@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* body의 여백을 0 */
+body {
+    margin: 0;
+}
+
+/* 
+    선택자의 종류
+    1. 요소(타입, 태그) 선택자
+    2. 그룹 선택자: ,
+*/
+/* h1의 색상을 darkorange로 지정 */
+h1,p,div,a,span {
+    width: 80%;
+    background: lawngreen;
+}

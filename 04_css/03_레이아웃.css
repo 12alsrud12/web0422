@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 
+    선택자의 종류
+    1. 요소(태그, 타입)
+    2. 그룹 :,
+    3. 클래스 선택자: .이름
+*/
+
+.div1 {
+    background: aqua;
+    width: 1200px;
+    height:300px;
+    margin: auto;
+}
+.div2 {
+    background: beige;
+    width: 1200px;
+    height:200px;
+    margin: auto;
+}
+.div3 {
+    background: chocolate;
+    width: 1200px;
+    height:100px;
+    margin: auto;  
+}
+.div4 {
+    background: darkcyan;
+    width: 1200px;
+    height:200px;
+    margin: auto;
+}
