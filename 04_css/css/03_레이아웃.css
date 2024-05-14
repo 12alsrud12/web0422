@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* 
+    선택자의 종류
+    1. 요소(태그, 타입)
+    2. 그룹 :,
+    3. 클래스 선택자: .이름
+*/
+/* 레이아웃 유형1의 전체 크기 */
+
+.container1 { 
+    width: 400px;
+    margin: auto; /* 콘텐츠 가로 중앙 배치 */
+}
+/* 레이아웃 유형1 - 세로 */
+/* .div1~4는 레이아웃 유형1의 각 박스 크기와 배경색 */
+
+.div1 {
+    background: #FF8690;
+    /* height:300px; */
+}
+.div2 {
+    background: #FF5800;
+    /* height:200px; */
+}
+.div3 {
+    background: #F32E5E;
+    /* height:100px;  */
+}
+.div4 {
+    background: #C03E8D;
+    /* height:200px; */
+}
+
+/* 레이아웃 유형2 - 가로 */
+/* 
+    레이아웃(Layout) 세팅방법  
+    1. 고전적 방법인 "floating layout"
+    2. 요오즘 사람들이 쓰는 "flexible layout"
+    3. 2번이 이걸로 대체 될 수도 있는 "grid layout"
+    4. positioning
+    5. 블록레벨 속성을 인라인요소의 가로속성으로 바꾼다.
+ */
+ /* 
+    5번 방식은 쉽다.
+    5번 display(표시방식)
+    display: block; -> 인라인요소 속성을 블록레벨요소 속성으로 바꾼다.
+        (요소가 바뀌는게 아니라 속성이 바뀜)
+    display: inline; -> 블록레벨요소 속성을 인라인요소 속성으로 바꾼다.
+    display: inline-block; -> 인라인요소 + 블록레벨요소 두 속성을 모두 갖는다.
+    display: none; -> 화면에서 요소를 제거
+
+    Ctrl + D
+    1. 포토샵: 선택 해제
+    2. 피그마: 복제
+    3. vscode: 다중 선택 (선택된 것 찾아서 계속 선택해줌)
+
+    블록레벨요소
+     - display: block;
+     - 세로 배치(위에서 아래, 줄바꿈)
+     - 가로는 100%, 세로는 내용 크기
+     - 가로/세로 크기가 지정된다.
+
+    인라인요소
+    1. display: inline;
+     - 가로 배치 (왼쪽에서 오른쪽, 줄바꿈x)
+     - 가로/세로는 내용 크기
+     - 가로/세로 크기가 지정되지 않는다.
+
+    2.display: inline-block;
+     - width(너비),height 크기가 지정된다.
+ */
+
+/* .div5~7는 레이아웃 유형2의 각 박스 크기와 배경색 */
+/* 레이아웃 유형2: inline-block */
+.container2 {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+}
+.div5 {
+    
+    background: #795199;
+}
+.div6 {
+    background: #3D5381;
+}
+.div7 {
+    background: #2F4858;
+}
+
+/* 
+    레이아웃 유형2: float
+    float: left;
+    float: right;
+*/
+/* 
+    카멜(낙타) 표기법: 소문자, 두번째 단어부터 단어의 첫글자는 대문자
+     - boxSizeContainer
+     - containerBoxSize 이런식이다 (첫 글자는 무조건 소문자)
+
+    혹은  box_size, boxSize, box-size 이런 방식으로도 쓴다.
+*/
+.boxSize {
+    width: 500px;
+    height: 300px;
+}
+.container3 {
+    float: left;
+}
+.div8 {
+    
+    background: #FFBEC6;
+}
+.div9 {
+    background: #FF8690;
+}
+.div10 {
+    background: #C4515E;
+}
+/* 
+    레이아웃 유형2: flexible
+*/
+.container4 {
+    display: flex;
+}
