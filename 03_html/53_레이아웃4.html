@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃3</title>
+    <link rel="stylesheet" href="../04_css/03_레이아웃.css">
+</head>
+<body>
+    <!-- 세로배치 -->
+    <!-- margin1의 가로크기가 1200px이다. -->
+    <!-- 콘테이너로 묶으면 좋은점이 뭐냐
+        1. 가로 중앙 배치 (margin:0 auto;)를 한번의 기록으로 다같이 배치 가능
+        2. 하나의 파일 내에서 여러 파일을 제어할 때 CSS 적용시킬때 콘텐츠를 하나로 그룹핑 할 때
+        3. 부모 크기와 같은 자식 요소는 생략
+        
+
+    -->
+<div class="margin1">
+    <!--
+        main과 footer가로 크기 width를 1200px으로 지정하지 않아도
+        main과 footer의 가로 크기는 부모 크기 (margin1의 크기)의 100%라 CSS에서 width 크기를 지워도 margin1이 부모로 있다면
+        바뀌지 않고 그대로다.
+    -->
+    <div class="container4 main1">
+            <!-- 가로배치: display: flex; -->
+            <div class="header2">헤더</div>
+            <div class="contents2">
+                <div class="slide">슬라이드</div>
+                <div class="banner">배너</div>
+                <div class="notice">공지사항/갤러리</div>
+            </div>
+    </div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>
