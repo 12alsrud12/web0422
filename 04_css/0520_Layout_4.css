@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.wrap {
+    width: 1200px;
+}
+.section {
+    display: flex;
+}
+.header {
+    width: 200px;
+    background: #cccccc;
+}
+.contents {
+    width: 1000px;
+}
+.slide {
+    height: 400px;
+    background: #cacaca;
+}
+.banner {
+    height: 200px;
+    background: #9b9b9b;
+}
+.notion {
+    height: 250px;
+    background: #585858;
+}
+.footer {
+    height: 100px;
+    background: #000000;
+}

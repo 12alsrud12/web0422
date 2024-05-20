@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코드펜 예제4</title>
+    <link rel="stylesheet" href="../04_css/0520_Layout_4.css">
+</head>
+<body>
+<!-- 세로 배치 -->
+<!-- wrap의 가로 크기가 1200px이다. -->
+<!-- 
+    .wrap의 역할
+        1. 가로 중앙 배치를 한 번에 처리 (margin: 0 auto;)
+        2. 전체 콘텐츠를 하나로 그룹핑
+        3.부모의 가로 크기와 같은 자식 요소의 width는 생략할 수 있다.
+-->
+<div class="wrap">
+    <div class="section">
+        <!-- 가로 배치: 부모요소 .section에 disply:flex; -->
+        <div class="header">헤더</div>
+        <div class="contents">
+            <!-- 세로 배치 -->
+            <div class="slide">슬라이드</div>
+            <div class="banner">배너</div>
+            <div class="notion">공지사항</div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>
