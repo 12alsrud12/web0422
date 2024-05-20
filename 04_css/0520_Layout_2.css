@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.contents {
+    display: flex;
+}
+/* 
+    선택자
+    1. 클래스: 이름
+    2. 그룹: ,
+    3. 요소(태그, 타입)
+    4. 하위: 부모 자식(손자) /부모 자식 사이에 한칸 공백띄고 넣는거
+    html에 contents div 에서 contents가 부모 div자식
+*/
+
+.contents div {
+    width: 400px;
+    height: 200px;
+}
+.taps {
+    background: #b3ff00;
+}
+.banner {
+    background: #2bff00;
+}
+.shortcut {
+    background: #00ffb3;
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/* Ctrl + Alt + 좌우방향키 : 분할창 */
+
+/* 
+    부모에 display:flex를 지정하면
+    부모는 플렉스 컨테이너가 되고, 자식만 플렉스 아이템이 된다.
+    (손자는 플렉스와 관계없다 자식까지만 플렉스를 받음)
+*/
+.wrap { display: flex; }
+
+.header { width: 200px; background: #ff9eb3; }
+
+.right_wrap {
+    width: 1000px;
+}
+
+.slide {
+    height: 400px;
+    background: #ff86e1;
+}
+.banner {
+    height: 200px;
+    background: #ed91ff;
+}
+.notion {
+    height: 250px;
+    background: #de8cff;
+}

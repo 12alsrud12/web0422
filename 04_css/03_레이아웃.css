@@ -30,7 +30,7 @@
     /* height:100px;  */
 }
 .div4 {
-    background: #C03E8D;
+    background: #ff00ff;
     /* height:200px; */
 }
 
@@ -186,9 +186,8 @@
 .footer {
     height: 100px;
     width: 1200px;
-    background: #a19fff;
+    background: aquamarine;
 }
-
 /* 53레이아웃-4 에서 쓸 추가 클래스 */
 /* 
     선택자
