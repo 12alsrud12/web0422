@@ -23,6 +23,10 @@
 body {
     margin: 0;
 }
+/* 
+    그룹핑/레이아웃 요소는 box-sizing : border-box; 으로 사용하며
+    border(테두리)와 padding(패딩) 크기가 width와 height에 포함된다.
+*/
 /* 테두리를 지정하려면 스타일은 반드시 기록한다. */
 div {
     width: 200px;
@@ -38,7 +42,7 @@ div {
     box-sizing: border-box;
 }
 /* 
-인라인 요소는 width, height가 적용되지 않는다.
+인라인 요소는 width, height, box-sizing가 적용되지 않는다.
 적용하려면 display 적용해야함. 
 */
 /* border: 값1 값2 값3 */
