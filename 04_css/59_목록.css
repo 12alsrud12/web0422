@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* 
+(일반형)
+List-style-type
+List-style-position
+List-style-image
+
+(속기형)
+List-style
+
++ List-style-type 에는 ul과 ol에 각자 다르게 적용할 수 있는 값이 있다 (none만 공용)
+
+ul에 지정할 수 있는 값
+1. disc(기본값)
+2. circle
+3. square
+4. none ( 공용 / 스타일 지우기 )
+
+그 외 나머지 list style 값은 무지 많지만 그건 다 ol에 지정이 가능하다.
+
+ol에 대표적인 지정할 수 있는 값
+1. decimal (1자리 숫자 / 1, 2, 3, ...)
+2. decimal-leading-zero (2자리 숫자 / 01, 02 ...)
+
+3. 그 외 숫자를 다른걸로 표기하는 것 :
+    3-1. lower-alpha(a, b, ...) 
+    3-2. upper-alpha(A, B, C, ...)
+    3-3. lower-roman(i, iii, ...)
+    3-4. upper-roman (I, II, III, IV ...)
+
+4. none ( 공용 / 스타일 지우기 )
+
+ul에 있는 기호 작은네모나 그런거 바꾸는 법 (블릿 기호)
+    list-style-image: url("폴더/파 일 명");
+    
+    이미지를 가져오는건대 폴더와 파일명에 띄어쓰기가 있으면 반드시 ""또는 ''로 묶는다 아님 그냥 붙여쓰면된다. 띄어쓰기 하면 나뉘기 때문이다.
+    
+    그리고 기본 블릿 기호 크기는 6px이다.
+
+list-style-psdition
+
+*/
+/* ul은 왼쪽 패딩과 위아래 여백이 있다. */
+ul {
+    padding-left: 40px;
+    margin: 16px 0;
+    border: 5px solid;
+    /* list-style-type: none; */
+    list-style: none;
+    color: blue;
+}
+
+li {
+    border: 1px solid red;
+    list-style-type: none;
+}
+li:nth-of-type(1) {
+    list-style-type: disc; 
+    list-style-position: inside;
+    list-style-image: url(../assets/list.png);
+}
+li:nth-of-type(2) {list-style-type: square;}
+li:nth-of-type(3) {list-style-type: circle;}
