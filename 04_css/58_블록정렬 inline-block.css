@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+
+/* 
+
+    text-align: 글자 맞춤;
+    line-height: 줄간격;
+    padding: 패딩;
+
+
+    넓게보면 인라인 요소(포함)와 텍스트 가로 정렬
+    (시간상 인라인은 다음시간에 배울 것)
+    text-align
+
+    텍스트의 세로 가운데 정렬
+    1. height를 지정하지 않고, padding의 위래 같은 크기를 지정한다.
+       (만약 height를 넣고 해야한다면 아래의 2번 방식을 사용해야함)
+
+    2. line-height 속성 값을 height 속성 크기와 같은 크기로 지정한다.
+       (단, 한 줄 텍스트 일때만 가능하다. 2줄 이상은 1번 방식으로)
+
+    만약 height 값도 지정하고 여러줄도 써야하면 다른걸 써야한다고 함 아직은 안 배웠다.
+*/
+.box {
+    background: yellow;
+    height: 200px;
+    margin: 12px;
+}
+
+div:nth-of-type(1) {
+    text-align: left;
+}
+
+div:nth-of-type(2) {
+    text-align: center;
+    line-height: 200px;
+}
+
+div:nth-of-type(3) {
+    text-align: right;
+    height: auto;
+    padding: 92px;
+}
+
+.box div {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+}
