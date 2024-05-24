@@ -9,15 +9,17 @@ header {
 /* 위쪽은 임시 (나중에 지울 것) */
 header {
     display: flex;
-
 }
-
+h1 {
+    padding: 16px 8px;
+}
+nav li {
+    list-style: none;
+}
 main {
     display: flex;
 }
-li {
-    list-style: none;
-}
+
 footer {
     width: 1920px;
     height: 85px;
