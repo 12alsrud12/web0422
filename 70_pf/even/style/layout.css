@@ -4,8 +4,9 @@
     그룹 선택자: ,
     전체 선택자: *
     *는 모든 요소를 가리킨다.
-
 */
+/* body 모든 요소 */
+/* layout  */
 body * {
     outline: 1px solid lime;
 }
@@ -82,7 +83,6 @@ section {
 
     body : 15px , line-height:22.5 -> 줄간격은 150~200% 이게 가독성이 좋다
     ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-
 */
 /* 
     font-family은 위에 body 폰트 지정 후 " 아래에! " h1 ~ h3 , nav a 지정을 따로 해주면,
@@ -94,10 +94,7 @@ body {
     font-size: 15px;
 }
 
-h1,
-h2,
-h3,
-nav a {
+h1,h2,h3,nav a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
