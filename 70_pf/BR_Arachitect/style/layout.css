@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+    outline: 1px solid red ;
+}
+header {
+    border: 1px solid rgb(0, 139, 139);
+}
+/* 위쪽은 임시 (나중에 지울 것) */
+header {
+    display: flex;
+
+}
+
+main {
+    display: flex;
+}
+li {
+    list-style: none;
+}
+footer {
+    width: 1920px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+    color: #fff;
+    background: #000;
+}
