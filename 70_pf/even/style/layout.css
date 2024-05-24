@@ -6,32 +6,53 @@
     *는 모든 요소를 가리킨다.
 */
 /* body 모든 요소 */
-/* layout  */
+
+/* temp(임시, 나중에 지울 것) */
 body * {
     outline: 1px solid lime;
 }
-
-body {
-    margin: 0;
+/* reset */
+body,ul,h1,h2, {
+    margin: 0 auto;
 }
+ul {
+    padding: 0;
+    list-style: none;
+}
+a {text-decoration: none;}
+
+/* layout  */
+/* 박스모델 속성, display, position */
 
 nav {
+}
+nav section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 100px;
+    
+    background: yellow;
+}
+ul li {
+    display: inline;
 }
 
 header {
     height: 200px;
     background: url(/assets/bg-light.png);
+    line-height: 92px;
 }
 
 section {
+    height: 100px;
     width: 940px;
     margin: 0 auto;
-    line-height: 92px;
 }
 
 .home-card {
     display: flex;
+    justify-content: space-between;
 }
 
 .home-ico {
@@ -43,7 +64,17 @@ section {
     width: 790px;
     height: 140px;
 }
+/* 우리가 일단 쓰는 이건 설명을 위한 영역 구분을 위한 코드다. */
 
+    /* header */
+header {
+    height: 200px;
+    background: url(/assets/bg-light.png);
+}
+    /* section */
+
+    /* footer */
+    
 /* 
     font 일반형
     font-family: 글꼴
@@ -101,9 +132,6 @@ h1,h2,h3,nav a {
 
 /* bg-color */
 nav {
-    line-height: 100px;
-    text-align: right;
-    padding-right: 100px;
     color: rgb(68, 68, 68);
     background: #d0ff00;
 }
@@ -116,6 +144,7 @@ h1 {
 
 h2 {
     font-size: 30px;
+    margin: 0;
 }
 
 /* 
