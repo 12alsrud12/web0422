@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* 웹 폰트  */
+/* 구글 폰트 */
+/* 본문/(body, p): 
+    한글: noto sans kr
+    영문: noto sans */
+/* 눈누 폰트 */
+/* 제목 : 나눔스퀘어 네오 */
+/* 
+실무에서는 기본 폰트 사용 : X
+한글이 되는 언어를 써야하는대 영어는 어차피 한글 폰트는 다 지원이 됨. 
+*/
+/* 
+구글 폰트: Noto Sans KR
+    https://fonts.google.com/selection/embed
+
+눈누 폰트: 나눔 스퀘어
+    https://noonnu.cc/font_page/1053
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+    눈누에서 가져온 폰트는 @font-face 라는 위의 이름의 태그를 갖고있는대
+    저 내부에 있는 font-family: 내부에 있는 저 Nanum 어쩌구 이름은 바꿀 수 있다고 한다.
+
+    방법은 그냥 지우고 이름 Nanum 으로 적고 아래 폰트 패밀리에도 원래 Nanum~Variable 지우고 Nanum으로 바꾸면 된다.
+ */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+}
+
+h1,h2,h3 {
+    font-family: "NanumSquareNeo-Variable";
+}
+h1,h3 {
+    font-size: 15px;
+}
+h2 {
+    font-size: 24px;
+}
+
+a {
+    color: #111;
+}

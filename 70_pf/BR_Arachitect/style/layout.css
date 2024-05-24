@@ -1,30 +1,73 @@
 @charset "utf-8";
 
-body {
-    outline: 1px solid red ;
-}
-header {
-    border: 1px solid rgb(0, 139, 139);
-}
-/* 위쪽은 임시 (나중에 지울 것) */
+/* Header */
+
 header {
     display: flex;
-}
-h1 {
-    padding: 16px 8px;
+    justify-content: space-between;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 36px;
 }
 nav li {
-    list-style: none;
-}
-main {
-    display: flex;
+    display: inline-block;
+    padding-left: 36px;
 }
 
-footer {
-    width: 1920px;
-    height: 85px;
-    text-align: center;
-    line-height: 85px;
-    color: #fff;
-    background: #000;
+/* Section의 공통 부분 */
+
+
+
+section {
+    width: 1700px;
+    margin: 0 auto;
 }
+
+h2 {
+    border-bottom: 1px solid #000000;
+    padding: 24px 0;
+    margin: 0 0 48px 0;
+}
+
+/* Section_1 */
+.s1 {
+    height: 745px;
+}
+
+.s1 h2 {
+    display: flex;
+    height: 745px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+/* Section_2 */
+.s2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.s2 li {
+    width: 360px;
+    height: 240px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.s2 li:nth-of-type(4n) {
+    margin: 0;
+}
+
+.s2 h3 {
+    display: inline-block;
+    padding: 8px 24px;
+    color: #fff;
+}
+
+/* Section_3 */
+
+/* Section_4 */
+
+/* Footer */
