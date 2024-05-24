@@ -14,12 +14,13 @@ body {
 nav {
     height: 100px;
 }
-header {
+header {    
     height: 200px;
+    background: url(/assets/bg-light.png);
 }
 section {
     width: 940px;
-    margin: auto;
+    margin: 0 auto;
     line-height: 92px;
 }
 .home-card {
@@ -32,4 +33,10 @@ section {
 .home-description {
     width: 790px;
     height: 140px;
+}
+nav {
+    background: #d0ff00;
+}
+h1 { 
+    background: #0004ff;
 }
