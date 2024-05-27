@@ -71,3 +71,6 @@ h2 {
 /* Section_4 */
 
 /* Footer */
+div {
+    align-content: space-around;
+}
