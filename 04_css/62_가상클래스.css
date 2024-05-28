@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* 
+        선택자::before -> 이전
+        선택자::after -> 이후
+        */
+p::before {
+    /* 특수문자는 한글의 자음 + 한자키 */
+    content: "★";
+    color: red;
+    display: inline-block;
+    font-size: 8px;
+    margin-right: 16px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+}
+
+p::after {
+    /* 이모지 삽입 -> 윈 + . 혹은 윈 + ; */
+    content: "😍";
+}

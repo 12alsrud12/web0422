@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>60_가상클래스_link관련</title>
+    <link rel="stylesheet" href="../04_css/60_가상클래스_link.css">
     <!-- 내부 CSS사용 -->
     <style>
         /* 선택자 {속성:값;} */
@@ -14,7 +16,7 @@
             선택자:hover -> 올렸을 때
             선택자:active -> 눌렀을 때
         */
-        
+
         /* a요소를 방문전(클릭하기전) 글자색 색상이 #ff0000이다. */
         /* a:link {color: #ff0000;} */
         /* a요소를 방문 했다는(방문후/클릭후) 색상이 #ffc400이다. */
@@ -27,10 +29,18 @@
         그리고 이 위 4개 가상클래스 선택자를 다 쓰려면 위 순서대로 해야한다.
         1.link 2.visited 3.hover 4.active 틀리면 난리남
          */
-         a {color: #3b3b3b; text-decoration: none;}
-         a:hover {color: #ff81d5; text-decoration: underline;}
+        a {
+            color: #3b3b3b;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff81d5;
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
     <h1>가상 클래스 선택자</h1>
     <p>링크 관련하여 :link, :visited, :hover, :acive가 있다.</p>
@@ -40,6 +50,7 @@
     <!-- 기본 색상 
             기본 : 파란색 밑줄 / CSS에서 따지면 -> a {color: blue; text-decoration: underline;} 속성이다.
      -->
-     <a href="#">링크2</a>
+    <a href="#">링크2</a>
 </body>
+
 </html>

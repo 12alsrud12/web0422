@@ -37,6 +37,11 @@ nav section {
 ul li {
     display: inline;
 }
+ul li:nth-of-type(2)::before {
+    padding: 0 16px;
+    content: "●";
+    color: #c1c1c1;
+}
 
 header {
     height: 200px;
