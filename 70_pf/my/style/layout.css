@@ -38,10 +38,15 @@ ul li {
     display: inline;
 }
 ul li:nth-of-type(2)::before {
-    padding: 0 16px;
-    content: "●";
-    color: #c1c1c1;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 12px 4px;
+    background: #999;
+    bor
 }
+
 
 header {
     height: 200px;
