@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>63_배경이미지</title>
+    <style>
+                    /* 
+            기본적으로 배경 이미지는 패턴으로 들어간다. (넣을 수 있는만큼 반복적으로 들어감)
+            그래서 아래에 background-repeat 가 있는 것. (반복 여부 결정)
+
+            배경 관련 속성
+                backgroubd-img : 배경 이미지
+                background-repeat : 반복 여부
+                background-position : 위치
+                background-size : 크기
+                background-attachment : 고정 여부
+                background-color : 배경색
+
+                background (속기형)
+             */
+        div {
+            height: 1000px;
+            background: #000;
+        }
+        p {
+            /* 일반형 */
+            height: 3000px;
+            border: 1px solid #fff000;
+            background-image: url(../assets2/Facebook.png);
+            background-repeat: no-repeat;
+            /* 50% 50% -> 가로 세로 */
+            background-position: 50%;
+            background-size: 200px;
+            background-color: aqua;
+
+            /* 속기형 */
+            /* background: 색|url(경로/이미지명) 반복여부 위치/크기; */
+            background: url(../assets/namu.jpg) no-repeat 0/cover fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경 이미지</h1>
+    <div></div>
+    <!-- 예시로, p에 이미지 넣어본다고 하심. -->
+    <div>
+        <p>background-image, background-repeat, background-position, background-size, background-attachment 와 같은 CSS 속성이 있다.</p>
+    </div>
+    <div></div>
+
+</body>
+</html>

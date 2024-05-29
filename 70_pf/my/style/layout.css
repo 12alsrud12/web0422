@@ -24,8 +24,6 @@ a {text-decoration: none;}
 /* layout  */
 /* 박스모델 속성, display, position */
 
-nav {
-}
 nav section {
     display: flex;
     justify-content: flex-end;
@@ -37,27 +35,31 @@ nav section {
 ul li {
     display: inline;
 }
-ul li:nth-of-type(2)::before {
+ul li:nth-of-type(1)::after {
     display: inline-block;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     margin: 0 12px 4px;
     background: #999;
-    bor
 }
 
 
 header {
     height: 200px;
-    background: url(/assets/bg-light.png);
+    background: url(/assets/bg-light.png) no-repeat 50% 50%/cover fixed;
     line-height: 92px;
 }
-
 section {
     height: 100px;
     width: 940px;
     margin: 0 auto;
+}
+section h2 {
+    margin: 56px 0;
+}
+section div {
+    margin-bottom: 56px 0;
 }
 
 .home-card {
@@ -76,14 +78,10 @@ section {
 }
 /* 우리가 일단 쓰는 이건 설명을 위한 영역 구분을 위한 코드다. */
 
-    /* header */
-header {
-    height: 200px;
-    background: url(/assets/bg-light.png);
-}
-    /* section */
+/* header */
+/* section1 */
 
-    /* footer */
+/* footer */
     
 /* 
     font 일반형
