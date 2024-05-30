@@ -52,26 +52,58 @@
 */
 /* body 모든 요소 */
 /* text */
-@font-face{
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.5 Arial, Helvetica, sans-serif;
+    font-style:italic;
+}
+
+@font-face {
     font-family: "Noto Sans KR";
-    src: url("https://12alsrud12.github.io/web0422/asstes/font/NotoSans-VariableFont_wdth,wght.ttf");} 
-h3 {
-    font-family: "Noto Sans KR",sans-serif;
+    src: url("https://12alsrud12.github.io/web0422/assets/font/NotoSansKR-Bold.ttf");
+}
+
+.home-description h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: none;
+    font-weight: 700;
+}
+
+.home-description h3 span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 /* temp(임시, 나중에 지울 것) */
 body * {
     outline: 1px solid lime;
 }
+
 /* reset */
-body,ul,h1,h2, {
-    margin: 0 auto;
+body,
+ul,
+h1,
+h2,
+{
+margin: 0 auto;
 }
+
 ul {
     padding: 0;
     list-style: none;
 }
-a {text-decoration: none;}
+
+a {
+    text-decoration: underline;
+    color: #444;
+}
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+}
 
 /* layout  */
 /* 박스모델 속성, display, position */
@@ -81,19 +113,19 @@ nav section {
     justify-content: flex-end;
     align-items: center;
     height: 100px;
-    
-    background: yellow;
 }
+
 ul li {
     display: inline;
 }
-ul li:nth-of-type(1)::after {
+
+section li:nth-of-type(1)::after {
     display: inline-block;
+    content: "●";
     width: 6px;
     height: 6px;
-    border-radius: 50%;
     margin: 0 12px 4px;
-    background: #999;
+    color: #999;
 }
 
 
@@ -102,14 +134,17 @@ header {
     background: url(/assets/bg-light.png) no-repeat 50% 50%/cover fixed;
     line-height: 92px;
 }
+
 section {
     height: 100px;
     width: 940px;
     margin: 0 auto;
 }
+
 section h2 {
     margin: 56px 0;
 }
+
 section div {
     margin-buttom: 56px 0;
 }
@@ -128,6 +163,7 @@ section div {
     width: 790px;
     height: 140px;
 }
+
 /* 우리가 일단 쓰는 이건 설명을 위한 영역 구분을 위한 코드다. */
 
 /* header */
@@ -135,20 +171,28 @@ section div {
 .home-description h3 {
     margin: 0;
 }
+
+.home-description h3 span {
+    margin: 0 0 0 1em;
+}
+
 .home-description p {
     margin: 20px 0;
 }
 
 
 /* footer */
-    
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 
-h1,h2,h3,nav a {
+h1,
+h2,
+h3,
+nav a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
@@ -156,7 +200,6 @@ h1,h2,h3,nav a {
 /* bg-color */
 nav {
     color: rgb(68, 68, 68);
-    background: #d0ff00;
 }
 
 h1 {
@@ -166,7 +209,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 3rem;
     margin: 0;
 }
 

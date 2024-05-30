@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* text */
+@font-face{
+    font-family: "Noto Sans KR";
+    src: url("https://12alsrud12.github.io/web0422/assets/font/NotoSansKR-Bold.ttf");
+} 
+.home-description h3 {
+    font-family: "Noto Sans KR",sans-serif;
+    font-style: none;
+    font-weight: 700;
+}
+.home-description h3 span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
