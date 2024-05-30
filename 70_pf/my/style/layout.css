@@ -52,7 +52,12 @@
 */
 /* body 모든 요소 */
 /* text */
-@font-face
+@font-face{
+    font-family: "Noto Sans KR";
+    src: url("https://12alsrud12.github.io/web0422/asstes/font/NotoSans-VariableFont_wdth,wght.ttf");} 
+h3 {
+    font-family: "Noto Sans KR",sans-serif;
+}
 
 /* temp(임시, 나중에 지울 것) */
 body * {
