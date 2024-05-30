@@ -51,6 +51,8 @@
     *는 모든 요소를 가리킨다.
 */
 /* body 모든 요소 */
+/* text */
+@font-face
 
 /* temp(임시, 나중에 지울 것) */
 body * {
@@ -125,6 +127,13 @@ section div {
 
 /* header */
 /* section1 */
+.home-description h3 {
+    margin: 0;
+}
+.home-description p {
+    margin: 20px 0;
+}
+
 
 /* footer */
     
