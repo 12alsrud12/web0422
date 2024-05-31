@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
 /* 
     font 일반형
     font-family: 글꼴
@@ -79,7 +81,7 @@ body {
 
 /* temp(임시, 나중에 지울 것) */
 body * {
-    outline: 1px solid lime;
+    /* outline: 1px solid lime; */
 }
 
 /* reset */
@@ -136,7 +138,6 @@ header {
 }
 
 section {
-    height: 100px;
     width: 940px;
     margin: 0 auto;
 }
@@ -154,14 +155,14 @@ section div {
     justify-content: space-between;
 }
 
-.home-ico {
+.home-icon {
     width: 100px;
     height: 100px;
+    
 }
 
 .home-description {
     width: 790px;
-    height: 140px;
 }
 
 /* 우리가 일단 쓰는 이건 설명을 위한 영역 구분을 위한 코드다. */
@@ -238,5 +239,5 @@ p {
 }
 
 .home-description {
-    background: #ff7676;
+    /* background: #ff7676; */
 }
