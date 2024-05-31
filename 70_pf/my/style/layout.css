@@ -120,6 +120,7 @@ ul {
 }
 
 a {
+    margin: 0;
     text-decoration: underline;
     color: #444;
 }
