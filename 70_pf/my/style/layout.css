@@ -154,7 +154,7 @@ section li:nth-of-type(1)::after {
 
 header {
     height: 200px;
-    background: url(/assets/bg-light.png) no-repeat 50% 50%/cover fixed;
+    background: url(https://12alsrud12.github.io/web0422/assets/bg-light.png) no-repeat 50% 50%/cover fixed;
     line-height: 92px;
 }
 
