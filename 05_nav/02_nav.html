@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav_01유형</title>
+    <title>nav_02유형</title>
     <style>
         @import url(style/reset.css);
         @import url(style/typo.css);
@@ -45,6 +45,8 @@
             line-height: 30px;
             /* line-height */
             text-align: center;
+            color: #fff;
+            background: #555;
             /* text-align:center = 텍스트 가로 중앙 배치 */
         }
 
@@ -55,21 +57,25 @@
         /* 2depth : 메인메뉴 내부/이후  */
 
         .sub {
-            height: 0;
             overflow: hidden;
-            visibility: hidden;
+            height: 0;
+            opacity: 0;
             padding: 10px 0 20px;
             transition: 0.5s;
             line-height: 2;
             background: rgba(0, 0, 0, .5);
         }
 
-        .main>li:hover .sub {
+        .main:hover .sub {
             height: 150px;
             visibility: visible;
+            opacity: 1;
+        }
+        .sub li a {
+            padding: 4px 6px;
         }
 
-        .sub li:hover {
+        .sub li:hover a {
             background: #111;
         }
     </style>

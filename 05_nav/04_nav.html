@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav_01유형</title>
+    <title>nav_04유형</title>
     <style>
         @import url(style/reset.css);
         @import url(style/typo.css);
@@ -14,59 +14,45 @@
         }
 
         header {
-            display: flex;
-            justify-content: flex-end;
-            /* align-items: flex-end; */
+            width: 200px;
             border: 1px solid;
-            position: relative;
-            padding: 20px 30px 0;
-            width: 1200px;
-            height: 100px;
-            margin: 0 auto;
-            /* 블록레벨요소의 가로 가운데 배치 반드시!! width 지정 후 margin: 0 auto 해야 중앙 정렬 된다. */
         }
 
         .gnb {
-            position: absolute;
-            border: 1px solid;
+            margin: 16px;
         }
 
 
         /* 1depth : nav ~ 메인메뉴 까지 */
-        .main {
-            display: flex;
-        }
-
         .main>li {
-            width: 160px;
-            height: 30px;
-            border-right: 1px solid #fff;
-            /* 이건 메뉴 사이 선 넣어본 것. */
-            line-height: 30px;
-            /* line-height */
-            text-align: center;
-            /* text-align:center = 텍스트 가로 중앙 배치 */
-        }
-
-        .main>li:hover {
+            line-height: 40px;
             background: #333;
+            border-bottom: 1px solid #111;
+            text-align: center;
         }
 
         /* 2depth : 메인메뉴 내부/이후  */
 
         .sub {
-            height: 0;
             overflow: hidden;
             visibility: hidden;
+            height: 0;
+            opacity: 0;
             padding: 10px 0 20px;
-            transition: 0.5s;
-            line-height: 2;
-            background: rgba(0, 0, 0, .5);
+            transition: 0.3s;
+            line-height: 30px;
+            background: #777;
         }
+
 
         .main>li:hover .sub {
             height: 150px;
             visibility: visible;
+            opacity: 1;
+        }
+
+        .sub li a {
+            padding: 4px 6px;
         }
 
         .sub li:hover {
