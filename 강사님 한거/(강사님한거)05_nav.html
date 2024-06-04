@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav_05유형</title>
+    <title>Document</title>
     <style>
-        @import url(style/reset.css);
-        @import url(style/typo.css);
-
+        @import url(reset.css);
+        @import url(typo.css);
 
         header {
             width: 200px;
@@ -20,9 +19,7 @@
             margin: 16px;
         }
 
-
-        /* 1depth : nav ~ 메인메뉴 까지 */
-
+        /* 1depth */
         .main>li {
             padding: 8px 0;
             background: #333;
@@ -30,17 +27,16 @@
             text-align: center;
         }
 
-        /* 2depth : 메인메뉴 내부/이후  */
-
+        /* 2depth */
         .sub {
             overflow: hidden;
             visibility: hidden;
             opacity: 0;
-            transition: 0.5s;
-            line-height: 2;
+            /* 숫자가 작을 수록 빠르다. */
+            transition: .5s;
             background: #777;
+            line-height: 2;
         }
-
 
         .main>li:hover .sub {
             visibility: visible;
@@ -48,9 +44,10 @@
         }
 
         .sub li:hover {
-            background: #111;
+            background: #333;
         }
-        /* 유형5추가 코드 */
+
+        /* 유형5 추가 코드 */
         .main>li {
             position: relative;
         }
@@ -79,12 +76,12 @@
 </head>
 
 <body>
+    <!-- header>nav.gnb>ul.main>li*4>a[href="#"]{메인메뉴$}+ul.sub>li*4>a[href="#"]{서브메뉴$}   -->
     <header>
         <nav class="gnb">
             <!-- 1depth -->
             <ul class="main">
                 <li>
-                    <!-- ul과 li는 형제 관계 -->
                     <a href="#">메인메뉴1</a>
                     <!-- 2depth -->
                     <ul class="sub">
@@ -124,7 +121,6 @@
             </ul>
         </nav>
     </header>
-
 </body>
 
 </html>
