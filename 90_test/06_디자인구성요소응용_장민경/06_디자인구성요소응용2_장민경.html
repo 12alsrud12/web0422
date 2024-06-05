@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내비게이션_장민경</title>
+    <style>
+        /* reset */
+
+        body * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* typo */
+
+        @font-face {
+            font-family: 'MangoDdobak-B';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .body {
+            font-family: "MangoDdobak-B", sans-serif;
+            font: 1.5rem/1.5 "MangoDdobak-B", sans-serif;
+            line-height: 1.5;
+        }
+
+        .main>li>a {
+            font-size: 1.6rem;
+            color: #a18B92;
+        }
+
+        .main>li:hover>a {
+            color: #fff2f8;
+        }
+
+        .sub a {
+            color: #fff2f8;
+        }
+
+        .sub a:hover {
+            color: #a18B92;
+        }
+
+        /* 1depth : main ~ */
+        header {
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            margin-top: 150px;
+            padding: 0 20px;
+            border-top: 1px solid #000;
+        }
+
+        .gnb {
+            width: 100%;
+            position: relative;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            height: 50px;
+        }
+
+        .main::before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            right: 0;
+            left: 0;
+            z-index: -2;
+            display: block;
+            width: 100%;
+            height: 0px;
+            opacity: 0;
+            transition: .3s;
+            background: rgba(161, 139, 146, .5);
+        }
+
+
+        .main:hover::before {
+            height: 150px;
+            opacity: 1;
+        }
+
+        .main>li {
+            width: 170px;
+            line-height: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .main>li:hover {
+            background: rgb(161, 139, 146);
+        }
+
+        /* 메인메뉴 선택 시 배경색 변경  */
+
+        /* 2depth : ul.sub ~ ul */
+        .sub {
+            overflow: hidden;
+            height: 0;
+            opacity: 0;
+            transition: .3s;
+            line-height: 2;
+        }
+
+        .main:hover .sub {
+            opacity: 1;
+            height: 150px;
+        }
+
+        .sub li a {
+            padding: 4px 6px;
+        }
+
+        .sub li:hover a {
+            background: #fff2f8;
+        }
+
+        /* 서브메뉴 호버 시 배경색 변경 */
+    </style>
+    <!-- 내부 CSS 종료 -->
+</head>
+
+<body>
+    <header>
+        <nav class="gnb">
+            <ul class="main">
+                <li>
+                    <a href="#">축제소개</a>
+                    <ul class="sub">
+                        <li><a href="#">Festival 소개</a></li>
+                        <li><a href="#">행사장 안내</a></li>
+                        <li><a href="#">조직위원회</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예약안내</a>
+                    <ul class="sub">
+                        <li><a href="#">예약하기</a></li>
+                        <li><a href="#">예약확인/취소</a></li>
+                        <li><a href="#">단체예약문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아티스트</a>
+                    <ul class="sub">
+                        <li><a href="#">고릴라즈</a></li>
+                        <li><a href="#">메이저 레이저</a></li>
+                        <li><a href="#">아우스게인</a></li>
+                        <li><a href="#">타임로드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">사진갤러리</a></li>
+                        <li><a href="#">영상갤러리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
