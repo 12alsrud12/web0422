@@ -33,19 +33,28 @@
 
     방법은 그냥 지우고 이름 Nanum 으로 적고 아래 폰트 패밀리에도 원래 Nanum~Variable 지우고 Nanum으로 바꾸면 된다.
  */
-body {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 15px;
+html {
+    font-size: 10px;
 }
 
-h1,h2,h3 {
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
     font-family: "NanumSquareNeo-Variable";
 }
-h1,h3 {
-    font-size: 15px;
+
+h1,
+h3 {
+    font-size: 1.5rem;
 }
+
 h2 {
-    font-size: 24px;
+    font-size: 1.4rem;
 }
 
 a {

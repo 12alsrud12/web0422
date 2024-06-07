@@ -9,12 +9,15 @@ body * {
 header {
     background: #ccc;
 }
+
 .s1 {
     background: #777;
 }
+
 .s2 li {
     background: #5a5a5a;
 }
+
 h3 {
     background: #000000;
 }
