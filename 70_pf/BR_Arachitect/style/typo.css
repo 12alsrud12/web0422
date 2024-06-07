@@ -42,6 +42,10 @@ body {
     font-size: 1.5rem;
 }
 
+h1 {
+    font-weight: normal;
+}
+
 h1,
 h2,
 h3 {
