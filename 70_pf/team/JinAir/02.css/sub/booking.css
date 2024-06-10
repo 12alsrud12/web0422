@@ -1,1 +1,13 @@
 @charset "utf-8";
+
+body {
+    outline: 1px solid lime;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+}
+
+/* 공통 section */
