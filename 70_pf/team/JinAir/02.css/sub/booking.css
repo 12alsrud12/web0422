@@ -155,7 +155,7 @@ img {
     margin-bottom: 15px;
 }
 
-ul  {
+ul {
     margin: 0 0 40px;
 }
 
@@ -222,7 +222,6 @@ li {
 /* 유의사항 box */
 
 .us {
-    margin-bottom: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
