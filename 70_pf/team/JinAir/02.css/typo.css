@@ -32,15 +32,8 @@ h2 {
     font-size: 2.4rem;
 }
 
-p,
-ul {
+p {
     font-size: 1.4rem;
-}
-
-
-a {
-    font-size: 1.2rem;
-    color: #192547;
 }
 
 /* //공통 font// */
