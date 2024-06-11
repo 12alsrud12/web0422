@@ -9,26 +9,38 @@
         @import url(style/reset.css);
 
         section {
-            position: relative;
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
 
         div {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 1496px;
             height: 745px;
             background: #005813;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gr {
+            position: relative;
+            height: 10px;
+            background: rgb(190, 214, 0);
+            background: linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
         }
 
         /* letter-spacing = 글자간격 "자간" */
 
         h2 {
             position: absolute;
-            top: 45%;
-            left: 47%;
             letter-spacing: 4px;
             font-weight: 400;
-            border: 1px solid palegreen;
+            transform: translate(-50%, -50%);
         }
 
         b {
@@ -45,8 +57,13 @@
     section 태그는 그 안에 자식요소로 제목 태그가 반드시 존재 (보통은 h2부터 / h2 ~ h6)
      -->
     <section>
-        <h2><b>Jin</b>Air</h2>
-        <div></div>
+        <div>
+            <div class="img">
+                <div class="gr">
+                    <h2><b>Jin</b>Air</h2>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
