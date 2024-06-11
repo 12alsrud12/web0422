@@ -86,7 +86,10 @@ p {
     background: #fff;
 }
 
+.text_box li::before {
+    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/pasicon.png?raw=true);
+}
+
 .text_box ul {
     padding-left: 40px;
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/pasword_icon.png?raw=true);
 }
