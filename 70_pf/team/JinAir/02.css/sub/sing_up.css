@@ -81,8 +81,7 @@ p {
     display: flex;
     height: 56px;
     align-items: center;
-    margin: 0;
-    margin-left: 156px;
+    margin: 0 0 15px 156px;
 }
 
 .box_2 input {
@@ -118,3 +117,40 @@ p {
 }
 
 /* lang */
+
+.yn {
+    display: flex;
+    margin-top: 160px;
+    height: 120px;
+    border-top: 1px dashed #192547;
+    background: #fff;
+}
+
+.yn_center {
+    width: 1120px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.yn_center p {
+    color: #192547;
+}
+
+.yn button:nth-of-type(1) {
+    background: #bed600;
+}
+
+.yn button:nth-of-type(2) {
+    background: #192547;
+}
+
+.yn button {
+    border: none;
+    border-radius: 5px;
+    width: 148px;
+    height: 60px;
+    margin-left: 10px;
+    color: #fff;
+}
