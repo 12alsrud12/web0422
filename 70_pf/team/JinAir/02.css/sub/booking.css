@@ -2,16 +2,10 @@
 
 
 /* 공통 */
-h2 * {
+.icon strong {
+    background-size: 10px;
     background: rgb(190, 214, 0);
     background: linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-}
-
-.box_title>h2 * {
-    background: none;
-}
-strong>h2 * {
-    background: none;
 }
 
 body {
