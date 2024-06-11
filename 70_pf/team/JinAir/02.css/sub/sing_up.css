@@ -77,6 +77,32 @@ p {
     background: #bed600;
 }
 
+.box_2 {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    margin: 0;
+    margin-left: 156px;
+}
+
+.box_2 input {
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #ababab;
+    width: 340px;
+    height: 43px;
+}
+
+.box_2 button {
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #ababab;
+    width: 145px;
+    height: 50px;
+    color: #fff;
+    background: #192547;
+}
+
 /* dg */
 .text_box {
     line-height: 65px;
@@ -86,10 +112,9 @@ p {
     background: #fff;
 }
 
-.text_box li::before {
-    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/pasicon.png?raw=true);
-}
-
 .text_box ul {
     padding-left: 40px;
+    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/pasicon.png?raw=true);
 }
+
+/* lang */
