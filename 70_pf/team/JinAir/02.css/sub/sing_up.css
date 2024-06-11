@@ -87,5 +87,6 @@ p {
 }
 
 .text_box ul {
-    list-style: url();
+    padding-left: 40px;
+    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/pasword_icon.png?raw=true);
 }
