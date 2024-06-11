@@ -7,7 +7,10 @@ h2 * {
     background: linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.box_title>h2 {
+.box_title>h2 * {
+    background: none;
+}
+strong>h2 * {
     background: none;
 }
 
@@ -61,8 +64,13 @@ ul {
     font-size: 1.4rem;
 }
 
-.us>li p {
+.us>li p,
+.faq>ul p {
     font-size: 1.6em;
+}
+
+.faq a {
+    font-size: 1.4rem;
 }
 
 
@@ -168,7 +176,7 @@ li {
 .imp {
     display: flex;
     flex-direction: row;
-    margin: 5px 0 0 0;
+    margin: 5px 0 0 20px;
     list-style: none;
 }
 
@@ -197,6 +205,19 @@ li {
 }
 
 .ab a:hover {
+    background: #192547;
+    color: #fff;
+}
+
+
+.abc>a {
+    padding: 8px 8px 5px;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    background: #bed600;
+}
+
+.abc a:hover {
     background: #192547;
     color: #fff;
 }
@@ -230,7 +251,7 @@ li {
     flex-direction: column;
     position: relative;
     border-radius: 18px;
-    background: #fff;
+    background: #f4f4f4;
     padding: 0 30px;
 }
 
@@ -249,7 +270,7 @@ li {
 
 .sub_us1>button {
     border: none;
-    background: #fff;
+    background: #f4f4f4;
 }
 
 .sub_us2 li,
@@ -263,7 +284,7 @@ li {
 .sub_us3 {
     position: absolute;
     overflow: hidden;
-    background: #fff;
+    background: #f4f4f4;
     opacity: 0;
     height: 0;
     margin: 0;
@@ -299,6 +320,33 @@ li {
 .sub_us2 li:hover {}
 
 /* //유의사항 box// */
+
+/* FAQbox */
+
+.faq {
+    border-radius: 18px;
+    background: #f0f0f0;
+    padding: 30px;
+}
+
+.faq ul {
+    list-style: none;
+    margin: 0;
+    width: 860px;
+}
+
+.faq p {
+    margin: 0;
+}
+
+.faq li {
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}
 
 /* last */
 main {

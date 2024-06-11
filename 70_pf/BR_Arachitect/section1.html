@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Section1</title>
     <style>
+        @import url(style/reset.css);
+
         section {
-            display: flex;
-            
+            position: relative;
+            text-align: center;
+        }
+
+        div {
+            display: inline-block;
+            width: 1496px;
+            height: 745px;
+            background: #005813;
+        }
+
+        /* letter-spacing = 글자간격 "자간" */
+
+        h2 {
+            position: absolute;
+            top: 45%;
+            left: 47%;
+            letter-spacing: 4px;
+            font-weight: 400;
+            border: 1px solid palegreen;
+        }
+
+        b {
+            padding: 8px 16px;
+            margin-right: 16px;
+            color: #fff;
+            background: rgba(190, 214, 0, .5);
         }
     </style>
 </head>
@@ -18,8 +45,8 @@
     section 태그는 그 안에 자식요소로 제목 태그가 반드시 존재 (보통은 h2부터 / h2 ~ h6)
      -->
     <section>
-        <h2><b>Jin</b> Air</h2>
-        <img src="/assets/야자수 사진.jpg" alt="야자수사진">
+        <h2><b>Jin</b>Air</h2>
+        <div></div>
     </section>
 </body>
 
