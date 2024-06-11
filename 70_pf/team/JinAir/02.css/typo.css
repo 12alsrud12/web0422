@@ -36,4 +36,10 @@ p {
     font-size: 1.4rem;
 }
 
+button {
+    font-family: "Gmarker", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
 /* //공통 font// */
