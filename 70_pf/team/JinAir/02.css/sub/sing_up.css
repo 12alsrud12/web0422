@@ -81,7 +81,7 @@ p {
     display: flex;
     height: 56px;
     align-items: center;
-    margin: 0 0 15px 156px;
+    margin: 0 0 15px 158px;
 }
 
 .box_2 input {
@@ -155,7 +155,7 @@ p {
     color: #fff;
 }
 
-/* 성별 */
+/* 성별,국가 */
 
 .box_3 {
     display: flex;
@@ -175,4 +175,16 @@ p {
     border-radius: 5px;
     width: 348px;
     padding: 15px 10px;
+}
+
+/* 연락처* */
+
+.form-select2 {
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    width: 148px;
+    padding: 15px 10px;
+    margin-right: 10px;
+    color: #fff;
+    background: #192547;
 }
