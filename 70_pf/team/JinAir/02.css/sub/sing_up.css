@@ -69,10 +69,12 @@ p {
 }
 
 .box_1 button:active {
-    width: 145px;
-    height: 50px;
-    border-radius: 5px;
-    margin-right: 10px;
+    color: #192547;
+    background: #bed600;
+    border: none;
+}
+
+.box_2 button:active {
     color: #192547;
     background: #bed600;
 }
@@ -146,6 +148,13 @@ p {
     background: #192547;
 }
 
+.yn button:nth-of-type(2):active,
+.yn button:nth-of-type(1):active {
+    border: none;
+    color: #fff;
+    background: #009fda;
+}
+
 .yn button {
     border: none;
     border-radius: 5px;
@@ -180,11 +189,11 @@ p {
 /* 연락처* */
 
 .form-select2 {
-    border: 1px solid #ababab;
+    border: none;
     border-radius: 5px;
     width: 148px;
     padding: 15px 10px;
     margin-right: 10px;
     color: #fff;
-    background: #192547;
+    background: #ababab;
 }
