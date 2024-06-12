@@ -69,14 +69,14 @@ p {
 }
 
 .su_box_1 button:active {
-    color: #192547;
-    background: #bed600;
+    color: #fff;
+    background: #009fda;
     border: none;
 }
 
 .su_box_2 button:active {
-    color: #192547;
-    background: #bed600;
+    color: #fff;
+    background: #009fda;
 }
 
 .su_box_2 {
