@@ -2,7 +2,7 @@
 
 
 /* 공통 */
-.icon strong {
+.bkg_icon strong {
     background: rgb(190, 214, 0);
     background: linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -24,50 +24,54 @@ hr {
     border: 1px dashed #192547;
 }
 
-.imp {
+.bkg_imp {
     margin-top: 20px;
 }
+
 
 /* //공통// */
 
 /* booking_font */
 
-.mn {
+.bkg_mn {
     font-weight: 500;
 }
 
-.bk1 a {
+.bkg_a2 {
     font-size: 1em;
+    color: #192547;
 }
 
-.imp {
+.bkg_imp {
     font-size: 1.2rem;
     color: #ababab;
 }
 
-.a1 {
+.bkg_a1 {
     color: #fff;
 }
 
-a {
+.bkg_faq a,
+.bkg_ab a,
+.bkg_abc a {
     font-size: 1.2rem;
     color: #192547;
 }
 
-ul {
+.bkg_text_box ul {
     font-size: 1.4rem;
 }
 
-.us>li p,
-.faq>ul p {
+.bkg_us>li p,
+.bkg_faq>ul p {
     font-size: 1.6em;
 }
 
-.faq a {
+.bkg_faq a {
     font-size: 1.4rem;
 }
 
-.faq a:hover {
+.bkg_faq a:hover {
     text-decoration: underline;
 }
 
@@ -76,7 +80,7 @@ ul {
 
 /* seciton_title */
 
-.sub_title {
+.bkg_sub_title {
     display: flex;
     flex-direction: column;
     border-radius: 18px 18px 0 0;
@@ -89,12 +93,12 @@ h1 {
     margin: 0;
 }
 
-.bk1 {
+.bkg_bk1 {
     display: flex;
     flex-direction: row;
 }
 
-.bk1 a {
+.bkg_bk1 a {
     width: 600px;
     line-height: 55px;
     text-align: center;
@@ -103,7 +107,7 @@ h1 {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-.bk1 .a1 {
+.bkg_bk1 .bkg_a1 {
     background: #192547;
 }
 
@@ -111,52 +115,53 @@ h1 {
 
 /* section */
 
-.bk2 {
+.bkg_bk2 {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 1120px;
 }
 
-.box_title {
+.bkg_box_title {
     margin: 0;
     padding: 60px 0;
 }
 
 
 
-.box {
+.bkg_box {
     display: flex;
     flex-direction: row;
     margin: 60px 0 0;
 }
 
-.icon {
+.bkg_icon {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 230px;
+    margin-bottom: 60px;
 }
 
 img {
     margin: 0 60px 20px 60px;
 }
 
-.text_box {
+.bkg_text_box {
     display: flex;
     width: 890px;
     flex-direction: column;
 }
 
-.text_box li {
+.bkg_text_box li {
     margin-bottom: 10px;
 }
 
-.text_box strong {
+.bkg_text_box strong {
     margin-bottom: 20px;
 }
 
-.text_box h2 {
+.bkg_text_box h2 {
     margin-bottom: 15px;
 }
 
@@ -169,7 +174,7 @@ li {
     list-style: url(../../03.assets/booking/li_list_img.png);
 }
 
-.imp {
+.bkg_imp {
     display: flex;
     flex-direction: row;
     margin: 5px 0 0 20px;
@@ -178,59 +183,59 @@ li {
 
 
 
-.E {
+.bkg_E {
     height: 190px;
     margin: 30px 0;
 }
 
-.E li {
+.bkg_E li {
     margin: 10px 20px;
 }
 
-.ab a::after {
+.bkg_ab a::after {
     content: url(../../03.assets/booking/버튼.png);
     margin-left: 4px;
 }
 
-.ab>a {
+.bkg_ab>a {
     padding: 8px 8px 5px;
     border: 1px solid #bed600;
     border-radius: 5px;
     margin: 0 10px 0 10px;
 }
 
-.ab a:hover {
+.bkg_ab a:hover {
     background: #192547;
     color: #fff;
 }
 
 
-.abc>a {
+.bkg_abc a {
     padding: 8px 8px 5px;
     border-radius: 5px;
     margin: 0 10px 0 10px;
     background: #bed600;
 }
 
-.abc a:hover {
+.bkg_abc a:hover {
     background: #192547;
     color: #fff;
 }
 
 
 
-.air_1,
-.air_2 {
+.bkg_air_1,
+.bkg_air_2 {
     list-style: none;
     margin-left: 80px;
 }
 
-.air_1 {
+.bkg_air_1 {
     list-style: url(../../03.assets/booking/gs.png);
     margin-bottom: 15px;
 }
 
-.air_2 {
+.bkg_air_2 {
     list-style: url(../../03.assets/booking/gs2.png);
 }
 
@@ -239,7 +244,7 @@ li {
 
 /* 유의사항 box */
 
-.us {
+.bkg_us {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -249,12 +254,12 @@ li {
     padding: 0 30px;
 }
 
-.us li {
+.bkg_us li {
     list-style: none;
     transition: 1s;
 }
 
-.sub_us1 {
+.bkg_sub_us1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -262,20 +267,20 @@ li {
     margin: 10px 0 0 0;
 }
 
-.sub_us1>button {
+.bkg_sub_us1>button {
     border: none;
     background: #f4f4f4;
 }
 
-.sub_us2 li,
-.sub_us3 li {
+.bkg_sub_us2 li,
+.bkg_sub_us3 li {
     list-style: disc;
     margin: 0;
     margin: 10px 0 10px 0;
 }
 
-.sub_us2,
-.sub_us3 {
+.bkg_sub_us2,
+.bkg_sub_us3 {
     position: absolute;
     overflow: hidden;
     background: #f4f4f4;
@@ -289,18 +294,18 @@ li {
     padding: 10px 50px;
 }
 
-.us:hover .sub_us1>button {
+.bkg_us:hover .bkg_sub_us1>button {
     background: #f4f4f4;
 }
 
-.us:hover .sub_us2 {
+.bkg_us:hover .bkg_sub_us2 {
     overflow: visible;
     height: 150px;
     opacity: 1;
-    background: #f4f4ff;
+    background: #f4f4f4;
 }
 
-.us:hover .sub_us3 {
+.bkg_us:hover .bkg_sub_us3 {
     overflow: visible;
     height: 220px;
     opacity: 1;
@@ -311,23 +316,23 @@ li {
 
 /* FAQbox */
 
-.faq {
+.bkg_faq {
     border-radius: 18px;
     background: #f4f4f4;
     padding: 30px;
 }
 
-.faq ul {
+.bkg_faq ul {
     list-style: none;
     margin: 0;
     width: 860px;
 }
 
-.faq p {
+.bkg_faq p {
     margin: 0;
 }
 
-.faq li {
+.bkg_faq li {
     list-style: none;
     margin: 10px 0 0 0;
 }
