@@ -24,12 +24,13 @@ hr {
     border-radius: 0 0 18px 18px;
     width: 1120px;
     height: 88px;
-    margin: 0;
-    padding: 40px 0 20px 0;
     margin-bottom: 142px;
     color: #fff;
     background: #192547;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .2);
+}
+
+.su_sub_title>h2 {
+    margin: 30px 0 20px;
 }
 
 p:nth-of-type(1) {
