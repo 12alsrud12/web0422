@@ -157,6 +157,22 @@ p {
 
 /* 성별 */
 
-label * {
+.box_3 {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.box_3 p {
+    font-size: 1.4rem;
+    color: #192547;
+    margin-bottom: 15px;
+}
+
+.form-select {
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    width: 348px;
+    padding: 15px 10px;
 }
