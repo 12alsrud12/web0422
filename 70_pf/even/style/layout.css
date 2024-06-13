@@ -9,6 +9,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 /* 
     font 일반형
     font-family: 글꼴
@@ -49,45 +50,45 @@ html {
     body : 15px , line-height:22.5 -> 줄간격은 150~200% 이게 가독성이 좋다
     ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
     */
-    /* 
+/* 
     font-family은 위에 body 폰트 지정 후 " 아래에! " h1 ~ h3 , nav a 지정을 따로 해주면,
     글 쓸때 h1 ~ h3 , nav a 는 Georaia 폰트로 써진다.
     body 에서도 폰트사이즈 15px인것도 h1,nav 말고도 p태그에 바로 적용시키려고..
     */
-    
-    /* 
+
+/* 
     그룹 선택자: ,
     전체 선택자: *
     *는 모든 요소를 가리킨다.
     */
-    /* body 모든 요소 */
-    /* text */
-    html {
-        font-size: 10px;
-    }
-    
-    body {
-        font: 1.5rem/1.5 Arial, Helvetica, sans-serif;
-        font-style:italic;
-    }
-    
-    @font-face {
-        font-family: "Noto Sans KR";
-        src: url("https://12alsrud12.github.io/web0422/assets/font/NotoSansKR-Bold.ttf");
-    }
+/* body 모든 요소 */
+/* text */
+html {
+    font-size: 10px;
+}
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-    }
-    
-    h1,
-    h2,
-    h3,
-    nav a {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-style: italic;
-    }
+body {
+    font: 1.5rem/1.5 Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("https://12alsrud12.github.io/web0422/assets/font/NotoSansKR-Bold.ttf");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+nav a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
 
 .home-description h3 {
     font-family: "Noto Sans KR", sans-serif;
@@ -124,6 +125,7 @@ a {
     text-decoration: underline;
     color: #444;
 }
+
 nav a {
     font-size: 2rem;
     text-decoration: none;
@@ -180,7 +182,7 @@ section div {
 .home-icon {
     width: 100px;
     height: 100px;
-    
+
 }
 
 .home-description {
@@ -246,4 +248,3 @@ p {
 .home-icon img {
     width: 100px;
 }
-
