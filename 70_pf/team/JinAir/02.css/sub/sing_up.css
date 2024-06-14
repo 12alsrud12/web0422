@@ -80,7 +80,7 @@ p {
 /* dg */
 .su_text_box {
     margin: 0;
-    padding:20px;
+    padding: 20px;
     border: 1px solid #bed600;
     border-radius: 18px;
     background: #fff;
@@ -89,7 +89,7 @@ p {
 .su_text_box ul {
     margin: 0;
     padding-left: 20px;
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/pasicon.png?raw=true);
+    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/sing_up_icon.png?raw=true);
 }
 
 /* lang */
