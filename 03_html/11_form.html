@@ -13,98 +13,87 @@
     <p>폼은 로그인, 검색창 또는 회원가입 페이지 제작시에 사용된다.</p>
     <p>input 태그의 22가지 타입에 따라 입력란, 확인란, 라디오 버튼, 전송 버튼, 초기화 버튼, ... 등이 있다.</p>
     <p>input 태그는 인라인 요소이다.</p>
+    <p>
+        웹언어
+        1. 클라이언트 언어 - 디자이너, 퍼블리셔, 프론트 엔드 개발자
+        - HTML + CSS + JavaScript
+        2. 서버 언어 - 백엔드 개발자 - Java(jsp), php, asp
+    </p>
 
-    <!-- 필수 요소! value , name -->
-
-    <!-- 한 줄 택스트 -->
-    <!-- 여기 입력란의 value가 초기값을 지정. 텍스트 칸안에 벨류 텍스트 넣어져서 지우고 입력해야함 -->
-    <!-- placehoder 지워지는 값 뭐 치면 싹 지워진다, -->
-    로그인<input type="text" placeholder="아이디를 입력해 주세요"><br>
-
-    <!-- 비밀번호 입력 -->
-    비밀번호<input type="password"><br>
-    <!-- 브라우저 화면에 표시되지 않는 텍스트 입력 / 웹 내의 화면 표시는X 프로그래밍 적으로 표시할때 -->
-    <input type="hidden"><br>
-
-
-    <!-- 이메일 -->
-    <label for="user_email">이메일</label>
-    <input type="email" id="user_email"><br>
-    <!-- 검색 -->
-    검색<input type="search"><br>
-    <!-- 전화번호 -->
-    전화번호<input type="tel"><br>
-    <!-- 링크/웹주소 입력 -->
-    웹주소<input type="url">
-
-    <hr>
-
-    <!-- 여러개 중에서 여러개 선택 -->
-    <label><input type="checkbox" name="ckgroup" value="rule1">HTML</label>
-    <label><input type="checkbox" name="ckgroup" value="rule2">CSS</label>
-    <label><input type="checkbox" name="ckgroup" value="rule3">JavaScript</label>
-    <!-- 여러개 중에서 1개만 선택 -->
-    <!-- 개발자를 위해 쓰는 것 name는 개발자가 DB를 연동할때 쓴다. -->
-    <input type="radio" name="radiogroup">
-    <input type="radio" name="radiogroup">
-    <input type="radio" name="radiogroup">
-
-    <hr>
-
-    <!-- 전송 , 제출 | value로 로그인적어서 버튼내 문구 입력 가능 (로그인 같이 정보전송해야하는건 이 타입을 이용)  -->
-    <input type="submit">
-    <!-- 초기화 -->
-    <input type="reset">
-    <!-- button내부 값은 value="이름" 을적으면 버튼 내부에 글이 들어간다. -->
-    <input type="button" value="더보기 버튼">
-    <!-- 이미지 버튼 (전송/submit , 초기화/reset) -->
-    <input type="image" src="../02_Figma/assets/기타버튼.svg" alt="기타버튼">
-    <!-- 파일첨부 -->
-    <input type="file">
-
-    <hr>
-
-    <!-- 
-    value 는 버튼일 경우에는 이름을 적으면 버튼 내부에 글이 들어가지만
-    각 속성 값마다 용도가 조금씩 다른대
-
-    예시로 checkbox와 radio에서의 value는 개발쪽이랑 연관이 있다고 한다.
-    겉 모습 차이가아니라 데이터베이스에 넘길 자료를 적는거라고 한다.
-
-    예시로 필수 동의 부분 체크안하면 못지나가는 부분
-    혹은 읽었는지 안읽었는지 체크박스로 확인한다거나 
-     -->
-
-    <input type="checkbox" name="ckgroup" value="rule1">HTML 읽음
-    <input type="checkbox" name="ckgroup" value="rule2">CSS 읽음
-    <input type="checkbox" name="ckgroup" value="rule3">JavaScript 읽음
-    <!-- 여러개 중에서 1개만 선택 -->
-    <!-- 개발자를 위해 쓰는 것 name는 개발자가 DB를 연동할때 쓴다. -->
-    <input type="radio" name="radiogroup">
-    <input type="radio" name="radiogroup">
-    <input type="radio" name="radiogroup">
-
-    <hr>
-
-    <!-- 적용 예시 : 디자이너는 전송 초기화는 input를 쓰지만 그 외는 버튼을 쓰는 경우가 많다 | 그렇다고 꼭 지킬 필요는 없고 타입만 잘 지키면 됨.  -->
-    <button type="submit">전송,제출</button>
-    <button type="reset">초기화,reset</button>
-    <button type="button">버튼</button>
-
-    <hr>
-
-    <!-- 스핀 버튼,카운트 역할 -->
-    <input type="number">
-    <!-- 범위 -->
-    <input type="range">
-
-    <hr>
-
-    <input type="date">
-    <input type="datetime">
-    <input type="date">
-    <input type="date">
-    <input type="date">
+    <form action="">
+        <!-- 필수 요소! value , name -->
+        <!-- 한 줄 택스트 -->
+        <!-- 여기 입력란의 value가 초기값을 지정. 텍스트 칸안에 벨류 텍스트 넣어져서 지우고 입력해야함 -->
+        <!-- placehoder 지워지는 값 뭐 치면 싹 지워진다, -->
+        로그인<input type="text" placeholder="아이디를 입력해 주세요"><br>
+        <!-- 비밀번호 입력 -->
+        비밀번호<input type="password"><br>
+        <!-- 브라우저 화면에 표시되지 않는 텍스트 입력 / 웹 내의 화면 표시는X 프로그래밍 적으로 표시할때 -->
+        <input type="hidden"><br>
+        <!-- 이메일 -->
+        <label for="user_email">이메일</label>
+        <input type="email" id="user_email"><br>
+        <!-- 검색 -->
+        검색<input type="search"><br>
+        <!-- 전화번호 -->
+        전화번호<input type="tel"><br>
+        <!-- 링크/웹주소 입력 -->
+        웹주소<input type="url">
+        <hr>
+        <!-- 여러개 중에서 여러개 선택 -->
+        <label><input type="checkbox" name="ckgroup" value="rule1">HTML</label>
+        <label><input type="checkbox" name="ckgroup" value="rule2">CSS</label>
+        <label><input type="checkbox" name="ckgroup" value="rule3">JavaScript</label>
+        <!-- 여러개 중에서 1개만 선택 -->
+        <!-- 개발자를 위해 쓰는 것 name는 개발자가 DB를 연동할때 쓴다. -->
+        <input type="radio" name="radiogroup">
+        <input type="radio" name="radiogroup">
+        <input type="radio" name="radiogroup">
+        <hr>
+        <!-- 전송 , 제출 | value로 로그인적어서 버튼내 문구 입력 가능 (로그인 같이 정보전송해야하는건 이 타입을 이용)  -->
+        <input type="submit">
+        <!-- 초기화 -->
+        <input type="reset">
+        <!-- button내부 값은 value="이름" 을적으면 버튼 내부에 글이 들어간다. -->
+        <input type="button" value="더보기 버튼">
+        <!-- 이미지 버튼 (전송/submit , 초기화/reset) -->
+        <input type="image" src="../02_Figma/assets/기타버튼.svg" alt="기타버튼">
+        <!-- 파일첨부 -->
+        <input type="file">
+        <hr>
+        <!--
+        value 는 버튼일 경우에는 이름을 적으면 버튼 내부에 글이 들어가지만
+        각 속성 값마다 용도가 조금씩 다른대
+        예시로 checkbox와 radio에서의 value는 개발쪽이랑 연관이 있다고 한다.
+        겉 모습 차이가아니라 데이터베이스에 넘길 자료를 적는거라고 한다.
+        예시로 필수 동의 부분 체크안하면 못지나가는 부분
+        혹은 읽었는지 안읽었는지 체크박스로 확인한다거나
+         -->
+        <input type="checkbox" name="ckgroup" value="rule1">HTML 읽음
+        <input type="checkbox" name="ckgroup" value="rule2">CSS 읽음
+        <input type="checkbox" name="ckgroup" value="rule3">JavaScript 읽음
+        <!-- 여러개 중에서 1개만 선택 -->
+        <!-- 개발자를 위해 쓰는 것 name는 개발자가 DB를 연동할때 쓴다. -->
+        <input type="radio" name="radiogroup">
+        <input type="radio" name="radiogroup">
+        <input type="radio" name="radiogroup">
+        <hr>
+        <!-- 적용 예시 : 디자이너는 전송 초기화는 input를 쓰지만 그 외는 버튼을 쓰는 경우가 많다 | 그렇다고 꼭 지킬 필요는 없고 타입만 잘 지키면 됨.  -->
+        <button type="submit">전송,제출</button>
+        <button type="reset">초기화,reset</button>
+        <button type="button">버튼</button>
+        <hr>
+        <!-- 스핀 버튼,카운트 역할 -->
+        <input type="number">
+        <!-- 범위 -->
+        <input type="range">
+        <hr>
+        <input type="date">
+        <input type="datetime">
+        <input type="date">
+        <input type="date">
+        <input type="date">
+    </form>
 
 
 
@@ -142,6 +131,17 @@
     <input type="time"><!-- 시간설정 | fire fox는 X -->
     <input type="url"><!-- 링크 넣는칸 -->
     <input type="week"><!-- 년도+주 단위로 날짜 지정 | 24년도 25번째 주 -->
+
+
+    <hr>
+
+    <select name="" id="">
+        <option value="">국제전화코드</option>
+        <option value="">한국</option>
+        <option value="">일본</option>
+    </select>
+
+
 </body>
 
 </html>
