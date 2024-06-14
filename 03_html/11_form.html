@@ -10,7 +10,7 @@
 <body>
     <h1>폼(form,양식)</h1>
     <h2>입력란의 22가지 종류</h2>
-    <p>input 태그의 22가지 타입에 따라 입력란, 확인란, 라디오 버튼, 전송 버튼, 초기화 버튼, ... 등이 있다.</p>
+    <p>폼은 로그인, 검색창 또는 회원가입 페이지 제작시에 사용된다. input 태그의 22가지 타입에 따라 입력란, 확인란, 라디오 버튼, 전송 버튼, 초기화 버튼, ... 등이 있다.</p>
 
     <!-- 한 줄 택스트 -->
     <input type="text">
@@ -29,6 +29,19 @@
     <input type="tel">
     <!-- 링크/웹주소 입력 -->
     <input type="url">
+
+    <!-- 여러개 중에서 여러개 선택 -->
+    <input type="checkbox" name="ckgroup">HTML
+    <input type="checkbox" name="ckgroup">CSS
+    <input type="checkbox" name="ckgroup">JavaScript
+    <!-- 여러개 중에서 1개만 선택 -->
+    <!-- 개발자를 위해 쓰는 것 name는 개발자가 DB를 연동할때 쓴다. -->
+    <input type="radio" name="radiogroup">
+    <input type="radio" name="radiogroup">
+    <input type="radio" name="radiogroup">
+
+    <!--  -->
+    <input type="radio" name="reset">
 
 
 
