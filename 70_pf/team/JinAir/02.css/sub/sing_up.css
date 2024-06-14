@@ -39,11 +39,14 @@ p:nth-of-type(1) {
     margin: 0;
 }
 
-/* section */
-
-p {
-    margin-bottom: 15px;
+button,
+input,
+select {
+    font-family: "Gmarket", sans-serif;
+    font-size: 16px;
 }
+
+/* section */
 
 .su_box_1 {
     margin: 0;
@@ -54,14 +57,6 @@ p {
     margin-bottom: 15px;
 }
 
-.su_box_1 input {
-    width: 340px;
-    height: 43px;
-    border-radius: 5px;
-    margin-right: 10px;
-    border: 1px solid #ababab;
-}
-
 .su_box_2 {
     display: flex;
     height: 56px;
@@ -69,17 +64,18 @@ p {
     margin: 0 0 15px 158px;
 }
 
+.su_box_1 input,
 .su_box_2 input {
+    width: 340px;
+    height: 43px;
     border-radius: 5px;
     margin-right: 10px;
     border: 1px solid #ababab;
-    width: 340px;
-    height: 43px;
 }
 
 /* dg */
+
 .su_text_box {
-    margin: 0;
     padding: 20px;
     border: 1px solid #bed600;
     border-radius: 18px;
@@ -129,52 +125,49 @@ p {
     margin-bottom: 15px;
 }
 
-.su_form-select {
+select {
     border: 1px solid #ababab;
     border-radius: 5px;
     width: 348px;
     padding: 15px 10px;
 }
 
-
-/* 연락처* */
-
-.su_form-select2 {
-    border: none;
+.user_tel select {
+    border: 1px solid #ababab;
     border-radius: 5px;
-    width: 148px;
+    width: 170px;
     padding: 15px 10px;
-    margin-right: 10px;
-    color: #fff;
-    background: #ababab;
 }
 
-/* button a */
+/* button */
 
-.su_box_1 a {
-    width: 145px;
-    border-radius: 5px;
-    margin-right: 10px;
-    color: #fff;
-    background: #192547;
-}
-
-.su_box_1 a:active,
-.su_box_2 a:active,
 .su_yn a:nth-of-type(2):active,
 .su_yn a:nth-of-type(1):active {
     color: #fff;
     background: #009fda;
 }
 
-.su_box_2 a {
+button {
     border-radius: 5px;
     margin-right: 10px;
     border: 1px solid #ababab;
     width: 145px;
+    height: 50px;
     color: #fff;
     background: #192547;
 }
+
+input {
+    height: 48px;
+    padding: 2px 20px 0;
+}
+
+label {
+    ma-bottom: 15px;
+}
+
+
+/* last */
 
 .su_yn a:nth-of-type(1) {
     background: #bed600;
@@ -192,15 +185,8 @@ p {
     color: #fff;
 }
 
-.su_box_1 a,
-.su_box_2 a,
 .su_yn a {
     text-align: center;
-}
-
-.su_box_1 a,
-.su_box_2 a {
-    line-height: 50px;
 }
 
 .su_yn a {
