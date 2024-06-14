@@ -86,11 +86,12 @@ hr {
     border-radius: 18px 18px 0 0;
 }
 
-h1 {
+section h2:nth-of-type(1) {
     background: #fff;
     line-height: 120px;
     padding: 0 40px 0 40px;
     margin: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .bkg_bk1 {
