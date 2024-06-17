@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_translate</title>
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        margin: 20px;
+    }
+
+    div div {
+        background: #00ad6b;
+        margin: 0;
+        transition: 1s;
+    }
+
+    /* 
+    transform 에는 두가지 유형이 있다 (2D 와 3D)
+
+        2D
+            이동 (translate)
+            - translate(X위치, Y위치)
+            - translateX (X위치만) : 좌 우
+            - translateY (Y위치만) : 상 하
+
+            크기 조절(scale)
+            - scale ( 가로,세로 )
+            - scaleX (가로) 
+            - scaleY (세로)
+
+            회전,각도 (rotate) -> 단위는 deg를 사용! (각도를 나타내는 단위 0~360 , 더 큰 값도 사용가능 720 (근데 그냥 360과 다를바 X))
+
+            skew ( x각도, y각도 )
+            skewX ( x각도, y각도 )
+            skewY ( x각도, y각도 )
+        3D
+            - translateZ (Z위치) : 앞/뒤
+            - rotateX (각도)
+            - rotateY (각도)
+
+            3D에는 skew가 없음
+    */
+
+    .trf1:hover div {
+        transform: translate(50px, 0);
+        /* 이동 (상하px, 좌우px) */
+    }
+
+    .trf2:hover div {
+        transform: scale(2, 2);
+        /* 크기 조절 기본값 1,1 */
+    }
+
+    .trf3:hover div {
+        transform: rotate(60deg);
+        /* 회전 */
+    }
+
+    .trf4:hover div {
+        transform: skew(60deg, 60deg);
+        /* 기울기 */
+    }
+</style>
+
+<body>
+
+    <h1>변환(transform)</h1>
+    <p>변환이란? 이동,크기 조절, 회전(scale), 기울기(skew)를 말한다.</p>
+
+    <div class="trf1">
+        <div>이동</div>
+    </div>
+
+    <div class="trf2">
+        <div>크기 조절</div>
+    </div>
+
+    <div class="trf3">
+        <div>회전</div>
+    </div>
+
+    <div class="trf4">
+        <div>기울기</div>
+    </div>
+
+</body>
+
+</html>

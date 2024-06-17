@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 main {
     background: #f9f9f9;
 }
@@ -19,12 +20,6 @@ hr {
 /* sing_up 전용 typo */
 
 .su_sub_title {
-    display: flex;
-    justify-content: center;
-    border-radius: 0 0 18px 18px;
-    width: 1120px;
-    height: 88px;
-    margin-bottom: 142px;
     color: #fff;
     background: #192547;
 }
@@ -46,7 +41,25 @@ select {
     font-size: 16px;
 }
 
+li {
+    font-size: 1.2rem;
+}
+
+.su_yn a {
+    line-height: 60px;
+    text-align: center;
+}
+
 /* section */
+
+.su_sub_title {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 18px 18px;
+    width: 1120px;
+    height: 88px;
+    margin-bottom: 142px;
+}
 
 .su_box_1 {
     margin: 0;
@@ -61,21 +74,21 @@ select {
     display: flex;
     height: 56px;
     align-items: center;
-    margin: 0 0 15px 158px;
+    margin: 0 0 15px 180px;
 }
 
-.su_box_1 input,
-.su_box_2 input {
+input {
     width: 340px;
-    height: 43px;
+    height: 48px;
     border-radius: 5px;
     margin-right: 10px;
     border: 1px solid #ababab;
 }
 
-/* dg */
+/* text_box */
 
 .su_text_box {
+    width: 690px;
     padding: 20px;
     border: 1px solid #bed600;
     border-radius: 18px;
@@ -88,42 +101,8 @@ select {
     list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/sing_up_icon.png?raw=true);
 }
 
-/* lang */
-
-.su_yn {
-    display: flex;
-    margin-top: 160px;
-    height: 120px;
-    border-top: 1px dashed #192547;
-    background: #fff;
-}
-
-.su_yn_center {
-    width: 1120px;
-    margin: 0 auto;
-    justify-content: flex-end;
-    align-items: center;
-    display: flex;
-}
-
-.su_yn_center p {
-    color: #192547;
-}
 
 /* 성별,국가 */
-
-.su_box_3 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-}
-
-.su_box_3 p {
-    font-size: 1.4rem;
-    color: #192547;
-    margin-bottom: 15px;
-}
 
 select {
     border: 1px solid #ababab;
@@ -162,10 +141,13 @@ input {
     padding: 2px 20px 0;
 }
 
-label {
-    ma-bottom: 15px;
+select[name="user_tel"] {
+    width: 170px;
+    height: 50px;
+    margin-right: 10px;
+    color: #f9f9f9;
+    background: #ababab;
 }
-
 
 /* last */
 
@@ -185,10 +167,22 @@ label {
     color: #fff;
 }
 
-.su_yn a {
-    text-align: center;
+.su_yn {
+    display: flex;
+    margin-top: 160px;
+    height: 120px;
+    border-top: 1px dashed #192547;
+    background: #fff;
 }
 
-.su_yn a {
-    line-height: 60px;
+.su_yn_center {
+    width: 1120px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.su_yn_center p {
+    color: #192547;
 }
