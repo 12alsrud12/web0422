@@ -268,9 +268,8 @@ li {
     margin: 10px 0 0 0;
 }
 
-.bkg_sub_us1>button {
-    border: none;
-    background: #f4f4f4;
+.bkg_sub_us1 div {
+    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button_up.png?raw=true);
 }
 
 .bkg_sub_us2 li,
@@ -295,8 +294,8 @@ li {
     padding: 10px 50px;
 }
 
-.bkg_us:hover .bkg_sub_us1>button {
-    background: #f4f4f4;
+.bkg_us:hover .bkg_sub_us1 div {
+    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button.png?raw=true);
 }
 
 .bkg_us:hover .bkg_sub_us2 {
