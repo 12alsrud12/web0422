@@ -85,6 +85,11 @@ input {
     border: 1px solid #ababab;
 }
 
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
 /* text_box */
 
 .su_text_box {
@@ -96,9 +101,13 @@ input {
 }
 
 .su_text_box ul {
+    display: flex;
+}
+
+.su_text_box ul::before {
     margin: 0;
-    padding-left: 20px;
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/sing_up_icon.png?raw=true);
+    padding:0 20px;
+    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/sing_up_icon.png?raw=true);
 }
 
 
