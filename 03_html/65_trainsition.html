@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>65_transition</title>
+
+    <style>
+
+        /* 호버 전 */
+
+        div {
+            width: 300px;
+            line-height: 200px;
+            text-align: center;
+            background: #e9e9e9;
+            
+
+            transition-property: padding;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+
+            transition: padding 1s ease 0s, font-size 0.5s ease-in 1s;
+
+        }
+        /* 
+            transition-property : 속성 종류를 지정 속성명 지정
+            transition-duration : 실제로 얼마나 동작하는가 동작시간
+            transition-timing-function : 가속도
+            transition-delay : 딜레이 = 지연시간
+
+
+            속기형
+            transition
+        
+        */
+
+        /* 호버 후 */
+
+        div:hover {
+            font-size: 20px;
+            padding: 20px 0;
+            background: #bed600;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>변환 (transition)</h1>
+    <div>색 변환</div>
+</body>
+</html>
