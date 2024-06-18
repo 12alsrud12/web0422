@@ -20,14 +20,12 @@ main {
 }
 
 hr {
-    margin: 0;
     border: 1px dashed #192547;
 }
 
 .bkg_imp {
     margin-top: 20px;
 }
-
 
 /* //공통// */
 
@@ -77,6 +75,10 @@ hr {
 
 .bkg_faq a:hover {
     text-decoration: underline;
+}
+
+.bkg_sub_us1 p {
+    
 }
 
 
