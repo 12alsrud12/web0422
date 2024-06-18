@@ -19,6 +19,28 @@ hr {
 
 /* sing_up 전용 typo */
 
+body {
+    font-size: 16px;
+    color: #192547;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
 .su_sub_title {
     color: #fff;
     background: #192547;
