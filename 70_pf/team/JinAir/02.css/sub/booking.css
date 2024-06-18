@@ -2,9 +2,11 @@
 
 
 /* 공통 */
-.bkg_icon strong {
-    border-bottom: 10px solid linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-   
+.bkg_icon div {
+    border-bottom: 10px solid;
+    border-image: linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
+
 }
 
 body {
@@ -99,7 +101,13 @@ p {
     text-decoration: underline;
 }
 
-.bkg_sub_us1 p {}
+.bkg_sub_us1>p {
+    font-size: 1.4rem;
+}
+
+* {
+    line-height: 1.5;
+}
 
 
 /* //booking_font// */
@@ -294,9 +302,7 @@ li {
     margin: 10px 0 0 0;
 }
 
-.bkg_sub_us1 div {
-    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button_up.png?raw=true);
-}
+
 
 .bkg_sub_us2 li,
 .bkg_sub_us3 li {
@@ -320,10 +326,19 @@ li {
     padding: 10px 50px;
 }
 
-.bkg_us:hover .bkg_sub_us1 div {
+/* 유의사항 box ^ 아이콘 부분 */
+.bkg_sub_us1 div {
+    width: 10px;
+    height: 7px;
     background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button.png?raw=true);
 }
 
+.bkg_us:hover .bkg_sub_us1 div {
+    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button_up.png?raw=true);
+}
+
+
+/* 유의사항 늘어났을때 */
 .bkg_us:hover .bkg_sub_us2 {
     overflow: visible;
     height: 150px;
