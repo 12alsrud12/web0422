@@ -46,6 +46,7 @@
         .slide {
             position: relative;
             width: var(--w);
+            /* 좌우 슬라이드는 width값 입력 후 overflow hidden으로 해야한다 w값으로 가리니까 */
             height: var(--h);
             margin: 20px;
             overflow: hidden;
@@ -68,6 +69,7 @@
         }
 
         @keyframes slide {
+            /* 여기서는 left를 사용했지만 transflateX (좌 우) 이걸로도 가능하다 (0, 25%, 50%, 75%) 단, translate는 최신브라우저 에서만 동작한다 position left이건 구 브라우저에서도 작동한다. */
             0% {
                 left: 0%;
             }

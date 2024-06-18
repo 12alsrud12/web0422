@@ -33,6 +33,10 @@ hr {
 
 /* booking_font */
 
+.bkg_bk {
+    font-weight: 700;
+}
+
 .bkg_mn {
     font-weight: 500;
 }

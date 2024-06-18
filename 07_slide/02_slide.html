@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01_slide 상하</title>
+    <title>02_slide 상하</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
@@ -54,6 +54,7 @@
             position: relative;
             width: var(--w);
             height: var(--h);
+            /* 상하 슬라이드는 height값 입력 후 overflow hidden으로 해야한다 h값으로 가리니까 */
             margin: 20px;
             overflow: hidden;
         }
@@ -74,7 +75,7 @@
         }
 
         @keyframes slide {
-            /* transformX 는 좌우 transformY는 상하 이동 */
+            /* translateX 는 좌우 translateY는 상하 이동 */
             0% {
                 transform: translateY(0%)
             }
