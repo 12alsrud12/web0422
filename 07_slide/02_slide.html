@@ -4,11 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01_slide</title>
+    <title>01_slide 상하</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        /* reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        /* //reset// */
+
+
+        /* typo */
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font: 400 1.5rem/1.5 "Noto Sans KR", sans-serif;
+        }
+
+        /* //typo// */
+
+
+
+        :root {
+            --w: 500px;
+            --h: 150px;
+        }
+
+
+        .slide {
+            position: relative;
+            width: var(--w);
+            height: var(--h);
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        .slide ul {
+            position: absolute;
+            width: 100%;
+            height: 400%;
+        }
+
+        .slide li {
+            flex: 0 0 25%;
+        }
+
+        /* animation */
+        .slide ul {
+            animation: slide 12s infinite;
+        }
+
+        @keyframes slide {
+            /* transformX 는 좌우 transformY는 상하 이동 */
+            0% {
+                transform: translateY(0%)
+            }
+
+            10% {
+                transform: translateY(-25%)
+            }
+
+            33% {
+                transform: translateY(-25%)
+            }
+
+            43% {
+                transform: translateY(-50%)
+            }
+
+            66% {
+                transform: translateY(-50%)
+            }
+
+            76% {
+                transform: translateY(-75%)
+            }
+
+            99.99% {
+                transform: translateY(-75%)
+            }
+
+            100% {
+                transform: translateY(0%)
+            }
+        }
+
+        /* typo */
+
+
+    </style>
 </head>
 
 <body>
-
+    <div class="slide">
+        <ul>
+            <li><img src="assets/slide_nav1.png" alt="1"></li>
+            <li><img src="assets/slide_nav2.png" alt="2"></li>
+            <li><img src="assets/slide_nav3.png" alt="3"></li>
+            <li><img src="assets/slide_nav1.png" alt="1"></li>
+        </ul>
+    </div>
 </body>
 
 </html>
