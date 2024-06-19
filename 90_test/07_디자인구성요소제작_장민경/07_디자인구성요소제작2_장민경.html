@@ -7,7 +7,7 @@
     <title>Vallery-Festival_장민경</title>
     <style>
         /* reset */
-        body * {
+        body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -35,6 +35,7 @@
         body {
             font-family: "pcp", sans-serif;
             font-size: 10px;
+            background: #f9f9f9;
         }
 
         h1 {
@@ -55,6 +56,7 @@
             color: #ffd04f;
             background: #584100;
         }
+
         footer p:hover {
             padding: 8px;
             color: #584100;
@@ -64,14 +66,24 @@
         /* //typo// */
 
         /* header */
+
+        header {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 0 auto;
+        }
+
         /* logo */
+
+
         .logo {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 200px;
             background: #584100;
-            border-bottom: 1px solid #ffd04f;
+            border-bottom: 1px dashed #ffd04f;
         }
 
         h1 {
@@ -81,29 +93,148 @@
         }
 
         /* //logo// */
-        nav {
-            height: 100px;
+
+        /* nav */
+        .n {
+            width: 100%;
+            position: relative;
         }
 
-        ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100px;
-        }
-
-        .sub_nav {
+        .main_nav {
             margin: 0;
-            height: 0;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100px;
+            border-bottom: 1px solid #584100;
+            background: #f9f9f9;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
         }
+
+        .main_nav::before {
+            content: "";
+            position: absolute;
+            top: 280px;
+            right: 0;
+            left: 0;
+            z-index: -2;
+            display: block;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            transition: .5s;
+            background: #ffd04f;
+        }
+
+        .main_nav:hover::before {
+            height: 250px;
+            opacity: 1;
+        }
+
+        .main_nav>li {
+            width: 180px;
+            line-height: 100px;
+            height: 100px;
+            text-align: center;
+        }
+
+        .main_nav>li>a:hover {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            color: #ffd04f;
+            background: #584100;
+        }
+
+        /* nav-sub */
+        .sub_nav {
+            line-height: 50px;
+            overflow: hidden;
+            height: 0;
+        }
+
+        .main_nav:hover .sub_nav {
+            opacity: 1;
+            height: 200px;
+        }
+
+        .sub_nav li a {
+            padding: 8px 16px;
+        }
+
+        .sub_nav li:hover a {
+            border-radius: 18px;
+            color: #ffd04f;
+            background: #584100;
+        }
+
+        /* //nav// */
 
         /* //header// */
 
         /* slide */
 
         .slide {
+            position: relative;
+            z-index: -3;
+            margin: 0 auto;
+            width: 1900px;
+            height: 1440px;
+            overflow: hidden;
+        }
+
+
+        .slide ul {
             margin: 0;
+            position: absolute;
+            display: flex;
+            width: 400%;
+            height: 1440px;
+        }
+
+        .slide li {
+            flex: 0 0 25%;
+        }
+
+        /* animation */
+
+        .slide ul {
+            animation: slide 12s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%)
+            }
+
+            10% {
+                transform: translateX(-75%)
+            }
+
+            33% {
+                transform: translateX(-75%)
+            }
+
+            43% {
+                transform: translateX(-50%)
+            }
+
+            66% {
+                transform: translateX(-50%)
+            }
+
+            76% {
+                transform: translateX(-25%)
+            }
+
+            99.99% {
+                transform: translateX(-25%)
+            }
+
+            100% {
+                transform: translateX(0%)
+            }
         }
 
         /* //slide// */
@@ -115,6 +246,13 @@
             align-items: center;
             height: 100px;
         }
+
+        footer p:hover {
+            color: #584100;
+            padding: 8px 16px;
+            background: #ffd04f;
+        }
+
         /* //footer// */
     </style>
 </head>
@@ -125,23 +263,26 @@
         <div class="logo">
             <h1>Vallery Festival</h1>
         </div>
-        <nav>
-            <ul>
-                <li class="main_nav">축제소개
+        <nav class="nul">
+            <ul class="main_nav">
+                <li>
+                    <a href="#">축제소개</a>
                     <ul class="sub_nav">
                         <li><a href="#">Festival 소개</a></li>
                         <li><a href="#">행사장 안내</a></li>
                         <li><a href="#">조직위원회</a></li>
                     </ul>
                 </li>
-                <li class="main_nav">예약안내
+                <li>
+                    <a href="#">예약안내</a>
                     <ul class="sub_nav">
                         <li><a href="#">예약하기</a></li>
                         <li><a href="#">예약확인/취소</a></li>
                         <li><a href="#">단체예약문의</a></li>
                     </ul>
                 </li>
-                <li class="main_nav">아티스트
+                <li>
+                    <a href="#">아티스트</a>
                     <ul class="sub_nav">
                         <li><a href="#">고릴라즈</a></li>
                         <li><a href="#">메이저 레이즈</a></li>
@@ -149,7 +290,8 @@
                         <li><a href="#">타임로드</a></li>
                     </ul>
                 </li>
-                <li class="main_nav">커뮤니티
+                <li>
+                    <a href="#">커뮤니티</a>
                     <ul class="sub_nav">
                         <li><a href="#">공지사항</a></li>
                         <li><a href="#">사진갤러리</a></li>
@@ -163,16 +305,16 @@
     <div class="slide">
         <ul>
             <li>
-                <img src="" alt="">
+                <img src="http://12alsrud12.github.io/web0422/90_test/07_디자인구성요소제작_장민경/images/1.jpg" alt="1">
             </li>
             <li>
-                <img src="" alt="">
+                <img src="http://12alsrud12.github.io/web0422/90_test/07_디자인구성요소제작_장민경/images/2.jpg" alt="2">
             </li>
             <li>
-                <img src="" alt="">
+                <img src="http://12alsrud12.github.io/web0422/90_test/07_디자인구성요소제작_장민경/images/3.jpg" alt="3">
             </li>
             <li>
-                <img src="" alt="">
+                <img src="http://12alsrud12.github.io/web0422/90_test/07_디자인구성요소제작_장민경/images/1.jpg" alt="1">
             </li>
         </ul>
 
