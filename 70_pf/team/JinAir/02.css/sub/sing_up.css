@@ -86,8 +86,9 @@ li {
     height: 88px;
     margin-bottom: 142px;
 }
+
 .su_sub_title h2 {
- margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .su_box_1 {
@@ -147,6 +148,11 @@ select {
     border-radius: 5px;
     width: 348px;
     padding: 15px 10px;
+}
+
+select[name="lang"] {
+    height: 48px;
+    width: 340px;
 }
 
 option {

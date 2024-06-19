@@ -12,12 +12,91 @@
 
     <link rel="stylesheet" href="../../02.css/reset.css">
     <link rel="stylesheet" href="../../02.css/typo.css">
+    <link rel="stylesheet" href="../../02.css/header.css">
     <link rel="stylesheet" href="../../02.css/sub/sing_up.css">
 </head>
 
 <body>
-    <!-- 헤더 -->
-
+    <!-- header -->
+    <header>
+        <div class="header_inner">
+            <!-- Logo -->
+            <a href="#"><img src="https://images.jinair.com/newHom/images/web/common/logo.svg" alt="home"></a>
+            <!-- //Logo -->
+            <nav class="gnb">
+                <!-- 1depth -->
+                <ul class="main">
+                    <li>
+                        <a href="#">나의예약</a>
+                    </li>
+                    <li>
+                        <a href="#">프로모션</a>
+                    </li>
+                    <li>
+                        <a href="#">부가서비스</a>
+                    </li>
+                    <li>
+                        <a href="#">운항정보</a>
+                    </li>
+                    <li class="all">
+                        <a href="#">전체메뉴</a>
+                        <!-- 2depth -->
+                        <div class="menu">
+                            <ul class="sub">
+                                <li>
+                                    <div class="box">
+                                        <span>예약 안내</span><a href="#">항공권 예약</a><br><a href="#">예약/결제 안내</a>
+                                        <span>추천 항공권</span><a href="#">최저가 항공권</a><br><a href="#">맞춤 항공권</a>
+                                        <span>운임 및 수수료</span><a href="#">국내선</a><br><a href="#">국제선</a><br><a
+                                            href="#">비즈니스운임</a>
+                                        <span>할인</span><a href="#">할인쿠폰</a><br><a href="#">프로모션코드</a><br><a
+                                            href="#">신분할인제도</a><br><a href="#">상용우대 프로그램</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>이벤트</span><a href="#">진행중</a><br><a href="#">종료</a><br><a href="#">당첨자
+                                            발표</a>
+                                        <span>제휴</span><a href="#">카드/금융</a><br><a href="#">호텔</a><br><a
+                                            href="#">차량</a><br><a href="#">액티비티</a><br><a href="#">기타 여행상품</a><br><a
+                                            href="#">지니 보딩패스</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>부가서비스 안내</span><a href="#">묶음 할인</a><br><a href="#">좌석</a><br><a
+                                            href="#">수하물</a><br><a href="#">기내식</a><br><a href="#">여행보험</a><br><a
+                                            href="#">JINI PET</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>출도착 안내</span><a href="#">구간 조회</a><br><a href="#">편명 조회</a>
+                                        <span>스케쥴 조회</span><a href="#">왕복</a><br><a href="#">편도</a>
+                                        <span>취항 노선 안내</span><a href="#">국내선</a><br><a href="#">국제선</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <span>자주 찾는 메뉴</span><a href="#">웹/모바일 체크인</a><br><a href="#">부가서비스 안내</a><br><a
+                                            href="#">국내선 할인제도</a><br><a href="#">할인 쿠폰</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header_box">
+                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_search.svg"
+                        alt="search"></a>
+                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_alarm.svg" alt="alarm"></a>
+                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_mypage.svg"
+                        alt="login"></a>
+            </div>
+        </div>
+    </header>
+    <!-- //header// -->
     <main>
         <section>
             <div class="su_sub_title">
@@ -31,7 +110,7 @@
                 <label for="user_id">아이디*</label>
                 <div class="su_box_1">
                     <input type="text" id="user_id" placeholder="사용할 아이디를 입력하세요.">
-                    <button id="user_id">중복 확인</button>
+                    <button class="user_id">중복 확인</button>
                 </div>
 
                 <hr>
@@ -40,13 +119,13 @@
                 <label for="user_email">이메일*</label>
                 <div class="su_box_1">
                     <input type="email" id="user_email" placeholder="사용할 이메일을 입력하세요.">
-                    <button id="user_email">중복 확인</button>
-                    <button id="user_email">인증번호 요청</button>
+                    <button class="user_email">중복 확인</button>
+                    <button class="user_email">인증번호 요청</button>
                 </div>
                 <!-- email 인증번호 -->
                 <div class="su_box_1">
                     <input type="text" id="user_email_2" placeholder="인증번호를 입력하세요.">
-                    <button id="user_email_2">인증번호 확인</button>
+                    <button class="user_email_2">인증번호 확인</button>
                 </div>
 
                 <hr>
@@ -54,7 +133,7 @@
                 <label for="user_pw">비밀번호*</label>
                 <div class="su_box_1">
                     <input type="password" id="user_pw" placeholder="비밀번호를 입력하세요.">
-                    <input type="password" id="user_pw" placeholder="한번 더 같은 비밀번호를 입력하세요.">
+                    <input type="password" placeholder="한번 더 같은 비밀번호를 입력하세요.">
                 </div>
 
                 <!-- password guid text box -->
@@ -91,14 +170,14 @@
                 <label for="user_kn">한글 이름*</label>
                 <div class="su_box_1">
                     <input type="text" id="user_kn" placeholder="성">
-                    <input type="text" id="user_kn" placeholder="이름">
+                    <input type="text" placeholder="이름">
                 </div>
 
                 <!-- 영문이름: english name = en -->
                 <label for="user_en">영문 이름*</label>
                 <div class="su_box_1">
                     <input type="text" id="user_en" placeholder="성">
-                    <input type="text" id="user_en" placeholder="이름">
+                    <input type="text" placeholder="이름">
                 </div>
 
                 <hr>
@@ -112,7 +191,7 @@
                 <!-- 성별: Gender = gd -->
                 <label for="user_gd">성별*</label>
                 <div class="su_box_1">
-                    <select name="gender" id="user_bd">
+                    <select name="gender" id="user_gd">
                         <option value="male">남자</option>
                         <option value="female">여자</option>
                         <option value="no">선택 안함</option>
@@ -123,17 +202,17 @@
 
                 <label for="user_tel">휴대전화번호*</label>
                 <div class="su_box_1">
-                    <select name="user_tel" id="user_tel">
+                    <select name="user_tel">
                         <option value="kr">대한민국 (+82)</option>
                         <option value="jp">일본 (+81)</option>
                         <option value="mdb">몰디브 (+960)</option>
                     </select>
                     <input type="tel" id="user_tel" placeholder="전화번호를 입력하세요.">
-                    <button id="user_tel">인증번호 전송</button>
+                    <button class="user_tel">인증번호 전송</button>
                 </div>
                 <div class="su_box_2">
-                    <input type="tel" id="user_tel_2" placeholder="인증번호를 입력하세요">
-                    <button id="user_tel">인증번호 확인</button>
+                    <input type="tel" placeholder="인증번호를 입력하세요">
+                    <button class="user_tel">인증번호 확인</button>
                 </div>
 
                 <div class="su_text_box">
