@@ -1,1 +1,117 @@
 @charset "utf-8";
+
+/* typo */
+
+h2 {
+    font-size: 2.4em;
+    color: #192547;
+}
+
+a {
+    font-size: 1.6em;
+    color: #192547;
+}
+
+ul {
+    list-style: image()
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* //typo// */
+
+/* 전체 */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #0000ff;
+}
+
+section {
+    width: 1120px;
+    border: 1px solid #ff0000;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+hr {
+    margin: 0;
+    border: 1px dashed #192547;
+}
+
+/* sub_title 예약/결제안내 2개  */
+
+.bk_sub_title h2 {
+    line-height: 120px;
+    padding: 0 0 0 40px;
+    width: 100%;
+    box-shadow: 0px 0 4px rgba(0, 0, 0, .5);
+    background: #fff;
+}
+
+.bk_link {
+    display: flex;
+    flex-direction: row;
+}
+
+.bk_link p {
+    width: 600px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .5);
+    border-radius: 0 0 18px 18px;
+}
+
+/* 예약/결제안내 bk_a1 = 현제 페이지 표시 */
+
+.bk_a1 {
+    background: #192547;
+}
+
+.bk_a1 a {
+    color: #fff;
+}
+
+/* 예약/결제안내 bk_a2 = 연결 가능한 다른 페이지 */
+
+.bk_a2 {
+    background: #fff;
+}
+
+.bk_a2 a {
+    color: #192547;
+}
+
+/* sub title ~ section 사이 설명문 */
+
+.bk_main_text {
+    padding: 60px 0;
+}
+
+/* image+제목 */
+
+.bk_box {
+    display: flex;
+}
+
+.bk_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    border: 1px solid lime;
+}
+
+.bk_img img {
+    padding: 60px 60px 0 60px;
+}
+
+.bk_img h2 {
+    margin-top: 20px;
+}
