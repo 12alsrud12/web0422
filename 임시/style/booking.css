@@ -12,11 +12,7 @@ a {
     color: #192547;
 }
 
-ul {
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/li_list.png?raw=true);
-    font-size: 14px;
-    line-height: 1.5;
-}
+
 
 /* //typo// */
 
@@ -38,6 +34,13 @@ section {
 
 body {
     background: #f9f9f9;
+}
+
+.bk_li1 {
+    list-style: disc;
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 hr {
@@ -114,4 +117,38 @@ hr {
 
 .bk_img h2 {
     margin-top: 20px;
+}
+
+/* 기본 ul/li = .bk_li1 */
+
+.bk_li1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bk_li1 li {
+    margin-bottom: 15px;
+}
+
+.bk_li1 li:last-of-type {
+    margin-bottom: 0;
+}
+
+/* 버튼1 (우측 아이콘X) */
+
+.bk_bt1 {
+    width: 140px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 1px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    border: 1px solid #bed600;
+    margin: 15px 0 0 15px;
+}
+
+.bk_bt1:hover {
+    background: #bed600;
 }
