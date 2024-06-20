@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallery-Festival_장민경</title>
+
+    <style>
+        /* reset */
+        body,
+        h1,
+        p,
+        ul {
+            margin: 0;
+
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            color: #a1a1a1;
+            text-decoration: none;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* //reset// */
+
+        /* typo */
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Hi+Melody&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        body {
+            font: 15px/1.6 "Noto Sans KR", sans-serif;
+            /* 15px의 1.6배 = 22.4px 라는 뜻이다 line-height=1.6 */
+        }
+
+
+        /* //typo// */
+
+        /* 풀페이지 레이아웃(fullpage layout) */
+        .wrap {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            border: 10px solid red;
+        }
+
+        /* //풀페이지 레이아웃(fullpage layout)// */
+
+        /* 헤더 */
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background: #ccc;
+        }
+
+        .logo {
+            background: #fff;
+            border-radius: 18px;
+            padding: 0 24px 5px;
+        }
+
+        /* 내비게이션 */
+
+        .gnb {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 9999;
+            background: #111;
+        }
+
+        /* 1depth : nav ~ 메인메뉴 까지 */
+        .main {
+            display: flex;
+            justify-content: center;
+            height: 40px;
+            margin: 0;
+            border: 1px solid;
+        }
+
+        .main>li {
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #555;
+        }
+
+        .main>li:hover {
+            background: rgba(109, 109, 109, 0.5);
+        }
+
+        .main>li:hover>a {
+            color: #fff;
+        }
+
+        /* 2depth : 메인메뉴 내부/이후  */
+
+        .sub {
+            /* 화면 차지X 넘치는거 삭제 */
+            overflow: hidden;
+
+            /* 실제로 화면에 차지 / transition적용x */
+            visibility: hidden;
+
+            /* 실제로 화면에 차이(투명도만 조절) / transition적용 o */
+            opacity: 0;
+
+            /* display:none도 안보이게 하는거지만 transition적용 x */
+            /* 서브에 마우스 오버시 서브 메뉴가 나타나지 않게 한다. */
+            height: 0;
+            padding: 10px 0 20px;
+            transition: 0.5s;
+            line-height: 2;
+        }
+
+        /* display:none; visibility:hidden; = transition 적용 X */
+        /* overflow:hidden; opacity:0; = transition 적용 O */
+
+        .main:hover .sub {
+            height: 150px;
+            overflow: visible;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .sub li a {
+            padding: 4px 6px;
+        }
+
+        .sub li:hover a {
+            color: #fff;
+            background: #111;
+        }
+
+        /* 유형3 추가 */
+
+        /* 
+
+            <ul class="main">
+                ::before
+                <li>메인메뉴1</li>
+                <li>메인메뉴2</li>
+                <li>메인메뉴3</li>
+                <li>메인메뉴4</li>
+                ::after
+            </ul>
+
+        */
+        .main::before {
+            content: "";
+            position: absolute;
+            top: 30px;
+            right: 0;
+            /* display:block;또는 display:inline-block;또는 position:static이 아니면 width와 height가 지정된다. */
+            z-index: -2;
+            display: block;
+            width: 100%;
+            height: 0px;
+            opacity: 0;
+            transition: .3s;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .main:hover::before {
+            height: 150px;
+            opacity: 1;
+        }
+
+        /* 슬라이드 */
+
+        .slide {
+            height: calc(100% - 340px);
+        }
+
+        .slide {
+            position: relative;
+
+            /* 좌우 슬라이드는 width값 입력 후 overflow hidden으로 해야한다 w값으로 가리니까 */
+
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .slide ul {
+            position: absolute;
+            display: flex;
+            width: 400%;
+            height: 100%;
+        }
+
+        .slide li {
+            width: 25%;
+        }
+
+        /* animation */
+        .slide ul {
+            animation: slide 12s infinite;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: 50% 100%;
+        }
+
+        @keyframes slide {
+
+            /* 여기서는 left를 사용했지만 transflateX (좌 우) 이걸로도 가능하다 (0, 25%, 50%, 75%) 단, translate는 최신브라우저 에서만 동작한다 position left이건 구 브라우저에서도 작동한다. */
+            0% {
+                left: 0%;
+            }
+
+            10% {
+                left: -100%;
+            }
+
+            33% {
+                left: -100%;
+            }
+
+            43% {
+                left: -200%;
+            }
+
+            66% {
+                left: -200%;
+            }
+
+            76% {
+                left: -300%;
+            }
+
+            99.99% {
+                left: -300%;
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+
+        /* typo */
+        .slide li {
+            font-size: calc(var(--w) / 5);
+            text-align: center;
+            line-height: calc(var(--h) - 20px);
+        }
+
+        /* bg-color */
+        .slide li:nth-child(1) {
+            background: url(images/1.jpg);
+        }
+
+        .slide li:nth-child(2) {
+            background: url(images/2.jpg);
+        }
+
+        .slide li:nth-child(3) {
+            background: url(images/3.jpg);
+        }
+
+        .slide li:nth-child(4) {
+            background: url(images/1.jpg);
+        }
+
+        .silde li {
+            width: 25%;
+            height: 100%;
+            background: no-repeat 50% 50%/cover;
+            text-indent: -9999em;
+        }
+
+
+
+        /* 푸터 */
+        footer {
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: #646464;
+            background: #333;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <!-- 헤더 : 로고 -->
+        <header>
+            <h1 class="logo"><a href="#">Vallery-Festival</a></h1>
+        </header>
+        <!-- 내비게이션 -->
+        <nav class="gnb">
+            <!-- 1depth -->
+            <ul class="main">
+                <li>
+                    <!-- ul과 li는 형제 관계 -->
+                    <a href="#">메인메뉴1</a>
+                    <!-- 2depth -->
+                    <ul class="sub">
+                        <li><a href="#">서브메뉴1</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                        <li><a href="#">서브메뉴3</a></li>
+                        <li><a href="#">서브메뉴4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">메인메뉴2</a>
+                    <ul class="sub">
+                        <li><a href="#">서브메뉴1</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                        <li><a href="#">서브메뉴3</a></li>
+                        <li><a href="#">서브메뉴4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">메인메뉴3</a>
+                    <ul class="sub">
+                        <li><a href="#">서브메뉴1</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                        <li><a href="#">서브메뉴3</a></li>
+                        <li><a href="#">서브메뉴4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">메인메뉴4</a>
+                    <ul class="sub">
+                        <li><a href="#">서브메뉴1</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                        <li><a href="#">서브메뉴3</a></li>
+                        <li><a href="#">서브메뉴4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 슬라이드 -->
+        <div class="slide">
+            <ul>
+                <li>슬라이드 이미지 1</li>
+                <li>슬라이드 이미지 2</li>
+                <li>슬라이드 이미지 3</li>
+                <li>슬라이드 이미지 1</li>
+            </ul>
+        </div>
+        <!-- 푸터 -->
+        <footer>
+            <p>Copyright 2024. Vallery Festival. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
