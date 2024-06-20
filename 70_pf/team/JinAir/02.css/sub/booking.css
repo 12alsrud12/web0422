@@ -80,7 +80,8 @@ p {
 
 .bkg_faq a,
 .bkg_ab a,
-.bkg_abc a {
+.bkg_abc a,
+.bkg_ab2 a {
     font-size: 1.2rem;
     color: #192547;
 }
@@ -229,24 +230,26 @@ li {
 }
 
 .bkg_ab a::after {
-    content: url(../../03.assets/booking/버튼.png);
+    content: url(../../03.assets/booking/smallbuttom.png);
     margin-left: 4px;
 }
 
-.bkg_ab>a {
+.bkg_ab>a,
+.bkg_ab2>a,
+.bkg_abc>a {
     padding: 8px 8px 5px;
     border: 1px solid #bed600;
     border-radius: 5px;
     margin: 0 10px 0 10px;
 }
 
-.bkg_ab a:hover {
+.bkg_ab a:hover,
+.bkg_ab2 a:hover {
     background: #192547;
     color: #fff;
 }
 
-
-.bkg_abc a {
+.bkg_ab2 a:hover .bkg_abc a {
     padding: 8px 8px 5px;
     border-radius: 5px;
     margin: 0 10px 0 10px;
