@@ -2,6 +2,10 @@
 
 /* booking 전용 typo */
 
+h1,
+h2 {
+    font-weight: 700;
+}
 
 h2 {
     font-size: 2.4em;
@@ -31,6 +35,18 @@ main {
     width: 1200px;
 }
 
+.bk_tab1,
+.bk_tab2 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+hr {
+    margin: 0;
+    border: 1px dashed #192547;
+}
+
 /* //전체// */
 
 /* title */
@@ -38,16 +54,11 @@ main>h2 {
     padding-left: 40px;
     line-height: 120px;
     background: #fff;
-    border-bottom: 3px solid #ababab;
+    border-bottom: 2px solid #ababab;
     box-shadow: 0 -4px 4px rgba(109, 109, 109.5);
 }
 
-section {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    background: none;
-}
+
 
 /* ////title//// */
 
@@ -80,6 +91,8 @@ section {
 .bk_tabs section {
     display: none;
     position: absolute;
+    width: 1120px;
+    left: 40px;
     top: 55px;
 }
 
@@ -106,9 +119,9 @@ section {
     width: 1120px;
 }
 
-/* 예약안내 */
+/* section */
+section>h2 {
+    padding: 60px 0;
+}
 
-/* /////예약안내///// */
-
-/* 결제안내 */
-/* /////결제안내///// */
+/* /////section///// */
