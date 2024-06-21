@@ -9,10 +9,25 @@
     <style>
         /* 
             선택자
-            
+            	1. class와 id 선택자
+
+	            2. 한칸공백 , > , + , ~
+		            a. 조상/부모선택자 자식선택자
+		            b. 부모선택자>자식선택자
+		            c. 형제(형/위)선택자+형제(아우/형바로아래만)선택자
+		            d. 형제(형/위)선택자~형제(아우/형바로아래만)선택자
+		            
+	            3. :checked, :hover, :nth-of-type 등...
+                    a. : ← 가상 클래스
+                    b. :hover은 무엇으로도 대체할 수 없다.
+
          */
         #food1+label {
-            꺄악~
+            color: red;
+        }
+
+        input:checked {
+            border: 1px solid pink;
         }
     </style>
 </head>
