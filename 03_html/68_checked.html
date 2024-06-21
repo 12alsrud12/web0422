@@ -22,12 +22,33 @@
                     b. :hover은 무엇으로도 대체할 수 없다.
 
          */
-        #food1+label {
-            color: red;
+        #food1 {
+            display: none;
         }
 
-        input:checked {
-            border: 1px solid pink;
+        #food1+label::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            background: url(../assets/68_chak.svg) no-repeat;
+        }
+
+        #food1+label {
+            color: green;
+        }
+
+        /* 
+            확인란은 margin: 3px 3px 3px 4px;
+            라디오 버튼은 margin: 3px 3px 0 5px;
+         */
+        :checked {
+            width: 23px;
+            height: 23px;
+            accent-color: pink;
+            margin-right: 30px;
+            zoom: 2;
         }
     </style>
 </head>
@@ -41,12 +62,12 @@
     <!-- 확인란(check box) -->
 
     <h2>3가지중 가장 먹고싶은 음식은? (중복 선택 가능)</h2>
-    <label for="food1">짜장</label>
     <input type="checkbox" id="food1" class="subject" name="ckbox" value="짜장">
-    <label for="food2">짬뽕</label>
+    <label for="food1">짜장</label>
     <input type="checkbox" id="food2" class="subject" name="ckbox" value="짬뽕">
-    <label for="food3">탕수육</label>
+    <label for="food2">짬뽕</label>
     <input type="checkbox" id="food3" class="subject" name="ckbox" value="탕수육">
+    <label for="food3">탕수육</label>
 
     <!-- 라디오 버튼(radio) -->
     <h2>개인정보수집에 동의하시겠습니까?</h2>
