@@ -1,14 +1,79 @@
 @charset "utf-8";
 
+/* booking 전용 typo */
 
-/* 공통 */
-.bkg_icon div {
-    border-bottom: 10px solid;
-    border-image: linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    border-image-slice: 1;
-
+h2 {
+    font-weight: 400;
+    font-size: 2.4em;
+    color: #192547;
 }
 
+label {
+    font-size: 1.6em;
+}
+
+label:checked {
+    color: #f9f9f9;
+    background: #192547;
+}
+
+ul * {
+    font-size: 14px;
+    line-height: 2;
+    color: #192547;
+}
+
+.box_1>ul,
+.box_2>ul,
+.box_3>ul {
+    list-style: disc;
+}
+
+.gs>ul {
+    list-style: none;
+}
+
+.gray_list {
+    font-size: 12px;
+    line-height: 2.3;
+    list-style: none;
+    color: #ababab;
+}
+
+a {
+    font-size: 12px;
+    color: #192547;
+    margin-bottom: 60px;
+}
+
+.bt_1:hover,
+.bt_2:hover,
+.bt_3:hover {
+    color: #fff;
+}
+
+
+.bkg_sub_us1 {
+    font-size: 18px;
+}
+
+.bkg_sub_us2>ul,
+.bkg_sub_us3>ul {
+    font-size: 14px;
+}
+
+.bkg_faq li>a,
+.bkg_faq li>p {
+    font-size: 14px;
+}
+
+.bkg_faq li>p {
+    font-weight: 900;
+}
+
+/* ////booking 전용 typo//// */
+
+/* 전체 */
 body {
     background: #f9f9f9;
 }
@@ -18,270 +83,278 @@ main {
     flex-direction: column;
     margin: 0 auto;
     width: 1200px;
-    margin-bottom: 130px;
+}
+
+.bk_tab1,
+.bk_tab2 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
 }
 
 hr {
-    width: 100%;
+    margin: 0;
     border: 1px dashed #192547;
 }
 
-.bkg_imp {
-    margin-top: 20px;
-}
+/* //전체// */
 
-/* //공통// */
-
-/* booking_font */
-
-body {
-    font-size: 16px;
-    color: #192547;
-}
-
-h1,
-h2 {
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 2.4rem;
-}
-
-p {
-    font-size: 1.4rem;
-}
-
-.bkg_bk {
-    font-weight: 700;
-}
-
-.bkg_mn {
-    font-weight: 500;
-}
-
-.bkg_a2 {
-    font-size: 1em;
-    color: #192547;
-}
-
-.bkg_imp {
-    font-size: 1.2rem;
-    color: #ababab;
-}
-
-.bkg_a1 {
-    color: #fff;
-}
-
-.bkg_faq a,
-.bkg_ab a,
-.bkg_abc a,
-.bkg_ab2 a {
-    font-size: 1.2rem;
-    color: #192547;
-}
-
-.bkg_text_box ul {
-    font-size: 1.4rem;
-}
-
-.bkg_us>li p,
-.bkg_faq>ul p {
-    font-size: 1.6em;
-}
-
-.bkg_faq a {
-    font-size: 1.4rem;
-}
-
-.bkg_faq a:hover {
-    text-decoration: underline;
-}
-
-.bkg_sub_us1>p {
-    font-size: 1.4rem;
-}
-
-* {
-    line-height: 1.5;
-}
-
-
-/* //booking_font// */
-
-/* seciton_title */
-
-.bkg_sub_title {
-    display: flex;
-    flex-direction: column;
-    border-radius: 18px 18px 0 0;
-}
-
-section h2:nth-of-type(1) {
-    background: #fff;
+/* title */
+main>h2 {
+    padding-left: 40px;
     line-height: 120px;
-    padding: 0 40px 0 40px;
-    margin: 0;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    border-bottom: 3px solid #f4f4f4;
+    box-shadow: 0 -4px 4px rgba(109, 109, 109.5);
 }
 
-.bkg_bk1 {
+/* ////title//// */
+
+/* tabs 유형 */
+.bk_tabs {
     display: flex;
     flex-direction: row;
+    position: relative;
+    z-index: 2;
+    width: 1200px;
+    margin: 0 auto;
+
 }
 
-.bkg_bk1 a {
+.bk_tabs label {
+    position: static;
+    z-index: 1;
+    display: inline-block;
     width: 600px;
     line-height: 55px;
     text-align: center;
-    background: #fff;
     border-radius: 0 0 18px 18px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    color: #192547;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(109, 109, 109.5);
 }
 
-.bkg_bk1 .bkg_a1 {
+
+.bk_tabs section {
+    display: none;
+    position: absolute;
+    width: 1120px;
+    left: 40px;
+    top: 55px;
+}
+
+.bk_tabs input {
+    display: none;
+}
+
+.bk_tabs input:checked+label {
+    color: #fff;
     background: #192547;
 }
 
-/* //seciton_title// */
-
-/* section */
-
-.bkg_bk2 {
+.bk_tabs input:checked+label+section {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+}
+
+/* ////tabs 유형//// */
+
+.bk_tab1 {
     width: 1120px;
 }
 
-.bkg_box_title {
-    margin: 0;
+.bk_tab2 {
+    width: 1120px;
+}
+
+/* section */
+section>h2 {
     padding: 60px 0;
 }
 
+.bk_contain {
+    display: flex;
+    flex-direction: column;
+}
 
-
-.bkg_box {
+.bk_contain_2 {
     display: flex;
     flex-direction: row;
+}
+
+.bk_contain_3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+
+.sub_con {
+    width: 890px;
     margin: 60px 0 0;
 }
 
-.bkg_icon {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 230px;
-    margin-bottom: 60px;
-}
-
-img {
-    margin: 0 60px 20px 60px;
-}
-
-.bkg_text_box {
-    display: flex;
+.sub_con2 {
     width: 890px;
-    flex-direction: column;
+    margin: 60px 0;
 }
 
-.bkg_text_box li {
-    margin-bottom: 10px;
+.sub_con3 {
+    width: 890px;
+    margin: 0 0 60px;
 }
 
-.bkg_text_box strong {
+/* section title */
+
+.icon>h2 {
+    margin-top: 20px;
+}
+
+.sub_con>h2,
+.sub_con2>h2,
+.sub_con3>h2 {
     margin-bottom: 20px;
 }
 
-.bkg_text_box h2 {
-    margin: 0 0 15px 0;
-}
-
-ul {
-    margin: 0 0 40px;
-}
-
-li {
-    margin: 0 0 0 20px;
-    list-style: url(../../03.assets/booking/li_list_img.png);
-}
-
-.bkg_imp {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 0 0 20px;
-    list-style: none;
-}
-
-
-
-.bkg_E {
-    height: 190px;
-    margin: 30px 0;
-}
-
-.bkg_E li {
-    margin: 10px 20px;
-}
-
-.bkg_ab a::after {
-    content: url(../../03.assets/booking/smallbuttom.png);
-    margin-left: 4px;
-}
-
-.bkg_ab>a,
-.bkg_ab2>a,
-.bkg_abc>a {
-    padding: 8px 8px 5px;
-    border: 1px solid #bed600;
-    border-radius: 5px;
-    margin: 0 10px 0 10px;
-}
-
-.bkg_ab a:hover,
-.bkg_ab2 a:hover {
-    background: #192547;
-    color: #fff;
-}
-
-.bkg_ab2 a:hover .bkg_abc a {
-    padding: 8px 8px 5px;
-    border-radius: 5px;
-    margin: 0 10px 0 10px;
-    background: #bed600;
-}
-
-.bkg_abc a:hover {
-    background: #192547;
-    color: #fff;
-}
-
-
-
-.bkg_air_1,
-.bkg_air_2 {
-    list-style: none;
-    margin-left: 80px;
-}
-
-.bkg_air_1 {
-    list-style: url(../../03.assets/booking/gs.png);
+.box_1>h2,
+.box_2>h2,
+.box_3>h2 {
     margin-bottom: 15px;
 }
 
-.bkg_air_2 {
-    list-style: url(../../03.assets/booking/gs2.png);
+.sub_con>h2,
+.sub_con2>h2,
+.sub_con3>h2,
+.icon>h2 {
+    position: relative;
+}
+
+.sub_con>h2,
+.sub_con2>h2,
+.sub_con3>h2 {
+    display: inline-block;
+}
+
+.sub_con>h2 strong::before,
+.sub_con2>h2 strong::before,
+.sub_con3>h2 strong::before,
+.icon>h2::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 7px;
+    bottom: 8%;
+    border-radius: 2px;
+    background: linear-gradient(to right, rgba(189, 214, 0, 0.7) 0%, rgba(211, 233, 46, 0) 100%);
 }
 
 
-/* //section// */
 
-/* 유의사항 box */
+/* ////section title//// */
+
+/* section - . ul */
+.box_1>ul,
+.box_2>ul,
+.box_3>ul {
+    padding-left: 20px;
+}
+
+.box_1>ul {
+    margin-bottom: 40px;
+}
+
+.box_2>ul {
+    margin-bottom: 60px;
+}
+
+.box_3>ul {
+    margin-bottom: 20px;
+}
+
+/* /////section - . ul///// */
+
+/* h2X >ul */
+
+.h2x_ul {
+    margin: 40px 0 0;
+}
+
+/* 버튼 */
+
+.bt_1,
+.bt_2,
+.bt_3 {
+    padding: 6px 10px 5px;
+    border-radius: 5px;
+    line-height: 25px;
+}
+
+.bt_1,
+.bt_3 {
+    border: 1px solid #bed600;
+    background: #f9f9f9;
+}
+
+.bt_1:nth-of-type(1),
+.bt_2,
+.bt_3 {
+    margin-left: 20px;
+}
+
+.bt_1:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+.bt_1::after {
+    margin-left: 5px;
+    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/smallbuttom.png?raw=true);
+}
+
+.bt_1:hover,
+.bt_2:hover,
+.bt_3:hover {
+    background: #192547;
+}
+
+/* 버튼2 */
+
+.bt_2 {
+    border: none;
+    background: #bed600;
+}
+
+
+/* /////h2X >ul///// */
+
+/* 국내.국제선 수수료 */
+
+.gs {
+    margin-bottom: 40px;
+}
+
+.gs>li:nth-of-type(1) {
+    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs.png?raw=true);
+}
+
+.gs>li:nth-of-type(2) {
+    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs2.png?raw=true);
+}
+
+.gs>li {
+    margin-left: 80px;
+}
+
+/* ///국내.국제선 수수료/// */
+
+/* 유의사항 */
 
 .bkg_us {
     list-style: none;
@@ -290,7 +363,7 @@ li {
     position: relative;
     border-radius: 18px;
     background: #f4f4f4;
-    padding: 0 30px;
+    padding: 20px;
 }
 
 .bkg_us li {
@@ -323,7 +396,7 @@ li {
     opacity: 0;
     height: 0;
     margin: 0;
-    top: 40px;
+    top: 65px;
     left: 0;
     right: 0;
     border-radius: 0 0 18px 18px;
@@ -332,7 +405,7 @@ li {
 
 /* 유의사항 box ^ 아이콘 부분 */
 .bkg_sub_us1 div {
-    width: 10px;
+    width: 12px;
     height: 7px;
     background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button.png?raw=true);
 }
@@ -345,19 +418,19 @@ li {
 /* 유의사항 늘어났을때 */
 .bkg_us:hover .bkg_sub_us2 {
     overflow: visible;
-    height: 150px;
+    height: 170px;
     opacity: 1;
     background: #f4f4f4;
 }
 
 .bkg_us:hover .bkg_sub_us3 {
     overflow: visible;
-    height: 220px;
+    height: 250px;
     opacity: 1;
     background: #f4f4f4;
 }
 
-/* //유의사항 box// */
+/* /////유의사항///// */
 
 /* FAQbox */
 
@@ -365,6 +438,7 @@ li {
     border-radius: 18px;
     background: #f4f4f4;
     padding: 30px;
+    margin: 60px 0 135px;
 }
 
 .bkg_faq ul {
@@ -377,46 +451,9 @@ li {
     margin: 0;
 }
 
-.bkg_faq li {
-    list-style: none;
-    margin: 10px 0 0 0;
+.bkg_faq li>ul>li {
+    margin-left: 20px;
+    list-style: disc;
 }
 
-/* 탭 유형 */
-
-.bk_tabs {
-    position: relative;
-    width: 1200px;
-    height: 200px;
-    padding: 2px;
-    border: 1px solid;
-}
-
-.bk_tabs label {
-    display: inline-block;
-    padding: 2px 24px;
-    background: #999;
-    color: #777;
-    cursor: pointer;
-}
-
-.bk_tabs div {
-    display: none;
-    position: absolute;
-    width: calc(100% - 4px);
-    height: calc(100% - 31px);
-    padding: 16px;
-}
-
-.bk_tabs input {
-    display: none;
-}
-
-.bk_tabs input:checked+label {
-    background: #333;
-    color: #fff;
-}
-
-.bk_tabs input:checked+label+div {
-    display: block;
-}
+/* /////section///// */
