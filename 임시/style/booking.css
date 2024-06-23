@@ -2,12 +2,8 @@
 
 /* booking 전용 typo */
 
-h1,
 h2 {
-    font-weight: 700;
-}
-
-h2 {
+    font-weight: 400;
     font-size: 2.4em;
     color: #192547;
 }
@@ -19,6 +15,20 @@ label {
 label:checked {
     color: #f9f9f9;
     background: #192547;
+}
+
+.box_1>ul,
+.box_2>ul {
+    list-style: disc;
+    font-size: 1.4em;
+    line-height: 2;
+    color: #192547;
+}
+
+.gray_list {
+    font-size: 12px;
+    list-style: none;
+    color: #ababab;
 }
 
 /* ////booking 전용 typo//// */
@@ -123,5 +133,79 @@ main>h2 {
 section>h2 {
     padding: 60px 0;
 }
+
+.bk_contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.bk_contain_2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+
+.sub_con {
+    width: 890px;
+    margin: 60px 0 0 0;
+}
+
+/* section title */
+
+.icon>h2 {
+    margin-top: 20px;
+}
+
+.sub_con>h2 {
+    margin-bottom: 20px;
+}
+
+.box_1>h2 {
+    margin-bottom: 15px;
+}
+
+.box_2>h2 {
+    margin-bottom: 15px;
+}
+
+/* ////section title//// */
+
+/* section - . ul */
+.box_1>ul,
+.box_2>ul {
+    padding-left: 20px;
+}
+
+.box_1>ul {
+    margin-bottom: 40px;
+}
+
+.box_2>ul {
+    margin-bottom: 60px;
+}
+
+/* /////section - . ul///// */
+
+/* h2X >ul */
+
+.h2x_ul {
+    margin: 40px 0 0;
+}
+
+.bt_1 {}
+
+.bt_1::after {
+    content: url();
+}
+
+
 
 /* /////section///// */
