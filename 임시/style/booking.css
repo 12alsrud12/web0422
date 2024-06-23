@@ -31,6 +31,20 @@ label:checked {
     color: #ababab;
 }
 
+button {
+    font-size: 1.2em;
+    color: #192547;
+    margin-bottom: 60px;
+}
+
+button>a {
+    color: #192547;
+}
+
+.bt_1:hover>a {
+    color: #fff;
+}
+
 /* ////booking 전용 typo//// */
 
 /* 전체 */
@@ -64,11 +78,9 @@ main>h2 {
     padding-left: 40px;
     line-height: 120px;
     background: #fff;
-    border-bottom: 2px solid #ababab;
+    border-bottom: 3px solid #f4f4f4;
     box-shadow: 0 -4px 4px rgba(109, 109, 109.5);
 }
-
-
 
 /* ////title//// */
 
@@ -200,10 +212,22 @@ section>h2 {
     margin: 40px 0 0;
 }
 
-.bt_1 {}
+.bt_1 {
+    line-height: 25px;
+    padding: 0;
+    padding: 1px 8px 0;
+    border: 1px solid #bed600;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
 
 .bt_1::after {
-    content: url();
+    margin-left: 5px;
+    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/smallbuttom.png?raw=true);
+}
+
+.bt_1:hover {
+    background: #192547;
 }
 
 
