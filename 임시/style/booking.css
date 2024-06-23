@@ -17,12 +17,20 @@ label:checked {
     background: #192547;
 }
 
-.box_1>ul,
-.box_2>ul {
-    list-style: disc;
-    font-size: 1.4em;
+ul * {
+    font-size: 14px;
     line-height: 2;
     color: #192547;
+}
+
+.box_1>ul,
+.box_2>ul,
+.box_3>ul {
+    list-style: disc;
+}
+
+.gs>ul {
+    list-style: none;
 }
 
 .gray_list {
@@ -43,6 +51,15 @@ button>a {
 
 .bt_1:hover>a {
     color: #fff;
+}
+
+.bkg_sub_us1 {
+    font-size: 18px;
+}
+
+.bkg_sub_us2>ul,
+.bkg_sub_us3>ul {
+    font-size: 14px;
 }
 
 /* ////booking 전용 typo//// */
@@ -156,6 +173,11 @@ section>h2 {
     flex-direction: row;
 }
 
+.bk_contain_3 {
+    display: flex;
+    flex-direction: row;
+}
+
 .icon {
     display: flex;
     flex-direction: column;
@@ -180,11 +202,9 @@ section>h2 {
     margin-bottom: 20px;
 }
 
-.box_1>h2 {
-    margin-bottom: 15px;
-}
-
-.box_2>h2 {
+.box_1>h2,
+.box_2>h2,
+.box_3>h2 {
     margin-bottom: 15px;
 }
 
@@ -192,7 +212,8 @@ section>h2 {
 
 /* section - . ul */
 .box_1>ul,
-.box_2>ul {
+.box_2>ul,
+.box_3>ul {
     padding-left: 20px;
 }
 
@@ -202,6 +223,10 @@ section>h2 {
 
 .box_2>ul {
     margin-bottom: 60px;
+}
+
+.box_3>ul {
+    margin-bottom: 20px;
 }
 
 /* /////section - . ul///// */
@@ -214,6 +239,7 @@ section>h2 {
 
 .bt_1 {
     line-height: 25px;
+    margin-right: 10px;
     padding: 0;
     padding: 1px 8px 0;
     border: 1px solid #bed600;
@@ -230,6 +256,132 @@ section>h2 {
     background: #192547;
 }
 
+/* /////h2X >ul///// */
 
+/* h2O ul */
+
+/* ////h2O ul//// */
+
+/* 국내.국제선 수수료 */
+
+.gs {
+    margin-bottom: 40px;
+}
+
+.gs>li:nth-of-type(1) {
+    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs.png?raw=true);
+}
+
+.gs>li:nth-of-type(2) {
+    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs2.png?raw=true);
+}
+
+.gs>li {
+    margin-left: 80px;
+}
+
+/* ///국내.국제선 수수료/// */
+
+/* 유의사항 */
+
+.bkg_us {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 18px;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.bkg_us li {
+    list-style: none;
+    transition: 1s;
+}
+
+.bkg_sub_us1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+
+
+.bkg_sub_us2 li,
+.bkg_sub_us3 li {
+    list-style: disc;
+    margin: 0;
+    margin: 10px 0 10px 0;
+}
+
+.bkg_sub_us2,
+.bkg_sub_us3 {
+    position: absolute;
+    overflow: hidden;
+    background: #f4f4f4;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    top: 65px;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 18px 18px;
+    padding: 10px 50px;
+}
+
+/* 유의사항 box ^ 아이콘 부분 */
+.bkg_sub_us1 div {
+    width: 12px;
+    height: 7px;
+    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button.png?raw=true);
+}
+
+.bkg_us:hover .bkg_sub_us1 div {
+    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button_up.png?raw=true);
+}
+
+
+/* 유의사항 늘어났을때 */
+.bkg_us:hover .bkg_sub_us2 {
+    overflow: visible;
+    height: 170px;
+    opacity: 1;
+    background: #f4f4f4;
+}
+
+.bkg_us:hover .bkg_sub_us3 {
+    overflow: visible;
+    height: 250px;
+    opacity: 1;
+    background: #f4f4f4;
+}
+
+/* /////유의사항///// */
+
+/* FAQbox */
+
+.bkg_faq {
+    border-radius: 18px;
+    background: #f4f4f4;
+    padding: 30px;
+    margin-bottom: 135px;
+}
+
+.bkg_faq ul {
+    list-style: none;
+    margin: 0;
+    width: 860px;
+}
+
+.bkg_faq p {
+    margin: 0;
+}
+
+.bkg_faq li>ul>li {
+    margin-left: 20px;
+    list-style: disc;
+}
 
 /* /////section///// */
