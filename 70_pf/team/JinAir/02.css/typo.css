@@ -98,6 +98,12 @@ main>a,
     font-weight: 900;
 }
 
+.bkg_sub_us2:hover li,
+.bkg_sub_us3:hover li {
+    color: #192547;
+    background: #bed600;
+}
+
 /* ////booking 전용 typo//// */
 
 .header_box {
