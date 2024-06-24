@@ -10,7 +10,7 @@ header {
     width: 100%;
     margin: 0 auto;
     height: 80px;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0);
 }
 
 .header_inner {
@@ -63,6 +63,10 @@ header {
     color: #192547;
 }
 
+.main>li a:hover {
+    color: #fff;
+}
+
 .all {
     position: relative;
 }
@@ -96,6 +100,7 @@ header {
 
 .sub li a:hover {
     background: #BED600;
+    color: #192547;
 }
 
 .box {
