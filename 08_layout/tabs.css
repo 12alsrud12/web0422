@@ -32,6 +32,9 @@
 .tabs>div {
     display: none;
     position: absolute;
+    width: 100%;
+    /* 100%높이에 버튼 높이 20px 만큼 빼겠다 라는 뜻 */
+    height: calc(100% - 20px);
     padding: 16px;
     border: 1px solid #ccc;
 }
@@ -80,7 +83,7 @@
 
 .tab2 div {
     width: 150px;
-    height: 120px;
+    height: 100px;
     background: #000;
 }
 
