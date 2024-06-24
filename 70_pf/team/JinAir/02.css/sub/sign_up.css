@@ -98,6 +98,10 @@ section>li {
     color: #192547;
 }
 
+.su_text_box li {
+    font-size: 1.2rem;
+}
+
 /* section */
 
 .su_sub_title {
