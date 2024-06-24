@@ -70,10 +70,6 @@ ul * {
     color: #ababab;
 }
 
-.main>li>a:hover {
-    color: #192547;
-}
-
 main>a,
 .bt_1,
 .bt_2,

@@ -26,13 +26,11 @@ body {
     height: 25px;
 }
 
-.main>li a:hover {
-    color: #192547;
-}
-
 .header_box>a {
     font-size: 10px;
 }
 
-
-
+.main>li a:hover {
+    font-size: 16px;
+    color: #192547;
+}
