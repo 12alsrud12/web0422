@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(typo.css);
+
+/* 탭 부분 */
+.tabs {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 550px;
+    height: 200px;
+}
+
+.tabs label {
+    display: inline-block;
+    padding: 2px 24px;
+    background: #999;
+    color: #777;
+    /* cursor : pointer -> label 에 마우스 커서 대면 손가락 모양 나오게 하기 */
+    cursor: pointer;
+}
+
+.tabs div {
+    display: none;
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 31px);
+    padding: 16px;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs input:checked+label {
+    background: #fff;
+    color: #111;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.tabs input:checked+label+div {
+    display: block;
+}
+
+
+/* bg-color */
+
+.tabs div {
+    border: 1px solid #ccc;
+}
+
+/* tab1 */
+.tab1 {
+    background: #ddd;
+}
+
+.tab1 li {
+    line-height: 2.3;
+    /* li 사이 간격 */
+    border-bottom: 1px solid #ccc;
+}
+
+.tab1 li span {
+    display: inline-block;
+    width: 430px;
+    /* li 내부 span에 크기 지정 /날짜와 공지사항 문구 간격 주기 위함 + 크기 주기위해서 inline-block 변형 */
+}
+
+/* /////////tab1 끝////////  */
+
+/* tab2 */
+.tab2 {
+    background: #ccc;
+}
+
+/* /////////tab2 끝////////// */
+/* 탭 부분 */

@@ -40,7 +40,7 @@ ul * {
     color: #ababab;
 }
 
-a {
+main>a {
     font-size: 12px;
     color: #192547;
     margin-bottom: 60px;
@@ -75,11 +75,14 @@ a {
 
 /* 전체 */
 
+body {
+    background: #f9f9f9;
+}
+
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 0;
-    width: 1200px;
+    margin: 0 auto;
     background: #f9f9f9;
 }
 
@@ -95,15 +98,25 @@ hr {
     border: 1px dashed #192547;
 }
 
+header {
+    border-bottom: 3px solid #f4f4f4;
+}
+
+.main>li a:hover {
+    color: #192547;
+}
+
 /* //전체// */
 
 /* title */
 main>h2 {
+    width: 1200px;
+    margin: 80px auto 0;
     padding-left: 40px;
     line-height: 120px;
     background: #fff;
     border-bottom: 3px solid #f4f4f4;
-    box-shadow: 0 -4px 4px rgba(109, 109, 109.5);
+    box-shadow: 0 0 4px rgba(109, 109, 109.5);
 }
 
 /* ////title//// */
@@ -391,6 +404,7 @@ section>h2 {
     position: absolute;
     overflow: hidden;
     background: #f4f4f4;
+    z-index: 5;
     opacity: 0;
     height: 0;
     margin: 0;
@@ -416,14 +430,14 @@ section>h2 {
 /* 유의사항 늘어났을때 */
 .bkg_us:hover .bkg_sub_us2 {
     overflow: visible;
-    height: 170px;
+    height: 190px;
     opacity: 1;
     background: #f4f4f4;
 }
 
 .bkg_us:hover .bkg_sub_us3 {
     overflow: visible;
-    height: 250px;
+    height: 270px;
     opacity: 1;
     background: #f4f4f4;
 }

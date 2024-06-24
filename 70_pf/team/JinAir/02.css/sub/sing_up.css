@@ -12,6 +12,19 @@ section {
     width: 1120px;
 }
 
+header {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.header_box {
+    font-size: 10px;
+    height: 25px;
+}
+
+.header_box>a {
+    font-size: 10px;
+}
+
 /* sing_up 전용 typo */
 
 body {
@@ -48,6 +61,7 @@ p:nth-of-type(1) {
 }
 
 .su_sub_title {
+    margin-top: 80px;
     color: #fff;
     background: #192547;
 }
@@ -63,7 +77,7 @@ select {
     font-size: 16px;
 }
 
-li {
+section>li {
     font-size: 1.2rem;
 }
 
