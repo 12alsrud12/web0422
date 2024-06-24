@@ -95,7 +95,6 @@ main>a,
 }
 
 .bkg_faq li>p {
-    color: #192547;
     font-weight: 900;
 }
 
@@ -103,6 +102,10 @@ main>a,
 .bkg_sub_us3:hover li {
     color: #192547;
     background: #bed600;
+}
+
+.bkg_sub_us1 {
+    color: #192547;
 }
 
 /* ////booking 전용 typo//// */
