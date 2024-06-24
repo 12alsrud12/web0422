@@ -20,21 +20,168 @@ body {
     line-height: 1;
 }
 
-/* font의 위계 */
-/* 1depth, mainmenu */
-.main>li>a {
-    font-size: 2.0rem;
+/* booking 전용 typo */
+
+h2 {
+    font-weight: 400;
+    font-size: 2.4em;
     color: #192547;
 }
 
-.main li:hover a {
+label {
+    font-size: 1.6em;
+}
+
+label:checked {
+    color: #f9f9f9;
+    background: #192547;
+}
+
+ul * {
+    font-size: 14px;
+    line-height: 2;
     color: #192547;
 }
 
-/* 2depth, submenu */
-.sub li a {
+.box_1>ul,
+.box_2>ul,
+.box_3>ul {
+    list-style: disc;
+}
+
+.gs>ul {
+    list-style: none;
+}
+
+.gray_list {
+    font-size: 12px;
+    line-height: 2.3;
+    list-style: none;
+    color: #ababab;
+}
+
+.main>li>a:hover {
+    color: #192547;
+}
+
+main>a,
+.bt_1,
+.bt_2,
+.bt_3 {
+    font-size: 12px;
+    color: #192547;
+    margin-bottom: 60px;
+}
+
+.bt_1:hover,
+.bt_2:hover,
+.bt_3:hover {
+    color: #fff;
+}
+
+
+.bkg_sub_us1 {
+    font-size: 18px;
+}
+
+.bkg_sub_us2>ul,
+.bkg_sub_us3>ul {
+    font-size: 14px;
+}
+
+.bkg_faq li>a,
+.bkg_faq li>p {
+    font-size: 14px;
+}
+
+.bkg_faq li>p {
+    font-weight: 900;
+}
+
+/* ////booking 전용 typo//// */
+
+.header_box {
+    font-size: 10px;
+    height: 25px;
+}
+
+.main>li a:hover {
+    color: #192547;
+}
+
+.header_box>a {
+    font-size: 10px;
+}
+
+/* sing_up 전용 typo */
+
+body {
+    font-size: 16px;
+    color: #192547;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
     font-size: 1.4rem;
-    color: #ccc;
+    font-weight: 700;
 }
 
-/* //공통 font// */
+p:last-of-type {
+    font-weight: 500;
+}
+
+p:nth-of-type(1) {
+    font-size: 1.6rem;
+    color: #bed600;
+    margin: 0;
+}
+
+.su_sub_title {
+    margin-top: 80px;
+    color: #fff;
+    background: #192547;
+}
+
+.su_sub_title>h2 {
+    margin: 40px 0 0;
+}
+
+button,
+input,
+select {
+    font-family: "Gmarket", sans-serif;
+    font-size: 16px;
+}
+
+section>li {
+    font-size: 1.2rem;
+}
+
+.su_yn a {
+    line-height: 60px;
+    text-align: center;
+}
+
+.su_yn_center p {
+    color: #192547;
+}
+
+.main>li>a:hover {
+    color: #192547;
+}
+
+.su_text_box>ul>li {
+    font-size: 12px;
+}

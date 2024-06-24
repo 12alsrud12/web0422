@@ -5,8 +5,8 @@ body,
 ul,
 h1,
 h2,
-{
-margin: 0 auto;
+p {
+    margin: 0 auto;
 }
 
 ul {
