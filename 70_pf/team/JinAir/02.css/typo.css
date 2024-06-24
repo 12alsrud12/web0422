@@ -109,6 +109,11 @@ main>a,
     color: #192547;
 }
 
+label[for="bk_bts1"],
+label[for="bk_bts2"] {
+    font-size: 16px;
+}
+
 /* ////booking 전용 typo//// */
 
 .header_box {
