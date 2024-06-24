@@ -30,7 +30,18 @@ body {
     font-size: 10px;
 }
 
-.main>li a:hover {
+
+
+.main>li a {
     font-size: 16px;
     color: #192547;
+}
+
+.main li a:hover {
+    color: #192547;
+}
+
+.bkg_faq a:hover {
+    color: #192547;
+    background: #bed600;
 }
