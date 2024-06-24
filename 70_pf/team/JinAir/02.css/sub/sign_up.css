@@ -16,6 +16,91 @@ header {
     border-bottom: 1px solid #f4f4f4;
 }
 
+.header_box {
+    font-size: 10px;
+    height: 25px;
+}
+
+.main>li a:hover {
+    color: #192547;
+}
+
+.header_box>a {
+    font-size: 10px;
+}
+
+/* sing_up 전용 typo */
+
+body {
+    font-size: 16px;
+    color: #192547;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+p:last-of-type {
+    font-weight: 500;
+}
+
+p:nth-of-type(1) {
+    font-size: 1.6rem;
+    color: #bed600;
+    margin: 0;
+}
+
+.su_sub_title {
+    margin-top: 80px;
+    color: #fff;
+    background: #192547;
+}
+
+.su_sub_title>h2 {
+    margin: 40px 0 0;
+}
+
+button,
+input,
+select {
+    font-family: "Gmarket", sans-serif;
+    font-size: 16px;
+}
+
+section>li {
+    font-size: 1.2rem;
+}
+
+.su_yn a {
+    line-height: 60px;
+    text-align: center;
+}
+
+.su_yn_center p {
+    color: #192547;
+}
+
+.main>li>a:hover {
+    color: #192547;
+}
+
+.su_text_box li {
+    font-size: 12px;
+}
 
 /* section */
 
