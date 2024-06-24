@@ -12,6 +12,11 @@ p {
     margin: 0;
 }
 
+body {
+    /* 지정안하면 사용자가 맘대로 바꿔버림 */
+    background: #fff;
+}
+
 ul {
     padding-left: 0;
     list-style: none;
@@ -19,5 +24,5 @@ ul {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #666;
 }
