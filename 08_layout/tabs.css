@@ -68,6 +68,7 @@
 }
 
 .tab1 li span {
+    /* width를 적용하면서 inline(가로 배치) */
     display: inline-block;
     width: 430px;
     /* li 내부 span에 크기 지정 /날짜와 공지사항 문구 간격 주기 위함 + 크기 주기위해서 inline-block 변형 */
@@ -79,7 +80,8 @@
 .tab2 ul {
     display: flex;
     justify-content: space-around;
-    line-height: 1;
+    line-height: .2;
+    margin-top: 5px;
 }
 
 .tab2 div {
