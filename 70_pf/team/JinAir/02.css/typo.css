@@ -98,8 +98,8 @@ main>a,
     font-weight: 900;
 }
 
-.bkg_sub_us2>li:hover,
-.bkg_sub_us3>li:hover {
+.bkg_sub_us2>ul li:hover,
+.bkg_sub_us3>ul li:hover {
     color: #192547;
     background: #bed600;
 }
