@@ -11,6 +11,10 @@ body {
     line-height: 1.6;
 }
 
+p {
+    margin: 0;
+}
+
 /* font의 위계 */
 /* 1depth = mainmenu */
 .main>li>a {

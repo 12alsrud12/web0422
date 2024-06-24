@@ -9,30 +9,40 @@
     left: 50px;
     top: 50px;
     width: 550px;
-    height: 200px;
+    height: 220px;
+
 }
 
 .tabs label {
     display: inline-block;
-    padding: 2px 24px;
+    padding: 8px 24px;
     background: #999;
     color: #777;
     /* cursor : pointer -> label 에 마우스 커서 대면 손가락 모양 나오게 하기 */
     cursor: pointer;
 }
 
-.tabs div {
+.tabs label {
+    position: relative;
+    z-index: 99;
+    left: 30px;
+    top: 1px;
+}
+
+.tabs>div {
     display: none;
     position: absolute;
     width: calc(100% - 4px);
     height: calc(100% - 31px);
     padding: 16px;
+    border: 1px solid #ccc;
 }
 
 .tabs input {
     display: none;
 }
 
+/* tabs 안의 하위요소인 체크된 input 아래 동생(자식x) label을 선택 */
 .tabs input:checked+label {
     background: #fff;
     color: #111;
@@ -40,21 +50,14 @@
     border-bottom: none;
 }
 
+/* tabs 안의 하위요소인 체크된 input 아래 동생(자식x) label+div선택 */
 .tabs input:checked+label+div {
     display: block;
 }
 
 
-/* bg-color */
-
-.tabs div {
-    border: 1px solid #ccc;
-}
-
 /* tab1 */
-.tab1 {
-    background: #ddd;
-}
+
 
 .tab1 li {
     line-height: 2.3;
@@ -71,8 +74,20 @@
 /* /////////tab1 끝////////  */
 
 /* tab2 */
-.tab2 {
-    background: #ccc;
+.tab2 ul {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1;
+}
+
+.tab2 div {
+    width: 150px;
+    height: 120px;
+    background: #000;
+}
+
+.tab2 p {
+    margin-top: 10px;
 }
 
 /* /////////tab2 끝////////// */
