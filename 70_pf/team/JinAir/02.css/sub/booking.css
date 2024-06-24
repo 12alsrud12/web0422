@@ -40,7 +40,14 @@ ul * {
     color: #ababab;
 }
 
-main>a {
+.main>li>a:hover {
+    color: #192547;
+}
+
+main>a,
+.bt_1,
+.bt_2,
+.bt_3 {
     font-size: 12px;
     color: #192547;
     margin-bottom: 60px;
@@ -102,9 +109,7 @@ header {
     border-bottom: 3px solid #f4f4f4;
 }
 
-.main>li a:hover {
-    color: #192547;
-}
+
 
 /* //전체// */
 
