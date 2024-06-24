@@ -32,8 +32,6 @@
 .tabs>div {
     display: none;
     position: absolute;
-    width: calc(100% - 4px);
-    height: calc(100% - 31px);
     padding: 16px;
     border: 1px solid #ccc;
 }
