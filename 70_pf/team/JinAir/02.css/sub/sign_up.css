@@ -98,7 +98,7 @@ section>li {
     color: #192547;
 }
 
-.su_text_box li {
+.su_text_box>ul {
     font-size: 12px;
 }
 
