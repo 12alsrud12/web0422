@@ -3,18 +3,28 @@
 @import url(reset.css);
 @import url(typo.css);
 
-.banner {
+#banner {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 1340px;
+    padding: 50px;
+    margin: 0 auto;
+    background: rgb(45, 165, 34);
 }
 
-.banner a {
-    display: flex;
-    flex-direction: row;
-}
-
-div {
-    width: 100px;
+#banner a>div {
+    width: 120px;
     height: 100px;
-    background: #ccc;
+    background: #fff279;
+}
+
+/* 배너 타이틀 및 설명글 */
+#banner>div {
+    width: 1000px;
+    padding-right: 200px;
+}
+
+#banner>div>h2 {
+    margin-bottom: 10px;
 }
