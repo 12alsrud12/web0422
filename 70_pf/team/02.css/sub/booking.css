@@ -28,7 +28,7 @@ hr {
 }
 
 header {
-    border-bottom: 3px solid #f4f4f4;
+
 }
 
 
@@ -369,7 +369,7 @@ section>h2 {
 
 .bt_1::after {
     margin-left: 5px;
-    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/smallbuttom.png?raw=true);
+    content: url(../../03.assets/booking/smallbuttom.png);
 }
 
 .bt_1:hover,
@@ -395,11 +395,11 @@ section>h2 {
 }
 
 .gs>li:nth-of-type(1) {
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs.png?raw=true);
+    list-style: url(../../03.assets/booking/gs.png);
 }
 
 .gs>li:nth-of-type(2) {
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs2.png?raw=true);
+    list-style: url(../../03.assets/booking/gs2.png);
 }
 
 .gs>li {
@@ -420,6 +420,7 @@ section>h2 {
     padding: 20px;
 }
 
+
 .bkg_us li {
     list-style: none;
     transition: 1s;
@@ -433,6 +434,9 @@ section>h2 {
     margin: 10px 0 0 0;
 }
 
+.bkg_sub_us1>p {
+    margin: 0;
+}
 
 
 .bkg_sub_us2 li,
@@ -462,11 +466,11 @@ section>h2 {
 .bkg_sub_us1 div {
     width: 12px;
     height: 7px;
-    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button.png?raw=true);
+    background-image: url(../../03.assets/booking/button.png);
 }
 
 .bkg_us:hover .bkg_sub_us1 div {
-    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button_up.png?raw=true);
+    background-image: url(../../03.assets/booking/button_up.png);
 }
 
 
