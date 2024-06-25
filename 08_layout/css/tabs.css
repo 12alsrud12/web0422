@@ -69,6 +69,10 @@
     border-bottom: 1px solid #ccc;
 }
 
+.tab1 span {
+    display: inline-block;
+}
+
 .tab1 li {
     /* width를 적용하면서 inline(가로 배치) */
     display: flex;
@@ -82,19 +86,16 @@
 /* tab2 */
 .tab2 ul {
     display: flex;
-    justify-content: space-around;
-    line-height: .2;
+    justify-content: space-between;
+    line-height: 2.3;
     margin-top: 5px;
 }
 
-.tab2 div {
+.tab2 span {
+    display: block;
     width: 150px;
     height: 100px;
     background: #000;
-}
-
-.tab2 p {
-    margin-top: 10px;
 }
 
 /* /////////tab2 끝////////// */
