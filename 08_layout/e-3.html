@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디 e-3제작</title>
+    <link rel="stylesheet" href="css/e-3.css">
+</head>
+
+<body>
+    <div class="top_wrap"><!-- 푸터 제외 헤더 ~ 메인컨텐츠 -->
+        <!-- 헤더 영역 -->
+        <header>
+            <!-- 로고 -->
+            <h1><a href="#">로고</a></h1>
+
+            <!-- 메인메뉴 / 여기에 position: relative -->
+            <nav class="gnb">
+
+                <!-- 1depth / 여기 before에 position: absolute -->
+                <ul class="main">
+                    <li>
+                        <!-- ul과 li는 형제 관계 -->
+                        <a href="#">MENU1</a>
+                        <!-- 2depth -->
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU1-1</a></li>
+                            <li><a href="#">SUB_MENU1-2</a></li>
+                            <li><a href="#">SUB_MENU1-3</a></li>
+                            <li><a href="#">SUB_MENU1-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MENU2</a>
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU2-1</a></li>
+                            <li><a href="#">SUB_MENU2-2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MENU3</a>
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU3-1</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MENU4</a>
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU4-1</a></li>
+                            <li><a href="#">SUB_MENU4-2</a></li>
+                            <li><a href="#">SUB_MENU4-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- spot menu -->
+            <div class="spot_menu">
+                <a href="#">SPOTMENU1</a>
+                <a href="#">SPOTMENU2</a>
+            </div><!-- //.spot menu -->
+        </header>
+
+        <div id="main_contents">
+
+            <!-- 배너 -->
+            <div id="banner">
+                <a href="#">
+                    <div><!-- 배너 이미지 --></div>
+                </a>
+                <div>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></p>
+                </div>
+                <a href="#"><img src="right_banner_icon.svg" alt="웹디시험은 svg금지~"></a>
+            </div>
+
+            <!-- 탭1 : 공지사항 -->
+            <div id="notis">
+                <ul>
+                    <li><span>Lorem ipsum dolor sit, amet</span>0000.00.00</li>
+                    <li><span>Lorem ipsum dolor sit, amet</span>0000.00.00</li>
+                    <li><span>Lorem ipsum dolor sit, amet</span>0000.00.00</li>
+                    <li><span>Lorem ipsum dolor sit, amet</span>0000.00.00</li>
+                </ul>
+            </div>
+
+            <!-- 탭2 : 갤러리 -->
+            <div id="gallery">
+                <ul>
+                    <li>
+                        <div><!-- 이미지 삽입 --></div>
+                        <p>Lorem, ipsum dolor.</p>
+                    </li>
+                    <li>
+                        <div><!-- 이미지 삽입 --></div>
+                        <p>Lorem, ipsum dolor.</p>
+                    </li>
+                    <li>
+                        <div><!-- 이미지 삽입 --></div>
+                        <p>Lorem, ipsum dolor.</p>
+                    </li>
+                </ul>
+            </div><!-- //.tab2 -->
+            <div id="slide"><!-- 슬라이드 이미지 삽입 --></div>
+        </div><!-- //.main_contents -->
+
+    </div><!-- //.top_wrap -->
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="flogo"><a href="#">LOGO</a></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ut repellendus aliquam ducimus quo maxime
+            doloremque dolore culpa illo voluptas.</p>
+        <div class="sns">SNS</div>
+    </footer><!-- //푸터 -->
+</body>
+
+</html>

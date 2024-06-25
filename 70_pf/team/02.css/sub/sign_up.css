@@ -21,6 +21,10 @@ header {
     height: 25px;
 }
 
+header {
+    width: 1920px;
+}
+
 .main>li a:hover {
     color: #192547;
 }
@@ -77,7 +81,7 @@ p:nth-of-type(1) {
 button,
 input,
 select {
-    font-family: "Gmarket", sans-serif;
+    font-family: "GmarketSansMedium", sans-serif;
     font-size: 16px;
 }
 
@@ -163,7 +167,7 @@ label {
 
 .su_text_box ul::before {
     padding: 0 20px;
-    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/sing_up_icon.png?raw=true);
+    content: url(../../03.assets/booking/sing_up_icon.png);
 }
 
 

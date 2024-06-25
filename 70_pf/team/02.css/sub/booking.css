@@ -31,9 +31,8 @@ header {
     width: 1920px;
 }
 
-.header_inner {
-    width: 1260px;
-    padding: 0 30px;
+.header_inner li a {
+    vertical-align: middle;
 }
 
 
@@ -530,6 +529,7 @@ section>h2 {
     list-style: none;
     margin: 0;
     width: 860px;
+    transition: 1s;
 }
 
 .bkg_faq p {
@@ -543,6 +543,32 @@ section>h2 {
 .bkg_faq li>ul>li {
     margin-left: 20px;
     list-style: disc;
+}
+
+.bkg_faq a {
+    : 5px;
+}
+
+.bkg_faq li:hover>a {
+    border-bottom: 1px solid #192547;
+}
+
+.bkg_faq li:hover {
+    animation: bkg_faq2 .5s 1;
+}
+
+@keyframes bkg_faq2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0)
+    }
 }
 
 /* /////section///// */
