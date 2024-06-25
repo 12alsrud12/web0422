@@ -43,3 +43,9 @@ p {
     font-size: 1.4rem;
     color: #333;
 }
+
+/*  */
+
+.tab1 li {
+    font-size: 14px;
+}
