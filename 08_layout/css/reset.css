@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+ul,
+p {
+    margin: 0;
+}
+
+body {
+    /* 지정안하면 사용자가 맘대로 바꿔버림 */
+    background: #fff;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
