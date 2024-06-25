@@ -28,9 +28,13 @@ hr {
 }
 
 header {
-
+    width: 1920px;
 }
 
+.header_inner {
+    width: 1260px;
+    padding: 0 30px;
+}
 
 
 /* //전체// */
@@ -152,9 +156,10 @@ h2 {
 /* ////booking 전용 typo//// */
 
 /* title */
+
 main>h2 {
     width: 1200px;
-    margin: 80px auto 0;
+    margin: 81px auto 0;
     padding-left: 40px;
     line-height: 120px;
     background: #fff;
