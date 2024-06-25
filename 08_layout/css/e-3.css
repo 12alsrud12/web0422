@@ -1,30 +1,100 @@
 @charset "utf-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+@import url(common/reset.css);
+@import url(common/typo.css);
 
-/* @import url();는 상단에 기록해야 한다. */
-@import url(reset.css);
-@import url(typo.css);
+/* 상단 영역 */
+.top_wrap {
+    display: flex;
+}
 
-@import url(header.css);
-@import url(footer.css);
+/* 헤더 영역 */
+header {
+    width: 200px;
+    padding: 20px;
+}
+
+/* 로고 */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+/* 내비게이션 */
+#gnb {
+    margin-bottom: 24px;
+}
+
+/* 1depth */
+#gnb .main>li {
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+}
+
+#gnb .main>li:hover {
+    background: #333;
+}
+
+/* 2depth */
+#gnb .sub {
+    position: relative;
+    left: 160px;
+    top: -40px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 0 20px;
+    transition: .3s;
+    line-height: 2;
+    background: red;
+}
+
+#gnb .main>li:hover .sub {
+    height: 150px;
+    visibility: visible;
+    opacity: 1;
+}
+
+#gnb .sub li a {
+    display: block;
+}
+
+#gnb .sub li:hover a {
+    background: #111;
+}
+
+/* 스팟 메뉴 */
+header .spot_menu a:first-child::after {
+    content: "|";
+    margin: 0 4px;
+}
+
+header .spot_menu a:hover {
+    text-decoration: underline;
+}
+
+/* 메인 콘텐츠 */
+#main_contents {
+    width: 400px;
+    border: 1px solid;
+}
 
 /* 링크 영역 */
-/* 아이콘 이미지 */
 #link {
-    width: 1340px;
     height: 100px;
     padding: 20px;
-    background: midnightblue;
+    background: bisque;
 }
 
 #link ul {
     display: flex;
     justify-content: space-evenly;
-
-}
-
-#link li {
-    display: flex;
-    align-items: center;
 }
 
 #link li a {
@@ -33,31 +103,28 @@
 }
 
 /* 아이콘 이미지 */
-#link span {
-    display: inline-block;
+#link ul li a span {
     width: 60px;
     height: 60px;
-    vertical-align: middle;
     background: #ccc;
     margin-right: 24px;
 }
 
+/* 배너 영역 */
 #banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1340px;
     padding: 50px;
-    margin: 0 auto;
-    background: rgb(45, 165, 34);
+    background: aliceblue;
 }
 
 /* 배너 이미지 */
 /* 플렉스 아이템 요소는 display:block; 이다. */
-#banner>span {
+#banner span {
     width: 120px;
     height: 100px;
-    background: #fff279;
+    background: #ccc;
 }
 
 /* 배너 타이틀 및 설명글 */
@@ -66,123 +133,176 @@
     padding-right: 200px;
 }
 
-#banner>div>h2 {
+#banner>div h2 {
     margin-bottom: 16px;
 }
 
-/* 탭 부분 */
+/* 공지사항 및 갤러리 */
 #tab_wrap {
-    height: 250px;
-    width: 1340px;
-    background: #fff;
+    height: 300px;
 }
 
-.tabs {
+#tab_wrap .tabs {
     position: relative;
     left: 50px;
-    top: 5px;
+    top: 30px;
     width: 550px;
     height: 220px;
 }
 
-.tabs label {
+#tab_wrap .tabs input {
+    display: none;
+}
+
+/* 탭의 버튼 */
+#tab_wrap .tabs label {
+    position: relative;
+    left: 24px;
+    top: 1px;
     display: inline-block;
-    /* label의 높이는 padding 4px */
-    padding: 8px 24px;
+    /* label의 높이는 4px */
+    padding: 4px 24px;
     background: #999;
     color: #777;
-    /* cursor : pointer -> label 에 마우스 커서 대면 손가락 모양 나오게 하기 */
+    /* 손 모양 */
     cursor: pointer;
 }
 
-.tabs label {
-    position: relative;
+/* .tabs 안의 하위요소인 체크된 input 아래 동생 label을 선택 */
+#tab_wrap .tabs input:checked+label {
     z-index: 99;
-    left: 30px;
-    top: 1px;
-}
-
-.tabs>div {
-    display: none;
-    position: absolute;
-    width: 100%;
-    /* 100%높이에 버튼 높이 20px 만큼 빼겠다 라는 뜻 */
-    height: calc(100% - 20px);
-    padding: 16px;
-    border: 1px solid #ccc;
-}
-
-.tabs input {
-    display: none;
-}
-
-/* tabs 안의 하위요소인 체크된 input 아래 동생(자식x) label을 선택 */
-.tabs input:checked+label {
     background: #fff;
     color: #111;
     border: 1px solid #ccc;
     border-bottom: none;
 }
 
-/* tabs 안의 하위요소인 체크된 input 아래 동생(자식x) label+div선택 */
-.tabs input:checked+label+div {
+/* 탭의 콘텐츠 */
+#tab_wrap .tabs>div {
+    display: none;
+    /* position:absolute;이면 width는 콘텐츠 크기 */
+    position: absolute;
+    width: 100%;
+    /* 32px은 label의 높이 */
+    height: calc(100% - 32px);
+    padding: 16px 24px;
+    border: 1px solid #ccc;
+}
+
+/* 체크된 input의 아래 label 아래 div만 보이게한다. */
+#tab_wrap .tabs input:checked+label+div {
     display: block;
 }
 
-
-/* tab1 */
-
-
-.tab1 li {
-    line-height: 3;
-    /* li 사이 간격 */
-    border-bottom: 1px solid #ccc;
+/* 공지사항의 콘텐츠 */
+#tab_wrap .tab1 li {
+    line-height: 2.3;
+    border-bottom: 1px dotted #ccc;
 }
 
-.tab1 span {
+#tab_wrap .tab1 li a {
     display: inline-block;
+    width: 422px;
 }
 
-.tab1 li {
-    /* width를 적용하면서 inline(가로 배치) */
-    display: flex;
-    justify-content: space-between;
-    width: 430px;
-    /* li 내부 span에 크기 지정 /날짜와 공지사항 문구 간격 주기 위함 + 크기 주기위해서 inline-block 변형 */
-}
-
-/* /////////tab1 끝////////  */
-
-/* tab2 */
-.tab2 ul {
+/* 갤러리의 콘텐츠 */
+#tab_wrap .tab2 ul {
     display: flex;
     justify-content: space-between;
     line-height: 2.3;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
-.tab2 span {
+#tab_wrap .tab2 span {
     display: block;
     width: 150px;
     height: 100px;
-    background: #000;
+    background: #ccc;
 }
 
-/* /////////tab2 끝////////// */
-/* 탭 부분 */
-
-
-
-.main_contents {
-    width: 1340px;
-    margin: -100px auto 0;
-    border: 1px solid red;
-}
-
-
+/* 슬라이드 이미지 */
 #slide {
-    height: 350px;
-    background: aqua;
+    width: calc(100% - 600px);
+    height: 700px;
+    background: rgba(240, 68, 103, 0.5);
 }
 
-#main_contents {}
+/* 푸터 영역 */
+footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: #797979;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+/* 하단 로고 */
+footer .flogo {
+    width: 190px;
+    text-align: center;
+}
+
+/* 주소 및 저작권 */
+footer p {
+    width: 850px;
+}
+
+/* SNS */
+/* 폰트어썸 코드로 삽입하기 */
+footer .sns a {
+    margin: 0 8px;
+    font-size: 3em;
+    color: #555;
+    transition: .3s;
+}
+
+footer .sns a:nth-child(4):hover {
+    color: #b803ee;
+}
+
+/* 아래는 SNS이미지로 삽입하기 */
+
+/* footer .sns a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    margin: 0 8px;
+    background: no-repeat 50% 50%;
+    transition: .3s;
+}
+
+footer .sns a:nth-child(1) {
+    background-image: url(../images/tw.png);
+}
+
+footer .sns a:nth-child(2) {
+    background-image: url(../images/insta.png);
+}
+
+footer .sns a:nth-child(3) {
+    background-image: url(../images/face.png);
+} */
+
+/* 호버시 아이콘 변경 */
+/* footer .sns a:nth-child(1):hover {
+    background-image: url(../images/tw-co.png);
+}
+
+footer .sns a:nth-child(2):hover {
+    background-image: url(../images/insta-co.png);
+}
+
+footer .sns a:nth-child(3):hover {
+    background-image: url(../images/face-co.png);
+} */
+
+/* 호버시 아이콘 크기 커짐 */
+/* 
+footer .sns a:hover {
+    transform: scale(1.2, 1.2);
+} */
