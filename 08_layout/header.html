@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <div class="container">
+            <!-- 로고 -->
+            <h1><a href="#">로고</a></h1>
+            <!-- 메인메뉴 / 여기에 position: relative -->
+            <nav class="gnb">
+                <!-- 1depth / 여기 before에 position: absolute -->
+                <ul class="main">
+                    <li>
+                        <!-- ul과 li는 형제 관계 -->
+                        <a href="#">MENU1</a>
+                        <!-- 2depth -->
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU1-1</a></li>
+                            <li><a href="#">SUB_MENU1-2</a></li>
+                            <li><a href="#">SUB_MENU1-3</a></li>
+                            <li><a href="#">SUB_MENU1-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MENU2</a>
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU2-1</a></li>
+                            <li><a href="#">SUB_MENU2-2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MENU3</a>
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU3-1</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">MENU4</a>
+                        <ul class="sub">
+                            <li><a href="#">SUB_MENU4-1</a></li>
+                            <li><a href="#">SUB_MENU4-2</a></li>
+                            <li><a href="#">SUB_MENU4-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>
