@@ -87,7 +87,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url(images/banner_tip\ 1.png) rgba(61, 216, 255) no-repeat -10%;
+    background-image: ;
+    background: url(../images/banner_tip\ 1.png) no-repeat -10%, rgba(61, 216, 255);
     border-bottom: 3px solid rgb(0, 83, 104);
 }
 
@@ -98,7 +99,7 @@ button {
 }
 
 button:hover img {
-    animation: bti 1s;
+    animation: bti 1s infinite;
 }
 
 @keyframes bti {
@@ -138,7 +139,7 @@ button:hover img {
     line-height: 100px;
     border: none;
     border-radius: 20px;
-    background: url(images/game_starts_bg.png) no-repeat;
+    background: url(../images/game_starts_bg.png) no-repeat;
 }
 
 /* nav */
