@@ -359,14 +359,25 @@ button:hover img {
     color: #fff;
 }
 
+.notion ul {
+    width: 100%;
+}
+
 .gallery {
     background: #f4f4f4;
 }
 
 .gallery ul {
-    margin-top: 15px;
+    width: 160px;
+    padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+}
+
+.gallery li {
+    display: flex;
+    margin-right: 20px;
+    text-align: center;
+    flex-direction: column;
 }
 
 
