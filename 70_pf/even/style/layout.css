@@ -101,11 +101,6 @@ nav a {
     font-style: italic;
 }
 
-/* temp(임시, 나중에 지울 것) */
-body * {
-    /* outline: 1px solid lime; */
-}
-
 /* reset */
 body,
 ul,
