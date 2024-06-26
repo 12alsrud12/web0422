@@ -545,15 +545,11 @@ section>h2 {
     list-style: disc;
 }
 
-.bkg_faq a {
-    : 5px;
-}
-
 .bkg_faq li:hover>a {
     border-bottom: 1px solid #192547;
 }
 
-.bkg_faq li:hover {
+.bkg_faq_sub li:hover {
     animation: bkg_faq2 .5s 1;
 }
 
