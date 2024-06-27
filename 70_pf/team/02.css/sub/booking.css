@@ -29,6 +29,7 @@ hr {
 
 header {
     width: 1920px;
+    border-bottom: 2px solid #ccc;
 }
 
 .header_inner li a {
@@ -567,4 +568,15 @@ section>h2 {
     }
 }
 
+
 /* /////section///// */
+/* 푸터 자리 만들기 */
+.footer {
+    position: relative;
+    left: -400px;
+
+}
+
+.footer image {
+    width: 1903px;
+}
