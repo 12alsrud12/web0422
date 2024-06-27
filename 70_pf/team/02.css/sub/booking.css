@@ -573,6 +573,7 @@ section>h2 {
 /* 푸터 자리 만들기 */
 .footer {
     position: relative;
+    width: 1903px;
     left: -400px;
 
 }
