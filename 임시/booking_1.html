@@ -1,67 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연습1</title>
+    <title>Document</title>
     <style>
-        body {
+        * {
             box-sizing: border-box;
+        }
+
+        body,
+        h2 {
             margin: 0;
         }
 
-        .d1 {
-            width: 200px;
-            height: 300px;
+        header {
+            height: 100px;
+            background: red;
         }
 
-        .d1 {
-            position: relative;
-            display: flex;
-            flex-direction: column;
+        main {
+            margin: 0;
+            background: #000;
+        }
+
+        section {
             margin: 0 auto;
-            width: 200px;
-            background: #ffb4b4;
-            transition: .3s;
+            width: 1200px;
+            height: 3000px;
+            background: blue;
         }
 
-        .img {
-            margin: 20px auto 0;
+        .tabs {
+            position: relative;
+            margin: 0 auto;
+            width: 1100px;
+            height: 3000px;
+            background: yellow;
         }
 
-        .txt {
-            text-align: center;
-            opacity: 0;
-            padding: 8px;
-            border: 1px solid lime;
-            transition: .3s;
+        .tabs label {
+            display: inline-block;
+            padding: 2px 24px;
+            background: #ccc;
+            cursor: pointer;
         }
 
-        .d1:hover .txt {
-            opacity: 1;
+        .tabs div {
+            display: none;
+            position: absolute;
+            width: calc(100% - 4px);
+            height: calc(100%);
+            padding: 16px;
         }
 
-        .d1:hover {
-            padding: 30px 0;
-            background: #6fe2ff;
+        .tabs input {
+            display: none;
         }
 
+        .tabs input:checked+label {
+            background: #333;
+            color: #fff;
+        }
+
+        .tabs input:checked+label+div {
+            display: block;
+        }
+
+        .tab1 {
+            background: #000;
+        }
+        .tab2 {
+            background: aqua;
+        }
+
+        footer {
+            height: 100px;
+        }
     </style>
-
 </head>
 
 <body>
-
-    <div class="d1">
-        <div class="img">
-            <img src="../assets/icon/jinair_logo.png" alt="진에어로고">
-        </div>
-        <div class="txt">
-            abc
-        </div>
-    </div>
-
+    <header></header>
+    <main>
+        <section>
+            <h2>asd</h2>
+            <div class="tabs">
+                <input type="radio" name="bts" id="bts_1" checked>
+                <label for="bts_1">1</label>
+                <div class="tab1">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </div>
+                <input type="radio" name="bts" id="bts_2">
+                <label for="bts_2">2</label>
+                <div class="tab2">
+                    <div>asdfasfasfasdfasdfasdfasdfsdfasdfasdf</div>
+                    <div>asdfasfasfasdfasdfasdfasdfsdfasdfasdf</div>
+                    <div>asdfasfasfasdfasdfasdfasdfsdfasdfasdf</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 
 </html>

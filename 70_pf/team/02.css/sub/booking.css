@@ -13,6 +13,7 @@ main {
     flex-direction: column;
     margin: 0 auto;
     background: #f9f9f9;
+    height: 3880px;
 }
 
 .bk_tab1,
@@ -156,6 +157,10 @@ h2 {
 /* ////booking 전용 typo//// */
 
 /* title */
+
+main {
+    width: 1920px;
+}
 
 main>h2 {
     width: 1200px;
@@ -574,10 +579,11 @@ section>h2 {
 .footer {
     position: relative;
     width: 1903px;
-    left: -400px;
+    left: -393px;
 
 }
 
-.footer image {
+.footer>image {
+    display: inline;
     width: 1903px;
 }

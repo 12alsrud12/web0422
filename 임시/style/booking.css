@@ -1,12 +1,41 @@
 @charset "utf-8";
 
+
+
+/* 전체 */
+
+body {
+    background: #f9f9f9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: #f9f9f9;
+    height: 3880px;
+}
+
+
+
+hr {
+    margin: 0;
+    border: 1px dashed #192547;
+}
+
+header {
+    border-bottom: 2px solid #ccc;
+}
+
+.header_inner li a {
+    vertical-align: middle;
+}
+
+
+/* //전체// */
+
 /* booking 전용 typo */
 
-h2 {
-    font-weight: 400;
-    font-size: 2.4em;
-    color: #192547;
-}
 
 label {
     font-size: 1.6em;
@@ -40,7 +69,10 @@ ul * {
     color: #ababab;
 }
 
-a {
+main>a,
+.bt_1,
+.bt_2,
+.bt_3 {
     font-size: 12px;
     color: #192547;
     margin-bottom: 60px;
@@ -71,19 +103,68 @@ a {
     font-weight: 900;
 }
 
+.bkg_sub_us2>ul li:hover,
+.bkg_sub_us3>ul li:hover {
+    width: 100%;
+    color: #192547;
+    background: #bed600;
+}
+
+label[for="bk_bts1"],
+label[for="bk_bts2"] {
+    font-size: 16px;
+}
+
+/* booking typo 추가 */
+.bkg_sub_us1>p {
+    color: #192547;
+}
+
+.bkg_faq ul li p {
+    font-size: 1.2em;
+    color: #192547;
+    margin-bottom: 5px;
+}
+
+/* booking typo 추가 */
+.bkg_sub_us1>p {
+    font-size: 16px;
+    color: #192547;
+}
+
+.bkg_faq ul li p {
+    font-size: 1.2em;
+    color: #192547;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.4em;
+    color: #192547;
+}
+
+.main li a:hover {
+    color: #192547;
+}
+
 /* ////booking 전용 typo//// */
 
-/* 전체 */
-body {
-    background: #f9f9f9;
+/* title */
+
+main>h2 {
+    width: 1200px;
+    margin: 81px auto 0;
+    padding-left: 40px;
+    line-height: 120px;
+    background: #fff;
+    border-bottom: 3px solid #f4f4f4;
+    box-shadow: 0 0 4px rgba(109, 109, 109.5);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 1200px;
-}
+/* ////title//// */
+
+/* tabs 유형 */
 
 .bk_tab1,
 .bk_tab2 {
@@ -92,25 +173,6 @@ main {
     width: 1200px;
 }
 
-hr {
-    margin: 0;
-    border: 1px dashed #192547;
-}
-
-/* //전체// */
-
-/* title */
-main>h2 {
-    padding-left: 40px;
-    line-height: 120px;
-    background: #fff;
-    border-bottom: 3px solid #f4f4f4;
-    box-shadow: 0 -4px 4px rgba(109, 109, 109.5);
-}
-
-/* ////title//// */
-
-/* tabs 유형 */
 .bk_tabs {
     display: flex;
     flex-direction: row;
@@ -136,7 +198,8 @@ main>h2 {
 }
 
 
-.bk_tabs section {
+.bk_tabs .bk_tab1,
+.bk_tab2 {
     display: none;
     position: absolute;
     width: 1120px;
@@ -153,7 +216,8 @@ main>h2 {
     background: #192547;
 }
 
-.bk_tabs input:checked+label+section {
+.bk_tabs input:checked+label+.bk_tab1,
+.bk_tabs input:checked+label+.bk_tab2 {
     display: flex;
 }
 
@@ -168,7 +232,8 @@ main>h2 {
 }
 
 /* section */
-section>h2 {
+.bk_tab1>h2,
+.bk_tab2>h2 {
     padding: 60px 0;
 }
 
@@ -315,7 +380,7 @@ section>h2 {
 
 .bt_1::after {
     margin-left: 5px;
-    content: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/smallbuttom.png?raw=true);
+    content: url(../../03.assets/booking/smallbuttom.png);
 }
 
 .bt_1:hover,
@@ -341,11 +406,11 @@ section>h2 {
 }
 
 .gs>li:nth-of-type(1) {
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs.png?raw=true);
+    list-style: url(../../03.assets/booking/gs.png);
 }
 
 .gs>li:nth-of-type(2) {
-    list-style: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/gs2.png?raw=true);
+    list-style: url(../../03.assets/booking/gs2.png);
 }
 
 .gs>li {
@@ -366,6 +431,7 @@ section>h2 {
     padding: 20px;
 }
 
+
 .bkg_us li {
     list-style: none;
     transition: 1s;
@@ -379,6 +445,9 @@ section>h2 {
     margin: 10px 0 0 0;
 }
 
+.bkg_sub_us1>p {
+    margin: 0;
+}
 
 
 .bkg_sub_us2 li,
@@ -393,6 +462,7 @@ section>h2 {
     position: absolute;
     overflow: hidden;
     background: #f4f4f4;
+    z-index: 5;
     opacity: 0;
     height: 0;
     margin: 0;
@@ -407,27 +477,48 @@ section>h2 {
 .bkg_sub_us1 div {
     width: 12px;
     height: 7px;
-    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button.png?raw=true);
+    background-image: url(../../03.assets/booking/button.png);
 }
 
 .bkg_us:hover .bkg_sub_us1 div {
-    background-image: url(https://github.com/12alsrud12/web0422/blob/main/70_pf/team/JinAir/03.assets/booking/button_up.png?raw=true);
+    background-image: url(../../03.assets/booking/button_up.png);
 }
 
 
 /* 유의사항 늘어났을때 */
 .bkg_us:hover .bkg_sub_us2 {
     overflow: visible;
-    height: 170px;
+    height: 190px;
     opacity: 1;
     background: #f4f4f4;
 }
 
 .bkg_us:hover .bkg_sub_us3 {
     overflow: visible;
-    height: 250px;
+    height: 270px;
     opacity: 1;
     background: #f4f4f4;
+}
+
+/* 유의사항 약간의 animation  */
+
+.bkg_sub_us2>ul li:hover,
+.bkg_sub_us3>ul li:hover {
+    animation: bkg_sub .5s 1;
+}
+
+@keyframes bkg_sub {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0)
+    }
 }
 
 /* /////유의사항///// */
@@ -445,10 +536,15 @@ section>h2 {
     list-style: none;
     margin: 0;
     width: 860px;
+    transition: 1s;
 }
 
 .bkg_faq p {
     margin: 0;
+}
+
+.bkg_faq a {
+    transition: .3s;
 }
 
 .bkg_faq li>ul>li {
@@ -456,4 +552,28 @@ section>h2 {
     list-style: disc;
 }
 
+.bkg_faq li:hover>a {
+    border-bottom: 1px solid #192547;
+}
+
+.bkg_faq_sub li:hover {
+    animation: bkg_faq2 .5s 1;
+}
+
+@keyframes bkg_faq2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+
 /* /////section///// */
+/* 푸터 자리 만들기 */
