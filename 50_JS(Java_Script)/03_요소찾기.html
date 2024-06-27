@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS03_요소찾기</title>
+    <style>
+        /* 
+            선택자
+            1. 아이디
+            2. 클래스
+            3. 태그
+        */
+        #orange {
+            color: orange;
+        }
+
+        .red {
+            color: red;
+        }
+
+        #green {
+            color: green;
+        }
+
+        .aqua {
+            color: aqua;
+        }
+
+        li {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.getElementById("orange").style.color = "orange";
+        document.getElementsByTagName('li')[2].style.color = "blue";
+        document.getElementsByClassName("red")[0].style.color = "red";
+        document.querySelector("#orange").style.backgroundColor = "black";
+        document.querySelectorAll('li')[2].style.border = "1px solid red";
+        document.documentElement.style.borderLeft = "10px solid blue";
+        document.body.style.borderTop = "5px solid red";
+
+        // jQ
+        $("li").css({ color: "blue" });
+        $('#green').css("color", "green");
+        $('.aqua').css("color", "aqua");
+        $('html').css({ borderBottom: "3px dotted gray" });
+        $('body').css({ width: 500 });
+    </script>
+    <ul>
+        <li id="orange">목록1</li>
+        <li class="red">목록2</li>
+        <li>목록3</li>
+        <li id="green">목록1</li>
+        <li class="aqua">목록2</li>
+        <li>목록3</li>
+    </ul>
+</body>
+
+</html>
