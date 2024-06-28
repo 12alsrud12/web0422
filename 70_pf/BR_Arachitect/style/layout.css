@@ -1,14 +1,24 @@
 @charset "utf-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 
 header {
+    /* position이 fixed나 absolute이면 width가 콘텐츠 크기 */
+    position: fixed;
+
+    z-index: 9999;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 52px;
     padding: 0 30px;
     background: #fff;
+    margin: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -29,78 +39,85 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
     width: 1480px;
-    margin: 0 auto;
-    padding: 96px 0;
 }
 
-div {
+#sec1 {
+    margin-top: 0;
+}
+
+#sec1 div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1496px;
+    width: 1480px;
     height: 745px;
     background: #005813;
 }
 
-.img {
+#sec1 .img {
     display: flex;
     justify-content: center;
 }
 
-.gr {
-    position: relative;
-    height: 10px;
-    background: rgb(190, 214, 0);
-    background: linear-gradient(90deg, rgba(190, 214, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
-}
 
 /* letter-spacing = 글자간격 "자간" */
 
-section:first-of-type h2 {
+#sec1 h2 {
     position: absolute;
     letter-spacing: 4px;
     font-weight: 400;
     transform: translate(-50%, -50%);
 }
 
-b {
+#sec1 b {
     padding: 8px 16px;
     margin-right: 16px;
     color: #fff;
     background: rgba(190, 214, 0, .5);
 }
 
+/* 섹션2,3,4 공통 */
+section {
+    width: 1480px;
+    margin: 0 auto;
+    padding: 96px 0;
+}
+
+section li {
+    width: 355px;
+}
+
+section li:not(:nth-of-type(4n)) {
+    margin-right: 20px;
+}
+
 /* section2 */
-h2 {
+
+
+#sec2 h2 {
     border-bottom: 1px solid #f1f1f1;
     padding-bottom: 24px;
     margin: 72px 0 48px 0;
 }
 
-ul {
+#sec2 ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-li {
-    position: relative;
-    width: 362px;
-    margin: 0 16px 16px 0;
+#sec2 li {
+    height: 240px;
+    margin-bottom: 20px;
 }
 
-h3 {
+#sec2 h3 {
     position: absolute;
     background: #bed600;
-    padding: 8px 24px;
+    padding-bottom: 20px;
 }
 
-li:nth-of-type(4n) {
-    margin-right: 0;
-}
-
-div {
+#sec2 div {
     height: 240px;
     background: #008f40;
 }
@@ -108,35 +125,32 @@ div {
 /* section3 */
 /* 섹션3 영역 */
 
-section:nth-of-type(3) h2 {
+#sec3 h2 {
     padding-bottom: 24px;
-    border-bottom: 1px solid pink;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #192547;
 }
 
-div {
+#sec3 div {
     height: 240px;
     margin: 15px 0;
     background-image: url(https://github.com/12alsrud12/web0422/blob/main/assets/%EB%82%B4%EA%B0%80%20%EC%B0%8D%EC%9D%80%20%EC%82%AC%EC%A7%84/%EC%82%AC%EC%A7%84%ED%81%AC%EA%B8%B0%EC%A1%B0%EC%A0%95_w255/10.jpg?raw=true);
 }
 
-h3 {
+#sec3 h3 {
     font-size: 2.4rem;
+    margin-bottom: 16px;
 }
 
-ul {
+#sec3>p {
+    margin-bottom: 48px 0;
+}
+
+#sec3 ul {
     display: flex;
 }
 
-li {
-    width: 355px;
-    margin-right: 20px;
-}
-
-li:nth-of-type(4) {
-    margin-right: 0;
-}
-
-a {
+#sec3 a {
     display: block;
     width: 355px;
     padding: 8px 0;
@@ -147,17 +161,21 @@ a {
 /* section4 */
 /* 섹션4 영역 */
 
+#sec4 {
+    margin-bottom: 8px;
+}
+
 .s4 {
     border-bottom: 1px solid #ccc;
     padding: 0 0 24px 0;
     margin: 0 0 16px 0;
 }
 
-p {
+#sec4 p {
     margin-bottom: 24px;
 }
 
-input {
+#sec4 input {
     display: block;
     /* input는 display는 inline - block고 요소는 inline이다.
             inline는 줄바꿈이 안되지만 칸이 모자라면 줄 바꿈이 된다. */
@@ -168,11 +186,11 @@ input {
     border: 1px solid #ccc;
 }
 
-form {
+#sec4 form {
     color: #fff;
 }
 
-button {
+#sec4 button {
     margin: 24px 0 48px;
     padding: 8px 16px;
     border-radius: 5px;
