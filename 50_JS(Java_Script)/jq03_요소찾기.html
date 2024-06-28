@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQ03_요소찾기</title>
+    <script src="jquery-3.7.1.min.js"></script>
     <style>
         /* 
             선택자
@@ -35,14 +36,11 @@
     </ul>
 
     <p class="aqua">나는 유엘 밖의 아쿠아</p>
-    <!-- <script src="jquery-3.7.1.min.js"> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
 
+    <script>
         $("#orange").css("color", "orange");
         // :eq(), eq()의 index는 0번 부터
         // 문서에서 클래스가 첫 번째 red인 요소를 가져와서
-        $(".red:eq(0)").css({ color: red });
         $("li").eq(5).css("borderTop", "1px solid");
 
         // 단일 요소
@@ -50,7 +48,7 @@
         // 같은 요소가 여러 개
         $("ul").eq(0).css("borderTop", "1px solid");
         $("ul").eq(0).css("color", "pink");
-        $(".aqua").eq(0).css("color", "aqua");
+        $(".aqua").css("color", "aqua");
 
         // 형식
         // 0. $("선택자").eq <- eq는 특이케이스~
@@ -61,7 +59,6 @@
         // 메소드: eq("문자열", "문자열"), css("문자열", "문자열") - 동작 -> 동사(서술어)
         // 속성: "style", "color" - 특징 -> 형용사
         // 문장 끝에는 ;를 기록한다.
-
     </script>
 
 </body>

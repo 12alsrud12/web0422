@@ -48,7 +48,9 @@ h1 {
 
 h1,
 h2,
-h3 {
+h3,
+button,
+a {
     font-family: "NanumSquareNeo-Variable";
 }
 
@@ -63,4 +65,19 @@ h2 {
 
 a {
     color: #111;
+}
+
+input,
+button {
+    font-size: 1.5rem;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+button {
+    color: #fff;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+    color: #aaa;
 }
