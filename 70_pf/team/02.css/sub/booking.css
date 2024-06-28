@@ -34,6 +34,7 @@ hr {
 header {
     width: 1920px;
     border-bottom: 2px solid #ccc;
+    background: rgba(255, 255, 255, 1);
 }
 
 .header_inner li a {
@@ -500,6 +501,11 @@ section>h2 {
     height: 270px;
     opacity: 1;
     background: #f4f4f4;
+}
+
+.bkg_sub_us2>ul li,
+.bkg_sub_us3>ul li {
+    padding: 3px 10px 1px;
 }
 
 /* 유의사항 약간의 animation  */
