@@ -58,7 +58,7 @@ div {
 
 /* letter-spacing = 글자간격 "자간" */
 
-h2 {
+section:first-of-type h2 {
     position: absolute;
     letter-spacing: 4px;
     font-weight: 400;
@@ -108,7 +108,7 @@ div {
 /* section3 */
 /* 섹션3 영역 */
 
-h2 {
+section:nth-of-type(3) h2 {
     padding-bottom: 24px;
     border-bottom: 1px solid pink;
 }
