@@ -3,6 +3,9 @@
 
 
 /* 전체 */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: #f9f9f9;
@@ -13,7 +16,7 @@ main {
     flex-direction: column;
     margin: 0 auto;
     background: #f9f9f9;
-    height: 3880px;
+    height: 3884px;
 }
 
 .bk_tab1,
