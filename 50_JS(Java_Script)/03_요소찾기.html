@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS03_요소찾기</title>
+    <title>03_요소찾기</title>
     <style>
         /* 
             선택자
@@ -12,48 +12,22 @@
             2. 클래스
             3. 태그
         */
-        #orange {
-            color: orange;
-        }
 
-        .red {
-            color: red;
-        }
-
-        #green {
-            color: green;
-        }
-
-        .aqua {
-            color: aqua;
-        }
-
-        li {
-            color: yellow;
-        }
+        /* #orange {color: orange;}
+        .red {color: red;}
+        #green {color: green;}
+        .aqua {color: aqua;}
+        li {color: yellow;} */
     </style>
 </head>
 
 <body>
-    <!-- <script>
-        document.getElementById("orange").style.color = "orange";
-        document.getElementsByTagName('li')[2].style.color = "blue";
-        document.getElementsByClassName("red")[0].style.color = "red";
-        document.querySelector("#orange").style.backgroundColor = "black";
-        document.querySelectorAll('li')[2].style.border = "1px solid red";
-        document.documentElement.style.borderLeft = "10px solid blue";
-        document.body.style.borderTop = "5px solid red";
-
-        // jQ
-        $("li").css({ color: "blue" });
-        $('#green').css("color", "green");
-        $('.aqua').css("color", "aqua");
-        $('html').css({ borderBottom: "3px dotted gray" });
-        $('body').css({ width: 500 });
-    </script> -->
+    <h1>요소 찾기</h1>
     <ul>
         <li id="orange">목록1</li>
-        <li class="red">목록2</li>
+        <li class="red">목록2 - index 0</li>
+        <li class="red">목록2 - index 1</li>
+        <li class="red">목록2 - index 2</li>
         <li>목록3</li>
         <li id="green">목록1</li>
         <li class="aqua">목록2</li>
@@ -61,39 +35,37 @@
     </ul>
 
     <script>
-        // 변수 = 값; (o)
-        // 변수 -> 값
-
-        // 변수 == 값; (o)
-        // 변수와 값은 같다.
-
-        // 변수 === 값; (o)
-
-        // 값 = 변수; (x)
+        // 변수1 = 값;
+        // 변수2 = 변수1;
         // 변수는 저장공간이다.
-        // 변수는 폴더, 값은 파일
+        // 변수는 폴더(지갑), 값은 파일(돈)
+        // 값 = 변수; (x)
+        // =은 대입(할당)연산자이다.
         // 오른쪽의 값을 왼쪽에 대입(할당)한다.
 
-        // document = 문서 / . = 아이가 / ID가 orange인 것을 가져와서 style color을 적용한다.
-        document.getElementById("orange").style.color = "pink";
+        // 문서의 아이디가 orange인 요소를 가져와서 글자색을 "orange"를 지정한다.
+        // 아이디는 한 문서내에서 유일하다.
+        document.getElementById("orange").style.color = "orange";
+        // index는 0번 부터
+        document.getElementsByClassName("red")[0].style.color = "red";
+        document.getElementsByTagName("li")[5].style.borderTop = "1px solid";
+
+        // 단일 요소
+        document.querySelector("ul").style.borderLeft = "5px solid";
+        // 같은 요소가 여러 개
+        document.querySelectorAll("ul")[0].style.borderTop = "1px solid";
         // 객체: document
-        // 메소드: getElementById() - 어떤 특정 동작을 나타낸다. / get= 가져오다 element= html내부의 Id()를
-        // 함수: function() -
-        // 메소드와 함수의 () <-괄호는 메소드나 함수가 될 수 있다.
-        // 속성: style, color - 객체의 "특징"
+        // 메소드: getElementById() - 동작 -> 동사(서술어)
+        // 속성: style.color - 특징 -> 형용사
         // 대입(할당) 연산자: =
         // 리터럴: 문자열 데이터 -> "orange"
-        // JS에서는 문장의 끝을 ; 으로 기록한다.
+        // 문장 끝에는 ;를 기록한다.
 
-        //  객체.style.CSS속성
-
-        // 형용사
-        /* #은 안쓰는이유가 저 가운데에 이미 By Id라고 지정해 두었기 때문 */
-        // 자바 스크립트 단어는 대소문자를 구별한다. CSS는 구별 안하는 편임.
-        // 단어와 단어는 . (도트)로 구분한다.
-        // 자바 스크립트는 카멜 표기법(첫글자는 소문자, 두번째 단어별 첫 글자를 대문자)을 쓴다.
+        // 단어는 대소문자를 구별한다.
+        // 단어와 단어는 .(도트)로 구분한다.
+        // 카멜 표기법(첫글자는 소문자, 두 번째 단어부터 단어별 첫글자는 대문자)을 사용한다.
+        // 문장 내의 문자열은 반드시 "" 또는 ''로 묶는다.
     </script>
-
 </body>
 
 </html>
