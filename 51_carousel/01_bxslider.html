@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>캐러셀_슬라이드</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+
 
 </head>
 
@@ -27,6 +29,8 @@
         $('bxslider') 까지는 제이쿼리지만 바로 오른쪽 .bxSlider은 아니다!
         */
         $('.bxslider').bxSlider({
+            mode: 'fade',
+            // mode: 'fade'추가하면 슬라이드가 아닌 투명해져서 변환하는 효과로 바뀜
             auto: true,
             autoControls: true,
             stopAutoOnClick: true,
