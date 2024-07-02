@@ -92,7 +92,6 @@ nav a {
 
 .home-description h3 {
     font-family: "Noto Sans KR", sans-serif;
-    font-style: none;
     font-weight: 700;
 }
 
@@ -105,9 +104,8 @@ nav a {
 body,
 ul,
 h1,
-h2,
-{
-margin: 0 auto;
+h2 {
+    margin: 0 auto;
 }
 
 ul {
@@ -166,7 +164,7 @@ section h2 {
 }
 
 section div {
-    margin-buttom: 56px 0;
+    margin-bottom: 56px 0;
 }
 
 .home-card {
@@ -235,11 +233,19 @@ nav a {
 }
 
 p {
-    font-family: ;
     font-size: 15px;
 }
 
 /* 아이콘 사이즈 100*100px */
 .home-icon img {
     width: 100px;
+}
+
+.home-icon {
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.home-icon:hover {
+    box-shadow: 0 4px 10px 4px rgba(68, 68, 68, .5);
 }
