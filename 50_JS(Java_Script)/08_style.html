@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_style</title>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <h1>스타일 적용</h1>
+    <div>박스1</div>
+    <div>박스2</div>
+    <style>
+
+    </style>
+
+    <script>
+        /* 
+            객체 | 객체는 늘 속성값과 메서드를 가지고있다.
+
+                1. {속성: 값, 속성: 값, ...,}
+
+                2. element {
+                    속성: 값,
+                    속성: 함수,
+                    css: function(){},
+                    ...,
+                }
+                속성들 중에 특별히 그 값이 함수인 속성을 메서드라고 한다.
+                메서드는 속성이다. = ( function을 값으로 한게 속성이다. 위에 css: function(){} )
+
+                그 외
+                    - 방법1: element.css("속성", 값);
+                    - 방법2: element.css({속성:값, 속성:값, ...}); | element.css({"속성":값, "속성":값, ...,})
+                        * 객체 형식으로 작성하면 속성명에 " " 를 생략할 수 있다.
+                        * CSS속성명으로 기록하면 " " 를 사용하고, 카멜표기법으로 표기하면 " "를 생략할 수 있다.
+                    - element.eq(숫자)
+
+            함수 
+                function(){}
+        */
+
+        /* 
+            element.style.CSS속성명 = "속성값";
+            단, CSS속성명은 카멜 표기법으로 한다.
+
+            하지만 jquery는
+            객체.메서드(인수, 인수, 인수, ...) / element.css(css속성명, "속성값");
+
+            element.css("width", "100px"); = 100px 이런 문자열은 무조건 "" 으로 묶어야한다.
+            element.css("width", 100); = 숫자는 묶으면 안된다.
+            element.eq(숫자);
+
+            이렇게 하면 된다.
+            단, 인수는 메서드마다 정해져있다. (내 마음대로 할 수 없다는 뜻)
+
+            element = 객체
+            css = 메서드
+            css속성명, 속성값 = 인수
+
+            카멜 표기법(Camel Case):
+            - 여러 단어를 연달아 사용할 때 각 단어의 첫 글자를 대문자로 적되, 맨 앞에 오는 글자는 소문자로 표기하는 것이다.
+        */
+        /* 
+            요소(element) 찾기
+            document.querySelectorAll('선택자')
+            $("선택자")
+        */
+
+        // ele = element/html 
+        // Div = <div>
+
+        // const eleDiv = document.querySelectorAll('div')[0]; 
+        const eleDiv = $('div').eq(0); //위 버전의 간략화 $('div').eq(0) | 그리고 첫번째 div 이름을 eleDiv으로 선언한 것 
+        // 이 아래는 선언한 eleDiv만 적고 .css 후 css값 입력하면 된다.
+        eleDiv.css("width", "100px");
+        eleDiv.css("height", "100px");
+        eleDiv.css("backgroundColor", "red");
+
+        // 실행코드 위에거 축약 버전
+        // eleDiv.css({width:값, height:값, backgroundColor:값});
+        /* 
+            eleDiv.css ({
+            
+                width:100px,
+                height:100px,
+                backgroundColor:red,
+
+            })
+        */
+        // 속성명에 " " 생략 가능
+
+
+        // 다른방식 ↓
+        // font-color, background-color 지정
+        document.querySelectorAll("div")[0].style.color = "#fff";
+        document.querySelectorAll("div")[0].style.backgroundColor = "orange";
+
+        document.querySelectorAll("div")[1].style.color = "#fff";
+        document.querySelectorAll("div")[1].style.backgroundColor = "orange";
+
+        // width, height 지정
+        document.querySelectorAll("div")[0].style.width = "100px";
+        document.querySelectorAll("div")[1].style.width = "100px";
+
+        document.querySelectorAll("div")[0].style.height = "100px";
+        document.querySelectorAll("div")[1].style.height = "100px";
+
+        // margin-top 지정
+        document.querySelectorAll("div")[0].style.marginTop = "50px";
+        document.querySelectorAll("div")[1].style.marginTop = "50px";
+
+        // ling-height 지정
+        document.querySelectorAll("div")[0].style.lineHeight = "100px";
+        document.querySelectorAll("div")[1].style.lineHeight = "100px";
+
+        // text-align 지정
+        document.querySelectorAll("div")[0].style.textAlign = "center";
+        document.querySelectorAll("div")[1].style.textAlign = "center";
+    </script>
+</body>
+
+</html>
