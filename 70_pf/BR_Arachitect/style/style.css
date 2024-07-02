@@ -9,7 +9,6 @@ html {
 header {
     /* position이 fixed나 absolute이면 width가 콘텐츠 크기 */
     position: fixed;
-
     z-index: 9999;
     width: 100%;
     display: flex;
@@ -40,10 +39,13 @@ section {
     justify-content: center;
     flex-direction: column;
     width: 1480px;
+    /* padding-top: 80px; */
 }
 
 #sec1 {
-    margin-top: 0;
+    /* position: relative */
+    margin: 0 auto;
+    padding: 0;
 }
 
 #sec1 div {
@@ -52,10 +54,14 @@ section {
     align-items: center;
     width: 1480px;
     height: 745px;
-    background: #005813;
 }
 
 #sec1 .img {
+    /* 
+    여기는 position: absolute 이렇게 set1과 여기에 포지션 걸고
+    left와 top를 50%으로
+    transform: translate(-50%, -50%); 걸어도 섹션1메인배너와 글자가 중앙정렬된다.
+    */
     display: flex;
     justify-content: center;
 }
@@ -114,10 +120,11 @@ section li:not(:nth-of-type(4n)) {
 #sec2 h3 {
     position: absolute;
     background: #bed600;
-    padding-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 0 5px 10px 5px;
 }
 
-#sec2 div {
+#sec2 div img {
     height: 240px;
     background: #008f40;
 }
@@ -134,7 +141,6 @@ section li:not(:nth-of-type(4n)) {
 #sec3 div {
     height: 240px;
     margin: 15px 0;
-    background-image: url(https://github.com/12alsrud12/web0422/blob/main/assets/%EB%82%B4%EA%B0%80%20%EC%B0%8D%EC%9D%80%20%EC%82%AC%EC%A7%84/%EC%82%AC%EC%A7%84%ED%81%AC%EA%B8%B0%EC%A1%B0%EC%A0%95_w255/10.jpg?raw=true);
 }
 
 #sec3 h3 {
@@ -142,8 +148,8 @@ section li:not(:nth-of-type(4n)) {
     margin-bottom: 16px;
 }
 
-#sec3>p {
-    margin-bottom: 48px 0;
+#sec3 p {
+    margin-bottom: 10px;
 }
 
 #sec3 ul {
@@ -162,7 +168,7 @@ section li:not(:nth-of-type(4n)) {
 /* 섹션4 영역 */
 
 #sec4 {
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .s4 {
