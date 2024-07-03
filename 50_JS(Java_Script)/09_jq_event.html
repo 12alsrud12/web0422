@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <h1>이벤트(Event)</h1>
+    <p>이벤트(Event)는 어떤 사건을 의미합니다.<br>
+        브라우저에서의 사건이란 사용자가 "클릭을 했을 때", "스크롤을 했을 때", "무언가를 입력했을 때" 등의 상호작용으로 인해 일어나는 사건을 의미한다.<br>
+        이벤트는 일반적으로 함수에 연결되며, 이 함수를 이벤트 핸들러(Event Handler) 라고 합니다.</p>
+
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+    <p>요기에 표시됩니다.</p>
+
+    <script>
+
+        const eleBox1 = $('.box1');
+        const eleBox2 = $('.box2');
+        const eleBox3 = $('.box3');
+        const eleBox4 = $('.box4');
+
+        // 요소에 스타일 적용
+        eleBox1.css("width", "200px");
+        eleBox1.css("height", "200px");
+        eleBox1.css("border", "solid");
+        eleBox1.css("margin", "5px");
+
+        eleBox2.css("width", "200px");
+        eleBox2.css("height", "200px");
+        eleBox2.css("border", "solid");
+        eleBox2.css("margin", "5px");
+
+        eleBox3.css("width", "200px");
+        eleBox3.css("height", "200px");
+        eleBox3.css("border", "solid");
+        eleBox3.css("margin", "5px");
+
+        eleBox4.css("width", "200px");
+        eleBox4.css("height", "200px");
+        eleBox4.css("border", "solid");
+        eleBox4.css("margin", "5px");
+
+
+
+        // JQ 이벤트 처리
+        eleBox1.on("mouseenter", function () {
+            eleBox1.css({ background: "red" });
+        });
+        /*
+            element
+
+            * 이벤트 전파: 자식 -> 부모(bubbling) | 이벤트는 무조건 "" 으로 감싸기!
+
+            이벤트 종류
+            이벤트: click(클릭 했을시), mouseenter(마우스 올렸을시), mouseleave(마우스 떠났을시), resize, scroll(스크롤 했을시), 등...,
+        */
+
+        // JS는 100; 만하면 인식 안되고 "100px"라고 해야 인식된다. jQuery는 100만적어도 인식됨
+        // 상수형 변수 const 선언후 class box1을 eleBox1로 지정
+    </script>
+</body>
+
+</html>
