@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_innerHTML</title>
+</head>
+
+<body>
+    <h1>요소의 콘텐츠를 변경하거나 가져오기</h1>
+    <p class="p1">나는 첫번째 단락입니다.</p>
+    <p class="p2">나는 두번째 단락입니다.</p>
+    <p class="p3">세번째</p>
+    <p class="p4">네번째</p>
+
+    <script>
+        /* 
+            // 콘텐츠 변경
+            객체.innerHTML -> HTML 태그 인식한다.
+            객체.textContent -> HTML 태그도 문자열 처리한다.
+
+            //콘텐츠 가져오기
+            let getP1Tag = p1.innerHTML;
+            let getP2Tag = p1.textContent;
+        */
+
+        // 상수형 변수 선언 const 변수+객체이름은 pTag으로 그 대상은 html내의 p태그이다.
+        const p1Tag = document.querySelector('.p1');
+        const p2Tag = document.querySelector('.p2');
+
+        // 변경
+        // pTag = p태그 내부의 HTML 문장을 -> "~~"으로 변경
+        p1Tag.innerHTML = '<a href="#">여기에 쓴 문장으로 교체됩니다1.</a>'
+        p2Tag.textContent = '<a href="#">여기에 쓴 문장으로 교체됩니다2.</a>';
+
+        // 가져오기
+        let getP1Tag = p1Tag.innerHTML;
+        let getP2Tag = p2Tag.textContent;
+        console.log("getP1Tag =", getP1Tag);
+        console.log("getP2Tag =", getP2Tag);
+        
+        // 
+    </script>
+</body>
+
+</html>

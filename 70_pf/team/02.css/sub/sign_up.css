@@ -21,10 +21,6 @@ header {
     height: 25px;
 }
 
-header {
-    width: 1920px;
-}
-
 .main>li a:hover {
     color: #192547;
 }
@@ -70,11 +66,11 @@ p:nth-of-type(1) {
 
 .su_sub_title {
     margin-top: 80px;
-    color: #fff;
     background: #192547;
 }
 
 .su_sub_title>h2 {
+    color: #fff;
     margin: 40px 0 0;
 }
 

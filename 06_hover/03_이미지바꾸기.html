@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예시</title>
+    <style></style>
+    <style>
+        .sns {
+            margin: 0 30px;
+        }
+
+        a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+
+        a div {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sns2 div {
+            margin-left: 30px;
+        }
+
+        .sns1 div {
+            background: url(../my/insta_ico.png);
+            transition: .3s;
+        }
+
+        .sns2 div {
+            background: url(../my/tumb_ico.png);
+            transition: .3s;
+        }
+
+        .sns1 div:hover {
+            background: url(../my/insta_ico_hover.png);
+            transform: scale(1.2);
+        }
+
+        .sns2 div:hover {
+            background: url(../my/tumb_ico_hover.png);
+            transform: scale(1.2);
+        }
+
+        /* img에 object-fit: cover; 이걸 하면 img를 감싼 div나 그런게 있으면 부모(박스)크기에 딱 맞게끔한다. background에서도 속기형 할 때 사용가능 */
+    </style>
+</head>
+
+<body>
+    <h1>호버시 이미지 바꾸기</h1>
+    <div class="sns">
+        <a href="#" class="sns1">
+            <div><!-- 이미지 삽입 예정 --></div>
+        </a>
+        <a href="#" class="sns2">
+            <div><!-- 이미지 삽입 예정 --></div>
+        </a>
+    </div>
+</body>
+
+</html>

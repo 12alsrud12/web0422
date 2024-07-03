@@ -41,6 +41,9 @@ header {
     vertical-align: middle;
 }
 
+main li {
+    list-style: disc;
+}
 
 /* //전체// */
 
@@ -568,6 +571,14 @@ section>h2 {
     animation: bkg_faq2 .5s 1;
 }
 
+.bkg_faq li:nth-of-type(1) {
+    list-style: none;
+}
+
+.bkg_faq_sub li:nth-of-type(1) {
+    list-style: disc;
+}
+
 @keyframes bkg_faq2 {
     0% {
         transform: translateX(0);
@@ -585,14 +596,8 @@ section>h2 {
 
 /* /////section///// */
 /* 푸터 자리 만들기 */
-.footer {
-    position: relative;
-    width: 1903px;
-    left: -393px;
 
-}
 
 .footer>image {
-    display: inline;
     width: 1903px;
 }
