@@ -32,8 +32,6 @@ hr {
 }
 
 header {
-    width: 1920px;
-    border-bottom: 2px solid #ccc;
     background: rgba(255, 255, 255, 1);
 }
 
@@ -386,7 +384,7 @@ section>h2 {
 
 .bt_1::after {
     margin-left: 5px;
-    content: url(../../03.assets/booking/smallbuttom.png);
+    content: url(../../03.assets/sub/booking/smallbuttom.png);
 }
 
 .bt_1:hover,
@@ -412,11 +410,11 @@ section>h2 {
 }
 
 .gs>li:nth-of-type(1) {
-    list-style: url(../../03.assets/booking/gs.png);
+    list-style: url(../../03.assets/sub/booking/gs.png);
 }
 
 .gs>li:nth-of-type(2) {
-    list-style: url(../../03.assets/booking/gs2.png);
+    list-style: url(../../03.assets/sub/booking/gs2.png);
 }
 
 .gs>li {
@@ -483,11 +481,11 @@ section>h2 {
 .bkg_sub_us1 div {
     width: 12px;
     height: 7px;
-    background-image: url(../../03.assets/booking/button.png);
+    background-image: url(../../03.assets/sub/booking/button.png);
 }
 
 .bkg_us:hover .bkg_sub_us1 div {
-    background-image: url(../../03.assets/booking/button_up.png);
+    background-image: url(../../03.assets/sub/booking/button_up.png);
 }
 
 
