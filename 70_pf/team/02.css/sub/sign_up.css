@@ -163,7 +163,7 @@ label {
 
 .su_text_box ul::before {
     padding: 0 20px;
-    content: url(../../03.assets/booking/sing_up_icon.png);
+    content: url(../../03.assets/sign_up/sing_up_icon.png);
 }
 
 
