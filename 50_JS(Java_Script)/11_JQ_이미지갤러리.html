@@ -79,9 +79,11 @@
             cont.html('<img src="../assets/JS_11_이미지갤러리_1.jpg" alt="이미지1">');
         });
 
-        btn2.on('click', function () {
+        btn2.click(ck);
+
+        function ck() {
             cont.html('<img src="../assets/JS_11_이미지갤러리_2.jpg" alt="이미지2">');
-        });
+        };
 
         btn3.on('click', function () {
             cont.html('<img src="../assets/JS_11_이미지갤러리_3.jpg" alt="이미지3">');

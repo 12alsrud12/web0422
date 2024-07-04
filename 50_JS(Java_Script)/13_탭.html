@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_JS탭</title>
+    <style>
+        #tabs>div {
+            font-size: 20px;
+            display: none;
+        }
+
+        #tabs>div.on {
+            display: block;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            padding: 8px 16px;
+            list-style: none;
+            border: 2px solid #797979;
+            border-radius: 8px 8px 0 0;
+            background: #000;
+        }
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>탭</h1>
+    <!-- Ctrl + 방향키로 태그 선택가능 -->
+    <div id="tabs"><!-- 탭 전체 부분 -->
+
+        <ul><!-- 탭 버튼 -->
+            <li><a href="#tab1">공지사항</a></li><!-- 클릭시 id tab1로 이동 -->
+            <li><a href="#tab2">갤러리</a></li><!-- 클릭시 id tab2로 이동 -->
+        </ul>
+
+        <!-- 탭의 콘텐츠 -->
+        <div id="tab1" class="on">나는 첫번째 콘텐츠</div>
+        <div id="tab2">나는 두번째 콘텐츠</div>
+    </div>
+
+    <script>
+        // 요소찾기
+        // 버튼인 a 2개 찾기 이렇게 적는 이유는 이제 a가 여러개일때 문제가 되기 때문에
+        // li먼저 찾기
+        const li1 = document.querySelectorAll('#tabs ul li')[0];/* [0]대신에 .item(0); 사용가능. */
+        const li2 = document.querySelectorAll('#tabs ul li')[1];/* [1]대신에 .item(1); 사용가능. */
+
+        // 위에서 li 찾고 여기서 그 내부 a찾기
+        const bt1 = document.querySelectorAll('#tabs a')[0];/* 위에서 li먼저 찾고나서 그 내부 a태그 요소찾을때는 li1붙여서 document~~ 하면 된다. */
+        const bt2 = document.querySelectorAll('#tabs a')[1];/* 위에서 li먼저 찾고나서 그 내부 a태그 요소찾을때는 li1붙여서 document~~ 하면 된다. */
+
+        console.log(bt1);
+        console.log(bt2);
+
+        // tab 1,2 찾기
+        const cont1 = document.querySelector('#tab1');
+        const cont2 = document.querySelector('#tab2');
+
+        console.log(cont1);
+        console.log(cont2);
+
+
+        // 이벤트처리
+        // 버튼1을 클릭하면 p.on이 되어 글자색을 붉게 
+        bt1.onclick = function () {
+            cont1.classList.add('on');
+            cont2.classList.remove('on');
+        };
+
+        // 버튼2을 클릭하면 p.off이 되어 글자색을 검게
+        bt2.onclick = function () {
+            cont2.classList.add('on');
+            cont1.classList.remove('on');
+        };
+
+    </script>
+</body>
+
+</html>

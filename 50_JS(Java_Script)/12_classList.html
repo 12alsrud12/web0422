@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_classList</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+
+        p.on {
+            color: red;
+        }
+
+        p.off {
+            color: #000;
+        }
+
+        div {
+            display: flex;
+        }
+
+        div a {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML 요소에 class를 추가/제거하기</h1>
+    <!-- Ctrl + 방향키로 태그 선택가능 -->
+    <p>나는 단락이다.</p>
+
+    <div>
+        <a href="#" class="btn1">버튼1</a>
+        <a href="#" class="btn2">버튼2</a>
+    </div>
+
+    <script>
+        // p를 선택하여 글자의 색상을 red로 지정한다.
+        const p = document.querySelector('p');
+        const bt1 = document.querySelectorAll('.btn1')[0];
+        const bt2 = document.querySelectorAll('.btn2')[0];
+
+
+        // 이벤트처리
+        // 버튼1을 클릭하면 p.on이 되어 글자색을 붉게 
+        bt1.onclick = function () {
+            p.classList.add('on');
+        };
+
+        // 버튼2을 클릭하면 p.off이 되어 글자색을 검게
+        bt2.onclick = function () {
+            p.classList.remove('on');
+        };
+
+    </script>
+</body>
+
+</html>
