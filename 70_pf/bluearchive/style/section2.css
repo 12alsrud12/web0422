@@ -27,6 +27,11 @@ body {
     background: #f0f6f8;
 }
 
+#tabs>div {
+    width: 1500px;
+    
+}
+
 /* //tabs */
 
 /* section */
