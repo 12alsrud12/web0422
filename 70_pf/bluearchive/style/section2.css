@@ -129,8 +129,6 @@ span {
     display: flex;
 }
 
-.tab_btn li {}
-
 .tab_btn ul>li {
     border: 3px solid #007ccf;
     border-bottom: none;
@@ -226,12 +224,8 @@ footer {
 
 @keyframes avater {
     0% {
-        right: -15%;
+        right: -20%;
         opacity: 0;
-    }
-
-    50% {
-        right: -10%;
     }
 
     100% {
