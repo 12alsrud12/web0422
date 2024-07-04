@@ -238,13 +238,15 @@ p {
 /* 아이콘 사이즈 100*100px */
 .home-icon img {
     width: 100px;
+    border-radius: 20px;
 }
 
 .home-icon {
-    border-radius: 20px;
     transition: .3s;
+    border-radius: 20px;
+
 }
 
 .home-icon:hover {
-    box-shadow: 0 4px 10px 4px rgba(68, 68, 68, .5);
+    box-shadow: 0 4px 10px  rgba(0, 0, 0, 0.5);
 }
