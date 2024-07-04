@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+input {
+    padding: 0;
+}
+
+/* //reset */
