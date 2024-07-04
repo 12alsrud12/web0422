@@ -25,22 +25,21 @@
             let getP2Tag = p1.textContent;
         */
 
-        // 상수형 변수 선언 const 변수+객체이름은 pTag으로 그 대상은 html내의 p태그이다.
-        const p1Tag = document.querySelector('.p1');
-        const p2Tag = document.querySelector('.p2');
+        // 요소 찾기
+        const p1 = document.querySelector('.p1');
+        const p2 = document.querySelector('.p2');
+        const p3 = document.querySelector('.p3');
+        const p4 = document.querySelector('.p4');
 
-        // 변경
-        // pTag = p태그 내부의 HTML 문장을 -> "~~"으로 변경
-        p1Tag.innerHTML = '<a href="#">여기에 쓴 문장으로 교체됩니다1.</a>'
-        p2Tag.textContent = '<a href="#">여기에 쓴 문장으로 교체됩니다2.</a>';
+        // 콘텐츠 가져오기
+        let getP1 = p1.innerHTML;
+        let getP2 = p2.textContent;
 
-        // 가져오기
-        let getP1Tag = p1Tag.innerHTML;
-        let getP2Tag = p2Tag.textContent;
-        console.log("getP1Tag =", getP1Tag);
-        console.log("getP2Tag =", getP2Tag);
-        
-        // 
+        // 콘텐츠 변경하기
+        p1.innerHTML = '<a href="#">네이버</a>';
+        p2.textContent = '<a href="#">네이버</a>';
+        p3.innerHTML = getP1;
+        p4.textContent = getP2;
     </script>
 </body>
 
