@@ -12,8 +12,22 @@
 </head>
 
 <body>
+    <header>
+        <div class="logo"><a href="#"><img src="image/logo.png" alt="로고"></a></div>
+        <ul>
+            <li><a href="#">공식 커뮤니티 바로가기</a></li>
+            <li>
+                <ul class="sns">
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">youtube</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
     <section id="s2">
+
         <div class="inner">
+
             <h2><span>GS</span><span class="sp1">25</span> X 블루 아카이브 콜라보 베이커리</h2>
             <p>기간: 5월 3일(금) ~ 7월 31일(수)</p>
 
@@ -22,39 +36,54 @@
                 <p><span>2차 출시:</span> 5월 17일(금)</p>
             </div>
 
-            <ul>
-                <li id="bt1" class="ck"><a href="#tab1">콜라보 베이커리</a></li>
-                <li id="bt3"><a href="#tab3">스템프 이벤트</a></li>
-                <li id="bt4"><a href="#tab4">굿즈</a></li>
-            </ul>
+            <div class="tab_btn">
+                <ul>
+                    <li id="bt1" class="ck"><a href="#tab1">콜라보 베이커리</a></li>
+                    <li id="bt3"><a href="#tab3">스템프 이벤트</a></li>
+                    <li id="bt4"><a href="#tab4">굿즈</a></li>
+                </ul>
+            </div>
+
             <div id="tabs">
                 <div id="tab1" class="on"><img src="image/cont.png" alt="콜라보빵"></div>
                 <div id="tab3">
                     <h2><span>우리동네</span><span class="sp1">GS</span> 스템프 이벤트</h2>
                     <img src="image/cont_0530il22lo5.png" alt="스템프">
                     <div class="btn">
-                        <button>5월 스템프 이벤트 경품 소개</button>
-                        <button>6월 스템프 이벤트 경품 소개</button>
-                        <button>7월 스템프 이벤트 경품 소개</button>
+                        <button onclick="alert('미완성 입니다 1')">5월 스템프 이벤트 경품 소개</button>
+                        <button onclick="alert('미완성 입니다 2')">6월 스템프 이벤트 경품 소개</button>
+                        <button onclick="alert('미완성 입니다 3')">7월 스템프 이벤트 경품 소개</button>
                     </div>
                 </div>
+
                 <div id="tab4">
                     <p>RABBIT 소대가 열심히 오픈 준비한 SRT 특별 매장 운영 예정!</p>
                     <h2><span>GS</span><span class="sp1">25</span> X 블루 아카이브 SRT 특별 매장</h2>
                     <p><span><b>기간:</b></span> 5월 18일(토) ~ 5월 31일(금)</p>
                     <img src="image/cont2.png" alt="굿즈">
                 </div>
-            </div>
-        </div>
+
+            </div><!-- //#tabs -->
+
+        </div><!-- //.inner -->
+
+        <div class="standing"><img src="image/char.png" alt="char"></div>
+        
     </section>
+    <footer>
+        <p>Copyright ⓒ J.M.K</p>
+    </footer>
 
     <script>
         // 요소 찾기: 버튼
+
+        const tab_btn = document.querySelectorAll('.tab_btn')[0];
+
         const bt1 = document.querySelector('#bt1');
         const bt3 = document.querySelector('#bt3');
         const bt4 = document.querySelector('#bt4');
 
-        const btn = document.querySelectorAll('.btn');
+        const btn = document.querySelectorAll('.btn')[0];
 
         // 요소 찾기: 탭1, 2, 3, 4
         const cont1 = document.querySelector('#tab1');
