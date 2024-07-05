@@ -253,8 +253,14 @@ nav li:not(:last-of-type) {
 /* //section */
 
 /* 캐릭터 */
-.chater {
+.avater1 {
+    position: absolute;
+}
+.avater2 {
+    right: -20%;
     position: fixed;
+    z-index: -1;
+    opacity: .5;
 }
 
 /* footer */
