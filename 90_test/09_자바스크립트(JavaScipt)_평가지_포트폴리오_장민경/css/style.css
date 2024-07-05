@@ -142,24 +142,34 @@ header p {
     flex-direction: column;
 }
 
-#s1 h2 {
-    text-align: center;
+#s1>h2 {
+    position: relative;
     margin: 100px 0;
-    
+    height: 40px;
 }
+
+#s1>h2::after {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    content: '';
+    background: url(../images/title_bg.png) no-repeat;
+}
+
+
 
 /* tabs */
 /* 탭 버튼 */
-ul {
+#s1>ul {
     display: flex;
 }
 
-ul>li:not(:last-child) {
+#s1>ul>li:not(:last-child) {
     cursor: pointer;
     margin-right: 50px;
 }
 
-li:not(:last-child)::after {
+#s1>li:not(:last-child)::after {
     content: url(../images/event_ico.png);
     margin-left: 50px;
 }
@@ -180,6 +190,10 @@ li:not(:last-child)::after {
     display: flex;
     align-items: center;
     background: url(../images/tab_bg.png);
+}
+
+.cont h2 {
+    margin-bottom: 24px;
 }
 
 .img {
