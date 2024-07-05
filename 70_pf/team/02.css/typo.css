@@ -45,7 +45,18 @@ body {
     color: #ccc;
 }
 
-a { color: #192547; }
-a:visited { color: #192547; }
-a:hover { color: #192547; }
-a:active { color: #192547; }
+a {
+    color: #192547;
+}
+
+a:visited {
+    color: #192547;
+}
+
+a:hover {
+    color: #192547;
+}
+
+a:active {
+    color: #192547;
+}

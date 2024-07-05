@@ -35,9 +35,6 @@ header {
     background: rgba(255, 255, 255, 1);
 }
 
-.header_inner li a {
-    vertical-align: middle;
-}
 
 main li {
     list-style: disc;
@@ -48,16 +45,16 @@ main li {
 /* booking 전용 typo */
 
 
-label {
+section label {
     font-size: 1.6em;
 }
 
-label:checked {
+section label:checked {
     color: #f9f9f9;
     background: #192547;
 }
 
-ul * {
+section ul *:not(#footer1, #footer2) {
     font-size: 14px;
     line-height: 2;
     color: #192547;
@@ -149,7 +146,7 @@ label[for="bk_bts2"] {
     margin-bottom: 5px;
 }
 
-h2 {
+h2:not(#footer1, #footer2) {
     font-weight: 400;
     font-size: 2.4em;
     color: #192547;
@@ -596,6 +593,23 @@ section>h2 {
 /* 푸터 자리 만들기 */
 
 
-.footer>image {
-    width: 1903px;
+#footer1 h2,
+#footer1 ul,
+#footer1 li,
+#footer1 a,
+#footer1 strong,
+#footer2 h2,
+#footer2 li a {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+#footer1 h2 {
+    font-weight: 700;
+}
+
+/* 헤더 */
+.header_inner li a {
+    vertical-align: middle;
 }

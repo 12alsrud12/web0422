@@ -65,7 +65,7 @@
     margin-right: 34px;
 }
 
-input {
+footer input {
     display: inline-block;
     width: 230px;
     height: 35px;
@@ -73,7 +73,7 @@ input {
     border: none;
 }
 
-button {
+footer button {
     width: 75px;
     height: 35px;
     margin-top: 30px;
