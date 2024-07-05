@@ -252,6 +252,11 @@ nav li:not(:last-of-type) {
 
 /* //section */
 
+/* 캐릭터 */
+.chater {
+    position: fixed;
+}
+
 /* footer */
 footer {
     line-height: 100px;
