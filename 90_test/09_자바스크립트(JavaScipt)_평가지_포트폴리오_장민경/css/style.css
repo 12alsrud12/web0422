@@ -79,7 +79,7 @@ span {
 
 .days p {
     font-size: 14px;
-    color: ;
+    color: #989898;
 }
 
 footer {
@@ -196,6 +196,9 @@ li:not(:last-child)::after {
     margin: 0;
 }
 
+.days {
+    margin: 10px 0;
+}
 
 
 /* //tabs */
