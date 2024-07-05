@@ -43,6 +43,7 @@ header p {
 }
 
 nav ul {
+    font-family: "맑은 고딕", sans-serif;
     color: #e9e9e9;
     font-size: 16px;
 }
@@ -82,9 +83,20 @@ span {
     color: #9c9c9c;
 }
 
+.cont_text h2:hover,
+.cont_text p:hover {
+    text-decoration: underline;
+}
+
 .days p {
     font-size: 14px;
     color: #989898;
+}
+
+.avater1 p {
+    font-size: 1.6em;
+    color: #f9f9f9;
+    text-align: center;
 }
 
 footer {
@@ -107,6 +119,9 @@ footer a:hover {
 }
 
 /* 전체 */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: url(../images/bg.png) 50% 50%/cover fixed;
@@ -253,11 +268,34 @@ nav li:not(:last-of-type) {
 /* //section */
 
 /* 캐릭터 */
+
 .avater1 {
-    position: absolute;
+    position: fixed;
+    z-index: 50;
+    right: 30px;
+    bottom: 30px;
 }
+
+.avater1 p {
+    margin-top: 15px;
+    padding: 3px 8px 2px;
+    border-radius: 10px;
+    border: 3px solid #dbbf91;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.avater1 p::before {
+    content: url(../images/event_ico.png);
+    margin-right: 10px;
+}
+
+.avater1 p::after {
+    content: url(../images/event_ico.png);
+    margin-left: 10px;
+}
+
 .avater2 {
-    right: -20%;
+    left: -50%;
     position: fixed;
     z-index: -1;
     opacity: .5;
