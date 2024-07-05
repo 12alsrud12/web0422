@@ -13,23 +13,31 @@
 
 <body>
     <header>
-        <div class="logo"><a href="#"><img src="image/logo.png" alt="로고"></a></div>
+        <div class="logo"><a href="https://bluearchive.nexon.com/home"><img src="image/logo.png" alt="로고"></a></div>
         <ul>
-            <li><a href="#">공식 커뮤니티 바로가기</a></li>
+            <li><a href="https://forum.nexon.com/bluearchive/">공식 커뮤니티 바로가기</a></li>
             <li>
                 <ul class="sns">
-                    <li><a href="#">twitter</a></li>
-                    <li><a href="#">youtube</a></li>
+                    <li><a href="https://x.com/KR_BlueArchive">twitter</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCj0iColXMAjPA92rH-AXVGQ">youtube</a></li>
                 </ul>
             </li>
         </ul>
     </header>
+
+    <div id="title">
+        <div id="obj1"><img src="image/title1.png" alt="타이틀1"></div>
+        <div id="obj2"><img src="image/title2.png" alt="타이틀2"></div>
+        <div id="obj3"><img src="image/title3.png" alt="타이틀3"></div>
+    </div>
+    </div>
+
     <section id="s2">
+        <h2><span>GS</span><span class="sp1">25</span> X 블루 아카이브 제휴 이벤트</h2>
 
         <div class="inner">
 
-            <h2><span>GS</span><span class="sp1">25</span> X 블루 아카이브 제휴 이벤트</h2>
-            <p>전체 콜라보 기간: 5월 3일(금) ~ 7월 31일(수)</p>
+            <p><span>전체 콜라보 기간:</span> 5월 3일(금) ~ 7월 31일(수)</p>
 
             <div class="tab_btn">
                 <ul>
@@ -71,11 +79,19 @@
         </div><!-- //.inner -->
 
         <div class="standing"><img src="image/char.png" alt="char"></div>
+        <div class="mini"><img src="image/char2_0530il22lo5.png" alt="char"></div>
 
     </section>
 
     <footer>
-        <p>Copyright ⓒ J.M.K</p>
+        <img src="image/00아로나SD.gif" alt="아로나">
+        <div class="ft_p">
+            <p>
+                Copyright ⓒ J.M.K All Right Reserved. target site:
+                <span class="sp1">★</span>
+                <a href="https://bluearchive.nexon.com/home">Blue_Archive</a>
+            </p>
+        </div>
     </footer>
 
     <script>
@@ -95,34 +111,33 @@
         const cont4 = document.querySelector('#tab4');
 
         // 이벤트 추가 - 탭 + 버튼
-        bt1.onclick = function () {
-            cont1.classList.add('on');
+        function resetT() {
+            cont1.classList.remove('on');
             cont3.classList.remove('on');
             cont4.classList.remove('on');
 
-            bt1.classList.add('ck');
+            bt1.classList.remove('ck');
             bt3.classList.remove('ck');
             bt4.classList.remove('ck');
+        };
+        bt1.onclick = function () {
+            resetT();
+            cont1.classList.add('on');
+            bt1.classList.add('ck');
         };
 
         bt3.onclick = function () {
+            resetT();
             cont3.classList.add('on');
-            cont1.classList.remove('on');
-            cont4.classList.remove('on');
 
             bt3.classList.add('ck');
-            bt1.classList.remove('ck');
-            bt4.classList.remove('ck');
         };
 
         bt4.onclick = function () {
+            resetT();
             cont4.classList.add('on');
-            cont3.classList.remove('on');
-            cont1.classList.remove('on');
 
             bt4.classList.add('ck');
-            bt3.classList.remove('ck');
-            bt1.classList.remove('ck');
         };
 
 
