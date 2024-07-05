@@ -50,6 +50,7 @@ bt4.onclick = function () {
 };
 
 // 확인용!!
+/* 
 console.log(bt1);
 console.log(bt2);
 console.log(bt3);
@@ -58,4 +59,5 @@ console.log(bt4);
 console.log(tb1);
 console.log(tb2);
 console.log(tb3);
-console.log(tb4);
+console.log(tb4); 
+*/
