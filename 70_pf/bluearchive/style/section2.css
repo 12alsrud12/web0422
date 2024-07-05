@@ -346,3 +346,8 @@ footer>img {
         opacity: 1;
     }
 }
+
+.mini {
+    position: fixed;
+    left: 0;
+}
