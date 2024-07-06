@@ -137,16 +137,14 @@ section {
     padding-top: 20px;
 }
 
-#board .text {
-    display: flex;
+.text button {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
     width: 100px;
-    height: 50px;
+    line-height: 50px;
     font-size: 15px;
     background: #fff;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-right: 10px;
 }
 
 #board .box1>.link {
