@@ -50,7 +50,7 @@ section {
     height: 55px;
     line-height: 55px;
     text-align: center;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000000;
 }
 
 .br:hover {
@@ -59,8 +59,15 @@ section {
     text-decoration: underline;
 }
 
-.bk {
+#side_menu a:last-of-type {
     color: #f9f9f9;
+}
+
+.bk {
+    width: 180px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
     background: #0e0e0e;
 }
 
