@@ -17,6 +17,18 @@ body {
     border-radius: 0 0 18px 18px;
 }
 
+.id h2 {
+    font-size: 24px;
+    line-height: 120px;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+hr {
+    width: 1120px;
+    border: 1px dashed #192547;
+}
+
 section {
     display: flex;
     position: relative;
@@ -25,9 +37,35 @@ section {
 
 #side_menu {
     position: absolute;
-    left: 200px;
-    top: 20px;
+    display: flex;
+    flex-direction: column;
+    left: 250px;
+    top: 37px;
     background: #fff;
+    font-size: 16px;
+}
+
+.br {
+    width: 180px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.br:hover {
+    color: #f9f9f9;
+    background: #0e0e0e;
+    text-decoration: underline;
+}
+
+.bk {
+    color: #f9f9f9;
+    background: #0e0e0e;
+}
+
+.bk:hover {
+    text-decoration: underline;
 }
 
 
@@ -64,14 +102,6 @@ section {
 
 #tit .suv_title img {
     margin-right: 32px;
-}
-
-#tit .id {
-    font-size: 24px;
-    justify-content: space-between;
-    text-align: left 30px;
-    align-items: center;
-    padding: 50px;
 }
 
 
@@ -124,7 +154,6 @@ section {
 
 #board .text {
     display: flex;
-    background: #fff;
     font-size: 15px;
     width: 100px;
     height: 50px;
@@ -136,21 +165,18 @@ section {
 
 #board .link {
     position: relative;
-    background: #fff;
-    font-size: 15px;
-    width: 545px;
-    height: 50px;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
+    font-size: 24px;
     margin-top: -82px;
     padding-right: 12px;
-    top: 50%;
+    top: -35px;
     left: 50%;
     transform: translate(-50%, -50%);
-    justify-content: space-between;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    ;
+}
+
+.link input {
+    width: 550px;
+    padding: 12px;
+    border: none;
 }
 
 
@@ -160,10 +186,6 @@ section {
 
 }
 
-/* p1 {
-    text-align: center;
-
-} */
 
 #board .t1,
 #board .p2,
@@ -174,16 +196,13 @@ section {
 #board .t6,
 #board .t7,
 #board .t8 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid;
     padding: 15px;
-    /* text-align: center; */
 }
 
-/* .p3 {
-    text-align: center;
-} */
 
 #board .p9 {
     position: relative;
@@ -206,8 +225,10 @@ section {
     padding-right: 15px;
 }
 
-#board .gr {
-    padding-right: 10px;
+.gr {
+    position: absolute;
+    bottom: 87px;
+    right: 310px;
 }
 
 #board .text {
@@ -224,7 +245,6 @@ section {
 
 #board .link {
     display: flex;
-    background: #fff;
     font-size: 15px;
     width: 545px;
     height: 50px;
@@ -244,4 +264,23 @@ section {
 #board .text7,
 #board .text8 {
     padding-right: 15px;
+}
+
+.text1:hover,
+.text2:hover,
+.text3:hover,
+.text4:hover,
+.text5:hover,
+.text6:hover,
+.text7:hover,
+.text8:hover {
+    text-decoration: underline;
+}
+
+.link img {
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
 }
