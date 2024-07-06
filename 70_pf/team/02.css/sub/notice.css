@@ -31,26 +31,35 @@ hr {
 
 section {
     display: flex;
-    position: relative;
-    margin-bottom: 130px;
+    width: 1120px;
+    margin: 0 auto 130px;
 }
 
 #side_menu {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    left: 250px;
-    top: 37px;
-    background: #fff;
+    margin-top: 38px;
     font-size: 16px;
 }
 
-.br {
+.br:not(:nth-of-type(3)) {
     width: 180px;
     height: 55px;
     line-height: 55px;
     text-align: center;
     border-bottom: 1px solid #000000;
+    background: #fff;
+}
+
+.br:nth-of-type(3) {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 45px 0;
+    width: 180px;
+    height: 85px;
+    line-height: 2;
+    background: #fff;
+    border-bottom: 1px solid #000;
 }
 
 .br:hover {
