@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>진에어 운항정보</title>
-    <link rel="stylesheet" href="../02.css/flight_info.css">
+    <link rel="stylesheet" href="../../02.css/header.css">
+    <link rel="stylesheet" href="../../02.css/sub/flight_info.css">
+    <link rel="stylesheet" href="../../02.css/footer.css">
 
 </head>
 
@@ -15,7 +17,8 @@
     <header>
         <div class="header_inner">
             <!-- Logo -->
-            <a href="#"><img src="https://images.jinair.com/newHom/images/web/common/logo.svg" alt="home"></a>
+            <a href="../../index.html"><img src="https://images.jinair.com/newHom/images/web/common/logo.svg"
+                    alt="home"></a>
             <!-- //Logo -->
             <nav class="gnb">
                 <!-- 1depth -->
@@ -24,7 +27,7 @@
                         <a href="booking.html">나의예약</a>
                     </li>
                     <li>
-                        <a href="promotion.html">프로모션</a>
+                        <a href="#">프로모션</a>
                     </li>
                     <li>
                         <a href="service.html">부가서비스</a>
@@ -82,11 +85,9 @@
                 </ul>
             </nav>
             <div class="header_box">
-                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_search.svg"
-                        alt="search"></a>
-                <a href="#"><img src="https://images.jinair.com/newHom/images/web/icons/icon_alarm.svg" alt="alarm"></a>
-                <a href="sign_up.html"><img src="https://images.jinair.com/newHom/images/web/icons/icon_mypage.svg"
-                        alt="login"></a>
+                <a href="#"><img src="../../03.assets/index/icon_search.svg" alt="search"></a>
+                <a href="#"><img src="../../03.assets/index/icon_alarm.svg" alt="alarm"></a>
+                <a href="login.html"><img src="../../03.assets/index/icon_mypage.svg" alt="login"></a>
             </div>
         </div>
     </header>
@@ -105,7 +106,8 @@
             <div class="text">본인 또는 가족, 지인의 비행기 출도착 상태가 궁금하신가요? 지금 바로 검색해 보세요.</div>
             <div class="content-box content01">
                 <button class="from"><span>From</span> <br>출발</button>
-                <span class="swap"><img src="../03.assets/booking__swap--disabled 1.svg" alt="버튼"></span>
+                <span class="swap"><img src="../../03.assets/sub/flight_info/booking__swap--disabled 1.svg"
+                        alt="버튼"></span>
                 <button class="to"><span>To</span> <br>도착</button>
                 <div class="line"></div>
                 <span class="date"><input type='date' id='currentDate'></span>
@@ -128,6 +130,94 @@
         document.getElementById('currentDate1').value = new Date().toISOString().substring(0, 10);;
 
     </script>
+
+    <footer id="footer1">
+        <div class="wrap_1">
+            <ul>
+                <li>
+                    <h2>회사안내</h2>
+                </li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">기업개요</a></li>
+                <li><a href="#">ESG경영</a></li>
+                <li><a href="#">소비자중심경영</a></li>
+                <li><a href="#">투자정보</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>회사안내</h2>
+                </li>
+                <li><a href="#">CI소개</a></li>
+                <li><a href="#">항공기 소개</a></li>
+                <li><a href="#">화물운송</a></li>
+                <li><a href="#">홍보센터</a></li>
+                <li><a href="#">채용정보</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>약관 및 규정</h2>
+                </li>
+                <li><a href="#">자주 묻는 질문(FAQ)</a></li>
+                <li><a href="#">고객의 말씀(Q&A)</a></li>
+                <li><a href="#">기내 유실물 찾기</a></li>
+                <li><a href="#">서류 양식함</a></li>
+                <li><a href="#"><strong>대리점 사이트 바로가기</strong></a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>고객서비스</h2>
+                </li>
+                <li><a href="#"><strong>개인정보 처리방침</strong></a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">운송약관 및 고지사항</a></li>
+                <li><a href="#">항공교통이용자 서비스 계획</a></li>
+                <li><a href="#">피해구제계획</a></li>
+                <li><a href="#">e-티켓 확인증 법적 고지문</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <div class="sns_sec">
+                <ul>
+                    <h2>SNS</h2>
+                    <li><a href="#"><img src="../../03.assets/index/icon_instagram.svg" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="../../03.assets/index/icon_facebook.svg" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="../../03.assets/index/icon_youTube.svg" alt="유튜브"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap_2">
+            <div class="letter">
+                <h2>뉴스레터 신청</h2>
+                <form action="custom.jsp">
+                    <input type="email" name="uemail" placeholder="메일 주소 입력">
+                    <button type="submit">전송</button>
+                </form>
+            </div>
+            <ul>
+                <h2>고객서비스센터</h2>
+                <li><span>1600-6200, 02-6099-1200</span></li>
+            </ul>
+            <ul>
+                <h2>업무시간</h2>
+                <li><span>오전 09:00 ~ 오후 18:00</span></li>
+            </ul>
+        </div>
+    </footer>
+    <footer id="footer2">
+        <div class="wrap">
+            <div class="logo">
+                <a href="#"><img src="../../03.assets/index/logo2.png" alt="logo"><span>(주) 진에어</span></a>
+            </div>
+            <div class="text">
+                <ul>
+                    <li>대표이사: 박병률</li>
+                    <li>사업자등록번호: 121-21-89086</li>
+                    <li>통신판매업신고: 제2008-서울 강서-0408</li>
+                    <li>개인정보보호책임자: 유준욱</li>
+                </ul>
+            </div>
+            <p>Copyright ⓒ JIN AIR. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

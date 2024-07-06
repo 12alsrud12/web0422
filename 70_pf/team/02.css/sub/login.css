@@ -6,6 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /* 공통 font */
 
 :root {
@@ -62,134 +63,6 @@ body {
     background: #fff;
 }
 
-/* 헤더 */
-header {
-    z-index: 100;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-    height: 80px;
-    top: 0;
-    background: rgba(0, 0, 0, 0);
-}
-
-.header_inner {
-    display: flex;
-    width: 1260px;
-    margin: 0 auto;
-    height: 80px;
-    padding: 0 30px;
-    align-items: center;
-}
-
-.header_inner>a>img {
-    width: 137px;
-}
-
-.header_box {
-    width: 137px;
-    margin-left: 88px;
-}
-
-.header_box>a>img {
-    height: 22px;
-    margin-left: 20px;
-}
-
-.gnb {
-    float: left;
-    width: 750px;
-    margin-left: 88px;
-    height: 80px;
-    box-sizing: border-box;
-}
-
-/* 1depth */
-.main {
-    display: flex;
-    height: 80px;
-    text-align: center;
-    justify-content: space-between;
-}
-
-.main>li {
-    height: 80px;
-    width: 150px;
-    text-align: center;
-    line-height: 80px;
-}
-
-.main>li:hover {
-    color: #192547;
-}
-
-.main>li a:hover {
-    font-weight: bold;
-}
-
-.all {
-    position: relative;
-}
-
-/* 2depth */
-.menu {
-    position: absolute;
-    top: 80px;
-    right: 0px;
-}
-
-.sub {
-    display: flex;
-    text-align: center;
-    overflow: hidden;
-    visibility: hidden;
-    opacity: 0;
-    border-radius: 10px;
-    transition: opacity .7s;
-    line-height: 2;
-    height:0; /* 추가 */
-}
-
-.main>li:hover .sub {
-    visibility: visible;
-    opacity: 1;
-    color: #192547;
-    height: auto;
-    border: 1px solid #ccc;
-}
-
-.sub li a:hover {
-    padding: 4px;
-    background: #BED600;
-    color: #192547;
-}
-
-.box {
-    width: 150px;
-    height: 500px;
-    padding: 5px 10px;
-    background: #f9f9f9;
-    border-right: 1px solid #CCC;
-    transition: .5s;
-}
-
-.sub li:nth-of-type(5) .box {
-    border-right: none;
-}
-
-.box span {
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 16px;
-    margin-top: 10px;
-    color: #192547;
-}
-
 /* 로그인 */
 * {
     padding: 0;
@@ -201,12 +74,14 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     margin-top: 6%;
 }
 
 .page-container {
     width: 1280px;
     height: 731px;
+    margin-bottom: 30px;
 }
 
 .line {
@@ -234,6 +109,7 @@ body {
     box-shadow: 10px black;
     border-radius: 15px;
 }
+
 /* 왼쪽 페이지 */
 .login-form-left-side {
     width: 50%;
@@ -342,9 +218,10 @@ body {
     justify-content: center;
     top: 10px;
 }
+
 .login-html .sign-in+.tab,
 .login-html .sign-up+.tab {
-    
+
     position: relative;
     justify-content: center;
 }
@@ -352,7 +229,7 @@ body {
 .login-form {
     min-height: 345px;
     position: relative;
-    
+
 }
 
 .login-form .group {
@@ -400,8 +277,9 @@ body {
 
 /* 아이디 저장 체크박스 */
 .icon {
-    vertical-align:middle;
+    vertical-align: middle;
 }
+
 .groupcheck {
     font-size: 12px;
     color: #192547;
@@ -420,6 +298,7 @@ body {
 .foot-lnk {
     text-align: center;
 }
+
 .foot-lnk span .id,
 .foot-lnk span .pass {
     color: #192547;
@@ -463,12 +342,14 @@ body {
 .nameid {
     display: inline-flex;
 }
+
 span .id {
     text-decoration: none;
     margin-right: 50px;
     color: #3E3E3E;
     font-size: 12px;
 }
+
 span .pass {
     text-decoration: none;
     color: #3E3E3E;
@@ -478,8 +359,9 @@ span .pass {
 .button {
     font-size: 20px;
 }
+
 .login-line {
-    position:absolute;
+    position: absolute;
     margin-top: 37px;
     border-bottom: 1px solid #ababab;
     width: 465px;
@@ -489,10 +371,12 @@ span .pass {
     margin-left: 0px;
     margin-top: .5px;
 }
+
 .nameid .firstname {
     margin-top: .5px;
     margin-left: 20px;
 }
+
 .labelname {
     margin-left: 20px;
 }

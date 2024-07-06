@@ -1,7 +1,5 @@
 @charset "utf-8";
-@import url(reset.css);
-@import url(typo.css);
-@import url(header.css);
+
 
 body {
     margin: 0;
@@ -11,87 +9,35 @@ body {
 #tit .suv_title {
     width: 1200px;
     height: 120px;
-    margin: 0 auto;
+    margin: 80px auto 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #fff;
+    border-radius: 0 0 18px 18px;
 }
 
-/* .flex {
-    padding-bottom: 20px;
-    align-items: center;
-} */
+section {
+    display: flex;
+    position: relative;
+    margin-bottom: 130px;
+}
 
-#side_menu #flex1 {
+#side_menu {
+    position: absolute;
+    left: 200px;
+    top: 20px;
     background: #fff;
-    width: 180px;
-    height: 56px;
-    font-size: 15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-    margin: 20px;
-    margin-bottom: 0;
-    border-top-width: 1px;
-    border-top-color: #000;
-    border-bottom: solid#000 1px;
-}
-
-#side_menu #flex3 {
-    background: #fff;
-    width: 180px;
-    height: 85px;
-    font-size: 15px;
-    padding-top: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 20px;
-    border-top-width: 1px;
-    border-top-color: #000;
-    border-bottom: solid#000 1px;
-
-}
-
-#side_menu #flex2,
-#side_menu #flex4,
-#side_menu #flex5,
-#side_menu #flex6 {
-    background: #fff;
-    width: 180px;
-    height: 56px;
-    font-size: 15px;
-    padding-top: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 20px;
-    border-top-width: 1px;
-    border-bottom: solid#000 1px;
 }
 
 
-#side_menu #flex7 {
-    background: #3e3e3e;
-    color: #fff;
-    width: 180px;
-    height: 56px;
-    font-size: 15px;
-    padding-top: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 20px 20px;
-
-}
 
 #board {
     position: relative;
     width: 895px;
     margin: 0 auto;
 }
+
 #board .box {
     background: #fff;
     font-size: 24px;
@@ -108,13 +54,8 @@ body {
     padding: 50px 0;
     width: 895px;
     height: 113px;
-    /* flex-wrap: nowrap; */
 }
 
-/* header {
-    position: relative;
-    border-bottom: 3px solid #ababab;
-} */
 
 #tit .suv_title h2 {
     margin-left: 24px;
@@ -134,33 +75,11 @@ body {
 }
 
 
-/* main.flex {
-    display: flex;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* #box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 39px;
-    flex-wrap: nowrap;
-} */
-
 #board .box1 {
     width: 895px;
     height: 113px;
     z-index: -10px;
-    /* padding-top: 60px; */
     padding: 50px 0;
-    /* margin-top: 39px; */
-    /* flex-wrap: nowrap; */
-
     background: #fff;
     border: lpx solid;
     font-size: 15px;

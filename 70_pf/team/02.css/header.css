@@ -9,10 +9,12 @@ header {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    top: 0;
     width: 100%;
     margin: 0 auto;
     height: 80px;
     background: #fff;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 .header_inner {
@@ -94,7 +96,8 @@ header {
     border-radius: 10px;
     transition: opacity .7s;
     line-height: 2;
-    height:0; /* 추가 */
+    height: 0;
+    /* 추가 */
 }
 
 .main>li:hover .sub {
