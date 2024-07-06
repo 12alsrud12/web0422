@@ -21,3 +21,7 @@ a {
     text-decoration: none;
 }
 body {background: #fff;}
+
+button {
+    border: none;
+}

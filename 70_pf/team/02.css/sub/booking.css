@@ -14,10 +14,11 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0;
     background: #f9f9f9;
     height: 3884px;
 }
+
 
 .bk_tab1,
 .bk_tab2 {
@@ -160,9 +161,6 @@ h2:not(#footer1, #footer2) {
 
 /* title */
 
-main {
-    width: 1920px;
-}
 
 main>h2 {
     width: 1200px;
@@ -590,13 +588,9 @@ section>h2 {
 
 
 /* /////section///// */
-/* 푸터 자리 만들기 */
-
-
-
-
 
 /* 헤더 */
 .header_inner li a {
     vertical-align: middle;
 }
+

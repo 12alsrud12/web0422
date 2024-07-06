@@ -74,9 +74,9 @@ section p:nth-of-type(1) {
     margin: 40px 0 0;
 }
 
-button,
-input,
-select {
+section button,
+section input,
+section select {
     font-family: "GmarketSansMedium", sans-serif;
     font-size: 16px;
 }
@@ -131,7 +131,7 @@ section>li {
     margin: 0 0 20px 180px;
 }
 
-input {
+section input {
     width: 340px;
     height: 48px;
     border-radius: 5px;
@@ -139,7 +139,7 @@ input {
     border: 1px solid #ababab;
 }
 
-label {
+section label {
     display: block;
     margin-bottom: 15px;
 }
@@ -169,19 +169,19 @@ label {
 
 /* 성별,국가 */
 
-select {
+section select {
     border: 1px solid #ababab;
     border-radius: 5px;
     width: 348px;
     padding: 15px 10px;
 }
 
-select[name="lang"] {
+section select[name="lang"] {
     height: 48px;
     width: 340px;
 }
 
-option {
+section option {
     border-radius: 5px;
     background: #f9f9f9;
     color: #192547
@@ -195,7 +195,7 @@ option {
     background: #009fda;
 }
 
-button {
+section button {
     cursor: pointer;
     border-radius: 5px;
     margin-right: 10px;
@@ -206,7 +206,7 @@ button {
     background: #192547;
 }
 
-input {
+section input {
     height: 48px;
     padding: 2px 20px 0;
 }
