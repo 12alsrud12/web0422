@@ -55,7 +55,7 @@ section label:checked {
     background: #192547;
 }
 
-section ul *:not(#footer1, #footer2) {
+section ul *:not(#footer1, #footer2, .gray_list) {
     font-size: 14px;
     line-height: 2;
     color: #192547;
@@ -69,13 +69,6 @@ section ul *:not(#footer1, #footer2) {
 
 .gs>ul {
     list-style: none;
-}
-
-.gray_list {
-    font-size: 12px;
-    line-height: 2.3;
-    list-style: none;
-    color: #ababab;
 }
 
 main>a,
@@ -155,6 +148,13 @@ h2:not(#footer1, #footer2) {
 
 .main li a:hover {
     color: #192547;
+}
+
+.gray_list {
+    font-size: 12px;
+    line-height: 2.3;
+    list-style: none;
+    color: #ababab;
 }
 
 /* ////booking 전용 typo//// */
@@ -593,4 +593,3 @@ section>h2 {
 .header_inner li a {
     vertical-align: middle;
 }
-
