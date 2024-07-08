@@ -242,3 +242,7 @@ header .sub li {
     width: 66px;
     height: 66px;
 }
+
+.logo span {
+    font-size: 12px;
+}
