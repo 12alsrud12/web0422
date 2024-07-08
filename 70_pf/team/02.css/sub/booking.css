@@ -55,7 +55,7 @@ section label:checked {
     background: #192547;
 }
 
-section ul *:not(#footer1, #footer2, .gray_list) {
+section ul *:not(#footer1, #footer2, .gray_list, .bkg_sub_us1 p) {
     font-size: 14px;
     line-height: 2;
     color: #192547;
