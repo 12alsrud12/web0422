@@ -176,7 +176,7 @@ section select {
     padding: 15px 10px;
 }
 
-section select[name="lang"] {
+section select {
     height: 48px;
     width: 340px;
 }
