@@ -1,10 +1,72 @@
 @charset "utf-8";
 
-#footer1 input,
-#footer1 button {
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
+@import url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff');
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff');
+}
+
+@font-face {
+    font-family: 'GmarketSansTTFBold';
+    src: url('https://hyein93.github.io/web0422/70_pf/team/02.css/GmarketSansTTFBold.ttf');
+}
+
+@font-face {
+    font-family: 'GmarketSansTTFLight';
+    src: url('https://hyein93.github.io/web0422/70_pf/team/02.css/GmarketSansTTFLight.ttf');
+}
+
+footer {
+    font-size: 16px;
+}
+
+footer {
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 1rem;
+    color: #192547;
+}
+
+footer h1 {
+    font-weight: normal;
+}
+
+footer h2 {
+    font-family: "GmarketSansTTFBold", sans-serif;
+    font-size: 1.5rem;
+    color: #192547;
+}
+
+footer p {
+    font-family: "GmarketSansMedium", sans-serif;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #192547;
+}
+
+footer input,
+footer button {
     font-size: 14px;
+    font-family: "GmarketSansMedium", sans-serif;
+}
+
+footer button {
+    color: #BED600;
+}
+
+header .main li {
+    font-size: 20px;
+}
+
+header .sub li {
+    font-size: 14px;
+}
+
+#footer1 a {
+    font-size: 14px;
+    line-height: 1.6rem;
 }
 
 #footer1 {
@@ -31,15 +93,16 @@
 
 #footer1 .sns_sec {
     display: flex;
+    flex-direction: column;
 }
 
-#footer1 .sns_sec li {
+#footer1 .sns_sec li:not(:first-of-type) {
     display: inline-block;
     width: 45px;
     margin-right: 10px;
 }
 
-#footer1 .sns_sec li:nth-of-type(3) {
+#footer1 .sns_sec li:nth-of-type(4) {
     margin-right: 0px;
 }
 
@@ -74,7 +137,7 @@
     margin-right: 34px;
 }
 
-footer input {
+#footer1 input {
     display: inline-block;
     width: 230px;
     height: 35px;
@@ -82,7 +145,7 @@ footer input {
     border: none;
 }
 
-footer button {
+#footer1 button {
     width: 75px;
     height: 35px;
     margin-top: 30px;
@@ -113,12 +176,20 @@ footer button {
 }
 
 #footer2 .wrap {
+    display: flex;
     width: 1200px;
-    height: 126px;
     margin: 0 auto;
+    height: 126px;
     padding: 30px 0;
     font-size: 12px;
 }
+
+#footer2 .text {
+    width: 750px;
+    font-size: 12px;
+}
+
+
 
 #footer2 ul {
     margin-top: 4px;
@@ -139,25 +210,39 @@ footer button {
 }
 
 /* 추가 */
-#footer1 h2,
-#footer1 ul,
-#footer1 li,
-#footer1 a,
-#footer1 strong,
-#footer2 h2,
-#footer2 li a {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
 
 #footer1 h2 {
     font-size: 16px;
     font-weight: 700;
-    line-height: 2;
 }
 
 #footer1 .wrap_1 ul>li a {
     font-size: 14px;
+    line-height: 1.8;
+}
+
+#footer2 {
+    color: #192547;
     line-height: 1.5;
+}
+
+.wrap_2 ul li {
+    line-height: 1.5;
+}
+
+#footer2 .icon {
+    width: 450px;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+}
+
+#footer2 .icon img {
+    width: 66px;
+    height: 66px;
+}
+
+.logo span {
+    font-size: 12px;
 }
