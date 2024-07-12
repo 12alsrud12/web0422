@@ -18,7 +18,8 @@
         // 문자 + 문자 -> 문자
         // 템플릿리터럴 (백틱: backticks 위쪽 숫자 키패드에 있는 ~와 함께있는 ( ` ) 키)
         // 백틱 안에 있는 내용은 모두 문자열로 취급한다.
-        document.write(`"오 + 2 = 오" + 2 + <br>`)
+        document.write(`"오 + 2 = 오" + 2 + <br>`);
+        document.write(`오 + 2 = ${"오" + 2}+ <br>`);
         document.write(1 + 2);
         document.write("<br>");
 
@@ -48,7 +49,7 @@
         document.write("5 + 2 =" + (5 + 2) + "<br>");
 
 
-        
+
     </script>
 
 </body>
