@@ -39,9 +39,9 @@
 
     <h1>HTML 속성 변경하기/가져오기</h1>
 
-    <div>
-        <a href="#">버튼</a>
-        <a href="#">취소</a>
+    <div><!-- prev = previous -->
+        <a href="#" id="prev">이전(prev) 버튼</a>
+        <a href="#" id="next">다음(next) 버튼</a>
     </div>
 
     <img src="../assets/my/craze_arcade_ico.png" alt="임시1">
@@ -59,7 +59,7 @@
         console.log(btn2);
 
         //이미지 변경
-        btn1.onclick = function () {
+        btn2.onclick = function () {
             img1.setAttribute("src", "../assets/my/Honkaistarrail.png");
             img1.setAttribute("alt", "임시2");
         };
@@ -74,7 +74,7 @@
         };
 
         //버튼 2 클릭 시 이미지 복원
-        btn2.onclick = function () {
+        btn1.onclick = function () {
             resetA();
         };
     </script>
