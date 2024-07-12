@@ -254,6 +254,8 @@ nav a {
 
 p {
     font-size: 15px;
+    font-weight: 600;
+    color: #444;
 }
 
 /* 아이콘 사이즈 100*100px */
