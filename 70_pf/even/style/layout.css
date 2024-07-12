@@ -74,7 +74,12 @@ body {
 
 @font-face {
     font-family: "Noto Sans KR";
-    src: url("https://12alsrud12.github.io/web0422/assets/font/NotoSansKR-Bold.ttf");
+    src: url("https://12alsrud12.github.io/web0422/assets/font/NotoSansKR/NotoSansKR-Bold.ttf");
+}
+
+@font-face {
+    font-family: "온글잎 은별";
+    src: url("https://12alsrud12.github.io/web0422/assets/font/온글잎_은별/온글잎_은별.ttf");
 }
 
 body {
@@ -98,6 +103,10 @@ nav a {
 .home-description h3 span {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
+}
+
+p {
+    font-family: "온글잎 은별", sans-serif;
 }
 
 /* reset */
@@ -128,10 +137,18 @@ nav a {
 /* 박스모델 속성, display, position */
 
 nav section {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100px;
+}
+
+section>ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
 }
 
 ul li {
@@ -145,6 +162,10 @@ section li:nth-of-type(1)::after {
     height: 6px;
     margin: 0 12px 4px;
     color: #999;
+}
+
+section li:nth-of-type(2) {
+    margin-left: 10px;
 }
 
 
@@ -248,5 +269,5 @@ p {
 }
 
 .home-icon:hover {
-    box-shadow: 0 4px 10px  rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
