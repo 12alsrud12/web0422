@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_html속성변경</title>
+</head>
+
+<body>
+
+    <h1>HTML 속성 변경하기/가져오기</h1>
+    <img src="../assets/my/craze_arcade_ico.png" alt="임시1">
+
+    <!-- JS -->
+    <script>
+        // 요소찾기
+        const img1 = document.querySelectorAll('img')[0];
+
+        // 요소 확인
+        console.log(img1);
+
+        //이미지 변경
+        img1.src = "../assets/my/craze_arcade_ico.png";
+        img1.setAttribute("src", "../assets/my/Honkaistarrail.png");
+    </script>
+</body>
+
+</html>
