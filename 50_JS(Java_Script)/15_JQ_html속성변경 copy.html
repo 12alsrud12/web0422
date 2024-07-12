@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_JQ_html속성변경</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        img {
+            margin-left: 20px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 8px 16px;
+            background: #f9f9f9;
+            transition: .3s;
+        }
+
+        a:hover {
+            border: #f4f4f4;
+            background: #000;
+            color: #fff;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML 속성 변경하기/가져오기</h1>
+
+    <div><!-- prev = previous -->
+        <a href="#" id="prev">이전(prev) 버튼</a>
+        <a href="#" id="next">다음(next) 버튼</a>
+    </div>
+
+    <img src="../assets/my/craze_arcade_ico.png" alt="임시1">
+
+    <!-- JS -->
+    <script>
+        // 요소찾기
+        const img1 = $('img');
+        const next = $('#next');
+        const prev = $('#prev');
+
+        // 요소 확인
+
+        //이미지 변경 / setAttribute = attr로 바뀌게 된다.
+        // JQ는 이렇게 한줄로 줄일 수도 있다.
+        next.click(function () {
+            img1.attr({ src: "../assets/my/Honkaistarrail.png", alt: "임시2" });
+        });
+
+        // 버튼 2 (btn2) 클릭 시 이미지 복원
+        // JQ는 이렇게 한줄로 줄일 수도 있다.
+        prev.click(function () {
+            resetA();
+        });
+
+        //이미지 복원 / setAttribute = attr로 바뀌게 된다.
+        // JQ는 이렇게 한줄로 줄일 수도 있다.
+        function resetA() {
+            img1.attr({ src: "../assets/my/craze_arcade_ico.png", alt: "임시1" });
+        };
+
+
+
+    </script>
+</body>
+
+</html>

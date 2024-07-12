@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "HS새마을체";
+    src: url("http://12alsrid12.github.io/eb0422/assets/font/HSSaemaul_HS새마을체/HSSaemaul-Regular.ttf")
+}
+
+@font-face {
+    font-family: "온글잎 은별";
+    src: url("https://12alsrud12.github.io/web0422/assets/font/온글잎_은별/온글잎_은별.ttf");
+}
+
+:root {
+    font-family: "HS새마을체", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-family: "HS새마을체", sans-serif;
+    font-size: 10px;
+}
