@@ -5,24 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15_html속성변경</title>
+    <style>
+        div {
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 8px 16px;
+            background: #f9f9f9;
+        }
+
+        a:hover {
+            background: #000;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>HTML 속성 변경하기/가져오기</h1>
+
+    <div>
+        <a href="#">버튼</a>
+        <a href="#">취소</a>
+    </div>
+
     <img src="../assets/my/craze_arcade_ico.png" alt="임시1">
 
     <!-- JS -->
     <script>
         // 요소찾기
         const img1 = document.querySelectorAll('img')[0];
+        const btn1 = document.querySelectorAll('a')[0];
+        const btn2 = document.querySelectorAll('a')[1];
 
         // 요소 확인
         console.log(img1);
+        console.log(btn1);
+        console.log(btn2);
 
         //이미지 변경
-        img1.src = "../assets/my/craze_arcade_ico.png";
-        img1.setAttribute("src", "../assets/my/Honkaistarrail.png");
+        btn1.onclick = function () {
+            img1.setAttribute("src", "../assets/my/Honkaistarrail.png");
+            img1.setAttribute("alt", "임시2");
+        };
+
+        // 버튼(btn1) 계속 클릭시 이미지 변경 /제어문 사용
+
+        //이미지 복원
+        function resetA() {
+            img1.setAttribute("src", "../assets/my/craze_arcade_ico.png");
+            img1.setAttribute("alt", "임시1");
+        };
+
+        //버튼 2 클릭 시 이미지 복원
+        btn2.onclick = function () {
+            resetA();
+        };
     </script>
 </body>
 
