@@ -13,13 +13,28 @@
     <h2>산술 연산자</h2>
 
     <script>
+        const a = 5, b = 2, c = "오";
+
         // + 는 연결
         // 문자 + 숫자 -> 문자
         // 문자 + 문자 -> 문자
         // 템플릿리터럴 (백틱: backticks 위쪽 숫자 키패드에 있는 ~와 함께있는 ( ` ) 키)
         // 백틱 안에 있는 내용은 모두 문자열로 취급한다.
+        /* 
+            백틱(bacticks) 구문
+            1. `백틱` 안에 내용은 모두 문자열로 취급한다.
+            2. HTML 태그 인식한다.
+            3. 문자열 보간: ${표현식 또는 변수}
+        */
+
+        // NaN(Not a Number): 숫자가 아니다.
         document.write(`"오 + 2 = 오" + 2 + <br>`);
-        document.write(`오 + 2 = ${"오" + 2}+ <br>`);
+        document.write(`오 + 2 = ${(a + b)} <br>`);
+        document.write(`오 / 2 = ${(a / b)} <br>`);
+        document.write(`오 % 2 = ${(a % b)} <br>`);
+
+        document.write(`${c} + ${b} = ${c} + ${b} = ${(a + b)} <br>`);
+
         document.write(1 + 2);
         document.write("<br>");
 
@@ -36,6 +51,7 @@
         + 는 더하기
         - 는 빼기
         * 는 곱하기
+        / 는 나누기
         % 는 나머지
         ^ 는 거듭제곱 
             예시: 5 ^ 2 -> 5를 두번 곱한다. 5*5 가 되는것
