@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>뚜레쥬르</title>
+    <title>뚜레쥬르_시안</title>
     <style>
         body {
             margin: 0 auto;
         }
 
-        div img {
+        div {
             position: fixed;
-            top: 50%;
-            transform: translateY(50%);
-            margin-right: 30px;
+            top: 30%;
+            right: 30px;
         }
 
-        img {
+        div>img {
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        img:not(div img) {
             width: 1903px;
             margin: 0;
         }
