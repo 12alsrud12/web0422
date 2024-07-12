@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15_html속성변경</title>
     <style>
+        img {
+            margin-left: 20px;
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+
         div {
             margin: 20px;
         }
@@ -17,11 +23,14 @@
             border-radius: 8px;
             padding: 8px 16px;
             background: #f9f9f9;
+            transition: .3s;
         }
 
         a:hover {
+            border: #f4f4f4;
             background: #000;
             color: #fff;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
@@ -56,6 +65,7 @@
         };
 
         // 버튼(btn1) 계속 클릭시 이미지 변경 /제어문 사용
+
 
         //이미지 복원
         function resetA() {
