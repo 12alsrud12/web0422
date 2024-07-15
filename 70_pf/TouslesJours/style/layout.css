@@ -2,12 +2,12 @@
 
 /* header */
 header {
+    position: fixed;
     display: flex;
     z-index: 9999;
     width: 100%;
     height: 90px;
     align-items: center;
-    position: fixed;
     border: 1px solid #CAC0B6;
 }
 
@@ -28,28 +28,11 @@ nav {
     position: absolute;
     display: flex;
     align-items: center;
-    opacity: 0;
-    width: 100%;
-    visibility: hidden;
-    top: 50px;
-    height: 0;
-    transition: .5s;
-}
-
-.main:hover .sub::before {
     height: 150px;
-    left: 0;
-    top: 0;
-    width: 1903px;
-    background: #0D4633;
+    width: 100%;
+    background: #0d4633;
 }
 
 .sub li {
     margin-right: 70px;
-}
-
-#main1:hover #sub1 {
-    opacity: 1;
-    visibility: visible;
-    height: 150px;
 }
