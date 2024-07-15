@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22_if(제어문,조건문)</title>
+</head>
+
+<body>
+    <h1>제어문</h1>
+    <h2>조건문</h2>
+
+    <script>
+        /*
+            if문의 형식
+            if (조건식) {
+                실행문;
+            };
+
+            조건식의 결과가 true이면 실행문이 실행된다.
+        */
+
+        const m = 10;
+        if (m < 10) {
+            m = "0" + m;
+        };
+
+        /*
+            if (조건식) {
+                실행문1;
+            } else {
+                실행문2; 
+            }
+
+            조건식이 true이면 실행문1을 실행
+            조건식이 false이면 실행문2을 실행
+        */
+
+        document.write(`${m}<br>`);
+
+
+        const d = new Date();
+
+        let ss = d.getSeconds();
+
+        if (ss < 10) {
+            ss = "0" + ss;
+        } else {
+            ss = ss;
+        };
+
+        document.write(`${ss}<br>`);
+
+        let ss2 = new Date(2024 - 7 - 15).getDay();
+        document.write(`${ss2}<br>`);
+
+        /* 
+            if (조건식1) {
+                실행문;
+            } else if (조건식2) {
+                실행문; 
+            } else if (조건식3) {
+                실행문; 
+            } else if (조건식4) {
+                실행문; 
+            } else if (조건식5) {
+                실행문; 
+            } else {
+                실행문; 
+            };
+
+            마지막은 else해서 위에 else if가 다 틀리면 마지막게 작동되게 하려고 그냥 else를 넣는다.
+        */
+        if (ss2 === 0) {
+            ss2 = "일요일";
+        } else if (ss2 === 1) {
+            ss2 = "월요일";
+        } else if (ss2 === 2) {
+            ss2 = "월요일";
+        } else if (ss2 === 3) {
+            ss2 = "화요일";
+        } else if (ss2 === 4) {
+            ss2 = "수요일";
+        } else if (ss2 === 5) {
+            ss2 = "목요일";
+        } else if (ss2 === 6) {
+            ss2 = "금요일";
+        } else {
+            ss2 = "토요일";
+        };
+
+
+
+    </script>
+
+</body>
+
+</html>

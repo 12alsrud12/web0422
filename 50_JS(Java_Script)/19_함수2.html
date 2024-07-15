@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_함수2</title>
+
+    <style>
+        .on {
+            background: #fff000;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            color: midnightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>함수</h1>
+
+    <div class="on">박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+
+    <script>
+        /* 
+            지역변수: 블록 내부에서만 사용 가능한 변수
+                블록 : { } <-이 중괄호를 블록 저내부에 쓰는게 {블록내부}
+
+            전역변수: 전지역에서 사용 가능한 변수.
+
+            ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+                - parameter (매개변수)
+                - argument1, argument2, ..., = 인자1, 인자2, ..., 등
+
+            ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+            이벤트
+            요소.onclick = finction(매개변수){지역변수};
+        */
+
+        // 모든 스크립트는 "요소 찾기 먼저"
+        const div1 = document.querySelectorAll('div')[0];
+        const div2 = document.querySelectorAll('div')[1];
+        const div3 = document.querySelectorAll('div')[2];
+
+        // 선언적 함수
+
+
+        function resetO() {
+            div1.classList.remove('on');
+            div2.classList.remove('on');
+            div3.classList.remove('on');
+        };
+
+        div1.onclick = () => {
+            resetO();
+            div1.classList.add('on');
+        };
+
+        div2.onclick = () => {
+            resetO();
+            div2.classList.add('on');
+        };
+
+        div3.onclick = () => {
+            resetO();
+            div3.classList.add('on');
+        };
+
+    </script>
+
+</body>
+
+</html>
