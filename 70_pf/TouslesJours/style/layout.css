@@ -31,15 +31,25 @@ nav {
     opacity: 0;
     width: 100%;
     visibility: hidden;
-    top: 70px;
+    top: 50px;
     height: 0;
+    transition: .5s;
+}
+
+.main:hover .sub::before {
+    height: 150px;
+    left: 0;
+    top: 0;
+    width: 1903px;
+    background: #0D4633;
+}
+
+.sub li {
+    margin-right: 70px;
 }
 
 #main1:hover #sub1 {
     opacity: 1;
     visibility: visible;
     height: 150px;
-    position: absolute;
-    left: 0;
-    background: #0D4633;
 }
