@@ -25,12 +25,20 @@ nav {
 }
 
 .sub {
+    top: 53px;
     position: absolute;
     display: flex;
     align-items: center;
     height: 150px;
     width: 100%;
     background: #0d4633;
+}
+
+
+.sub::before {
+    left: 0;
+    background: #0d4633;
+
 }
 
 .sub li {
