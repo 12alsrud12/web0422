@@ -221,9 +221,19 @@ section div {
 
 /* footer */
 footer {
-    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #490037;
 }
 
+footer div a,
+footer p {
+    font-family: "온글잎 은별", sans-serif;
+    color: #fff;
+}
 
 /* bg-color */
 nav {
@@ -267,7 +277,6 @@ p {
 .home-icon {
     transition: .3s;
     border-radius: 20px;
-
 }
 
 .home-icon:hover {
