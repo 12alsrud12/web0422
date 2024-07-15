@@ -10,10 +10,15 @@ li {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 ul {
     list-style: none;
 }
 
-* {
-    box-sizing: border-box;
+a {
+    text-decoration: none;
+    color: #3D6B5C;
 }

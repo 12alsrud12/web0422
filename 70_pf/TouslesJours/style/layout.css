@@ -1,1 +1,45 @@
 @charset "utf-8";
+
+/* header */
+header {
+    display: flex;
+    z-index: 9999;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    position: fixed;
+    border: 1px solid #CAC0B6;
+}
+
+nav {
+    margin-left: 50px;
+    display: flex;
+}
+
+.main:not(.sub) {
+    margin-right: 65px;
+}
+
+.main {
+    position: relative;
+}
+
+.sub {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    width: 100%;
+    visibility: hidden;
+    top: 70px;
+    height: 0;
+}
+
+#main1:hover #sub1 {
+    opacity: 1;
+    visibility: visible;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    background: #0D4633;
+}

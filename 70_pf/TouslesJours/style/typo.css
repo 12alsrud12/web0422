@@ -19,3 +19,20 @@ body {
     font-family: "HS새마을체", sans-serif;
     font-size: 10px;
 }
+
+.main a:not(.sub>li a) {
+    font-size: 16px;
+    color: #0D4633;
+}
+
+.sub li {
+    font-size: 24px;
+    color: #0D4633;
+}
+
+.sub li:hover {
+    font-size: 25px;
+    font-weight: 700;
+    color: #F26B24;
+    text-decoration: underline;
+}
