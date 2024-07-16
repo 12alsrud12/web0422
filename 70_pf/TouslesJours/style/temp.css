@@ -3,3 +3,18 @@
 body {
     background: #F7F0DA;
 }
+
+/* footer_bg */
+footer .ft_1 {
+    background: #F7F0DA;
+    border-bottom: 2px solid #CAC0B6;
+}
+
+footer .ft_2 {
+    height: 515px;
+    background: #2E2F2E;
+}
+
+#ft_cont1 {
+    border-bottom: 1px solid #CAC0B6;
+}

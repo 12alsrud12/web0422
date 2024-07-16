@@ -44,7 +44,51 @@ nav {
 }
 
 /* footer */
-footer {
-    
+
+/* footer1 */
+
+.ft_1 {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.ft_1 ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+.ft_1 li:not(.ft_1:last-of-type) {
+    margin-right: 50px;
+}
+
+/* footer2 */
+
+#ft_cont1 {
+    width: 1520px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#ft_cont1 li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+#ft_cont1 p {
+    margin: 45px 0 50px;
+}
+
+
+/* ft_box1 */
+#ft_box1 {
+    width: 747px;
+}
+
+.ft_logo {
+    padding: 40px 0;
+}
+
+/* ft_box2 */
+
 /* //footer */
