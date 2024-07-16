@@ -29,17 +29,22 @@ nav {
     position: absolute;
     display: flex;
     align-items: center;
-    height: 150px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
     width: 100%;
     background: #0d4633;
+    transition: .3s;
 }
 
-
-.sub::before {
-    left: 0;
-    background: #0d4633;
+.main:hover .sub {
+    height: 150px;
+    opacity: 1;
+    visibility: visible;
 }
 
-.sub li {
-    margin-right: 70px;
+/* footer */
+footer {
+    
 }
+/* //footer */

@@ -282,3 +282,15 @@ p {
 .home-icon:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* to the top ill */
+.ill {
+    position: fixed;
+    right: 60px;
+    bottom: -100px;
+    transition: .5s;
+}
+
+footer:hover .ill {
+    bottom: 88px;
+}
