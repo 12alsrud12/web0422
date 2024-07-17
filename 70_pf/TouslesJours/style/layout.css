@@ -141,4 +141,19 @@ header:hover .wrap::before {
 
 /* ft_box2 */
 
+#ft_box2 ul {
+    display: flex;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.ft_sub {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
 /* //footer */

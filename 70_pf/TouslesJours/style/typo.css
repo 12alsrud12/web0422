@@ -65,6 +65,19 @@ header:hover .main li a:not(.sub li) {
     color: #F7F0DA;
 }
 
+.ft_main a:not(.ft_sub li a) {
+    font-size: 16px;
+    color: #F7F0DA;
+}
+
+.ft_sub li {
+    font-size: 12px;
+}
+
+.ft_main {
+    font-family: "HS새마을체", sans-serif;
+}
+
 /* //footer */
 
 /* sub */
