@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* header */
 header {
     position: fixed;
@@ -17,10 +21,11 @@ header {
     width: 100%;
 }
 
-.wrap::before {
+.main::before {
     content: "";
     position: absolute;
     top: 91px;
+    left: 0;
     z-index: -2;
     display: block;
     width: 100%;
@@ -30,7 +35,7 @@ header {
     background: #0d4633;
 }
 
-header:hover .wrap::before {
+.wrap:hover .main::before {
     height: 150px;
     opacity: 1;
     visibility: visible;
@@ -74,24 +79,50 @@ header:hover .wrap::before {
 
 .sub li:not(:last-of-type) {
     margin-right: 75px;
-
 }
 
 .logo {
     position: fixed;
     left: 42%;
-    top: 36px;
+    top: 34px;
     border-radius: 18px 18px 0 0;
     padding: 16px 16px 0;
     background: #0d4633;
     transform: translate(50% 0);
 }
 
+.serch_my {
+    position: fixed;
+    display: flex;
+}
 
+.serch_my {
+    right: 230px;
+}
 
+.serch input {
+    border: none;
+    border-bottom: 1px solid #0d4633;
+    background: none;
+}
 
+.serch_my a {
+    margin-left: 30px;
+}
 
+/* //header */
 
+/* section */
+section {
+    height: 920px;
+}
+
+/* #sec1 */
+/* #sec2 */
+/* #sec3 */
+/* #sec4 */
+/* #sec5 */
+/* //section */
 
 /* footer */
 
@@ -179,7 +210,21 @@ header:hover .wrap::before {
 /* sns */
 #sns {
     margin: 26px 0 0 0;
-    animation:
+
+}
+
+#sns>img:hover {
+    animation: sns .5s 1
+}
+
+@keyframes sns {
+    0% {
+        transform: translateY(-30%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 #sns img:not(:last-of-type) {
