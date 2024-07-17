@@ -55,7 +55,7 @@ header:hover .main li a:not(.sub li) {
     font-family: "Abel", sans-serif;
 }
 
-#ft_cont1 li {
+#ft_cont1>#ft_box1 li {
     font-size: 1.2em;
     color: #F7F0DA;
 }
@@ -70,12 +70,20 @@ header:hover .main li a:not(.sub li) {
     color: #F7F0DA;
 }
 
-.ft_sub li {
-    font-size: 12px;
-}
 
 .ft_main {
     font-family: "HS새마을체", sans-serif;
+}
+
+.ft_sub li {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 12px;
+    color: #F7F0DA;
+}
+
+#ft_fs2 * {
+    font-size: 16px;
+    color: #2E2F2E;
 }
 
 /* //footer */
