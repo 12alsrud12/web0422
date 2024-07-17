@@ -21,6 +21,10 @@ body {
     font-size: 10px;
 }
 
+header:hover .main li a:not(.sub li) {
+    color: #F7F0DA;
+}
+
 .main a:not(.sub>li a) {
     font-size: 16px;
     color: #0D4633;
@@ -29,10 +33,10 @@ body {
 .sub li {
     font-size: 24px;
     color: #F7F0DA;
+    transition: .3s;
 }
 
 .sub li:hover {
-    font-size: 25px;
     font-weight: 700;
     color: #F26B24;
     text-decoration: underline;

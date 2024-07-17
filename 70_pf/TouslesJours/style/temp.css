@@ -4,6 +4,16 @@ body {
     background: #F7F0DA;
 }
 
+/* header */
+header {
+    background: #F7F0DA;
+}
+
+header:hover {
+    background: #3D6B5C;
+    border-bottom: 1px solid #0d4633;
+}
+
 /* footer_bg */
 footer .ft_1 {
     background: #F7F0DA;
