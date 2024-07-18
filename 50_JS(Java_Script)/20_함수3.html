@@ -1,61 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>20_함수3</title>
-
+    <title>Document</title>
 </head>
 
 <body>
     <h1>함수</h1>
-
     <script>
-        /* 
-            지역변수: 블록 내부에서만 사용 가능한 변수
-                블록 : { } <-이 중괄호를 블록 저내부에 쓰는게 {블록내부}
-
-            전역변수: 전지역에서 사용 가능한 변수.
-
-            ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-
-                - parameter (매개변수)
-                - argument1, argument2, ..., = 인자1, 인자2, ..., 등
-
-            ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-
-            함수3 부분
-
-            이벤트
-            요소.onclick = finction(매개변수){지역변수};
-        */
-
-        //    익명 함수
-        const fn1 = function (x, y, z = 3) {
-            // a 는 지역변수
-            const a = "hi";
-            document.write(`${x + y + z}<br>`);
-        };
-
-        // 화살표 함수
-        const fn2 = (x, y, z = 3) => {
-            // a 는 지역변수
-            const a = "hi";
-            document.write(`${x + y + z}<br>`);
+        // 익명 함수
+        const fn1 = function (x) {
+            document.write(`${x}<br>`);
         };
 
         // 화살표 함수
         // 매개변수가 1개이면 () 생략 가능
         // 실행문이 1개이면 {} 생략 가능
-        const fn3 = x =>
-            document.write(`${x}<br>`);
+        const fn2 = x => document.write(`${x}<br>`);
 
         // 함수 호출
-        fn1("엑스", "와이");
-        fn1(1, 2);
+        fn1("엑스");
+        fn1(1);
     </script>
-
 </body>
 
 </html>

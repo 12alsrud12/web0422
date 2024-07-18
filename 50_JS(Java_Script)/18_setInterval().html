@@ -1,43 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>18_setInterval</title>
+    <title>Document</title>
 </head>
-
 <body>
     <h1>타이밍 함수</h1>
     <p>현재 날짜와 시간이 표시된다.</p>
     <script>
         /*
-            setInterval (함수, 밀리초)
+            setInterval(함수, 밀리초)
             1초 = 1000밀리초
         */
 
-        const p = document.querySelector('p');
-
+        const p = document.querySelector("p");
+        // 1초후에 1초마다 함수를 실행
         setInterval(clock, 1000);
 
-        function clock() {
+        function clock(){
             const d = new Date();
             p.innerHTML = d;
-        };
-
-        // 년도
-        const yy = d.getFullYear();
-
-        // 월: 0 ~ 11 -> +1 이게 0단위부터 출발해서 +1을 해야 1 ~ 12월달 까지 다 나온다.
-        const mm = d.getMonth() + 1;
-
-        // 일: 1 ~ 31
-        const dd = d.getDate();
-
-        // 시: 0 ~ 23 등
-        
-
+        }
     </script>
 </body>
-
 </html>

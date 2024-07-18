@@ -1,73 +1,43 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>17_+연산자</title>
+    <title>Document</title>
 </head>
-
 <body>
-
     <h1>연산자</h1>
     <h2>산술 연산자</h2>
-
     <script>
         const a = 5, b = 2, c = "오";
 
-        // + 는 연결
+        // write()는 HTML 태그 인식한다.
+        document.write("문자열<br>");
+        // +는 더하기
+        // 숫자 + 숫자 -> 숫자
+        // a + " + " + b + " = "
+        // "5 + 2 ="
+        // 변수 + "문자열" + 변수 + '문자열'
+        document.write(a + " + " + b + " = " + (a + b) + "<br>");
+        // +는 연결
         // 문자 + 숫자 -> 문자
         // 문자 + 문자 -> 문자
-        // 템플릿리터럴 (백틱: backticks 위쪽 숫자 키패드에 있는 ~와 함께있는 ( ` ) 키)
-        // 백틱 안에 있는 내용은 모두 문자열로 취급한다.
-        /* 
-            백틱(bacticks) 구문
-            1. `백틱` 안에 내용은 모두 문자열로 취급한다.
-            2. HTML 태그 인식한다.
-            3. 문자열 보간: ${표현식 또는 변수}
-        */
-
-        // NaN(Not a Number): 숫자가 아니다.
-        document.write(`"오 + 2 = 오" + 2 + <br>`);
-        document.write(`오 + 2 = ${(a + b)} <br>`);
-        document.write(`오 / 2 = ${(a / b)} <br>`);
-        document.write(`오 % 2 = ${(a % b)} <br>`);
-
-        document.write(`${c} + ${b} = ${c} + ${b} = ${(a + b)} <br>`);
-
-        document.write(1 + 2);
-        document.write("<br>");
-
-        document.write("문자열1", "문자열2");
-        document.write("<br>");
-
-        document.write(10 - 10 * 10 + 10);
-        document.write("<br>");
-
-        document.write(10 - 10, "80");
-        document.write("<br>");
+        document.write("+연산자 사용한 방법: " + c + " + " + b + " = " + c + b + "<br>");
 
         /*
-        + 는 더하기
-        - 는 빼기
-        * 는 곱하기
-        / 는 나누기
-        % 는 나머지
-        ^ 는 거듭제곱 
-            예시: 5 ^ 2 -> 5를 두번 곱한다. 5*5 가 되는것
-                : 5 ^ 3 -> 5를 세번 곱한다. 5*5*5
-                근데 어째서인지 인식이 안되는 중이다. 출력값 0으로 뜸
+            백틱(backticks) 구문
+            1. `백틱` 안에 내용은 모두 문자열로 취급한다.
+            2. HTML 태그 인식한다.
+            3. 문자열 보간: ${표현식}
         */
+        document.write(`백틱을 사용한 방법: ${c} + ${b} = ${c + b}<br>`);
 
-        document.write(5 ^ 5);
-        document.write("<br>");
-
-        document.write("5 + 2 =" + (5 + 2) + "<br>");
-
-
-
+        // NaN(Not a Number): 숫자가 아니다.
+        document.write(`${a} - ${b} = ${a - b} <br>`);
+        document.write(`${a} * ${b} = ${a * b} <br>`);
+        document.write(`${a} / ${b} = ${a / b} <br>`);
+        // %는 나머지
+        document.write(`${a} % ${b} = ${a % b}`);
     </script>
-
 </body>
-
 </html>
