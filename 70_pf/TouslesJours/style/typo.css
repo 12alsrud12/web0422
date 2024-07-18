@@ -21,6 +21,43 @@ body {
     font-size: 10px;
 }
 
+h1:not(#sec2_sub_bx1 h1) {
+    color: #F26B24;
+    text-align: center;
+    padding-top: 130px;
+    height: 190px;
+    background: #0d4633;
+}
+
+h3 {
+    color: #0D4633;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 2.4em;
+    color: #0D4633;
+}
+
+#sec1 button {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 1.6em;
+    color: #0D4633;
+    font-weight: 700;
+}
+
 header:hover .main li a:not(.sub li) {
     color: #F7F0DA;
 }
@@ -41,6 +78,23 @@ header:hover .main li a:not(.sub li) {
     color: #F26B24;
     text-decoration: underline;
 }
+
+p.big {
+    letter-spacing: 4%;
+    font-family: "HS새마을체", sans-serif;
+    font-size: 24px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+#sec2_bx3 button {
+    color: #fff;
+    font-family: "HS새마을체", sans-serif;
+    font-size: 2.4rem;
+}
+
 
 /* footer */
 /* footer1 */

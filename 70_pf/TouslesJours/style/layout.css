@@ -1,19 +1,37 @@
 @charset "utf-8";
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css);
+
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background: #F7F0DA;
+}
+
 
 /* header */
 header {
     position: fixed;
     display: flex;
     z-index: 9999;
+    top: 0;
     width: 100%;
     height: 90px;
     align-items: center;
     border: 1px solid #CAC0B6;
     transition: .3s;
+}
+
+/* header bg */
+header {
+    background: #F7F0DA;
+}
+
+header:hover {
+    background: #3D6B5C;
+    border-bottom: 1px solid #0d4633;
 }
 
 .wrap {
@@ -114,14 +132,175 @@ header {
 
 /* section */
 section {
-    height: 920px;
+    height: 100vh;
+    margin: 0 auto;
+
 }
 
 /* #sec1 */
+#sec1 {
+    position: relative;
+    display: flex;
+    height: 920px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url(../images/sec_1/sec1_bg.png);
+}
+
+.sec1_st {
+    position: absolute;
+    top: 90px;
+    right: 97px;
+    z-index: 80;
+}
+
+#sec1 hr {
+    width: 280px;
+    border: 1px dashed #0d4633;
+    margin-bottom: 24px;
+}
+
+#sec1 h3 {
+    margin-top: 20px;
+}
+
+#sec1>div.sec1_main_bx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 250px 0 0 45px;
+    width: 750px;
+    height: 540px;
+    background: #0d4633;
+    border-radius: 50px 0 0 50px;
+}
+
+.sec1_sub_bx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    width: 650px;
+    height: 480px;
+    background: #f7f0da;
+}
+
+.sec1_logo {
+    width: 400px;
+    height: 50px;
+    background: #3D6B5C;
+    border-radius: 0 0 20px 20px;
+}
+
+.sec1_logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+#sec1 button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border: 1px solid #0d4633;
+    border-radius: 5px;
+}
+
+#sec1 button:hover {
+    background: #3D6B5C;
+    color: #F7F0DA;
+}
+
+.bxslider img {
+    width: 1080px;
+    height: 800px;
+}
+
+div.bx-wrapper {
+    margin-top: 105px;
+    width: 1080px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    z-index: 10;
+    width: 73px;
+    height: 86px;
+}
+
+.bx-wrapper .bx-prev {
+    left: 0px;
+    background: url(../images/sec_1/section1_left.png) no-repeat;
+}
+
+.bx-wrapper .bx-next,
+.bx-wrapper .bx-next:hover {
+    right: 0px;
+    background: url(../images/sec_1/section1_right.png) no-repeat 0 0 !important;
+}
+
+
+
+
+
 /* #sec2 */
+
+#sec2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#sec2_bx1 {
+    display: flex;
+}
+
+.sec_limg {
+    display: flex;
+    align-items: flex-end;
+    width: 280px;
+    height: 732px;
+    background: #3D6B5C;
+}
+
+.sec_limg img {
+    width: 280px;
+    height: 550px;
+}
+
+#sec2 h3 {
+    margin: 150px 0 10px 120px;
+}
+
+#sec2_sub_bx1 {
+    margin-left: 145px;
+}
+
+#sec2_bx3 {
+    display: flex;
+    flex-direction: column;
+    margin: 195px 0 0 74px;
+}
+
+#sec2_bx3 button {
+    width: 515px;
+    height: 55px;
+    background: #2e2e2e;
+    border-radius: 0 0 10px 10px;
+}
+
+#sec2_bx3 button:hover {
+    background: #F26B24;
+}
+
+
 /* #sec3 */
 /* #sec4 */
 /* #sec5 */
+#sec5 {
+    height: 920px;
+}
+
 /* //section */
 
 /* footer */
@@ -266,6 +445,10 @@ section {
     padding: 0 16px 8px;
 }
 
+.ft_main {
+    margin-top: 40px;
+}
+
 .ft_fs_sub>li a {
     padding: 0 16px;
     line-height: 2;
@@ -297,7 +480,45 @@ section {
     margin: 0 0 0 35px;
 }
 
+/* footer_bg */
+footer .ft_1 {
+    background: #F7F0DA;
+    border-bottom: 2px solid #CAC0B6;
+    border-top: 2px solid #CAC0B6;
+}
+
+footer .ft_2 {
+    height: 515px;
+    background: #2E2F2E;
+}
+
+#ft_cont1 {
+    border-bottom: 1px solid #CAC0B6;
+}
 
 
 
 /* //footer */
+
+/* panner */
+#panner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    padding: 10px 0;
+    width: 75px;
+    height: 353px;
+    background: #3D6B5C;
+    top: 30%;
+    right: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#panner hr {
+    width: 50px;
+    margin: 10px 0;
+    border: 1px dashed #F7F0DA;
+}
