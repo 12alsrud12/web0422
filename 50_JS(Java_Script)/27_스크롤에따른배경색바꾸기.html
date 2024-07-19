@@ -15,6 +15,25 @@
         }
     </style>
     <script>
+        // DOMContentLoaded ~ 돔(html) 내용(요소가)이 "모두" 불러지면(읽어지면)
+        // load ~ HTML요소, 이미지, 동영상 포함하여 모든 것을 읽었을 때 (로딩속도 오래걸린다고함) = loaded를 주로 사용한다.
+        window.addEventListener("DOMContentLoaded", function () {
+
+            // 요소 찾기
+            const p = document.querySelector("p");
+
+            // 스크롤 이벤트
+            window.addEventListener("scroll", function () {
+                p.innerHTML = Math.floor(pageYOffset);
+
+                if (p.innerHTML >= 300) {
+                    document.body.style.background = "yellow";
+                } else {
+                    document.body.style.background = "transparent";
+                }
+            });
+
+        });
 
     </script>
 </head>
