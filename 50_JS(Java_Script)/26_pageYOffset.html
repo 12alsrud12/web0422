@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26_pageYOffset</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        p {
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>스크롤이벤트</h1>
+    <p></p>
+    <script>
+        // 요소찾기
+        const p = document.querySelector('p');
+
+        // pageYOffset
+        // 이렇게 넣으면 fixed p가 자기가 있는 스크롤위치에 따라 그 수치를 숫자로 표시해준다.
+        // 그리고 pageYOffset는 window의 속성이라 window를 제외할 수 있다.
+
+        // p.innerHTML = window.pageYOffset;
+
+        // 이벤트 처리
+        /* 
+            이벤트 형식
+            객체.on이벤트 = 익명함수;
+            객체.addEventListener('이벤트', 익명함수);
+        */
+        window.onscroll = function () {
+            p.innerHTML = pageYOffset;
+        };
+    </script>
+</body>
+
+</html>
