@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "HS새마을체";
+    src: url("http://12alsrid12.github.io/eb0422/assets/font/HSSaemaul_HS새마을체/HSSaemaul-Regular.ttf")
+}
+
+@font-face {
+    font-family: "온글잎 은별";
+    src: url("https://12alsrud12.github.io/web0422/assets/font/온글잎_은별/온글잎_은별.ttf");
+}
+
+
+:root {
+    font-family: "HS새마을체", sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-family: "HS새마을체", sans-serif;
+    font-size: 10px;
+}
+
+h1:not(#sec2_sub_bx1 h1) {
+    color: #F26B24;
+    text-align: center;
+    padding-top: 130px;
+    height: 190px;
+    background: #0d4633;
+}
+
+h3 {
+    color: #0D4633;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 2.4em;
+    color: #0D4633;
+}
+
+#sec1 button {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 1.6em;
+    color: #0D4633;
+    font-weight: 700;
+}
+
+header:hover .main li a:not(.sub li) {
+    color: #F7F0DA;
+}
+
+.main a:not(.sub>li a) {
+    font-size: 16px;
+    color: #0D4633;
+}
+
+.sub li {
+    font-size: 24px;
+    color: #F7F0DA;
+    transition: .3s;
+}
+
+.sub li:hover {
+    font-weight: 700;
+    color: #F26B24;
+    text-decoration: underline;
+}
+
+p.big {
+    letter-spacing: 4%;
+    font-family: "HS새마을체", sans-serif;
+    font-size: 24px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+#sec2_bx3 button {
+    color: #fff;
+    font-family: "HS새마을체", sans-serif;
+    font-size: 2.4rem;
+}
+
+
+/* footer */
+/* footer1 */
+.ft_1 li a:not(.ong) {
+    font-size: 2.4em;
+    color: #2E2F2E;
+}
+
+/* footer2 */
+
+#ft_cont1 {
+    font-family: "Abel", sans-serif;
+}
+
+#ft_cont1>#ft_box1 li {
+    font-size: 1.2em;
+    color: #F7F0DA;
+}
+
+#ft_cont1 p {
+    font-size: 1.3em;
+    color: #F7F0DA;
+}
+
+.ft_main a:not(.ft_sub li a) {
+    font-size: 16px;
+    color: #F7F0DA;
+}
+
+
+.ft_main {
+    font-family: "HS새마을체", sans-serif;
+}
+
+.ft_sub li {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 12px;
+    color: #F7F0DA;
+}
+
+#ft_fs2 * {
+    font-size: 16px;
+    color: #2E2F2E;
+}
+
+/* //footer */
+
+/* sub */
+.ong {
+    color: #F26B24;
+}
+
+/* //sub */

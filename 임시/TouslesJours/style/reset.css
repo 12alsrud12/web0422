@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3D6B5C;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+    가상 요소 선택자
+    ::brfore ~ 요소의 내용 이전 내용을 가상으로 삽입
+    ::after ~ 요소의 내용 이후 내용을 가상으로 삽입
+    ::selection (뜻: 선택) 브라우저에서 텍스트를 블록 설정시 색상 지정
+*/
+
+::selection {
+    background: #3D6B5C;
+}
