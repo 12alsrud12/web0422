@@ -12,6 +12,10 @@ body {
     background: #F7F0DA;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 /* header */
 header {
@@ -130,12 +134,24 @@ header:hover {
     margin-left: 30px;
 }
 
+header:hover input {
+    border-bottom: 1px solid #F7F0DA;
+}
+
 /* //header */
 
 /* section */
-section {
+.section {
     height: 100vh;
     margin: 0 auto;
+
+}
+
+#sec2,
+#sec3,
+#sec4,
+#sec5 {
+    background: #F7F0DA !important;
 
 }
 
@@ -211,12 +227,12 @@ section {
     color: #F7F0DA;
 }
 
-.bxslider img {
+#sec1 .bxslider img {
     width: 1080px;
     height: 800px;
 }
 
-div.bx-wrapper {
+#sec1 div.bx-wrapper {
     margin-top: 105px;
     width: 1080px;
     height: 800px;
@@ -231,13 +247,13 @@ div.bx-wrapper {
     height: 86px;
 }
 
-.bx-wrapper .bx-prev {
+#sec1 .bx-wrapper .bx-prev {
     left: 0px;
     background: url(../images/sec_1/section1_left.png) no-repeat;
 }
 
-.bx-wrapper .bx-next,
-.bx-wrapper .bx-next:hover {
+#sec1 .bx-wrapper .bx-next,
+#sec1 .bx-wrapper .bx-next:hover {
     right: 0px;
     background: url(../images/sec_1/section1_right.png) no-repeat 0 0 !important;
 }
@@ -255,6 +271,7 @@ div.bx-wrapper {
 
 #sec2_bx1 {
     display: flex;
+    position: relative;
 }
 
 .sec_limg {
@@ -276,12 +293,29 @@ div.bx-wrapper {
 
 #sec2_sub_bx1 {
     margin-left: 145px;
+    line-height: 1.5;
+}
+
+#sec2_bx2 img {
+    position: relative;
+    left: -20px;
+    background: #0d4633;
+    padding: 8px 16px;
+    margin: 25px 0 30px;
+}
+
+#sec2_sub_bx2 {
+    margin-bottom: 25px;
 }
 
 #sec2_bx3 {
     display: flex;
     flex-direction: column;
     margin: 195px 0 0 74px;
+}
+
+#sec2_sub_bx1 {
+    margin-top: 55px;
 }
 
 #sec2_bx3 button {
@@ -297,10 +331,31 @@ div.bx-wrapper {
 
 
 /* #sec3 */
+
+#sec3 .bx-wrapper .bx-prev {
+    left: 0px;
+    background: url(../images/sec_1/section1_left.png) no-repeat;
+}
+
+#sec3 .bx-wrapper .bx-next,
+#sec3 .bx-wrapper .bx-next:hover {
+    right: 0px;
+    background: url(../images/sec_1/section1_right.png) no-repeat 0 0 !important;
+}
+
 /* #sec4 */
 /* #sec5 */
-#sec5 {
-    height: 920px;
+.sec5_logo {
+    height: 190px;
+    background: #0d4633;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec5_logo img {
+    width: 268px;
+    height: 35px;
+    margin: 0 0 25px 390px;
 }
 
 /* //section */
