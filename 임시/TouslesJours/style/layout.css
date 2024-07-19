@@ -241,7 +241,7 @@ header:hover input {
     margin-bottom: 0;
 }
 
-.bx-wrapper .bx-controls-direction a {
+.bx-wrapper .bx-controls-direction a:not(#sec3) {
     z-index: 10;
     width: 73px;
     height: 86px;
@@ -331,17 +331,74 @@ header:hover input {
 
 
 /* #sec3 */
+#sec3 .slide2 {
+    margin: 0;
+    background: #f7f0da;
+}
+
+#sec3 .slide2>div:not(.s3_sub_box1) {
+    display: flex;
+    background: #F7F0DA;
+    margin: 0;
+    height: 750px;
+}
+
+.s3_sub_box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.s3_sub_box2 {
+    display: flex;
+}
+
+.slide2 {
+    background: none;
+    height: 880px;
+}
+
+.slide2>div img {
+    width: 697px;
+    height: 695px;
+}
 
 #sec3 .bx-wrapper .bx-prev {
-    left: 0px;
-    background: url(../images/sec_1/section1_left.png) no-repeat;
+    left: 1025px;
+    background: url(../images/sec_3/section3_left.png) no-repeat;
 }
 
 #sec3 .bx-wrapper .bx-next,
 #sec3 .bx-wrapper .bx-next:hover {
-    right: 0px;
-    background: url(../images/sec_1/section1_right.png) no-repeat 0 0 !important;
+    right: 625px;
+    background: url(../images/sec_3/section3_right.png) no-repeat 0 0 !important;
 }
+
+/* sec3 매장 찾기 */
+#mj {
+    display: flex;
+}
+
+#mj>.mj_img {
+    display: flex;
+    align-items: flex-end;
+}
+
+#sec3 .slide2 h1 {
+    background: none;
+    margin: 285px;
+}
+
+.s3_sub_box2:first-of-type>img {
+    width: 105px;
+    height: 85px;
+}
+
+
+
+
+
+
+
 
 /* #sec4 */
 /* #sec5 */
@@ -356,6 +413,10 @@ header:hover input {
     width: 268px;
     height: 35px;
     margin: 0 0 25px 390px;
+}
+
+.s5_box1:first-of-type {
+    display: block;
 }
 
 /* //section */
