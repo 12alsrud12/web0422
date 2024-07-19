@@ -2,6 +2,8 @@
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css);
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.25/fullpage.min.css);
+
 html {
     scroll-behavior: smooth;
 }
