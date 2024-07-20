@@ -411,22 +411,32 @@ header:hover input {
 
 /* sec3 animation */
 
-#sec3>.s3_sub_box1.active {
+#sec3>.s3_sub_box1 {
+    position: relative;
     opacity: 0;
+    visibility: hidden;
     left: 0;
     transition: .5s;
+
 }
 
-
-
-#pp {
-    margin-top: 100px;
-    z-index: 99999;
-    position: fixed;
+.s3_sub_box1>h3.active {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    animation: s3 1s;
 }
 
-#pp p {
-    color: #000;
+@keyframes s3 {
+    0% {
+        opacity: 0;
+        left: -10px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
 }
 
 

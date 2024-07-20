@@ -26,7 +26,7 @@
             <div>
                 <img src="../TouslesJours/images/sec_3/sec3-1.png" alt="3-1">
                 <div class="s3_sub_box1">
-                    <h3 class="s3_title">
+                    <h3 class="s3_title active">
                         매일매일
                         <span class="bes">(<span class="ong">T</span>ous <span class="ong">L</span>es <span
                                 class="ong">J</span>ours)
@@ -141,11 +141,25 @@
     <script>
         const hd = document.querySelector("header");
         const s3 = document.querySelector("#sec3");
+        const s3Sub1 = document.querySelector("div .s3_sub_box1")[0];
 
-        window.addEventListener("scroll", function () {
-            n1.innerHTML = Math.floor(pageYOffset);
+        window.addEventListener("wheel", () => {
+            let wheel = event.wheelDeltaY;
 
-            if (hd.("")) { }
+            if (wheel > 0) {
+                /* mouse 휠 올렸을 시 발생하는 이벤트 */
+                console.log('Up!');
+                s3Sub1.classList.remove = (".active");
+            }
+            else {
+                /* (wheel < 0) mouse 휠 내렸을 시 발생하는 이벤트 */
+                console.log('Down!');
+                s3Sub1.classList.add = (".active");
+
+            }
+
+            preScrollTop = nextScrollTop;
+
         });
 
 
