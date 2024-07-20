@@ -94,6 +94,7 @@ p.small {
     font-family: "HS새마을체", sans-serif;
     font-size: 2.4rem;
 }
+
 .s3_sub_box h1 {
     font-size: 64px;
     color: #0D4633;
@@ -148,6 +149,14 @@ p.small {
 /* sub */
 .ong {
     color: #F26B24;
+}
+
+.bes {
+    color: #CAC0B6;
+}
+
+.gn {
+    color: #3D6B5C;
 }
 
 /* //sub */

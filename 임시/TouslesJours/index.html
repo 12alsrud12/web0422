@@ -99,6 +99,10 @@
 
     </header>
 
+    <div id="pp">
+        <p>123</p>
+    </div>
+
     <div id="wrap">
         <div id="sec1" class="section">
             <div class="sec1_st">
@@ -385,6 +389,15 @@
 
     <script>
 
+        const n1 = document.querySelector("#pp p");
+
+        window.addEventListener("scroll", function () {
+            n1.innerHTML = Math.floor(pageYOffset);
+            n1.innerHTML = Math.floor(pageYOffset);
+        });
+
+        console.log(n1);
+
         $('.slide').bxSlider({
             // General
             mode: 'fade',
@@ -430,6 +443,8 @@
             serch.innerHTML = ('<img src="images/header/serch_ico.png" alt="hover_ico1">');
             myPage.innerHTML = ('<img src="images/header/My_page_ico.png" alt="hover_ico1">');
         };
+
+
     </script>
 </body>
 
