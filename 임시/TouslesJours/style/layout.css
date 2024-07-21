@@ -411,16 +411,22 @@ header:hover input {
 
 /* sec3 animation */
 
-#sec3>.s3_sub_box1 {
+.s3_sub_box1:not(#sec3>h3.s3_num3) {
     position: relative;
     opacity: 0;
     visibility: hidden;
     left: 0;
     transition: .5s;
-
 }
 
-.s3_sub_box1>h3.active {
+#sec3 .s3_sub_box1>#s3_title1.active {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    animation: s3 1s;
+}
+
+#sec3 .s3_sub_box1>#s3_p1.active {
     position: absolute;
     opacity: 1;
     visibility: visible;
