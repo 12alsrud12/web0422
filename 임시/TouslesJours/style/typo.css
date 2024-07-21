@@ -45,6 +45,30 @@ h3 {
     font-size: 32px;
 }
 
+h2#mh_title {
+    font-size: 48px;
+    color: #0D4633;
+}
+
+h4 {
+    font-size: 32px;
+    color: #3D6B5C;
+    margin: 0;
+}
+
+h5 {
+    font-size: 24px;
+    color: #3D6B5C;
+    margin: 0;
+    margin-top: 24px;
+}
+
+input[placeholder="매장이나 시/군/구 명 입력"] {
+    font-size: 16px;
+    color: #2e2e2e;
+    font-family: "온글잎 은별", sans-serif;
+}
+
 p {
     font-family: "온글잎 은별", sans-serif;
     font-size: 2.4em;

@@ -343,9 +343,16 @@ header:hover input {
     height: 730px;
 }
 
+.slide2>div {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
 .s3_sub_box1 {
     display: flex;
     flex-direction: column;
+    margin-top: 280px;
     margin-left: 130px;
     position: relative;
 }
@@ -371,24 +378,20 @@ header:hover input {
 }
 
 #sec3 .bx-wrapper .bx-prev {
-    left: 1025px;
+    top: 530px;
+    left: 850px;
     background: url(../images/sec_3/section3_left.png) no-repeat;
 }
 
 #sec3 .bx-wrapper .bx-next,
 #sec3 .bx-wrapper .bx-next:hover {
-    right: 625px;
+    top: 530px;
+    left: 1103px;
     background: url(../images/sec_3/section3_right.png) no-repeat 0 0 !important;
 }
 
-/* sec3 매장 찾기 */
 #mj {
     display: flex;
-}
-
-#mj>.mj_img {
-    display: flex;
-    align-items: flex-end;
 }
 
 #sec3 .slide2 h1 {
@@ -396,7 +399,14 @@ header:hover input {
     margin: 285px;
 }
 
-.s3_sub_box2:first-of-type>img {
+#s3_mj_box1 {
+    display: flex;
+    align-items: center;
+}
+
+#s3_mj_box1>img {
+    margin: 0;
+    margin-left: 66px;
     width: 105px;
     height: 85px;
 }
@@ -409,40 +419,36 @@ header:hover input {
     margin: 79px 0 0 78px;
 }
 
-/* sec3 animation */
+#s3_mj_box2 {
+    display: flex;
+}
 
-.s3_sub_box1:not(#sec3>h3.s3_num3) {
+#s3_mj_box2>a img {
+    margin: 0;
+    margin: 5px 0 0 12px;
+    width: 36px;
+    height: 32px;
+}
+
+#s3_h31 {
+    margin: 0;
+    margin-left: 78px;
+    margin-top: 110px;
+}
+
+#mh_h32 {
+    margin: 0;
+    margin-left: 78px;
+    margin-top: 60px;
+}
+
+input[placeholder="매장이나 시/군/구 명 입력"] {
     position: relative;
-    opacity: 0;
-    visibility: hidden;
-    left: 0;
-    transition: .5s;
-}
-
-#sec3 .s3_sub_box1>#s3_title1.active {
-    position: absolute;
-    opacity: 1;
-    visibility: visible;
-    animation: s3 1s;
-}
-
-#sec3 .s3_sub_box1>#s3_p1.active {
-    position: absolute;
-    opacity: 1;
-    visibility: visible;
-    animation: s3 1s;
-}
-
-@keyframes s3 {
-    0% {
-        opacity: 0;
-        left: -10px;
-    }
-
-    100% {
-        opacity: 1;
-        left: 0px;
-    }
+    margin: 5px 0 0 0;
+    height: 32px;
+    padding: 4px 16px;
+    background: #CAC0B6;
+    border: none;
 }
 
 
