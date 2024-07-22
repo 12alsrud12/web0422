@@ -35,13 +35,47 @@ const serch = document.querySelectorAll(".serch a")[0];
 const myPage = document.querySelectorAll(".serch_my>a")[0];
 
 header.onmouseenter = function () {
-    serch.innerHTML = ('<img src="images/header/serch_ico_hover.png" alt="hover_ico1">');
-    myPage.innerHTML = ('<img src="images/header/My_page_ico_hover.png" alt="hover_ico1">');
+    // header :hover 시 icon 변경 
+    serch.innerHTML = ('<img src="images/serch_ico_hover.png" alt="hover_ico1">');
+    myPage.innerHTML = ('<img src="images/My_page_ico_hover.png" alt="hover_ico1">');
 };
 
 header.onmouseleave = function () {
-    serch.innerHTML = ('<img src="images/header/serch_ico.png" alt="hover_ico1">');
-    myPage.innerHTML = ('<img src="images/header/My_page_ico.png" alt="hover_ico1">');
+    // header mouse leave 시 icon 복구
+    serch.innerHTML = ('<img src="images/serch_ico.png" alt="hover_ico1">');
+    myPage.innerHTML = ('<img src="images/My_page_ico.png" alt="hover_ico1">');
 };
 
-const
+// tabs!!
+
+// 요소찾기
+const li1 = document.querySelectorAll('#tabs ul li')[0];
+const li2 = document.querySelectorAll('#tabs ul li')[1];
+
+// 위에서 li 찾고 여기서 그 내부 a찾기
+const bt1 = document.querySelectorAll('#tabs a')[0];/* 위에서 li먼저 찾고나서 그 내부 a태그 요소찾을때는 li1붙여서 document~~ 하면 된다. */
+const bt2 = document.querySelectorAll('#tabs a')[1];/* 위에서 li먼저 찾고나서 그 내부 a태그 요소찾을때는 li1붙여서 document~~ 하면 된다. */
+
+console.log(bt1);
+console.log(bt2);
+
+// tab 1,2 찾기
+const cont1 = document.querySelector('#tab1');
+const cont2 = document.querySelector('#tab2');
+
+console.log(cont1);
+console.log(cont2);
+
+
+// 이벤트처리
+// 버튼1을 클릭하면 p.on
+bt1.onclick = function () {
+    cont1.classList.add('on');
+    cont2.classList.remove('on');
+};
+
+// 버튼2을 클릭하면 p.off
+bt2.onclick = function () {
+    cont2.classList.add('on');
+    cont1.classList.remove('on');
+};
