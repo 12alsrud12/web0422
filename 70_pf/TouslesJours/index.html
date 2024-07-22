@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>뚜레쥬르</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/typo.css">
-    <link rel="stylesheet" href="style/temp.css">
-    <link rel="stylesheet" href="style/layout.css">
+    <title>뚜레쥬르_장민경</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <script src="../../50_JS(Java_Script)/jquery-3.7.1.min.js"></script>
+    <!-- jQuery -->
+    <script src="script/jquery-3.7.1.min.js"></script>
+
+    <!-- bxslider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+
+    <!-- fullpage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 </head>
 
 <body>
+    <!-- header -->
     <header>
 
         <nav class="wrap">
@@ -75,7 +79,7 @@
         </nav>
 
         <div class="logo">
-            <img src="images/header/logo.png" alt="header_logo">
+            <img src="images/logo.png" alt="header_logo">
         </div>
 
         <div class="serch_my">
@@ -83,266 +87,444 @@
             <div class="serch">
 
                 <input type="text">
-                <img src="images/header/serch_ico.png" alt="serch_ico">
+                <a href="#"><img src="images/serch_ico.png" alt="serch_ico"></a>
             </div>
 
             <a href="#">
-                <img src="images/header/My_page_ico.png" alt="serch_ico">
+                <img src="images/My_page_ico.png" alt="serch_ico">
             </a>
         </div>
 
-    </header>
+    </header><!-- header -->
 
-    <div id="sec1" class="section">
-        <div class="sec1_st">
-            <img src="images/sec_1/lb_recomm.png" alt="추천제품">
-        </div>
-        <div class="sec1_main_bx">
-            <div class="sec1_sub_bx">
-                <div class="sec1_logo">
-                    <img src="images/sec_1/sec1_logo.png" alt="sec1_logo">
-                </div><!-- .sec1_logo -->
-
-                <h3>건강한 데일리 베이커리</h3>
-
-                <hr>
-
-                <img src="images/sec_1/section1_icon.png" alt="sec1_icon">
-                <p>건강하지만, 맛있어야,</p>
-                <p>맛있지만, 건강해야,</p>
-                <p>매일 먹을 수 있다는 평범한 원칙으로부터</p>
-                <p>뚜레쥬르의 오늘은 시작됩니다.</p>
-
-                <button>자세히 보기</button>
-            </div><!-- sec1_sub_bx -->
-        </div><!-- sec1_main_bx -->
-        <div class="slide">
-            <div><img src="images/sec_1/sec1-slide1.png" alt="1"></div>
-            <div><img src="images/sec_1/sec1-slide2.png" alt="2"></div>
-            <div><img src="images/sec_1/sec1-slide3.png" alt="3"></div>
-        </div>
-
-    </div>
-    <section id="sec2" class="section">
-        <h1>New TOUS les JOURS</h1>
-        <div id="sec2_bx1">
-            <div class="sec_limg"><img src="images/sec2/sec_left_banner.png" alt="sec2_left_banner">
+    <div id="wrap">
+        <!-- sec1 -->
+        <div id="sec1" class="section">
+            <div class="sec1_st">
+                <img src="images/lb_recomm.png" alt="추천제품">
             </div>
-            <div id="sec2_bx2">
-                <h3>| 새로운 뚜레쥬르</h3>
-                <div id="sec2_sub_bx1">
-                    <p class="big">16년 10월 신선한 재료로 만들어 <span class="ong">건강하고</span>,</p>
-                    <p class="big">컨셉과 패키지 디자인 매장 인테리어까지 모두 새로워졌습니다.</p>
-                    <h1>여기는 <span class="ong">신선함이 가득한 베이커리</span></h1>
-                    <h1><span class="ong">뚜레쥬르</span>입니다.</h1>
-                    <p>매일매일(Tous Les Jours),</p>
-                    <p>매장에서 직접 굽는 <span class="ong">신선한 베이커리</span></p>
-                    <p class="small"><span class="ong">갓 구운 신선함</span>이 매장을 가득 채웁니다.</p>
+            <div class="sec1_main_bx">
+                <div class="sec1_sub_bx">
+                    <div class="sec1_logo">
+                        <img src="images/sec1_logo.png" alt="sec1_logo">
+                    </div><!-- .sec1_logo -->
+
+                    <h3>건강한 데일리 베이커리</h3>
+
+                    <hr>
+
+                    <img src="images/section1_icon.png" alt="sec1_icon">
+                    <p>건강하지만, 맛있어야,</p>
+                    <p>맛있지만, 건강해야,</p>
+                    <p>매일 먹을 수 있다는 평범한 원칙으로부터</p>
+                    <p>뚜레쥬르의 오늘은 시작됩니다.</p>
+
+                    <button>자세히 보기</button>
+                </div><!-- sec1_sub_bx -->
+            </div><!-- sec1_main_bx -->
+            <div class="slide">
+                <div><img src="images/sec1-slide1.png" alt="1"></div>
+                <div><img src="images/sec1-slide2.png" alt="2"></div>
+                <div><img src="images/sec1-slide3.png" alt="3"></div>
+            </div>
+
+        </div><!-- //#sec1 -->
+
+        <!-- section2 -->
+        <section id="sec2" class="section">
+            <h2>New TOUS les JOURS</h2>
+            <div id="sec2_bx1">
+                <div class="sec_limg"><img src="images/sec_left_banner.png" alt="sec2_left_banner">
+                </div>
+                <div id="sec2_bx2">
+                    <h3>| 새로운 뚜레쥬르</h3>
+                    <div id="sec2_sub_bx1">
+                        <p class="big">16년 10월 신선한 재료로 만들어 <span class="ong">건강하고</span>,</p>
+                        <p class="big">컨셉과 패키지 디자인 매장 인테리어까지 모두 새로워졌습니다.</p>
+                        <h1>여기는 <span class="ong">신선함이 가득한 베이커리</span></h1>
+                        <h2 id="tj"><span class="ong">뚜레쥬르</span>입니다.</h2>
+                        <img src="images/logo.png" alt="logo">
+                        <div id="sec2_sub_bx2">
+                            <p>매일매일(Tous Les Jours),</p>
+                            <p>매장에서 직접 굽는 <span class="ong">신선한 베이커리</span></p>
+                        </div>
+                        <p class="small"><span class="ong">갓 구운 신선함</span>이 매장을 가득 채웁니다.</p>
+                    </div>
+                </div>
+                <div id="sec2_bx3">
+                    <iframe width="515" height="290" src="https://www.youtube.com/embed/1h4eofC2MxU?si=o0p93MTrpiQMK1zE"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <button>뚜레쥬르 소개 바로가기</button>
                 </div>
             </div>
-            <div id="sec2_bx3">
-                <video width="515" height="290" controls>
-                    <source src="https://youtu.be/1h4eofC2MxU" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <button>뚜레쥬르 소개 바로가기</button>
-            </div>
-        </div>
+        </section> <!-- //section2 -->
 
-    </section>
-    <section id="sec3" class="section">
-        <h1>Brand List</h1>
+        <!-- section3 -->
+        <div id="sec3" class="section">
+            <h2>Brand List</h2>
+            <div class="slide2">
+                <div>
+                    <img src="images/sec3-1.png" alt="3-1">
+                    <div class="s3_sub_box1">
+                        <h3>
+                            매일매일
+                            <span class="bes">(<span class="ong">T</span>ous <span class="ong">L</span>es <span
+                                    class="ong">J</span>ours)
+                            </span>,
+                        </h3>
+                        <h3>매장에서 직접 굽는 <span class="ong">신선한 베이커리</span></h3>
+                        <p>뚜레쥬르는(Tous Les Jours - 프랑스어로 “매일매일” 이라는 뜻) 그 이름의 의미처럼
+                            매일매일 매장에서 직접 굽는 신선함을 가장 큰 가지로 하는 베이커리 입니다.</p>
 
-    </section>
-    <section id="sec4" class="section">
-        <h1>Event</h1>
-
-    </section>
-    <div id="sec5" class="section">
-        <div class="sec5_logo"><img src="images/sec_5/sec5_logo.png" alt="logo"></div>
-
-    </div>
-
-    <footer>
-        <div class="ft_1">
-            <ul>
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">기사 채용안내</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">위치기반서비스 이용약관</a></li>
-                <li><a href="#">창업안내</a></li>
-                <li><a href="#"><span class="ong">개인정보처리방침</span></a></li>
-                <li><a href="#">영상처리정보기기 운영관리방침</a></li>
-                <li><a href="#">이메일무단수집거부</a></li>
-                <li><a href="#">윤리신고센터</a></li>
-                <li><a href="#">법적고치</a></li>
-                <li><a href="#">사이트맵</a></li>
-            </ul>
-
-        </div>
-        <div class="ft_2">
-            <div id="ft_cont1">
-                <!-- ft_box1 -->
-                <div id="ft_box1">
-                    <div class="ft_logo">
-                        <img src="images/footer/logo.png" alt="ft_logo">
+                        <h3 class="s3_num3"><span class="gn">01</span> / <span class="ong">07</span></h3>
                     </div>
-                    <ul>
-                        <li>사업자 등록번호: 312-81-42519</li>
-                        <li>CJ푸드빌(주) 대표이사: 김찬호</li>
-                        <li>서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워 3.9- 11층 CJ푸드빌(주)</li>
-                        <li>고객센터 TEL : 1577 - 0700 대표 이메일 : help_master@cj.net</li>
-                        <li>개인정보보호책임자 : 김재완</li>
-                    </ul>
-                    <p>COPTRIGHT 2024ⓒJ.M.K target site : TOUS les JOURS : CJ Foodyile ALL RIGHT RESERVED.</p>
-                </div><!-- //ft_box1 -->
+                </div>
+                <div>
+                    <img src="images/sec3-2.png" alt="3-2">
+                    <div class="s3_sub_box1">
+                        <h3>
+                            <span class="ong">갓 구운 신선함</span>이
+                        </h3>
+                        <h3>
+                            매장을 가득 채웁니다.
+                        </h3>
+                        <p>오븐에서 방금 꺼낸 빵이 가장 맛있다는 것을 알기에, 뚜레쥬르는 지금도 더욱 따뜻하고 촉촉한 갓 구운 빵을 제공하기 위해 끊임없이 노력합니다.</p>
 
-                <!-- ft_box2 -->
-                <div id="ft_box2">
-                    <ul>
-                        <li class="ft_main">
-                            <a href="#sec1">제품 안내</a>
-                            <ul class="ft_sub">
-                                <li><a href="#"></a>신제품</li>
-                                <li><a href="#"></a>빵</li>
-                                <li><a href="#"></a>케이크</li>
-                                <li><a href="#"></a>델리</li>
-                                <li><a href="#"></a>선물</li>
-                                <li><a href="#"></a>디저트 & 스낵</li>
-                                <li><a href="#"></a>음료</li>
-                            </ul>
-                        </li>
-                        <li class="ft_main">
-                            <a href="#sec2">새로워진 뚜레쥬르</a>
-                            <ul class="ft_sub">
-                                <li><a href="#"></a>new 뚜레쥬르 살펴보기</li>
-                                <li><a href="#"></a>건강한 데일리 베이커리</li>
-                            </ul>
-                        </li>
-                        <li class="ft_main">
-                            <a href="#sec3">브랜드 스토리</a>
-                            <ul class="ft_sub">
-                                <li><a href="#"></a>브랜드 스토리</li>
-                                <li><a href="#"></a>뚜레쥬르 광고</li>
-                                <li><a href="#"></a>뚜레쥬르 재료 이야기</li>
-                                <li><a href="#"></a>뚜레쥬르 라뜰리에</li>
-                                <li><a href="#"></a>뚜레쥬르 착한빵</li>
-                                <li><a href="#"></a>뉴스 & 공지사항</li>
-                            </ul>
-                        </li>
-                        <li class="ft_main">
-                            <a href="#sec4">이벤트&멤버십</a>
-                            <ul class="ft_sub">
-                                <li><a href="#"></a>진행중인 이벤트</li>
-                                <li><a href="#"></a>이벤트 당첨자</li>
-                                <li><a href="#"></a>CJ ONE 멤버십</li>
-                                <li><a href="#"></a>제휴 혜택</li>
-                            </ul>
-                        </li>
-                        <li class="ft_main">
-                            <a href="#sec5">뚜레쥬르 앱&온라인 쇼핑몰</a>
-                            <ul class="ft_sub">
-                                <li><a href="#"></a>뚜레쥬르 앱</li>
-                                <li><a href="#"></a>홈페이지 전용 예약 배송</li>
-                                <li><a href="#"></a>꽃&케이크 택배 배송</li>
-                                <li><a href="#"></a>대량 구매 문의</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div><!-- //ft_box2 -->
-            </div><!-- //ft_cont1 -->
+                        <h3 class="s3_num3"><span class="gn">02</span> / <span class="ong">07</span></h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/sec3-3.png" alt="3-3">
+                    <div class="s3_sub_box1">
+                        <h3>
+                            좋은 밀가루를 만드는 회사의
+                        </h3>
+                        <h3 class="ong">베이커리 브랜드</h3>
+                        <p>좋은 밀가루도 좋은 빵의 맛을 내는 중요한 요소입니다. 뚜레쥬르는 CJ제일제당의 깐깐한 60년 제분 기술 노하우가 축적된 밀가루로 빵을 만드는 베이커리
+                            입니다.</p>
 
-            <!-- ft_cont2 -->
-            <div id="ft_cont2">
-                <div id="ft_fs"><!-- fs = family site 줄임말 -->
-                    <img src="images/footer/ft_familysite.png" alt="footer_family_site">
+                        <h3 class="s3_num3"><span class="gn">03</span> / <span class="ong">07</span></h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/sec3-4.png" alt="3-4">
+                    <div class="s3_sub_box1">
+                        <h3>
+                            선별된 좋은 재료를 사용하여
+                        </h3>
+                        <h3>
+                            <span class="ong">더욱 건강한 제품</span>을 제공하고자 합니다.
+                        </h3>
+                        <p>소중한 가족과 이웃에게 드리는 빵이기에, 뚜레쥬르의 빵과 케이크는 들어가는 모든 재료를 하나 하나 꼼꼼히 선별해서 사용합니다.</p>
+
+                        <h3 class="s3_num3"><span class="gn">04</span> / <span class="ong">07</span></h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/sec3-5.png" alt="3-5">
+                    <div class="s3_sub_box1">
+                        <h3>
+                            본질을 지키는 것은 기본,
+                        </h3>
+                        <h3>더 나아가 <span class="ong">혁신적인 변화로 업계를 선도</span>합니다.</h3>
+                        <p>매일매일, 하루 3번 매장에서 직접 빵을 굽는 일. 다른 베이커리에서 쉽게 도전하지 못했던 혁신적인 시도로 베이커리 시장에 첫 발을 내딛은 뚜레쥬르.</p>
+
+                        <h3 class="s3_num3"><span class="gn">05</span> / <span class="ong">07</span></h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/sec3-6.png" alt="3-6">
+                    <div class="s3_sub_box1">
+                        <h3>
+                            좋은 재료로 만들어 건강하고,
+                        </h3>
+                        <h3>
+                            매장에서 갓 구워 신선한 빵과 케이크를 만날 수 있는 곳.
+                        </h3>
+                        <p>"여기는 신선함이 가득한 베이커리, 뚜레쥬르입니다."</p>
+
+                        <h3 class="s3_num3" id="s3_h31"><span class="gn">06</span> / <span class="ong">07</span></h3>
+                    </div>
+                </div>
+                <div id="mj">
+                    <img src="images/sec3-7.png" alt="3-7">
+                    <div class="s3_sub_box1">
+                        <div id="s3_mj_box1">
+                            <h2 id="mh_title">
+                                Store List
+                            </h2>
+                            <img src="images/section3_icon.png" alt="s3_ico">
+                        </div>
+                        <div id="s3_mj_box2">
+                            <h4>매장 찾기</h4>
+                            <a href="#"> <img src="images/btn_search.png" alt="매장찾기아이콘"></a>
+                            <input type="text" placeholder="매장이나 시/군/구 명 입력">
+                        </div>
+                        <h5>가까운 <span class="ong">뚜레쥬르 매장</span>을 찾아보세요</h5>
+
+                        <h3 class="s3_num3" id="mh_h32"><span class="gn">07</span> / <span class="ong">07</span></h3>
+                    </div>
+                </div>
+            </div><!-- //#slide2 -->
+        </div><!-- //#sec2 -->
+
+        <div id="sec4" class="section">
+            <h2>Event</h2>
+
+            <div id="tabs"><!-- Event 탭 전체 부분 -->
+
+                <ul><!-- 탭 버튼 -->
+
+                    <li>
+                        <a href="#tab1">
+                            <img src="images/section2_left.png" alt="s4-btn">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#tab2"><img src="images/section2_right.png" alt="s4-btn">
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- 탭의 콘텐츠 -->
+                <div id="tab1" class="on">
+                    <div class="content1">
+                        <a href="#"><img src="images/UIcard_1.png" alt="sec4_1"></a>
+                        <a href="#"><img src="images/UIcard_2.png" alt="sec4_2"></a>
+                        <a href="#"><img src="images/UIcard_3.png" alt="sec4_3"></a>
+                        <a href="#"><img src="images/UIcard_4.png" alt="sec4_4"></a>
+                    </div>
+                </div>
+                <div id="tab2">
+                    <div class="content2">
+                        <a href="#"><img src="images/UIcard_5.png" alt="sec4_5"></a>
+                        <a href="#"><img src="images/UIcard_6.png" alt="sec4_6"></a>
+                        <a href="#"><img src="images/UIcard_7.png" alt="sec4_7"></a>
+                    </div>
+                </div>
+            </div><!-- //tabs -->
+        </div><!-- //sec4 -->
+        <div id="sec5" class="section">
+            <div class="sec5_logo">
+                <img src="images/sec5_logo.png" alt="logo">
+            </div>
+            <div id="s5_cont">
+                <div class="s5_box1">
+                    <img src="images/app_cont_02_01.png" alt="app_cont">
+                    <img src="images/app_cont_02_02.png" alt="app_cont">
+                    <img src="images/app_cont_02_03.png" alt="app_cont">
+                    <img src="images/app_cont_02_04.png" alt="app_cont">
                 </div>
 
-                <div id="ft_box3">
-                    <div id="sns">
-                        <img src="images/footer/instagram.png" alt="인스타그램">
-                        <img src="images/footer/facebook-f.png" alt="페이스북">
-                        <img src="images/footer/Vector.png" alt="트위터">
-                    </div>
-                    <div id="ft_fs2">
+                <div class="s5_box2">
+                    <h3>적립은 빠르게!<br>
+                        주문은 간편하게!<br>
+                        혜택까지 풍성하게!
+                    </h3>
+                    <hr>
+                    <p class="big">특별한
+                        <span class="ong">뚜쥬앱</span>
+                        <span class="sml">으로</span>
+                        <span class="ong">스마트</span>
+                        <span class="sml">하게!</span>
+                    </p>
+
+                    <p>내 손안의 편리한 뚜쥬 라이프</p>
+
+                    <div class="s5_box3">
+                        <p>다가오는 중요한 날을 위한 뚜레쥬르 케이크와<br>
+                            선물하기 좋은 롤케이크, 파운드 등을 미리 예약하고 픽업하세요!</p>
+
+                        <p>원하는 매장에서, 원하는 제품을 주문하고, 당일 원하는 시간에<br> 방문해 찾아가세요!</p>
+
+                        <p>집에서도, 회사에서도 어디에 있든지 편하게<br>
+                            가까운 뚜레쥬르를 배달로 만나보세요!</p>
+
+                        <p>소중한 분들께 뚜레쥬르 모바일 상품권으로 마음을 전하세요!<br> 제품 교환권과 잔액관리교환권 중 선택해서 선물할 수 있어요.</p>
+                    </div><!-- //s5_box3 -->
+                    <div class="s5_box4">
+                        <a href="#">지금 바로 뚜쥬앱 다운로드 하기 →</a>
+                        <img src="images/app_btn_qr.png" alt="qrcode">
+                    </div><!-- //s5_box4 -->
+                </div><!-- //s5_box2 -->
+
+                <div class="s5_box5">
+                    <img src="images/app_tit_01.png" alt="s5_img_title1">
+                    <img src="images/app_tit_02.png" alt="s5_img_title2">
+                </div>
+            </div><!-- //#s5_cont -->
+        </div>
+        <footer class="section fp-auto-height">
+            <div class="ft_1">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">기사 채용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">창업안내</a></li>
+                    <li><a href="#"><span class="ong">개인정보처리방침</span></a></li>
+                    <li><a href="#">영상처리정보기기 운영관리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">법적고치</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+
+            </div>
+            <div class="ft_2">
+                <div id="ft_cont1">
+                    <!-- ft_box1 -->
+                    <div id="ft_box1">
+                        <div class="ft_logo">
+                            <img src="images/logo.png" alt="ft_logo">
+                        </div>
                         <ul>
-                            <li class="ft_fs_main">
-                                <a href="#">family site</a>
-                                <ul class="ft_fs_sub">
-                                    <li><a href="#">더스테이크하우스</a></li>
-                                    <li><a href="#">N스위트바</a></li>
-                                    <li><a href="#">N스위트</a></li>
-                                    <li><a href="#">N테라스</a></li>
-                                    <li><a href="#">N버거</a></li>
-                                    <li><a href="#">더플레이스다이닝</a></li>
-                                    <li><a href="#">한쿡</a></li>
-                                    <li><a href="#">엔그릴</a></li>
-                                    <li><a href="#">N서울타워</a></li>
-                                    <li><a href="#">CJ푸드월드</a></li>
-                                    <li><a href="#">제일제면소</a></li>
-                                    <li><a href="#">더플레이스</a></li>
-                                    <li><a href="#">VIPS</a></li>
-                                    <li><a href="#">family site</a></li>
+                            <li>사업자 등록번호: 312-81-42519</li>
+                            <li>CJ푸드빌(주) 대표이사: 김찬호</li>
+                            <li>서울시 중구 마른내로34(초동 106-9번지) KT&G을지로타워 3.9- 11층 CJ푸드빌(주)</li>
+                            <li>고객센터 TEL : 1577 - 0700 대표 이메일 : help_master@cj.net</li>
+                            <li>개인정보보호책임자 : 김재완</li>
+                        </ul>
+                        <p>COPTRIGHT 2024ⓒJ.M.K target site : TOUS les JOURS : CJ Foodyile ALL RIGHT RESERVED.</p>
+                    </div><!-- //ft_box1 -->
+
+                    <!-- ft_box2 -->
+                    <div id="ft_box2">
+                        <ul>
+                            <li class="ft_main">
+                                <a href="#sec1">제품 안내</a>
+                                <ul class="ft_sub">
+                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="#">빵</a></li>
+                                    <li><a href="#">케이크</a></li>
+                                    <li><a href="#">델리</a></li>
+                                    <li><a href="#">선물</a></li>
+                                    <li><a href="#">디저트 & 스낵</a></li>
+                                    <li><a href="#">음료</a></li>
+                                </ul>
+                            </li>
+                            <li class="ft_main">
+                                <a href="#sec2">새로워진 뚜레쥬르</a>
+                                <ul class="ft_sub">
+                                    <li><a href="#">new 뚜레쥬르 살펴보기</a></li>
+                                    <li><a href="#">건강한 데일리 베이커리</a></li>
+                                </ul>
+                            </li>
+                            <li class="ft_main">
+                                <a href="#sec3">브랜드 스토리</a>
+                                <ul class="ft_sub">
+                                    <li><a href="#">브랜드 스토리</a></li>
+                                    <li><a href="#">뚜레쥬르 광고</a></li>
+                                    <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                                    <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+                                    <li><a href="#">뚜레쥬르 착한빵</a></li>
+                                    <li><a href="#">뉴스 & 공지사항</a></li>
+                                </ul>
+                            </li>
+                            <li class="ft_main">
+                                <a href="#sec4">이벤트&멤버십</a>
+                                <ul class="ft_sub">
+                                    <li><a href="#">진행중인 이벤트</a></li>
+                                    <li><a href="#">이벤트 당첨자</a></li>
+                                    <li><a href="#">CJ ONE 멤버십</a></li>
+                                    <li><a href="#">제휴 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li class="ft_main">
+                                <a href="#sec5">뚜레쥬르 앱&온라인 쇼핑몰</a>
+                                <ul class="ft_sub">
+                                    <li><a href="#">뚜레쥬르 앱</a></li>
+                                    <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                                    <li><a href="#">꽃&케이크 택배 배송</a></li>
+                                    <li><a href="#">대량 구매 문의</a></li>
                                 </ul>
                             </li>
                         </ul>
-                        </select>
+                    </div><!-- //ft_box2 -->
+                </div><!-- //ft_cont1 -->
+
+                <!-- ft_cont2 -->
+                <div id="ft_cont2">
+                    <div id="ft_fs"><!-- fs = family site 줄임말 -->
+                        <img src="images/ft_familysite.png" alt="footer_family_site">
                     </div>
-                </div>
 
-            </div><!-- //ft_cont2 -->
-        </div><!-- //ft_2 -->
+                    <div id="ft_box3">
+                        <div id="sns">
+                            <!-- font-awesome에서 가져온 icon을 색상 변경해서 추가. -->
+                            <img src="images/instagram.png" alt="인스타그램">
+                            <img src="images/facebook-f.png" alt="페이스북">
+                            <img src="images/Vector.png" alt="트위터">
+                        </div>
+                        <div id="ft_fs2">
+                            <ul>
+                                <li class="ft_fs_main">
+                                    <a href="#">family site</a>
+                                    <ul class="ft_fs_sub">
+                                        <li><a href="#">더스테이크하우스</a></li>
+                                        <li><a href="#">N스위트바</a></li>
+                                        <li><a href="#">N스위트</a></li>
+                                        <li><a href="#">N테라스</a></li>
+                                        <li><a href="#">N버거</a></li>
+                                        <li><a href="#">더플레이스다이닝</a></li>
+                                        <li><a href="#">한쿡</a></li>
+                                        <li><a href="#">엔그릴</a></li>
+                                        <li><a href="#">N서울타워</a></li>
+                                        <li><a href="#">CJ푸드월드</a></li>
+                                        <li><a href="#">제일제면소</a></li>
+                                        <li><a href="#">더플레이스</a></li>
+                                        <li><a href="#">VIPS</a></li>
+                                        <li><a href="#">family site</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-    </footer>
+                </div><!-- //ft_cont2 -->
+            </div><!-- //ft_2 -->
+
+        </footer>
+    </div><!-- section씩 지나가는 것 -->
+
+
 
     <div id="panner">
-        <div class="pn_icon"><a href="#"><img src="images/panner/매장정보_ico.png" alt="매장정보"></a>
+        <div class="pn_icon"><a href="#"><img src="images/매장정보_ico.png" alt="매장정보"></a>
         </div>
 
         <hr>
 
         <div class="pn_icon">
-            <a href="#"><img src="images/panner/주문정보_ico.png" alt="주문정보"></a>
+            <a href="#"><img src="images/주문정보_ico.png" alt="주문정보"></a>
         </div>
 
         <hr>
 
         <div class="pn_icon">
-            <a href="#"><img src="images/panner/NEW_ico.png" alt="기사채용안내"></a>
+            <a href="#"><img src="images/NEW_ico.png" alt="기사채용안내"></a>
         </div>
 
         <hr>
 
         <div class="pn_icon">
-            <a href="#"><img src="images/panner/panner_icon.png" alt="창업안내"></a>
+            <a href="#"><img src="images/panner_icon.png" alt="창업안내"></a>
         </div>
 
         <hr>
 
         <div class="pn_icon">
-            <a href="#"><img src="images/panner/mobile-ico.png" alt="모바일앱"></a>
+            <a href="#"><img src="images/mobile-ico.png" alt="모바일앱"></a>
         </div>
     </div>
 
-    <script>
-
-        $('.slide').bxSlider({
-            // General
-            mode: 'fade',
-            // auto를 false 로 바꾸면 캐러샐 슬라이드 동작 멈춤 버튼표시를 안보이게+자동슬라이드 정지.
-            auto: true,
-            // autoControls는 false로 하면 위와 다르게 슬라이드는 움직이고 버튼만 지운다.
-            autoControls: false,
-            // click시 자동 슬라이드를 순간 정지시킨다. false로 변경하면 click해도 슬라이드가 안멈춘다.
-            stopAutoOnClick: false,
-            // 페이저(pager,indicator 인디케이터 라고도함) 은 슬라이드 순서 보여주는 동그라미
-            pager: false,
-            // pause : 슬라이드 정지 시간 1밀리미초라서 1000 = 1초 4000 = 4초
-            pause: 5000,
-            slideWidth: 1080
-        });
-
-    </script>
+    <!-- js -->
+    <script src="script/script.js"></script>
 </body>
 
 </html>
