@@ -52,17 +52,15 @@ header.onmouseleave = function () {
 const li1 = document.querySelectorAll('#tabs ul li')[0];
 const li2 = document.querySelectorAll('#tabs ul li')[1];
 
-// 위에서 li 찾고 여기서 그 내부 a찾기
-const bt1 = document.querySelectorAll('#tabs a')[0];/* 위에서 li먼저 찾고나서 그 내부 a태그 요소찾을때는 li1붙여서 document~~ 하면 된다. */
-const bt2 = document.querySelectorAll('#tabs a')[1];/* 위에서 li먼저 찾고나서 그 내부 a태그 요소찾을때는 li1붙여서 document~~ 하면 된다. */
+const bt1 = document.querySelectorAll('#tabs a')[0];
+const bt2 = document.querySelectorAll('#tabs a')[1];
 
-console.log(bt1);
-console.log(bt2);
 
 // tab 1,2 찾기
 const cont1 = document.querySelector('#tab1');
 const cont2 = document.querySelector('#tab2');
 
+// 확인
 console.log(cont1);
 console.log(cont2);
 

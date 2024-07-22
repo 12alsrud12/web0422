@@ -180,6 +180,12 @@ p.small {
     color: #0D4633;
 }
 
+.s5_box4 a {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 24px;
+    color: #F7F0DA;
+}
+
 /* footer */
 /* footer1 */
 .ft_1 li a:not(.ong) {
@@ -237,6 +243,20 @@ p.small {
 
 .gn {
     color: #3D6B5C;
+}
+
+#sec5 p.big {
+    font-family: "온글잎 은별", sans-serif;
+    font-size: 32px;
+    color: #0D4633;
+}
+
+.sml {
+    font-size: 24px;
+}
+
+.s5_box3 p {
+    font-size: 16px;
 }
 
 /* //sub */
@@ -789,14 +809,67 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 }
 
 #s5_cont h3 {
-    margin: 50px 0 35px;
+    margin: 35px 0 35px;
 }
 
 #s5_cont hr {
     margin: 0;
-    margin-bottom: 35px;
     width: 60px;
     border: 1px solid #0D4633;
+}
+
+#s5_cont p:nth-last-of-type(2):not(.s5_box3 p) {
+    margin: 40px 0;
+}
+
+.s5_box3 {
+    margin-top: 40px;
+}
+
+.s5_box3 p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.s5_box4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 80px;
+    background: #0d4633;
+    border-radius: 18px;
+}
+
+.s5_box4 a {
+
+    margin-left: 32px;
+}
+
+.s5_box4 img {
+    margin-right: 32px;
+}
+
+.s5_box5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 135px;
+    width: 893px;
+    height: 730px;
+    background: url(../images/s5_bg.png);
+}
+
+.s5_box5 img:first-of-type {
+    margin-top: 50px;
+    width: 767px;
+    height: 81px;
+}
+
+.s5_box5 img:last-of-type {
+    margin-top: 40px;
+    width: 544px;
+    height: 44px;
 }
 
 /* //section */
@@ -1019,4 +1092,27 @@ footer .ft_2 {
     width: 50px;
     margin: 10px 0;
     border: 1px solid #0d4633;
+}
+
+/* ani */
+.s5_box5 img.active:first-of-type {
+    transition: .3s;
+    animation: s5_img .5s;
+}
+
+.s5_box5 img.active:last-of-type {
+    transition: .3s;
+    animation: s5_img .5s;
+}
+
+@keyframes s5_img {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
