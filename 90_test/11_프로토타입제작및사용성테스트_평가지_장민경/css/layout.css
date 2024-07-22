@@ -396,10 +396,10 @@ header:hover input {
 #sec1 {
     position: relative;
     display: flex;
-    height: 920px;
+    height: 100vh;
     margin: 0 auto;
     overflow: hidden;
-    background: url(images/sec1_bg.png);
+    background: url(../images/sec1_bg.png) 50% 50%/cover fixed no-repeat;
 }
 
 .sec1_st {
@@ -464,40 +464,38 @@ header:hover input {
     color: #F7F0DA;
 }
 
-#sec1 .bxslider img {
-    width: 1080px;
-    height: 800px;
-}
-
 #sec1 div.bx-wrapper {
     margin-top: 105px;
-    width: 1080px;
-    height: 800px;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 0;
 }
 
-.bx-wrapper .bx-controls-direction a:not(#sec3) {
-    z-index: 10;
-    width: 73px;
-    height: 86px;
+/* #tabs */
+
+#tabs>div {
+    font-size: 20px;
+    display: none;
 }
 
-#sec1 .bx-wrapper .bx-prev {
-    left: 0px;
-    background: url(../images/section1_left.png) no-repeat;
+#tabs>div.on {
+    display: block;
 }
 
-#sec1 .bx-wrapper .bx-next,
-#sec1 .bx-wrapper .bx-next:hover {
-    right: 0px;
-    background: url(../images/section1_right.png) no-repeat 0 0 !important;
+#tabs {
+    display: flex;
 }
 
+#btn ul {
+    display: flex;
+}
 
+#btn li {
+    position: relative;
+    display: flex;
+}
 
-
+/* //#tabs */
 
 /* #sec2 */
 
