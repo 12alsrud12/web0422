@@ -75,7 +75,9 @@ body {
     font-size: 10px;
 }
 
-h1:not(#sec2_sub_bx1 h1) {
+#sec2 h2:not(#sec2_sub_bx1 h2),
+#sec3 h2,
+#sec4 h2 {
     color: #F26B24;
     text-align: center;
     padding-top: 130px;
