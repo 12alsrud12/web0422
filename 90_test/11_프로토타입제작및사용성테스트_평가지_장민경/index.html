@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뚜레쥬르_장민경</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/typo.css">
-    <link rel="stylesheet" href="css/temp.css">
     <link rel="stylesheet" href="css/layout.css">
 
     <!-- jQuery -->
@@ -19,13 +16,10 @@
     <!-- fullpage.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <script src="script/tnj_fullpage.js"></script>
-
-    <!-- js -->
-    <script src="script/script.js"></script>
-
 </head>
 
 <body>
+    <!-- header -->
     <header>
 
         <nav class="wrap">
@@ -124,7 +118,7 @@
                     <button>자세히 보기</button>
                 </div><!-- sec1_sub_bx -->
             </div><!-- sec1_main_bx -->
-            <div class="slide">
+            <div class="tabs">
                 <div>
                     <img src="images/sec1-slide1.png" alt="1">
                 </div>
@@ -141,7 +135,7 @@
         <section id="sec2" class="section">
             <h1>New TOUS les JOURS</h1>
             <div id="sec2_bx1">
-                <div class="sec_limg"><img src="images/sec2/sec_left_banner.png" alt="sec2_left_banner">
+                <div class="sec_limg"><img src="images/sec_left_banner.png" alt="sec2_left_banner">
                 </div>
                 <div id="sec2_bx2">
                     <h3>| 새로운 뚜레쥬르</h3>
@@ -150,7 +144,7 @@
                         <p class="big">컨셉과 패키지 디자인 매장 인테리어까지 모두 새로워졌습니다.</p>
                         <h1>여기는 <span class="ong">신선함이 가득한 베이커리</span></h1>
                         <h1><span class="ong">뚜레쥬르</span>입니다.</h1>
-                        <img src="images/sec2/logo.png" alt="logo">
+                        <img src="images/logo.png" alt="logo">
                         <div id="sec2_sub_bx2">
                             <p>매일매일(Tous Les Jours),</p>
                             <p>매장에서 직접 굽는 <span class="ong">신선한 베이커리</span></p>
@@ -160,8 +154,12 @@
                 </div>
                 <div id="sec2_bx3">
                     <video width="515" height="290" controls>
-                        <source src="https://youtu.be/1h4eofC2MxU" type="video/mp4">
-                        Your browser does not support the video tag.
+                        <iframe width="515" height="290"
+                            src="https://www.youtube.com/embed/1h4eofC2MxU?si=o0p93MTrpiQMK1zE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </video>
                     <button>뚜레쥬르 소개 바로가기</button>
                 </div>
@@ -266,7 +264,7 @@
                         </div>
                         <div id="s3_mj_box2">
                             <h4>매장 찾기</h4>
-                            <a href="#"> <img src="images/btn_search 1.png" alt=""></a>
+                            <a href="#"> <img src="images/btn_search 1.png" alt="매장찾기아이콘"></a>
                             <input type="text" placeholder="매장이나 시/군/구 명 입력">
                         </div>
                         <h5>가까운 <span class="ong">뚜레쥬르 매장</span>을 찾아보세요</h5>
@@ -415,7 +413,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                            </select>
                         </div>
                     </div>
 
@@ -456,12 +453,8 @@
         </div>
     </div>
 
-    <script>
-
-
-
-
-    </script>
+    <!-- js -->
+    <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,3 @@
-const n1 = document.querySelector("#pp p");
-
-window.addEventListener("scroll", function () {
-    n1.innerHTML = Math.floor(pageYOffset);
-    n1.innerHTML = Math.floor(pageYOffset);
-});
-
-console.log(n1);
-
 $('.slide').bxSlider({
     // General
     mode: 'fade',
@@ -52,3 +43,5 @@ header.onmouseleave = function () {
     serch.innerHTML = ('<img src="images/header/serch_ico.png" alt="hover_ico1">');
     myPage.innerHTML = ('<img src="images/header/My_page_ico.png" alt="hover_ico1">');
 };
+
+const
