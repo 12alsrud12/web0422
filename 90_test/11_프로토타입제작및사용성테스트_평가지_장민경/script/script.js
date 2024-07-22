@@ -77,3 +77,19 @@ bt2.onclick = function () {
     cont2.classList.add('on');
     cont1.classList.remove('on');
 };
+
+
+// 원페이지 스크롤시 섹션이동 기능
+$(function () {
+    $('#wrap').fullpage({
+        menu: '#myNav',
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+        // navigation: true,
+        navigationTooltips: ['Main', 'New TOUS les JOURS', 'Brand List', 'Event',
+            'mobile', 'footer'],
+        showActiveTooltip: true,
+        //slidesNavigation: true,
+        //loopHorizontal: false,
+    });
+});
