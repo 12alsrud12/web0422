@@ -79,7 +79,8 @@ body {
 
 @font-face {
     font-family: "온글잎 은별";
-    src: url("https://12alsrud12.github.io/web0422/assets/font/온글잎_은별/온글잎_은별.ttf");
+    src: url("https://12alsrud12.github.io/web0422/assets/font/온글잎_은별/온글잎_은별.ttf") format("truetype");
+    font-weight: normal;
 }
 
 body {
