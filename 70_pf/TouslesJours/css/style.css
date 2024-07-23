@@ -48,14 +48,14 @@ iframe {
 
 /* typo */
 @font-face {
-    font-family: 'HSSaemaul-Regular';
+    font-family: 'HS새마을체';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Ownglyph_eunbyul21-Rg';
+    font-family: '온글잎 은별';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_eunbyul21-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
