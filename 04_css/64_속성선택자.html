@@ -5,26 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>64_속성선택자</title>
+    <style>
+        /* [속성] */
+        [target] {
+            text-decoration: none;
+        }
+
+        /* [속성="값"] */
+        [target="_blank"] {
+            color: #333;
+        }
+
+        /* [속성~="값"] */
+        [title~="com"] {
+            border: 1px solid red;
+        }
+
+        /* [속성|="값"] */
+        [title|="en"] {
+            background: yellow;
+        }
+
+        /* [속성^="값"] */
+        div[class^="test"] {
+            background: yellowgreen;
+        }
+
+        /* [속성$="값"] */
+        div[class$="test"] {
+            border: 1px solid blue;
+        }
+    </style>
 </head>
 
 <body>
     <h1>속성 선택자</h1>
     <h2>[속성]</h2>
     <a href="https://www.w3schools.com">W3schools.com</a><br>
-    <a href="https://www.google.com" target="_blank">Google.com</a><br>
+    <a href="https://www.google.com" target="_self">Google.com</a><br>
     <a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
 
     <h2>[속성="값"]</h2>
+    <a href="https://www.w3schools.com">W3schools.com</a><br>
+    <a href="https://www.google.com" target="_self">Google.com</a><br>
+    <a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+
     <!-- ~ = tilde, 틸더 라고 한다. -->
     <h2>[속성~="값"]</h2>
+    <a href="https://www.w3schools.com" title="W3schools.com com">W3schools.com</a><br>
+    <a href="https://www.google.com" target="_self" title="Google.com">Google.com</a><br>
+    <a href="https://www.microsoft.com" target="_blank" title="Microsoft.com com">Microsoft.com</a>
+
     <!-- | = vertical bar, 버티컬 바 또는 pipe, 파이프 라고 한다. -->
     <h2>[속성|="값"]</h2>
+    <a href="https://www.w3schools.com" title="en W3schools.com">W3schools.com</a><br>
+    <a href="https://www.google.com" target="_self" title="en-us Google.com">Google.com</a><br>
+    <a href="https://www.microsoft.com" target="_blank" title="en-ko Microsoft.com">Microsoft.com</a><br>
+    <a href="https://www.naver.com" target="_blank" title="ko naver.com">naver.com</a><br>
+    <a href="https://feweb.rf.gd" target="_blank" title="ja-jp feweb.rf.gd">feweb.rf.gd</a>
+
     <!-- ^ = caret, 캐럿 -->
     <h2>[속성^="값"]</h2>
+    <div class="test">1</div>
+    <div class="two_test">2</div>
+    <div class="test_three">3</div>
+    <div class="fortest">4</div>
+    <div class="testFive">5</div>
+
     <!-- $ = dollar sign, 달러 사인 -->
     <h2>[속성$="값"]</h2>
+    <div class="test">1</div>
+    <div class="two_test">2</div>
+    <div class="test_three">3</div>
+    <div class="fortest">4</div>
+    <div class="testFive">5</div>
     <!-- * = asterisk, 아스테리스크 -->
     <h2>[속성*="값"]</h2>
+
+
 </body>
 
 </html>
