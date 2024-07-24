@@ -1098,36 +1098,7 @@ footer .ft_2 {
         width: 100%;
     }
 
-    #sec1 {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .sec1_main_bx {
-        width: 100%;
-    }
-
-    #sec2 {
-        width: 100%;
-        height: 100vh;
-    }
-
-    #sec3 {
-        width: 100%;
-        height: 100vh;
-    }
-
-    #sec4 {
-        width: 100%;
-        height: 100vh;
-    }
-
-    #sec5 {
-        width: 100%;
-        height: 100vh;
-    }
-
-    footer {
+    #s5_cont {
         width: 100%;
     }
 }
