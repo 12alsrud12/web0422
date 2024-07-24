@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>64_속성선택자</title>
     <style>
+        /* 
+            ~ = tilde, 틸더 라고 한다.
+            | = vertical bar, 버티컬 바 또는 pipe, 파이프 라고 한다.
+
+            * = asterisk, 아스테리스크
+            ^ = caret, 캐럿
+            $ = dollar sign, 달러 사인
+
+            1. ~ 포함하는
+                - [속성~="en"] -> 포함하는 -> en, en-, en_, en us, us-en, us_en, ...
+
+            2. | 시작하는
+                - [속성|="en"] -> 시작하는 -> en과 enen, enKo는 적용되지 않는다. / 되는 것 en-en, en_en 등...,
+
+            3. * 포함하는 -> 들어가기만 하면 모든게 전부 다 선택된다.
+
+            4. ^ 시작하는 -> | 과는 다르게 en 도 포함해서 선택해준다.
+
+            5. $ 끝나는 -> 끝 단어에 en만 들어가면 다 포함한다. -> en, kren, kr-en, kr_en, ...
+
+            |와 ^ 는 "값"으로 시작되는 단어라는 점에서 같지만 ^는 앞에 값에 뒤에 단어가 없어도 "값" 그 자체도 포함해서 선택하는대 | 는 "값" 단어만 있는건 제외하되
+            그 뒤에 무언가 글자가 이어져있어야 선택된다.  
+        */
         /* [속성] */
         [target] {
             text-decoration: none;
@@ -32,37 +55,44 @@
         }
 
         /* [속성$="값"] */
-        div[class$="test"] {
+        p[class$="test"] {
             border: 1px solid blue;
+        }
+
+        /* [속성*="값"] */
+        [class*="text"] {
+            border: 5px solid orange;
         }
     </style>
 </head>
 
 <body>
+
     <h1>속성 선택자</h1>
+
     <h2>[속성]</h2>
-    <a href="https://www.w3schools.com">W3schools.com</a><br>
-    <a href="https://www.google.com" target="_self">Google.com</a><br>
-    <a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+    <a href="#">W3schools.com</a><br>
+    <a href="#" target="_self">Google.com</a><br>
+    <a href="#" target="_blank">Microsoft.com</a>
 
     <h2>[속성="값"]</h2>
-    <a href="https://www.w3schools.com">W3schools.com</a><br>
-    <a href="https://www.google.com" target="_self">Google.com</a><br>
-    <a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+    <a href="#">W3schools.com</a><br>
+    <a href="#" target="_self">Google.com</a><br>
+    <a href="#" target="_blank">Microsoft.com</a>
 
     <!-- ~ = tilde, 틸더 라고 한다. -->
     <h2>[속성~="값"]</h2>
-    <a href="https://www.w3schools.com" title="W3schools.com com">W3schools.com</a><br>
-    <a href="https://www.google.com" target="_self" title="Google.com">Google.com</a><br>
-    <a href="https://www.microsoft.com" target="_blank" title="Microsoft.com com">Microsoft.com</a>
+    <a href="#" title="W3schools.com com">W3schools.com</a><br>
+    <a href="#" target="_self" title="Google.com">Google.com</a><br>
+    <a href="#" target="_blank" title="Microsoft.com com">Microsoft.com</a>
 
     <!-- | = vertical bar, 버티컬 바 또는 pipe, 파이프 라고 한다. -->
     <h2>[속성|="값"]</h2>
-    <a href="https://www.w3schools.com" title="en W3schools.com">W3schools.com</a><br>
-    <a href="https://www.google.com" target="_self" title="en-us Google.com">Google.com</a><br>
-    <a href="https://www.microsoft.com" target="_blank" title="en-ko Microsoft.com">Microsoft.com</a><br>
-    <a href="https://www.naver.com" target="_blank" title="ko naver.com">naver.com</a><br>
-    <a href="https://feweb.rf.gd" target="_blank" title="ja-jp feweb.rf.gd">feweb.rf.gd</a>
+    <a href="#" title="en W3schools.com">W3schools.com</a><br>
+    <a href="#" target="_self" title="en-us Google.com">Google.com</a><br>
+    <a href="#" target="_blank" title="en-ko Microsoft.com">Microsoft.com</a><br>
+    <a href="#" target="_blank" title="ko naver.com">naver.com</a><br>
+    <a href="#" target="_blank" title="ja-jp feweb.rf.gd">feweb.rf.gd</a>
 
     <!-- ^ = caret, 캐럿 -->
     <h2>[속성^="값"]</h2>
@@ -74,14 +104,20 @@
 
     <!-- $ = dollar sign, 달러 사인 -->
     <h2>[속성$="값"]</h2>
-    <div class="test">1</div>
-    <div class="two_test">2</div>
-    <div class="test_three">3</div>
-    <div class="fortest">4</div>
-    <div class="testFive">5</div>
+    <p class="test">1</p>
+    <p class="two_test">2</p>
+    <p class="test_three">3</p>
+    <p class="fortest">4</p>
+    <p class="testFive">5</p>
+
     <!-- * = asterisk, 아스테리스크 -->
     <h2>[속성*="값"]</h2>
-
+    <div class="firsttext">1</div>
+    <div class="second">2</div>
+    <div class="text">3</div>
+    <div class="ex-text">4</div>
+    <p class="text">5</p>
+    <p class="ex-text">6</p>
 
 </body>
 
