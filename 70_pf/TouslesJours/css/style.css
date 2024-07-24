@@ -731,11 +731,12 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 }
 
 #tabs>div.on {
+    width: 100%;
     display: block;
 }
 
 #tabs ul {
-    width: 1920px;
+    width: 100%;
     justify-content: space-between;
     position: absolute;
     top: 60%;
@@ -753,10 +754,10 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 
 .content1,
 .content2 {
-    margin: 180px auto;
+    margin: 180px 360px;
     display: flex;
     justify-content: space-evenly;
-    width: 1370px;
+    flex-wrap: wrap;
     height: 430px;
 }
 
