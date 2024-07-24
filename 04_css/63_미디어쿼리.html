@@ -25,13 +25,14 @@
             padding: 15px;
         }
 
-        /* typo */
-        body {
-            font-family: "Lucida Sans", sans-serif;
-            color: #fff;
-            text-align: center;
-        }
+        /* 
+            CSS 변수(variable)
+                1. 선언
+                    :root {--변수명: 값;}
 
+                2. 사용
+                    선택자 {속성: var(--변수명);}
+        */
         /* 색상 */
         :root {
             /* -- ← 빼기 기호 2개(필수로 써야함!!) 이건 CSS의 변수라고 한다 변수이름지정 violet 그리고 #93c로 색상을 지정한 것. */
@@ -39,11 +40,21 @@
             --violet: #93c;
             --sky: #33b5e5;
             --depsky: #09c;
+            --white: #fff;
+            --gray: #333;
         }
+
+        /* typo */
+        body {
+            font-family: "Lucida Sans", sans-serif;
+            color: var(--white);
+            text-align: center;
+        }
+
 
         .header {
             background: var(--violet);
-            color: #ffffff;
+            color: var(--white);
             text-align: left;
             padding: 15px;
         }
@@ -54,12 +65,20 @@
             padding: 0;
         }
 
-        .row {
+        .section {
             display: flex;
+            flex-wrap: wrap;
         }
 
-        .row>div {
+        section>div {
             padding: 15px;
+        }
+
+        .menu,
+        .main,
+        .aside {
+            padding: 15px;
+            width: 100%;
         }
 
         .menu li {
@@ -79,7 +98,7 @@
         /* 메인 콘텐츠 */
         .main {
             text-align: left;
-            color: #333;
+            color: var(--gray);
         }
 
         /* 사이드 콘텐츠 */
@@ -93,132 +112,46 @@
         /* 푸터 */
         .footer {
             background: var(--sky);
+            text-align: center;
             font-size: 12px;
             padding: 15px;
         }
 
-        /* For mobile phones: */
-        [class*="col-"] {
-            width: 100%;
+        /* 최소 576px 이상의 장치: tablet,dexktop */
+        @media (min-width: 576px) {
+
+            /* 
+                flex-grow (성장하다) 1이면 늘어나고 수축
+                flex-shrink (줄인다 / 기본값0) 늘어나고 수축 x
+                flex-basis px, %, ...,
+                flex: grow shrink basis;
+            */
+            .menu {
+                flex: 33%;
+            }
+
+            .main {
+                flex: 67%;
+            }
+
+            .aside {
+                flex: 100%;
+            }
         }
 
-        /* row: 행, column: 열 / 줄여서 col, s는 small 작은것 */
-        /* @media only screen and (min-width: 600px) 원래 이건대 only screen and 이건 생략가능해서 지운다. */
-        /* 최소 600px 이상 */
-        @media (min-width: 600px) {
+        /* 최소 768이상의 장치: desktop */
+        @media (min-width: 900px) {
 
-            /* For tablets: */
-            /* col-*는 데스크탑, col-s-*는 태블릿이다., *는 1~12까지의 숫자를 말한다. col-을 지정하지 않으면 폰이다. */
-            /* 행은 가로 열은 세로이다. */
-            .col-s-1 {
-                width: 8.33%;
+            .menu {
+                flex: 25%;
             }
 
-            /* 1개의 크기가 비례해서 8.33이라는 뜻이다. */
-
-            .col-s-2 {
-                width: 16.66%;
+            .main {
+                flex: 50%;
             }
 
-            .col-s-3 {
-                width: 25%;
-            }
-
-            /* 정확히 1/4로 나눈 것 */
-
-            .col-s-4 {
-                width: 33.33%;
-            }
-
-            .col-s-5 {
-                width: 41.66%;
-            }
-
-            .col-s-6 {
-                width: 50%;
-            }
-
-            /* 정확히 반으로 나눈 것 */
-
-            .col-s-7 {
-                width: 58.33%;
-            }
-
-            .col-s-8 {
-                width: 66.66%;
-            }
-
-            .col-s-9 {
-                width: 75%;
-            }
-
-            /* 정확히 3/4로 지정한 것 */
-
-            .col-s-10 {
-                width: 83.33%;
-            }
-
-            .col-s-11 {
-                width: 91.66%;
-            }
-
-            .col-s-12 {
-                width: 100%;
-            }
-
-            /* 12일때가 전체를 다 사용한다는 뜻이다. */
-        }
-
-        /* 최소 992px 이상의 장치 992px 포함 */
-        @media only screen and (min-width: 992px) {
-
-            /* For desktop: */
-            .col-1 {
-                width: 8.33%;
-            }
-
-            .col-2 {
-                width: 16.66%;
-            }
-
-            .col-3 {
-                width: 25%;
-            }
-
-            .col-4 {
-                width: 33.33%;
-            }
-
-            .col-5 {
-                width: 41.66%;
-            }
-
-            .col-6 {
-                width: 50%;
-            }
-
-            .col-7 {
-                width: 58.33%;
-            }
-
-            .col-8 {
-                width: 66.66%;
-            }
-
-            .col-9 {
-                width: 75%;
-            }
-
-            .col-10 {
-                width: 83.33%;
-            }
-
-            .col-11 {
-                width: 91.66%;
-            }
-
-            .col-12 {
-                width: 100%;
+            .aside {
+                flex: 100%;
             }
         }
     </style>
@@ -230,9 +163,9 @@
     </div>
 
     <!-- row: 행, column: 열 / 줄여서 col, s는 small 작은것 -->
-    <div class="row">
+    <section class="section">
         <!-- 왼쪽 메뉴 -->
-        <div class="col-3 col-s-3 menu">
+        <div class="menu">
             <ul>
                 <li>The Flight</li>
                 <li>The City</li>
@@ -241,27 +174,30 @@
             </ul>
         </div>
 
-        <div class="col-6 col-s-9 main">
+        <div class="main">
             <h1>The City</h1>
             <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
                 the old town and the modern city.</p>
         </div>
 
-        <div class="col-3 col-s-12">
+        <div>
             <div class="aside">
-                <h2>What?</h2>
-                <p>Chania is a city on the island of Crete.</p>
-                <h2>Where?</h2>
-                <p>Crete is a Greek island in the Mediterranean Sea.</p>
-                <h2>How?</h2>
-                <p>You can reach Chania airport from all over Europe.</p>
+                <div>
+                    <h2>What?</h2>
+                    <p>Chania is a city on the island of Crete.</p>
+                    <h2>Where?</h2>
+                    <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                    <h2>How?</h2>
+                    <p>You can reach Chania airport from all over Europe.</p>
+                </div>
+
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
+    <footer class="footer">
         <p>CopyRight 2024 Chania. All rughts reserved.</p>
-    </div>
+    </footer>
 </body>
 
 </html>
