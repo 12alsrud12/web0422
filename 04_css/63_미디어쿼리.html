@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>63_미디어쿼리</title>
     <style>
+        /* reset */
         * {
             box-sizing: border-box;
+            /* border-box = width, height 크기에 border와 padding이 포함된다. */
         }
+
 
         .row::after {
             content: "";
@@ -22,6 +25,7 @@
             padding: 15px;
         }
 
+        /* typo */
         html {
             font-family: "Lucida Sans", sans-serif;
         }
@@ -72,12 +76,19 @@
             width: 100%;
         }
 
-        @media only screen and (min-width: 600px) {
+        /* row: 행, column: 열 / 줄여서 col, s는 small 작은것 */
+        /* @media only screen and (min-width: 600px) 원래 이건대 only screen and 이건 생략가능해서 지운다. */
+        /* 최소 600px 이상 */
+        @media (min-width: 600px) {
 
             /* For tablets: */
+            /* col-*는 데스크탑, col-s-*는 태블릿이다., *는 1~12까지의 숫자를 말한다. col-을 지정하지 않으면 폰이다. */
+            /* 행은 가로 열은 세로이다. */
             .col-s-1 {
                 width: 8.33%;
             }
+
+            /* 1개의 크기가 비례해서 8.33이라는 뜻이다. */
 
             .col-s-2 {
                 width: 16.66%;
@@ -86,6 +97,8 @@
             .col-s-3 {
                 width: 25%;
             }
+
+            /* 정확히 1/4로 나눈 것 */
 
             .col-s-4 {
                 width: 33.33%;
@@ -99,6 +112,8 @@
                 width: 50%;
             }
 
+            /* 정확히 반으로 나눈 것 */
+
             .col-s-7 {
                 width: 58.33%;
             }
@@ -111,6 +126,8 @@
                 width: 75%;
             }
 
+            /* 정확히 3/4로 지정한 것 */
+
             .col-s-10 {
                 width: 83.33%;
             }
@@ -122,9 +139,12 @@
             .col-s-12 {
                 width: 100%;
             }
+
+            /* 12일때가 전체를 다 사용한다는 뜻이다. */
         }
 
-        @media only screen and (min-width: 768px) {
+        /* 최소 992px 이상의 장치 992px 포함 */
+        @media only screen and (min-width: 992px) {
 
             /* For desktop: */
             .col-1 {
