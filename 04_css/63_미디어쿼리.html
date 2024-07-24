@@ -26,13 +26,25 @@
         }
 
         /* typo */
-        html {
+        body {
             font-family: "Lucida Sans", sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* 색상 */
+        :root {
+            /* -- ← 빼기 기호 2개(필수로 써야함!!) 이건 CSS의 변수라고 한다 변수이름지정 violet 그리고 #93c로 색상을 지정한 것. */
+            /* 변수(variable = 베리어 라는 뜻이다.) */
+            --violet: #93c;
+            --sky: #33b5e5;
+            --depsky: #09c;
         }
 
         .header {
-            background-color: #9933cc;
+            background: var(--violet);
             color: #ffffff;
+            text-align: left;
             padding: 15px;
         }
 
@@ -53,30 +65,34 @@
         .menu li {
             padding: 8px;
             margin-bottom: 7px;
-            background-color: #33b5e5;
-            color: #ffffff;
+            background: var(--sky);
+            transition: .3s;
 
             /* box-shadow: x위치 y위치 흐림 퍼짐효과 색상+opadity */
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         }
 
         .menu li:hover {
-            background-color: #0099cc;
+            background: var(--depsky);
         }
 
+        /* 메인 콘텐츠 */
+        .main {
+            text-align: left;
+            color: #333;
+        }
+
+        /* 사이드 콘텐츠 */
         .aside {
-            background-color: #33b5e5;
+            background: var(--sky);
             padding: 15px;
-            color: #ffffff;
-            text-align: center;
             font-size: 14px;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         }
 
+        /* 푸터 */
         .footer {
-            background-color: #0099cc;
-            color: #ffffff;
-            text-align: center;
+            background: var(--sky);
             font-size: 12px;
             padding: 15px;
         }
@@ -225,7 +241,7 @@
             </ul>
         </div>
 
-        <div class="col-6 col-s-9">
+        <div class="col-6 col-s-9 main">
             <h1>The City</h1>
             <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts,
                 the old town and the modern city.</p>
