@@ -7,14 +7,88 @@
     <title>br_draft</title>
 
     <style>
-        @media (min-width:576px) {}
+        /* 기본 폰 상태 */
+        body {
+            margin: 0;
+        }
 
-        @media (min-width:992px) {}
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .phone {
+            display: inline-block;
+        }
+
+        .tablet,
+        .desktop {
+            display: none;
+        }
+
+        @media (min-width: 768px) and (orientation: landscape) {
+
+            /* 폰 기울엿을때 */
+            .phone {
+                display: inline-block;
+            }
+
+            .tablet,
+            .desktop {
+                display: none;
+            }
+        }
+
+        @media (min-width:576px) {
+
+            /* 테블릿 */
+            .tablet {
+                display: inline-block;
+            }
+
+            .phone,
+            .desktop {
+                display: none;
+            }
+        }
+
+        @media (min-width:1000px) and (orientation: landscape) {
+
+            /* 테블릿 기울엿을때 */
+            .tablet {
+                display: inline-block;
+            }
+
+            .phone,
+            .desktop {
+                display: none;
+            }
+        }
+
+        @media (min-width:992px) {
+
+            /* 데스크탑 */
+            .desktop {
+                display: inline-block;
+            }
+
+            .phone,
+            .tablet {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-    
+
+    <div>
+        <img class="phone" src="asstes/phone.png" alt="phone">
+        <img class="tablet" src="asstes/tablet.png" alt="tablet">
+        <img class="desktop" src="asstes/desktop.png" alt="desktop">
+    </div>
+
+
 </body>
 
 </html>

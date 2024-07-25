@@ -135,3 +135,11 @@ footer button {
     font-weight: 700;
     color: var(--point);
 }
+
+/* 팀원 별 추가 font */
+
+/* 김은지님 */
+#FAQ_top h2,
+#menu_top h2 {
+    font-size: 80px;
+}
