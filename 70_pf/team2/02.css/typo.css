@@ -124,3 +124,14 @@ footer button {
     font-weight: 700;
     color: var(--point);
 }
+
+/* footer 2 */
+
+.ft2_bx2 li a {
+    font-size: 1.4rem;
+}
+
+.ft2_bx2 li:nth-of-type(3) a {
+    font-weight: 700;
+    color: var(--point);
+}

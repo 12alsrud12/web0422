@@ -87,6 +87,12 @@ footer hr {
     border-radius: 40px;
 }
 
+.ft2_bx2 ul {
+    width: 212px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* 폰 기울였을때 */
 @media (max-width: 768px) and (orientation: landscape) {
     /* 768이하이고 가로 사이즈일때 */
@@ -144,10 +150,19 @@ footer hr {
     #ft_main2 {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         height: 100px;
     }
 
     .ft_btn {
         display: block;
+    }
+
+    .ft2_bx2 ul {
+        width: 100%;
+    }
+
+    .ft2_bx2 li a:not(first-of-type) {
+        margin-left: 15px;
     }
 }
