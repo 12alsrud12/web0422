@@ -15,9 +15,9 @@
         /* 공통 */
         .bx {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
             border: 1px solid red;
-            padding: 30px;
         }
 
         .bx div {
@@ -31,12 +31,15 @@
         /* 폰 */
 
 
-
         @media (min-width:576px) {
 
             /* 테블릿 */
             body {
                 background: lightblue;
+            }
+
+            .bx {
+                flex-direction: row;
             }
         }
 
