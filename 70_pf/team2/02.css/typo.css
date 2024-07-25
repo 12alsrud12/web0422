@@ -46,6 +46,7 @@ h3 {
 
 p {
     font-family: '프리텐다드', sans-serif;
+    line-height: 1.5;
 }
 
 p.p1 {
@@ -62,6 +63,10 @@ p.p3 {
 
 p.p4 {
     font-size: 1.8em;
+}
+
+a {
+    font-family: "프리텐다드", sans-serif;
 }
 
 /* 추가 폰트 */
@@ -100,16 +105,22 @@ header {
 /* footer button */
 footer button {
     font-family: '프리텐다드', sans-serif;
-    font-size: 24px;
     font-weight: 700;
 }
 
-.ft_menu1 {
-    
+.ft_title_bx button {
     font-size: 14px;
 }
 
-.ft_menu1 li:first-of-type {
-    font-weight: ;
+#ft_main2 button {
+    font-size: 24px;
+}
+
+.ft_manu1 li a {
+    font-size: 14px;
+}
+
+.ft_manu1 li:first-child a {
+    font-weight: 700;
     color: var(--point);
 }

@@ -2,28 +2,93 @@
 
 @import url(style_guide.css);
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     border: 1px solid red;
     padding: 0 24px;
+    background: var(--white);
+    background: url(../03.assets/index/footer_bg.svg) no-repeat 50% 50%/cover;
+}
+
+
+footer button {
+    color: var(--white);
+    background: var(--main1);
 }
 
 .ft_logo {
-    margin: 32px 0 24px;
     width: 118px;
     height: 23px;
 }
 
-.ft_logo img {
-    width: 100%;
-    height: 100%;
+.ft_title_bx {
+    margin: 32px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ft_title_bx button {
+    padding: 8px 42px;
+    border-radius: 15px;
 }
 
 .ft_menu1 {
     display: flex;
 }
+
 .ft_menu1 li:first-of-type {
     color: var(--point);
 }
+
+.ft_bx2 {
+    margin-top: 10px;
+}
+
+#ft_main1 p:last-of-type:not(.ft_bx2 p) {
+    margin: 8px 0;
+}
+
+.ft_manu1 {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.ft_manu1 li:nth-of-type(2)::before {
+    content: "|";
+    margin: 0 16px;
+}
+
+.ft_manu1 li:nth-of-type(2)::after {
+    content: "|";
+    margin: 0 16px;
+}
+
+footer hr {
+    border: none;
+}
+
+/* footer2 */
+
+.ft_btn {
+    display: none;
+}
+
+#ft_main2 button {
+    padding: 5px 55px;
+    border-radius: 40px;
+}
+
+/* 폰 기울였을때 */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* 768이하이고 가로 사이즈일때 */
+
+}
+
 
 @media (min-width:576px) {
     /* 테블릿 */
@@ -38,7 +103,8 @@ footer {
     header {}
 
     /* 푸터 */
-    #ft_main1 {
+    #ft_main1,
+    #ft_main2 {
         width: 1460px;
         margin: 0 auto;
     }
@@ -49,10 +115,19 @@ footer {
 
     .ft_bx2 {
         display: flex;
+        margin: 8px 0 0;
     }
 
     .ft_bx2 p:first-of-type {
         width: 215px;
+    }
+
+    .ft_title_bx {
+        margin: 0;
+    }
+
+    .ft_title_bx button {
+        display: none;
     }
 
     footer hr {
@@ -61,5 +136,14 @@ footer {
         margin: 0;
     }
 
+    /* footer2 */
+    #ft_main2 {
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
 
+    .ft_btn {
+        display: block;
+    }
 }

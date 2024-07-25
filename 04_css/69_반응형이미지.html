@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>69_반응형이미지</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        img:first-of-type {
+            /* 
+                이미지 크기보다 큰 화면에서는 이미지 원래 크기대로 표시되고,
+                이미지 크기보다 작은 화면에서는 이미지 장치 크기에 맞게 작아짐.
+            */
+            max-width: 100%;
+            height: auto;
+        }
+
+        img:last-of-type {
+            min-width: 800px;
+            height: auto;
+        }
+
+        p {
+            font-size: 2vw;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://www.w3schools.com/css/img_chania.jpg" alt="1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem recusandae doloribus tempora velit molestias
+        laboriosam magni accusantium sunt unde!</p>
+    <img src="https://www.w3schools.com/css/img_chania.jpg" alt="2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem recusandae doloribus tempora velit molestias
+        laboriosam magni accusantium sunt unde!</p>
+</body>
+
+</html>
