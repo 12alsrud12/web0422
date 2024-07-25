@@ -731,12 +731,11 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 }
 
 #tabs>div.on {
-    width: 100%;
     display: block;
 }
 
 #tabs ul {
-    width: 100%;
+    width: 1920px;
     justify-content: space-between;
     position: absolute;
     top: 60%;
@@ -754,10 +753,10 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 
 .content1,
 .content2 {
-    margin: 180px 360px;
+    margin: 180px auto;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    width: 1370px;
     height: 430px;
 }
 
@@ -1092,20 +1091,4 @@ footer .ft_2 {
     width: 50px;
     margin: 10px 0;
     border: 1px solid #0d4633;
-}
-
-@media (min-width:600px) {
-    body {
-        width: 100%;
-    }
-
-    #s5_cont {
-        width: 100%;
-    }
-}
-
-@media (min-width:360px) {
-    body {
-        width: 100%;
-    }
 }

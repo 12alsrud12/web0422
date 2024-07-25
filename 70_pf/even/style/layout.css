@@ -78,8 +78,10 @@ body {
 }
 
 @font-face {
-    font-family: "온글잎 은별";
-    src: url("https://12alsrud12.github.io/web0422/assets/font/온글잎_은별/온글잎_은별.ttf");
+    font-family: '온글잎 은별';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_eunbyul21-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
