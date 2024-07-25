@@ -1,1 +1,10 @@
 @charset "utf-8";
+
+header {
+    height: 90px;
+    border: 1px solid #ff0000;
+}
+
+.sub_menu {
+    opacity: 0;
+}
