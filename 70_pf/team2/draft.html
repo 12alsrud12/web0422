@@ -11,14 +11,30 @@
         }
 
         div>img {
-            width: 1903px;
+            width: 100%;
+            height: autoF;
+        }
+
+        .pc {
+            display: none;
+        }
+
+        @media (min-width: 576px) {
+            .phone {
+                display: none;
+            }
+
+            .pc {
+                display: inline-block;
+            }
         }
     </style>
 </head>
 
 <body>
     <div>
-        <img src="draft.png" alt="시안">
+        <img class="pc" src="draft.png" alt="시안">
+        <img class="phone" src="draft_phone.png" alt="phone시안">
     </div>
 </body>
 
