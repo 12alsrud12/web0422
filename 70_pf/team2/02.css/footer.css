@@ -82,12 +82,12 @@ footer hr {
 
 
 #ft_ill img:first-of-type {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     animation: ft_ill1 infinite 3s;
 }
 
 #ft_ill img:nth-of-type(2) {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     animation: ft_ill1 infinite 7s;
 }
 
