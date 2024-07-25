@@ -74,6 +74,10 @@ footer hr {
 
 /* footer2 */
 
+#ft_main2 {
+    display: flex;
+}
+
 .ft_btn {
     display: none;
 }

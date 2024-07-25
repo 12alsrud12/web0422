@@ -1,56 +1,30 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 데스크탑이 우선일 시: 큰장치 -> 작은장치 */
+        /* https://www.w3schools.com/css/css_rwd_intro.asp */
+        /* 테스크탑 우선 디자인: 큰 장치 -> 작은 장치 */
         /* 데스크탑 */
-        body {
-            background: #fff;
-        }
 
         @media (max-width: 992px) {
-
             /* 992 이하: 테블릿 */
-            body {
-                background: darkcyan;
-            }
+            body {background: darkcyan;}
         }
-
-        @media (max-width: 1200px) and (orientation: landscape) {
-
-            /* 768이하이고 가로 사이즈일때 */
-            body {
-                background: darkmagenta;
-            }
-        }
-
-
-        @media (max-width: 576px) {
-
+        /* 참고: 자바스크립트의 and는 논리연산자 && */
+        @media (max-width: 576px)  {
             /* 576 이하: 폰 */
-            body {
-                background: darkgoldenrod;
-            }
+            body {background: darkgoldenrod;}
         }
-
-        /* 참고: 자바스크립트의 and는 논리연산자 $$ */
-        /* 여기서 and 조건 써서 기울였을때의 효과도 볼 수 있다. */
-        @media (max-width: 768px) and (orientation: landscape) {
-
-            /* 768이하이고 가로 사이즈일때 */
-            body {
-                background: darkred;
-            }
+        @media (max-width: 992px) and (orientation: landscape)  {
+            /* 768 이하 이고 가로 방향: 폰 */
+            body {background: darkred;}
         }
     </style>
 </head>
-
 <body>
-
+    
 </body>
-
 </html>

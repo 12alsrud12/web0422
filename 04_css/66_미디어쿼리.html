@@ -1,64 +1,51 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>65_미디어쿼리</title>
+    <title>Document</title>
     <style>
-        /* 모바일 우선 디자인: 작은장치 -> 큰장치 이 순서대로 해야해서 모바일이 맨 위. */
-        /* 영역확인 */
-        body {
-            outline: 1px dotted lime;
-        }
+        /* 모바일 우선 디자인: 작은 장치 -> 큰 장치 */
+
+        /* 영역 확인 */
+        body * {outline: 1px dotted lime;}
 
         /* 공통 */
+        .bx div {
+            width: 300px;
+            height: 300px;
+            background: yellow;
+            font-size: 50px;
+            margin: 10px;
+        }
+
+        /* 폰 */
         .bx {
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 1px solid red;
         }
 
-        .bx div {
-            /* 블록레벨 요소는 width 쓰지 않으면 auto가 100% */
-            height: 300px;
-            background: yellow;
-            font-size: 15px;
-            margin: 20px 0;
-        }
-
-        /* 폰 */
-
-
-        @media (min-width:576px) {
-
+        @media (min-width: 576px) {
             /* 테블릿 */
-            body {
-                background: lightblue;
-            }
-
+            body {background: lightblue;}
             .bx {
-                display: flex;
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: wrap;
             }
         }
-
-        @media (min-width:992px) {
-
+        @media (min-width: 992px) {
             /* 데스크탑 */
-            body {
-                background: lightcoral;
-            }
+            body {background: rgb(143, 146, 205);}
         }
     </style>
 </head>
 
 <body>
     <section>
-        <h2>미디어쿼리테스트</h2>
+        <h2>미디어쿼리 테스트</h2>
         <div class="bx">
             <div>1</div>
             <div>2</div>
