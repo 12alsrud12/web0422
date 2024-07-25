@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url(style_guide.css);
+
 footer {
     border: 1px solid red;
     padding: 0 24px;
@@ -14,6 +16,13 @@ footer {
 .ft_logo img {
     width: 100%;
     height: 100%;
+}
+
+.ft_menu1 {
+    display: flex;
+}
+.ft_menu1 li:first-of-type {
+    color: var(--point);
 }
 
 @media (min-width:576px) {
@@ -45,5 +54,12 @@ footer {
     .ft_bx2 p:first-of-type {
         width: 215px;
     }
+
+    footer hr {
+        width: 381px;
+        border: 1px solid var(--main1);
+        margin: 0;
+    }
+
 
 }

@@ -20,6 +20,15 @@
             }
         }
 
+        @media (max-width: 1200px) and (orientation: landscape) {
+
+            /* 768이하이고 가로 사이즈일때 */
+            body {
+                background: darkmagenta;
+            }
+        }
+
+
         @media (max-width: 576px) {
 
             /* 576 이하: 폰 */
@@ -28,7 +37,15 @@
             }
         }
 
-        /* 폰 */
+        /* 참고: 자바스크립트의 and는 논리연산자 $$ */
+        /* 여기서 and 조건 써서 기울였을때의 효과도 볼 수 있다. */
+        @media (max-width: 768px) and (orientation: landscape) {
+
+            /* 768이하이고 가로 사이즈일때 */
+            body {
+                background: darkred;
+            }
+        }
     </style>
 </head>
 

@@ -96,9 +96,20 @@ header {
     font-size: 3.2em;
 }
 
+/* footer */
 /* footer button */
 footer button {
     font-family: '프리텐다드', sans-serif;
     font-size: 24px;
     font-weight: 700;
+}
+
+.ft_menu1 {
+    
+    font-size: 14px;
+}
+
+.ft_menu1 li:first-of-type {
+    font-weight: ;
+    color: var(--point);
 }
