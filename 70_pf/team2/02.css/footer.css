@@ -110,6 +110,7 @@ footer hr {
 
 #ft_main2 {
     display: flex;
+    margin-bottom: 40px;
 }
 
 .ft_btn {
@@ -166,6 +167,10 @@ footer hr {
         display: flex;
         justify-content: space-evenly;
     }
+
+    #ft_ill {
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -209,6 +214,10 @@ footer hr {
 
 }
 
+@media (min-width: 1024px) and (orientation: landscape) {
+
+}
+
 @media (min-width:992px) {
 
     /* 데스크탑 */
@@ -235,7 +244,8 @@ footer hr {
         width: 215px;
     }
 
-    .ft_title_bx {
+    .ft_title_bx,
+    .ft2_bx2 {
         margin: 0;
     }
 
@@ -251,10 +261,10 @@ footer hr {
 
     /* footer2 */
     #ft_main2 {
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100px;
     }
 
     .ft_btn {
