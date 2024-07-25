@@ -1,1 +1,30 @@
 @charset "utf-8";
+
+:root {
+    /* main-color */
+    --main1: #876E66;
+    --main2: #E5D9B7;
+
+    /* sub-color */
+    --sub1: #796150;
+    --sub2: #101010;
+
+    /* point-color */
+    --point: #EC2931;
+
+    /* page-bg-color */
+    --bg: #FAF9F5;
+
+    /* season-color */
+    --season1: ;
+    --season2: ;
+    --season3: ;
+
+    --white: #fff;
+
+    --text1: #2d2d2d;
+    --text2: #666;
+    --text3: #8b8b8b;
+
+
+}
