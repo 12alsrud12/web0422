@@ -122,27 +122,34 @@ footer hr {
 }
 
 .ft2_bx2 ul {
+    margin: 10px 0;
     width: 220px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .ft2_bx2 li a {
-    margin: 16px 16px 16px 0;
+    margin: 16px 16px 20px 0;
+    line-height: 1.5;
 }
 
 .ft2_bx2 li:nth-of-type(2n) a {
     margin: 0;
 }
 
+.ft_cont2 {
+    display: none;
+}
+
 /* 폰 기울였을때 */
 @media (max-width: 768px) and (orientation: landscape) {
 
     /* 768이하이고 가로 사이즈일때 */
-    .ft2_bx2 ul {
-        width: 100%;
-        margin: 0 auto;
+
+    .ft2_bx2 {
+        width: 690px;
     }
+
 
     .ft2_bx2 li:first-of-type a,
     .ft2_bx2 li:last-of-type a {
@@ -154,7 +161,7 @@ footer hr {
     }
 
     .ft2_bx2 ul {
-        margin: 0 auto;
+        margin: 10px auto;
         width: 650px;
         display: flex;
         justify-content: space-evenly;
@@ -164,6 +171,41 @@ footer hr {
 
 @media (min-width:576px) {
     /* 테블릿 */
+
+    .ft_bx2 {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .ft_cont2 {
+        display: flex;
+    }
+
+    .ft2_bx2 {
+        margin: 0 auto;
+    }
+
+    .ft2_bx2 ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .ft2_bx2 li:first-of-type a {
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .ft2_bx2 li a {
+        margin: 0;
+        margin: 0 20px;
+    }
+
+    footer hr {
+        margin-top: 10px;
+        width: 100%;
+        border: 1px solid var(--main1);
+    }
 
 }
 
