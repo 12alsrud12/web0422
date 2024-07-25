@@ -1,6 +1,11 @@
 @charset "utf-8";
 
-
+@font-face {
+    font-family: 'HS새마을체';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: '온글잎 은별';
@@ -9,4 +14,61 @@
     font-style: normal;
 }
 
-h1 {}
+@font-face {
+    font-family: '프리텐다드';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'HS새마을체', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'HS새마을체', sans-serif;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: 'HS새마을체', sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: '프리텐다드', sans-serif;
+}
+
+p.p1 {
+    font-size: 12px;
+}
+
+p.p2 {
+    font-size: 14px;
+}
+
+p.p3 {
+    font-size: 16px;
+}
+
+p.p4 {
+    font-size: 18px;
+}
+
+/* 추가 폰트 */
+/* header nav-font */
+
+/* 회원가입 창 font */
+.su_title {
+    font-family: '온글잎 은별', sans-serif;
+    font-size: 32px;
+}
+
+/* footer button */
+footer button {
+    font-family: '프리텐다드', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
