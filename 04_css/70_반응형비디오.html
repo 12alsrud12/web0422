@@ -5,12 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>70_반응형비디오</title>
+    <style>
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- 비디오는 인라인 요소이다. 그래도 크기는 지정된다. -->
     <video width="400" controls>
+        <!-- 맨 위에 것이 먼저 연결이 안되면 2번째거가 나오고 안되면 3번 그래도 안뜨면 마지막 문구가 출력된다. -->
         <source src="https://www.w3schools.com/css/mov_bbb.mp4" type="video/mp4">
-        <source src="https://www.w3schools.com/css/mov_bbb.ogg" type="video/ogg">
+        <!-- ogg는 사파리는 부분적 지원 -->
+        <source src="../assets/video/mov_bbb.mp4" type="video/ogg">
+        <!-- 비디오 오디오 태그는 IE8 이전 버전은 지원하지 않는다. -->
+        <source src="../assets/video/mov_bbb.ogg" type="video/ogg">
         Your browser does not support HTML5 video.
     </video>
 </body>
