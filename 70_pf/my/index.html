@@ -7,18 +7,25 @@
     <title>J.M.K_my page</title>
     <!-- cdnjs에서 bootstrap 4.6.2 버전 중 1,4 링크 추가! -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+    <!-- 우리꺼 css 스타일 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 외부 srcipt -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div id="s2">
-        <h2>About me</h2>
-        <p>I love photography</p>
         <!-- 이 아래 container 여기 부터 부트스트랩 시작! -->
+        <!-- container 1 -->
         <div class="container">
+            <h2 class="text-center">About me</h2>
+            <!-- my 는 margin y 축 (위 아래 전부) -->
+            <p class="text-center my-5">I love photography</p>
             <!-- 내부에 row 2개 만들기! ☆ row에는 flex걸려있음!! -->
+            <!-- row 1 -->
             <div class="row">
                 <!-- 1번째 row에 col 1개 -->
+                <!-- col #1 -->
                 <div class="col">
                     <p>
                         We have created a fictional "personal" website/blog, and our fictional character is a hobby
@@ -31,30 +38,40 @@
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.
                     </p>
-                </div>
-            </div>
+                </div><!-- //col #1 -->
+            </div><!-- //row 1 -->
 
+            <!-- row 2 -->
             <div class="row">
                 <!-- 2번째 row에 col 2개 -->
+                <!-- col #2 -->
                 <div class="col">
+                    <!-- 2번째 row에 제목과 이미지 삽입 해야하는 부분! -->
+                    <div class="text-center my-5">Jang min kyung</div>
+                    <div>
+                        <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="임시 이미지">
+                    </div>
+                </div><!-- //col #2 -->
 
-                </div>
-
-                <div class="col">
+                <!-- col #3 -->
+                <div class="col mt-5">
                     <p>
                         Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
                         consequat.
                     </p>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div><!-- //col #3 -->
+            </div><!-- //row 2 -->
+        </div><!-- // container 1 -->
 </body>
 
 </html>
