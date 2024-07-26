@@ -1,10 +1,40 @@
 @charset "utf-8";
 
 header {
-    height: 90px;
     border: 1px solid #ff0000;
+    height: 40px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_menu {
+    display: flex;
+}
+
 
 .sub_menu {
     opacity: 0;
+    visibility: hidden;
+}
+
+/* 폰 기울였을 때 */
+@media (max-width: 768px) and (orientation: landscape) {}
+
+/* 태블릿 세로 */
+@media (min-width:576px) {}
+
+/* 데스크탑 */
+@media (min-width:992px) {
+    header {
+        height: 90px;
+    }
+
+    .main_menu {
+        display: flex;
+        height: 90px;
+        line-height: 90px;
+    }
 }
