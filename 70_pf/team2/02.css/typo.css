@@ -116,11 +116,11 @@ footer button {
     font-size: 24px;
 }
 
-.ft_manu1 li a {
+.ft_menu1 li a {
     font-size: 14px;
 }
 
-.ft_manu1 li:first-child a {
+.ft_menu1 li:first-child a {
     font-weight: 700;
     color: var(--point);
 }

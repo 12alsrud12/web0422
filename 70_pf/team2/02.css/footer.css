@@ -7,7 +7,6 @@ footer {
     border: 1px solid red;
     padding: 0 24px;
     background: var(--white);
-    z-index: -2;
     background: url(../03.assets/index/footer_bg.svg) no-repeat 50% 50%/cover;
 }
 
@@ -49,17 +48,17 @@ footer button {
     margin: 8px 0;
 }
 
-.ft_manu1 {
+.ft_menu1 {
     display: flex;
     margin-bottom: 8px;
 }
 
-.ft_manu1 li:nth-of-type(2)::before {
+.ft_menu1 li:nth-of-type(2)::before {
     content: "|";
     margin: 0 16px;
 }
 
-.ft_manu1 li:nth-of-type(2)::after {
+.ft_menu1 li:nth-of-type(2)::after {
     content: "|";
     margin: 0 16px;
 }
@@ -69,35 +68,32 @@ footer hr {
 }
 
 #ft_ill {
+    display: flex;
     bottom: 50px;
     position: absolute;
     right: 15px;
-    z-index: -1;
 }
 
 
 #ft_ill img:first-of-type {
-    margin-bottom: 70px;
+    width: 24px;
+    margin-bottom: 40px;
     animation: ft_ill1 infinite 3s;
 }
 
 #ft_ill img:nth-of-type(2) {
-    margin-bottom: 40px;
+    width: 16px;
+    right: 48px;
     animation: ft_ill1 infinite 7s;
 }
 
 @keyframes ft_ill1 {
     0% {
-        transform: rotate(1deg);
+        transform: rotate(0deg);
     }
-
-    99.99% {
-        transform: rotate(360deg);
-    }
-
 
     100% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -216,6 +212,10 @@ footer hr {
         width: 974px;
     }
 
+    .ft_menu1 {
+        margin-top: 16px;
+    }
+
     #ft_main2 {
         height: 100px;
         margin: 0;
@@ -253,6 +253,7 @@ footer hr {
 
     .ft_bx2 {
         display: flex;
+        width: 360px;
         margin: 8px 0 0;
     }
 
