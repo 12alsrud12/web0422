@@ -25,6 +25,36 @@
 
         const x = d.getFullYear();
         const y = d.getMonth();
+
+        // 월: 
+        const dd = d.getDate();
+        // 일: 1~31
+        const dd = d.getDate();
+        // 요일: 0(일) ~ 6(토)
+        let we = d.getDay();
+        // 시: 0~59
+        const hh = d.getHours();
+        // 분: 0~59
+        const mi = d.getMinutes();
+        // 초: 0~59
+        const ss = d.getSeconds();
+
+        // 요일 이렇게 안해두면 숫자 0 1 2 3 4 5 6 으로 나타난다 0 일요일 6토요일 순서
+        if (we === 0) {
+            we = "일요일";
+        } else if (we === 1) {
+            we = "월요일";
+        } else if (we === 2) {
+            we = "화요일";
+        } else if (we === 3) {
+            we = "수요일";
+        } else if (we === 4) {
+            we = "목요일";
+        } else if (we === 5) {
+            we = "금요일";
+        } else {
+            we = "토요일";
+        }
         document.write(y + "<br>" + m + "<br>");
     </script>
 

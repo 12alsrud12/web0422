@@ -2,17 +2,11 @@
 
 @import url(style_guide.css);
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 footer {
     position: relative;
     border: 1px solid red;
     padding: 0 24px;
     background: var(--white);
-    z-index: -2;
     background: url(../03.assets/index/footer_bg.svg) no-repeat 50% 50%/cover;
 }
 
