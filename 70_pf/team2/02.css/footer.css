@@ -221,6 +221,20 @@ footer hr {
         width: 974px;
     }
 
+    #ft_main2 {
+        height: 100px;
+        margin: 0;
+    }
+
+    .ft2_bx2 {
+        width: 650px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ft2_bx2 ul {
+        justify-content: space-between;
+    }
 }
 
 
