@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>72_부트스트랩</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+
+    <style>
+        body * {
+            border: 1px dotted red;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,6 +25,40 @@
             </div>
             <div class="col-sm">
                 One of three columns
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- col-sm: 576이하일때 100% -->
+            <!-- col-md: 768이하일때 100% -->
+            <!-- col-lg: 992이하일때 100% -->
+            <!-- col-xl: 1200이하일때 100% -->
+            <!-- col: 12등분 -->
+            <!-- 
+                col 사용시 규칙
+                    - col-*-*
+                    첫번째 *에는 sm md등 사이즈 기제
+                    두번째 * 에는 숫자 1 ~ 12 까지 입력 가능하지만 생략 가능
+                    생략 시 
+              -->
+            <div class="col-md">
+                1 of 2
+            </div>
+            <div class="col-md">
+                2 of 2
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                1 of 3
+            </div>
+            <div class="col-md">
+                2 of 3
+            </div>
+            <div class="col-md">
+                3 of 3
             </div>
         </div>
     </div>
