@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>20_디지털시계</title>
+        <script>
+            /*
+                함수
+                    1. 선언적 함수
+                    2. 익명 함수 -> 화살표 함수
+
+                    const 변수 = function(매개변수){return 실행문;}
+                    아래꺼는 위에보다 더 간략화 되어있는것, 매개변수가 만약 1개면 괄호도 필요가 없다.
+
+                    const 변수 = (매개변수) => 실행문;
+            */
+
+            window.addEventListener("DOMContentLoaded", () => {
+                const ho = document.querySelectorAll("span")[0];
+                const mi = document.querySelectorAll("span")[2];
+                const se = document.querySelectorAll("span")[4];
+
+                // 시간 실시간으로 가게하는 거 -> setInterval(함수, 밀리초);
+
+                setInterval(clock, 1000);
+
+                const d = new Date();
+
+                ho.innerText = d.getHours();
+                mi.innerText = d.getMinutes();
+                se.innerText = d.getSeconds();
+
+                console.log(d);
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <span>시</span>
+            <span>:</span>
+            <span>분</span>
+            <span>:</span>
+            <span>초</span>
+        </div>
+    </body>
+</html>

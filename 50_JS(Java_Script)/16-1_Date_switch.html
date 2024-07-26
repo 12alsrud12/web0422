@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-1_Date_switch</title>
+
+    <script>
+        /* 
+            제어문
+                1. 조건문: if, else
+                2. 선택문: switch ~ case, default, break / 단 default 는 선택사항 이다. / else도 선택사항이듯 ㅇㅅㅇ
+                3. 반복문: for / for은 한개밖에 없어도 종류가 짱 많은대
+                    - for, for~of, fot~in, while, do~while
+                4. continue, break / 1,2,3 내에서 필요하면 넣는 거라고 한다.
+                    - break -> 제어문 탈출 그 아래거는 무엇이 적혀도 실행안된다.
+
+            
+            switch ~ case문의 형식
+
+            switch (변수) {
+                case 값: 실행문; break;
+                case 값: 실행문; break;
+                case 값: 실행문; break;
+                ...
+                default 실행문;
+            }
+            
+            반복문을 제외하면 뭘 해도 끝까지 읽고나면 다시 작동하지 않는다.
+        */
+
+        // head에서 사용하는 스크립트 요소찾기 window 에 있는 모든 요소를 읽는다는 것
+        window.addEventListener("DOMContentLoaded", () => {
+            const we = 0;
+
+            document.write("<h1>제어문</h1>")
+            document.write("<h2>선택문</h2>")
+
+            switch (we) {
+                // const we = 0 하고 break 첫번째꺼 빼버리면 일요일입니다. 토요일입니다. 두개 다 사이트에 출력당한다.
+                case 0: document.write("일요일입니다."); break;
+                case 6: document.write("토요일입니다."); break;
+                // 해당하는 case가 없으면 default가 적용된다.
+                default: document.write("주중입니다.");
+            }
+        })
+
+
+    </script>
+</head>
+
+<body>
+    <h1>제어문</h1>
+    <h2>반복문</h2>
+</body>
+
+</html>

@@ -7,6 +7,7 @@ footer {
     border: 1px solid red;
     padding: 0 24px;
     background: var(--white);
+    z-index: -2;
     background: url(../03.assets/index/footer_bg.svg) no-repeat 50% 50%/cover;
 }
 
@@ -34,7 +35,6 @@ footer button {
 
 .ft_menu1 {
     display: flex;
-    margin-bottom: 8px;
 }
 
 .ft_menu1 li:first-of-type {
@@ -49,6 +49,10 @@ footer button {
     margin: 8px 0;
 }
 
+.ft_manu1 {
+    display: flex;
+    margin-bottom: 8px;
+}
 
 .ft_manu1 li:nth-of-type(2)::before {
     content: "|";
