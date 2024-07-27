@@ -24,13 +24,22 @@
 
 /* typo */
 
+/* 공통 */
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 100vh;
+}
+
 /* 폰 */
+
 
 .l_logo {
     width: 174px;
     height: 38px;
 }
-
 
 
 /* 폰 기울였을 시 */

@@ -1,0 +1,16 @@
+:root {
+    /* main-color */
+    --main1: #0d4633;
+    --main2: #3D6B5C;
+
+    /* sub-color */
+    --sub1: #f7f0da;
+    --sub2: #2e2e2e;
+    --sub3: #cac0b6;
+
+    /* point-color */
+    --point: #f26b24;
+
+    /* white */
+    --wt: #fff;
+}
