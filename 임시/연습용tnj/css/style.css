@@ -26,6 +26,11 @@
 
 /* 폰 */
 
+.l_logo {
+    width: 174px;
+    height: 38px;
+}
+
 
 
 /* 폰 기울였을 시 */
@@ -34,8 +39,9 @@
 /* 데스크탑 */
 
 @media (min-width: 992px) {
+
     /* logo */
-    .logo {
+    .l_logo {
         width: 268px;
         height: 37px;
     }
