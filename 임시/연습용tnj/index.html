@@ -34,9 +34,12 @@
 
         nav {
             position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: #000;
+            border: 1px solid orange;
+            right: -100%;
+        }
+
+        nav.active {
+            right: 0;
         }
 
         .mini_lg {
@@ -48,6 +51,7 @@
 
         .x_logo hr {
             width: 17px;
+            border: 1px solid var(--main1);
             transition: 1s;
         }
 
@@ -103,6 +107,59 @@
         <div class="logo"></div>
         <nav>
 
+            <ul>
+                <li class="main_menu" id="main1">
+                    <a href="#">메인메뉴1</a>
+                    <ul class="sub_menu" id="sub1">
+                        <li><a href="#">서브메뉴1-1</a></li>
+                        <li><a href="#">서브메뉴1-2</a></li>
+                        <li><a href="#">서브메뉴1-3</a></li>
+                        <li><a href="#">서브메뉴1-4</a></li>
+                        <li><a href="#">서브메뉴1-5</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu" id="main2">
+                    <a href="#">메인메뉴2</a>
+                    <ul class="sub_menu" id="sub2">
+                        <li><a href="#">서브메뉴2-1</a></li>
+                        <li><a href="#">서브메뉴2-2</a></li>
+                        <li><a href="#">서브메뉴2-3</a></li>
+                        <li><a href="#">서브메뉴2-4</a></li>
+                        <li><a href="#">서브메뉴2-5</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu" id="main3">
+                    <a href="#">메인메뉴3</a>
+                    <ul class="sub_menu" id="sub3">
+                        <li><a href="#">서브메뉴3-1</a></li>
+                        <li><a href="#">서브메뉴3-2</a></li>
+                        <li><a href="#">서브메뉴3-3</a></li>
+                        <li><a href="#">서브메뉴3-4</a></li>
+                        <li><a href="#">서브메뉴3-5</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu" id="main4">
+                    <a href="#">메인메뉴4</a>
+                    <ul class="sub_menu" id="sub4">
+                        <li><a href="#">서브메뉴4-1</a></li>
+                        <li><a href="#">서브메뉴4-2</a></li>
+                        <li><a href="#">서브메뉴4-3</a></li>
+                        <li><a href="#">서브메뉴4-4</a></li>
+                        <li><a href="#">서브메뉴4-5</a></li>
+                    </ul>
+                </li>
+                <li class="main_menu" id="main5">
+                    <a href="#">메인메뉴5</a>
+                    <ul class="sub_menu" id="sub5">
+                        <li><a href="#">서브메뉴5-1</a></li>
+                        <li><a href="#">서브메뉴5-2</a></li>
+                        <li><a href="#">서브메뉴5-3</a></li>
+                        <li><a href="#">서브메뉴5-4</a></li>
+                        <li><a href="#">서브메뉴5-5</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </nav>
         <div class="mini_lg">
             <div class="x_logo">
@@ -115,6 +172,37 @@
             <div class="hd_logo"><img src="images/My_page_ico.png" alt="my_page"></div>
         </div>
     </header>
+
+    <script>
+        // 요소찾기
+
+        // X버튼
+        const x = document.querySelector(".x_logo");
+        const x1 = document.querySelectorAll(".x_logo hr")[0];
+        const x2 = document.querySelectorAll(".x_logo hr")[1];
+        const x3 = document.querySelectorAll(".x_logo hr")[2];
+        const xx = document.querySelectorAll(".x_logo.active")[0];
+
+        // 확인용!
+        console.log(x1);
+        console.log(x2);
+        console.log(x3);
+
+        // 클릭 시 X자로 변경하게 할 것
+
+        x.onclick = function () {
+            x1.classList.add("active");
+            x2.classList.add("active");
+            x3.classList.add("active");
+        };
+
+        // nav
+        const n = document.querySelector("nav");
+
+        console.log(n);
+
+        if (x classList.has)
+    </script>
 </body>
 
 </html>
