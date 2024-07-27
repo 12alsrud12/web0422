@@ -4,131 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>헤더연습용</title>
-    <link rel="stylesheet" href="css/style_guide.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/type.css">
-
+    <title>123</title>
     <style>
-        .mb_hd_bt1 hr {
-            width: 20px;
-            margin: 0;
+        hr {
+            margin: 4px 0;
+            width: 17px;
             border: 2px solid #ccc;
         }
 
-        .mb_hd_bt1 hr:not(:first-of-type) {
-            margin-top: 3px;
+        .x_icon {
+            position: relative;
         }
 
-        button.mb_hd_bt1.active {
-            transition: .3s;
+        .x_icon hr {
+            transition: 1s;
         }
 
-
-        button.mb_hd_bt1 hr:nth-of-type(2) {
-            opacity: 1;
-        }
-
-        button.mb_hd_bt1.active hr:first-of-type {
-            transform: rotate(45deg);
-        }
-
-        button.mb_hd_bt1.active hr:nth-of-type(2) {
-            opacity: 0;
-        }
-
-        button.mb_hd_bt1.active hr:last-of-type {
-            transform: rotate(315deg);
-        }
-
-        /* 디자인 */
-        #modal .popup {
-            position: fixed;
-            width: 100%;
-            height: 100vh;
-            background: #6adf1c;
-            padding: 30px;
-        }
-
-        #modal .popup button {
+        .x_icon hr.active {
             position: absolute;
         }
 
-        /* 디자인 */
-
-        /* 팝업창 용도 */
-        #modal {
-            display: none;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+        div.x_icon hr:first-of-type.active {
+            transform: rotate(45deg);
         }
 
-        div#modal.on {
-            display: block;
+        div.x_icon hr:nth-of-type(2).active {
+            opacity: 0;
         }
 
-        /* //팝업창 용도 */
+        div.x_icon hr:last-of-type.active {
+            transform: rotate(315deg);
+        }
     </style>
-
 </head>
 
 <body>
 
-    <header>
-
-        <ul>
-            <li class="mb_hd_bt1">
-                <a href="#">
-                    <hr>
-                    <hr>
-                    <hr>
-                </a>
-            </li>
-        </ul>
-
-        <div id="modal" class="on"><!-- 팝업창 가리는 용도 -->
-
-            <div class="popup"><!-- 팝업창 콘텐츠 내용! -->
+    <div class="x_icon">
+        <hr>
+        <hr>
+        <hr>
+    </div>
 
 
-                <button class="mb_hd_bt1">
-                    <hr>
-                    <hr>
-                    <hr>
-                </button><!-- 누르면 팝업창 닫기/숨기기는 버튼 -->
-
-            </div><!-- .popup -->
-        </div><!-- //#modal -->
-    </header>
-
-    <!-- JS -->
     <script>
-        const md = document.querySelector('#modal');
-        const pp = document.querySelectorAll('#modal .popup')[0];
-        const bt1 = document.querySelectorAll('.mb_hd_bt1')[0];
-        const bt2 = document.querySelectorAll('.mb_hd_bt1')[1];
+        // 요소찾기
+        const x = document.querySelector(".x_icon");
+        const x1 = document.querySelectorAll(".x_icon hr")[0];
+        const x2 = document.querySelectorAll(".x_icon hr")[1];
+        const x3 = document.querySelectorAll(".x_icon hr")[2];
 
-        function resetX() {
-            md.classList.remove('on');
+        // 확인용!
+        console.log(x1);
+        console.log(x2);
+        console.log(x3);
+
+        // 클릭 시 X자로 변경하게 할 것
+
+        x.onclick = function () {
+            x1.classList.add("active");
+            x2.classList.add("active");
+            x3.classList.add("active");
         };
-
-        bt1.onclick = function () {
-            resetX();
-            md.classList.add('on');
-            bt2.classList.add('active');
-        };
-
-        bt2.onclick = function () {
-            resetX();
-            bt2.classList.remove('active');
-        };
-
     </script>
-
 </body>
 
 </html>

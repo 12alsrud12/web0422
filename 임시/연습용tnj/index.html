@@ -10,13 +10,107 @@
     <link rel="stylesheet" href="css/type.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+        body * {
+            border: 1px solid red;
+        }
+
+        header {
+            width: 100%;
+            height: 42px;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hd_logo {
+            width: 16px;
+        }
+
+        .hd_logo img {
+            vertical-align: middle;
+        }
+
+        nav {
+            position: fixed;
+        }
+
+        .mini_lg {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+        .x_logo hr {
+            width: 17px;
+            transition: 1s;
+        }
+
+        .x_logo hr.active {
+            position: absolute;
+        }
+
+        .x_logo hr:first-of-type.active {
+            transform: rotate(45deg);
+        }
+
+        .x_logo hr:nth-of-type(2).active {
+            opacity: 0;
+        }
+
+        .x_logo hr:last-of-type.active {
+            transform: rotate(315deg);
+        }
+
+        input {
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        @media (min-width:992px) {
+            header {
+                height: 90px;
+            }
+
+            .hd_logo {
+                width: 22px;
+            }
+
+            .logo {
+                width: 268px;
+                height: 37px;
+                background: url(images/logo.png);
+            }
+
+
+        }
+    </style>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script src="script/script.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="logo"></div>
+        <nav>
 
+        </nav>
+        <div class="mini_lg">
+            <div class="x_logo">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <input type="text">
+            <div class="hd_logo"><img src="images/serch_ico.png" alt="serch"></div>
+            <div class="hd_logo"><img src="images/My_page_ico.png" alt="my_page"></div>
+        </div>
+    </header>
 </body>
 
 </html>
