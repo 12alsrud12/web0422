@@ -8,265 +8,126 @@
     <link rel="stylesheet" href="css/style_guide.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/type.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .mb_hd_bt1 hr {
+            width: 20px;
+            margin: 0;
+            border: 2px solid #ccc;
+        }
 
-    <script src="script/script.js"></script>
+        .mb_hd_bt1 hr:not(:first-of-type) {
+            margin-top: 3px;
+        }
+
+        button.mb_hd_bt1.active {
+            transition: .3s;
+        }
+
+
+        button.mb_hd_bt1 hr:nth-of-type(2) {
+            opacity: 1;
+        }
+
+        button.mb_hd_bt1.active hr:first-of-type {
+            transform: rotate(45deg);
+        }
+
+        button.mb_hd_bt1.active hr:nth-of-type(2) {
+            opacity: 0;
+        }
+
+        button.mb_hd_bt1.active hr:last-of-type {
+            transform: rotate(315deg);
+        }
+
+        /* 디자인 */
+        #modal .popup {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #6adf1c;
+            padding: 30px;
+        }
+
+        #modal .popup button {
+            position: absolute;
+        }
+
+        /* 디자인 */
+
+        /* 팝업창 용도 */
+        #modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        div#modal.on {
+            display: block;
+        }
+
+        /* //팝업창 용도 */
+    </style>
+
 </head>
 
 <body>
 
     <header>
 
-        <div class="mb_h">
-            
-        </div>
-        <nav>
-            <ul>
-                <li class="main_menu" id="main1">
-                    <a href="#"></a>
-                    <ul id="sub1">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub2">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub3">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub4">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub5">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li class="main_menu" id="main2">
-                    <a href="#"></a>
-                    <ul id="sub1">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub2">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub3">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub4">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub5">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li class="main_menu" id="main3">
-                    <a href="#"></a>
-                    <ul id="sub1">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub2">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub3">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub4">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub5">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li class="main_menu" id="main4">
-                    <a href="#"></a>
-                    <ul id="sub1">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub2">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub3">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub4">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub5">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-                <li class="main_menu" id="main5">
-                    <a href="#"></a>
-                    <ul id="sub1">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub2">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub3">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub4">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <ul id="sub5">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <ul>
+            <li class="mb_hd_bt1">
+                <a href="#">
+                    <hr>
+                    <hr>
+                    <hr>
+                </a>
+            </li>
+        </ul>
+
+        <div id="modal" class="on"><!-- 팝업창 가리는 용도 -->
+
+            <div class="popup"><!-- 팝업창 콘텐츠 내용! -->
+
+
+                <button class="mb_hd_bt1">
+                    <hr>
+                    <hr>
+                    <hr>
+                </button><!-- 누르면 팝업창 닫기/숨기기는 버튼 -->
+
+            </div><!-- .popup -->
+        </div><!-- //#modal -->
     </header>
+
+    <!-- JS -->
+    <script>
+        const md = document.querySelector('#modal');
+        const pp = document.querySelectorAll('#modal .popup')[0];
+        const bt1 = document.querySelectorAll('.mb_hd_bt1')[0];
+        const bt2 = document.querySelectorAll('.mb_hd_bt1')[1];
+
+        function resetX() {
+            md.classList.remove('on');
+        };
+
+        bt1.onclick = function () {
+            resetX();
+            md.classList.add('on');
+            bt2.classList.add('active');
+        };
+
+        bt2.onclick = function () {
+            resetX();
+            bt2.classList.remove('active');
+        };
+
+    </script>
 
 </body>
 
