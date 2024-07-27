@@ -19,6 +19,7 @@
             width: 100%;
             height: 42px;
             position: fixed;
+            z-index: 9999;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -32,14 +33,32 @@
             vertical-align: middle;
         }
 
+        /* 네비게이션 */
+
         nav {
             position: fixed;
             border: 1px solid orange;
+            top: 42px;
             right: -100%;
         }
 
         nav.active {
             right: 0;
+        }
+
+        /* 메뉴 */
+
+        .main_menu {
+            position: relative;
+        }
+
+        .sub_menu {
+            position: absolute;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            transition: .3s;
         }
 
         .mini_lg {
@@ -81,6 +100,7 @@
         @media (min-width:992px) {
             header {
                 height: 90px;
+                background: var(--sub1);
             }
 
             .hd_logo {
@@ -88,9 +108,42 @@
             }
 
             .logo {
+                box-sizing: content-box;
+                margin: 34px auto 0;
                 width: 268px;
                 height: 37px;
-                background: url(images/logo.png);
+                border-radius: 18px 18px 0 0;
+                padding: 8px 24px;
+                background: url(images/logo.png) no-repeat 50% 50%;
+                background-color: var(--main1);
+            }
+
+            .x_logo {
+                visibility: hidden;
+            }
+
+            nav {
+                height: 90px;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                top: 0;
+                left: 0;
+            }
+
+            nav ul {
+                display: flex;
+                padding: 50px;
+            }
+
+            .main_menu {
+                position: relative;
+            }
+
+            .main_menu:hover .main_menu::before {
+                position: absolute;
+                height: 500px;
+                background: var(--main);
             }
 
 
@@ -194,6 +247,7 @@
             x1.classList.add("active");
             x2.classList.add("active");
             x3.classList.add("active");
+            n.classList.add("active");
         };
 
         // nav
@@ -201,7 +255,10 @@
 
         console.log(n);
 
-        if (x classList.has)
+        if (x.className('active').onclick()) {
+            n.classList.remove("active");
+            x.classList.remove("active");
+        };
     </script>
 </body>
 

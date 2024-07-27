@@ -20,7 +20,18 @@
 }
 
 
+/* header */
+/* main_menu */
+.main_menu a {
+    font-family: "HS새마을체", sans-serif;
+    font-size: 1.3em;
+    color: var(--main1);
+}
 
+.sub_menu a {
+    font-family: "HS새마을체", sans-serif;
+    font-size: 2.4em;
+}
 
 /* cp = copyRight */
 
