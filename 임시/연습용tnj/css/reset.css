@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+button,
+input {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+::selection {
+    background: #3D6B5C;
+}

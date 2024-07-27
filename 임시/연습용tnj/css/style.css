@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* style-guide */
+
+:root {
+    /* main-color */
+    --main1: #0d4633;
+    --main2: #3D6B5C;
+
+    /* sub-color */
+    --sub1: #f7f0da;
+    --sub2: #2e2e2e;
+    --sub3: #cac0b6;
+
+    /* point-color */
+    --point: #f26b24;
+
+    /* white */
+    --wt: #fff;
+}
+
+/* reset */
+
+
+/* typo */
+
+/* 폰 */
+
+
+
+/* 폰 기울였을 시 */
+@media (min-width: 740px) and (orientation: landscape) {}
+
+/* 데스크탑 */
+
+@media (min-width: 992px) {
+    /* logo */
+    .logo {
+        width: 268px;
+        height: 37px;
+    }
+}
