@@ -12,7 +12,7 @@
 
     <style>
         body * {
-            /* border: 1px solid red; */
+            border: 1px solid red;
         }
 
         header {
@@ -53,6 +53,10 @@
 
         /* 메뉴 */
 
+        .main {
+            position: relative;
+        }
+
         .main_menu {
             position: relative;
             transition: .3s;
@@ -74,7 +78,7 @@
 
         /* main-menu 호버시 sub_menu */
         .main>li:hover .sub_menu {
-            height: 500px;
+            height: 300px;
             opacity: 1;
             visibility: visible;
             overflow: visible;
