@@ -47,11 +47,4 @@ html {
 
 /* 데스크탑 */
 
-@media (min-width: 992px) {
-
-    /* logo */
-    .l_logo {
-        width: 268px;
-        height: 37px;
-    }
-}
+@media (min-width: 992px) {}

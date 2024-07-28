@@ -24,18 +24,35 @@
 /* main_menu */
 .main_menu a {
     font-family: "HS새마을체", sans-serif;
-    font-size: 1.3em;
+    font-size: 1.6em;
     color: var(--main1);
 }
 
 .sub_menu a {
     font-family: "HS새마을체", sans-serif;
-    font-size: 2.4em;
+    font-size: 1.6em;
 }
+
+
+
 
 /* cp = copyRight */
 
 .cp {
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
+}
+
+@media (min-width:992px) {
+    .main_menu a {
+        font-family: "HS새마을체", sans-serif;
+        font-size: 1.3em;
+        color: var(--main1);
+    }
+
+    .sub_menu a {
+        font-family: "HS새마을체", sans-serif;
+        font-size: 2.4em;
+    }
+
 }
