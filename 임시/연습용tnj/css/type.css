@@ -34,6 +34,14 @@
 }
 
 
+/* section */
+.section h2:first-of-type {
+    font-size: 32px;
+    font-family: "HS새마을체", sans-serif;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
 
 
 /* cp = copyRight */
@@ -64,7 +72,7 @@
         color: var(--sub1);
     }
 
-    .sub_menu:hover a {
+    .sub_menu li a:hover {
         color: var(--point);
         text-decoration: underline;
     }

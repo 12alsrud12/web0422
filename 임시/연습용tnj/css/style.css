@@ -59,15 +59,15 @@ header {
 }
 
 #serch {
-    width: 16px;
-    height: 15px;
+    width: 17px;
+    height: 16px;
     margin-right: 15px;
     background: url(../images/serch_ico.png) no-repeat 50% 50%/cover;
 }
 
 #my_page {
-    width: 16px;
-    height: 17px;
+    width: 17px;
+    height: 18px;
     background: url(../images/My_page_ico.png) no-repeat 50% 50%/cover;
 }
 
@@ -161,7 +161,25 @@ nav.active {
     display: none;
 }
 
+/* 섹션 */
+#sec1 {
+    height: 1305px;
+    background: var(--main1);
+    padding: 64px 24px 24px;
+}
 
+.s1_bx1 {
+    height: 100%;
+    border-radius: 25px;
+    background: var(--sub1);
+}
+
+/* 푸터 */
+
+footer {
+    height: 100px;
+    background: var(--sub2);
+}
 
 
 /* 폰 기울였을 시 */
@@ -176,6 +194,7 @@ nav.active {
         height: 90px;
         background: var(--sub1);
         transition: .3s;
+        border-bottom: 2px solid var(--sub3);
     }
 
     header:hover {
@@ -316,6 +335,21 @@ nav.active {
 
     #main5:hover #sub5 {
         left: -552px;
+    }
+
+    .section {
+        height: 100vh;
+        background: #ccc;
+    }
+
+    /* 푸터 */
+    footer {
+        height: 595px;
+    }
+
+    .ft1 {
+        height: 80px;
+        background: var(--sub1);
     }
 
 }

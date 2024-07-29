@@ -23,7 +23,7 @@
 
             <ul class="main">
                 <li class="main_menu" id="main1">
-                    <a href="#">제품안내</a>
+                    <a href="#sec1">제품안내</a>
                     <ul class="sub_menu" id="sub1">
                         <li><a href="#">신제품</a></li>
                         <li><a href="#">빵</a></li>
@@ -35,14 +35,14 @@
                     </ul>
                 </li>
                 <li class="main_menu" id="main2">
-                    <a href="#">새로워진 뚜레쥬르</a>
+                    <a href="#sec2">새로워진 뚜레쥬르</a>
                     <ul class="sub_menu" id="sub2">
                         <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
                         <li><a href="#">건강한 데일리 베이커리</a></li>
                     </ul>
                 </li>
                 <li class="main_menu" id="main3">
-                    <a href="#">브랜드 스토리</a>
+                    <a href="#sec3">브랜드 스토리</a>
                     <ul class="sub_menu" id="sub3">
                         <li><a href="#">브랜드 스토리</a></li>
                         <li><a href="#">뚜레쥬르 광고</a></li>
@@ -54,7 +54,7 @@
                     </ul>
                 </li>
                 <li class="main_menu" id="main4">
-                    <a href="#">이벤트&멤버십</a>
+                    <a href="#sec4">이벤트&멤버십</a>
                     <ul class="sub_menu" id="sub4">
                         <li><a href="#">진행중인 이벤트</a></li>
                         <li><a href="#">이벤트 당첨자</a></li>
@@ -63,7 +63,7 @@
                     </ul>
                 </li>
                 <li class="main_menu" id="main5">
-                    <a href="#">뚜레쥬르 앱&온라인 쇼핑몰</a>
+                    <a href="#sec5">뚜레쥬르 앱&온라인 쇼핑몰</a>
                     <ul class="sub_menu" id="sub5">
                         <li><a href="#">뚜레쥬르 앱</a></li>
                         <li><a href="#">홈페이지 전용 예약 배송</a></li>
@@ -86,40 +86,62 @@
         </div><!-- .mini_lg -->
     </header>
 
+    <div class="section" id="sec1">
+        <div class="s1_bx1"></div>
+    </div>
+    <div class="section" id="sec2">
+        <h2>New TOUS les JOURS</h2>
+    </div>
+    <div class="section" id="sec3">
+        <h2>Brand List</h2>
+    </div>
+    <div class="section" id="sec4">
+        <h2>Event</h2>
+    </div>
+    <div class="section" id="sec5"></div>
+
+    <footer>
+        <div class="ft1"></div>
+
+    </footer>
     <script>
         // 요소찾기
 
+        // header
         // X버튼
         const x = document.querySelector(".x_logo");
         const x1 = document.querySelectorAll(".x_logo hr")[0];
         const x2 = document.querySelectorAll(".x_logo hr")[1];
         const x3 = document.querySelectorAll(".x_logo hr")[2];
-
+        const n = document.querySelector("nav");
         // 확인용!
         console.log(x1);
         console.log(x2);
         console.log(x3);
 
-        // 클릭 시 X자로 변경하게 할 것
+        // 클릭 시 X자로 변경하게 할 것 + 네비가 나오게 할 것
 
         x.onclick = function () {
-            x1.classList.add("active");
-            n.classList.add("active");
+
+            if (x1.classList == 'active', x2.classList == 'active', x3.classList == 'active') {
+                x.onclick = function () {
+                    x1.classList.remove('active');
+                    x2.classList.remove('active');
+                    x3.classList.remove('active');
+                    n.classList.remove('active');
+                }
+            } else {
+                x1.classList.add("active");
+                x2.classList.add("active");
+                x3.classList.add("active");
+                n.classList.add("active");
+            }
+
+
         };
 
-        // nav
-        const n = document.querySelector("nav");
 
-        console.log(n);
 
-        if (x1.classList == 'active', x2.classList == 'active', x3.classList == 'active') {
-            x.onclick = function () {
-                x1.classList.remove('active');
-                x2.classList.remove('active');
-                x3.classList.remove('active');
-                n.classList.remove('active');
-            }
-        }
 
 
     </script>
