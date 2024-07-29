@@ -6,15 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>29-1 디지털시계</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
         /* 초기값 */
         html {
             font-size: 10px;
         }
 
+        body {
+            margin: 0;
+        }
+
+        /* 섹션 */
+        #s1 {
+            position: relative;
+            background: rgb(61, 61, 61);
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #s1 #clock {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         /* 날짜 디자인 */
 
         span {
-            font-size: 50px;
+            font-family: "Noto Sans KR", sans-serif;
+            font-size: 6rem;
             font-weight: 700;
             text-shadow: 0 0 5px 5px #ff7272;
             color: #ccc;
@@ -106,18 +131,21 @@
 </head>
 
 <body>
-    <div class="ddate">
-        <span>년</span>
-        <span>월</span>
-        <span>일</span>
-        <span>요일</span>
-    </div>
-
-    <div class="dtime">
-        <span>시</span>
-        <span>분</span>
-        <span>초</span>
-    </div>
+    <div id="s1">
+        <div id="clock">
+            <div class="ddate">
+                <span>년</span>
+                <span>월</span>
+                <span>일</span>
+                <span>요일</span>
+            </div>
+            <div class="dtime">
+                <span>시</span>
+                <span>분</span>
+                <span>초</span>
+            </div>
+        </div>
+    </div><!-- //s1 -->
 </body>
 
 </html>
