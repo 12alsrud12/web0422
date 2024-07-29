@@ -57,10 +57,15 @@
     }
 
     .main_menu:hover .sub_menu a {
-        color: var(--point);
+        color: var(--sub1);
     }
 
-    .sub_menu a:hover {
+    header:hover .main_menu a {
+        color: var(--sub1);
+    }
+
+    .sub_menu:hover a {
+        color: var(--point);
         text-decoration: underline;
     }
 

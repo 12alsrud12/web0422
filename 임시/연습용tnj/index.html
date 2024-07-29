@@ -25,51 +25,50 @@
                 <li class="main_menu" id="main1">
                     <a href="#">제품안내</a>
                     <ul class="sub_menu" id="sub1">
-                        <li><a href="#">서브메뉴1-1</a></li>
-                        <li><a href="#">서브메뉴1-2</a></li>
-                        <li><a href="#">서브메뉴1-3</a></li>
-                        <li><a href="#">서브메뉴1-4</a></li>
-                        <li><a href="#">서브메뉴1-5</a></li>
+                        <li><a href="#">신제품</a></li>
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">델리</a></li>
+                        <li><a href="#">선물</a></li>
+                        <li><a href="#">디저트&스낵</a></li>
+                        <li><a href="#">음료</a></li>
                     </ul>
                 </li>
                 <li class="main_menu" id="main2">
                     <a href="#">새로워진 뚜레쥬르</a>
                     <ul class="sub_menu" id="sub2">
-                        <li><a href="#">서브메뉴2-1</a></li>
-                        <li><a href="#">서브메뉴2-2</a></li>
-                        <li><a href="#">서브메뉴2-3</a></li>
-                        <li><a href="#">서브메뉴2-4</a></li>
-                        <li><a href="#">서브메뉴2-5</a></li>
+                        <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                        <li><a href="#">건강한 데일리 베이커리</a></li>
                     </ul>
                 </li>
                 <li class="main_menu" id="main3">
-                    <a href="#">메인메뉴3</a>
+                    <a href="#">브랜드 스토리</a>
                     <ul class="sub_menu" id="sub3">
-                        <li><a href="#">서브메뉴3-1</a></li>
-                        <li><a href="#">서브메뉴3-2</a></li>
-                        <li><a href="#">서브메뉴3-3</a></li>
-                        <li><a href="#">서브메뉴3-4</a></li>
-                        <li><a href="#">서브메뉴3-5</a></li>
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">뚜레쥬르 광고</a></li>
+                        <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                        <li><a href="#">글로벌 뚜레쥬르</a></li>
+                        <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+                        <li><a href="#">뚜레쥬르 착한빵</a></li>
+                        <li><a href="#">뉴스 & 공지사항</a></li>
                     </ul>
                 </li>
                 <li class="main_menu" id="main4">
-                    <a href="#">메인메뉴4</a>
+                    <a href="#">이벤트&멤버십</a>
                     <ul class="sub_menu" id="sub4">
-                        <li><a href="#">서브메뉴4-1</a></li>
-                        <li><a href="#">서브메뉴4-2</a></li>
-                        <li><a href="#">서브메뉴4-3</a></li>
-                        <li><a href="#">서브메뉴4-4</a></li>
-                        <li><a href="#">서브메뉴4-5</a></li>
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">이벤트 당첨자</a></li>
+                        <li><a href="#">CJ ONE 멤버십</a></li>
+                        <li><a href="#">제휴 혜택</a></li>
                     </ul>
                 </li>
                 <li class="main_menu" id="main5">
-                    <a href="#">메인메뉴5</a>
+                    <a href="#">뚜레쥬르 앱&온라인 쇼핑몰</a>
                     <ul class="sub_menu" id="sub5">
-                        <li><a href="#">서브메뉴5-1</a></li>
-                        <li><a href="#">서브메뉴5-2</a></li>
-                        <li><a href="#">서브메뉴5-3</a></li>
-                        <li><a href="#">서브메뉴5-4</a></li>
-                        <li><a href="#">서브메뉴5-5</a></li>
+                        <li><a href="#">뚜레쥬르 앱</a></li>
+                        <li><a href="#">홈페이지 전용 예약 배송</a></li>
+                        <li><a href="#">꽃 & 케이크 택배 배송</a></li>
+                        <li><a href="#">대량 구매 문의</a></li>
                     </ul>
                 </li>
             </ul>
@@ -82,8 +81,8 @@
                 <hr>
             </div><!-- .x_logo -->
             <input type="text">
-            <div class="hd_logo"><!-- serch_img --></div>
-            <div class="hd_logo"><!-- My page --></div>
+            <div class="hd_logo" id="serch"><!-- serch_img --></div>
+            <div class="hd_logo" id="my_page"><!-- My page --></div>
         </div><!-- .mini_lg -->
     </header>
 
@@ -95,7 +94,6 @@
         const x1 = document.querySelectorAll(".x_logo hr")[0];
         const x2 = document.querySelectorAll(".x_logo hr")[1];
         const x3 = document.querySelectorAll(".x_logo hr")[2];
-        const xx = document.querySelectorAll(".x_logo.active")[0];
 
         // 확인용!
         console.log(x1);
@@ -106,8 +104,6 @@
 
         x.onclick = function () {
             x1.classList.add("active");
-            x2.classList.add("active");
-            x3.classList.add("active");
             n.classList.add("active");
         };
 
@@ -116,10 +112,16 @@
 
         console.log(n);
 
-        if (xx.className('.x_logo .active').onclick()) {
-            n.classList.remove("active");
-            x.classList.remove("active");
-        };
+        if (x1.classList == 'active', x2.classList == 'active', x3.classList == 'active') {
+            x.onclick = function () {
+                x1.classList.remove('active');
+                x2.classList.remove('active');
+                x3.classList.remove('active');
+                n.classList.remove('active');
+            }
+        }
+
+
     </script>
 </body>
 
