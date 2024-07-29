@@ -33,6 +33,11 @@ html {
     height: 100vh;
 }
 
+.logo {
+    width: 268px;
+    height: 37px;
+}
+
 /* 폰 */
 body * {
     border: 1px solid red;
@@ -71,6 +76,27 @@ header {
     background: url(../images/My_page_ico.png) no-repeat 50% 50%/cover;
 }
 
+.ft_mb_img {
+    padding: 16px 0;
+    width: 100%;
+    height: auto;
+}
+
+div.sns.mb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.sns.mb>.sns:not(:last-of-type) {
+    width: 37px;
+}
+
+.sns.mb>.sns:last-of-type {
+    width: 19px;
+}
+
 /* 네비게이션 */
 
 nav {
@@ -81,6 +107,7 @@ nav {
     top: 42px;
     right: -100%;
     transition: .5s;
+    background: var(--sub1);
 }
 
 nav.active {
@@ -101,8 +128,9 @@ nav.active {
 }
 
 .sub_menu {
-    padding: 0 24px;
+    padding: 0 32px;
     position: absolute;
+    left: 0;
     height: 0;
     opacity: 0;
     visibility: hidden;
@@ -177,9 +205,106 @@ nav.active {
 /* 푸터 */
 
 footer {
-    height: 100px;
+    padding: 32px 16px 48px;
+
     background: var(--sub2);
 }
+
+.ft1 {
+    display: none;
+}
+
+
+.mb.fm_site button {
+    position: relative;
+    z-index: 50;
+    text-align: start;
+    border-radius: 20px;
+    padding: 0 16px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "HS새마을체", sans-serif;
+    color: var(--sub2);
+    height: 40px;
+    line-height: 40px;
+    background: var(--wt);
+}
+
+.mb.fm_site button::after {
+    content: "";
+    background: url(../images/familyiste_up.png);
+    width: 11px;
+    height: 7px;
+}
+
+.mb.fm_site button:hover::after {
+    content: "";
+    background: url(../images/familyiste_down.png);
+    width: 11px;
+    height: 7px;
+}
+
+ul.mb.fm_site {
+    position: absolute;
+    z-index: 45;
+    border-radius: 20px;
+    padding: 24px 0;
+    background: var(--wt);
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+}
+
+ul.mb.fm_site li a {
+    padding: 0 16px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "HS새마을체", sans-serif;
+    color: var(--point);
+    height: 40px;
+    line-height: 40px;
+}
+
+.mb.fm_site button:hover ul.mb.fm_site {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: 594px;
+}
+
+.ft2_bx1 .logo {
+    margin: 24px 0;
+}
+
+.cp:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.cp.mb {
+    height: 50px;
+    padding: 8px 0 0;
+}
+
+ul.mb {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+ul.mb li a {
+    padding: 0 40px;
+}
+
+ul.mb li {
+    border: 1px solid var(--sub1);
+}
+
+.pc {
+    display: none;
+}
+
 
 
 /* 폰 기울였을 시 */
@@ -199,9 +324,10 @@ footer {
 
     header:hover {
         background: var(--main2);
+        border-bottom: none;
     }
 
-    .logo {
+    header .logo {
         position: fixed;
         box-sizing: content-box;
         left: 40%;
@@ -344,12 +470,33 @@ footer {
 
     /* 푸터 */
     footer {
+        padding: 0;
         height: 595px;
     }
 
     .ft1 {
+        display: flex;
+        align-items: center;
         height: 80px;
         background: var(--sub1);
+    }
+
+    .ft1 ul {
+        width: 1716px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ft2 {
+        display: flex;
+        margin: 0 200px;
+    }
+
+    .mb,
+    div.sns.mb,
+    ul.mb {
+        display: none;
     }
 
 }

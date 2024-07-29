@@ -41,14 +41,39 @@
     height: 60px;
     line-height: 60px;
     text-align: center;
+    color: var(--point);
+    background: var(--main1);
 }
 
+/* footer */
+
+.mb.fm_site button {
+    font-size: 16px;
+    font-family: "HS새마을체", sans-serif;
+    color: var(--sub2);
+}
+
+ul.mb.fm_site li a {
+    font-size: 16px;
+    font-family: "HS새마을체", sans-serif;
+    color: var(--point);
+}
 
 /* cp = copyRight */
 
 .cp {
+    color: var(--sub1);
     font-family: "Abel", sans-serif;
     font-size: 1.2em;
+    line-height: 1.5;
+}
+
+ul.mb {
+    line-height: 38px;
+}
+
+ul.mb li a {
+    color: var(--sub1);
 }
 
 /* desk-top:font color */
@@ -77,4 +102,25 @@
         text-decoration: underline;
     }
 
+
+
+    /* section */
+
+    .section h2:first-of-type {
+        font-size: 48px;
+        height: 190px;
+        padding: 120px 0 0;
+    }
+
+    .ft1 li a {
+        font-family: "HS새마을체", sans-serif;
+        font-size: 2.4em;
+    }
+
+
+}
+
+/* 공통 */
+.ong {
+    color: var(--point);
 }

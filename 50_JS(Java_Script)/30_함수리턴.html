@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,42 @@
         */
 
         // 함수 선언
-        function fn(para){
-            document.write(para + " 호출했니?");
+        function fn(para) {
+            return para + " 호출했니?"
+            document.write(na, yo, hong);
         }
 
         // 함수 호출
-        fn("나");
-        fn("너");
-        fn("홍길동");
+        const na = fn("나");
+        const yo = fn("너");
+        const hong = fn("홍길동");
+
+        // fn = 나 or 너 or 홍길동 | para 옆 문자열 "호출했니?"
+        // fn para = 나호출했니? 너호출했니?홍길동호출했니?
+
+        // return 다시 돌려주다. 리턴
+
+        // 위에 return으로 값을 돌려준 후 출력
+
+        // 그러면 코드에서 나호출했니? 너호출했니? 홍길동호출했니? 문자열이 나타난다.
+
+        // 추가로
+        // 함수호출
+        const t = add(2, 5);
+        const tt = add(20, 50);
+        // 이렇게 add붙이고 숫자 넣으면 두개를 합쳐준다.
+
+        function add(t, tt) {
+            return t + tt;
+        };
+
+        document.write(t, tt);
+        // 이러면 7 과 70 순서대로 출력되어서 770이 출력된다 (띄어쓰기가 안됐기 때문이다.)
     </script>
 </head>
+
 <body>
     <h1>함수 - return</h1>
 </body>
+
 </html>
