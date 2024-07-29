@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/* reset */
+body {
+    margin: 0;
+}
+
+
+/* start */
+
+.wrap {
+    width: 1340px;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* A영역 */
+header {
+    height: 100px;
+    background: #878787;
+}
+
+/* B영역 */
+#slide {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+#slide div {
+    position: absolute;
+    width: 1350px;
+    height: 350px;
+    animation: slide 12s infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0%;
+    }
+
+    10% {
+        left: -25%;
+    }
+
+    33% {
+        left: -25%;
+    }
+
+    43% {
+        left: -50%;
+    }
+
+    68% {
+        left: -50%;
+    }
+
+    78% {
+        left: -75%;
+    }
+
+    99.99% {
+        left: -75%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+#slide div:first-of-type {
+    background: red;
+}
+
+#slide div:nth-of-type(2) {
+    background: orange;
+}
+
+#slide div:nth-of-type(3) {
+    background: yellow;
+}
+
+#slide div:nth-of-type(4) {
+    background: red;
+}
+
+/* C영역 */
+.contents {
+    margin: 0 auto;
+    width: 1200px;
+    border: 1px solid #787878;
+    position: relative;
+    top: -100px;
+}
+
+#link {
+    height: 100px;
+}
+
+#banner {
+    height: 150px;
+}
+
+#board {
+    height: 300px;
+}
+
+/* D영역 */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #787878;
+}
+
+footer div:first-of-type {
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+
+footer div:last-of-type {
+    width: 200px;
+    height: 100px;
+    background: red;
+}
