@@ -5,80 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>29-1 디지털시계</title>
+    <style>
+        /* 초기값 */
+        html {
+            font-size: 10px;
+        }
+
+        /* 날짜 디자인 */
+
+        span {
+            font-size: 50px;
+            font-weight: 700;
+            text-shadow: 0 0 5px 5px #ff7272;
+            color: #ccc;
+        }
+
+        /* 날짜의 . 표시 */
+        .ddate span:not(:last-child)::after {
+            content: " ●";
+            font-size: 8px;
+            margin: 0 8px;
+        }
+
+        /* 시간의 : 표시 */
+        .dtime span:not(:last-of-type)::after {
+            font-weight: 700;
+            content: ":";
+            margin-left: 8px;
+            animation: time infinite 1s;
+        }
+
+        /* 시간의 : 표시 애니메이션 추가 */
+        @keyframes time {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
     <script>
-        /* 
-            함수
-                1. 선언적 함수
-                2. 익명 함수 -> 화살표 함수
-
-                const 변수 = function(매개변수){실행문;}
-                const 변수 = 매개변수 => 실행문;
-        */
+        // DOM 요소를 모두 로딩한 후 - load 이벤트
         window.addEventListener("DOMContentLoaded", () => {
-            const ho = document.querySelectorAll("span")[0];
-            const mi = document.querySelectorAll("span")[2];
-            const se = document.querySelectorAll("span")[4];
+            // 년 월 일 요일
+            const ya = document.querySelectorAll("span")[0];
+            const mo = document.querySelectorAll("span")[1];
+            const da = document.querySelectorAll("span")[2];
+            const we = document.querySelectorAll("span")[3];
+            // 시 분 초
+            const ho = document.querySelectorAll("span")[4];
+            const mi = document.querySelectorAll("span")[5];
+            const se = document.querySelectorAll("span")[6];
 
-            // setInterval(함수, 밀리초);
+            // 1초마다 clock 호출
             setInterval(clock, 1000);
 
             function clock() {
+                // d라는 날짜 인스턴스 생성
                 const d = new Date();
 
-                /* if (se < 10) {
-                    se = "0" + se;
-                } else {
-                    se = se;
-                } */
-
-                /* 
-                    연산자
-                        1. 산술: +, -, *, /, %, **
-                        2. 비교: >, <, >=, <=, ==, ===, !=, !==
-                        3. 대입(할당): =, +=, -=, *=, /=, %=, **=
-                        4. 증감: ++, --
-                        5. 조건: ? :                
-
-                    항의 개수
-                        1. 단항: 증감
-                        2. 이항: 나머지
-                        3. 삼항: 조건
-
-                        예) 2 + 5
-
-                    조건 연산자
-                    (조건) ? 참 : 거짓;
-
-                */
+                // 날짜/시간 값 가져오기
+                let yea = d.getFullYear();
+                let mon = d.getMonth() + 1; /* 이걸 해야 제대로 월이 나타난다. */
+                let dat = d.getDate();
+                let wee = d.getDay();
 
                 let hou = d.getHours();
-                (hou < 10) ? hou = "0" + hou : hou = hou;
-                //console.log(hou);
-                ho.innerText = hou;
-
                 let min = d.getMinutes();
-                (min < 10) ? min = "0" + min : min = min;
-                //console.log(min);
-                mi.innerText = min;
-
-                // 초(0~59)를 sec에 할당
                 let sec = d.getSeconds();
-                (sec < 10) ? sec = "0" + sec : sec = sec;
-                //console.log(sec);
-                se.innerText = sec;
+
+                // 요일추가 반드시 출력 이전에 해야한다!
+                switch (wee) {
+                    case 0: wee = "일"; break;
+                    case 1: wee = "월"; break;
+                    case 2: wee = "화"; break;
+                    case 3: wee = "수"; break;
+                    case 4: wee = "목"; break;
+                    case 5: wee = "금"; break;
+                    default: wee = "토"; break;
+                };
+
+                // 출력
+                ya.innerText = yea + "년";
+                mo.innerText = ze(mon) + "월";
+                da.innerText = ze(dat) + "일";
+                we.innerText = wee + "요일";
+                ho.innerText = ze(hou);
+                mi.innerText = ze(min);
+                se.innerText = ze(sec);
 
                 function ze(num) {
-                    return (num < 10) ? num = "0" + num : num = num;
-                }
-
-            } // clock_fn
-
+                    // 0~9는 00~09로 표기
+                    return num < 10 ? (num = "0" + num) : (num = num);
+                };
+            }; // clock_fn
         }); // DOMContentLoaded
     </script>
 </head>
 
 <body>
+    <div class="ddate">
+        <span>년</span>
+        <span>월</span>
+        <span>일</span>
+        <span>요일</span>
+    </div>
 
+    <div class="dtime">
+        <span>시</span>
+        <span>분</span>
+        <span>초</span>
+    </div>
 </body>
 
 </html>
