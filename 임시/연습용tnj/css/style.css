@@ -196,10 +196,24 @@ nav.active {
     padding: 64px 24px 24px;
 }
 
-.s1_bx1 {
+div.mb.s1_bx1 {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     border-radius: 25px;
     background: var(--sub1);
+}
+
+div.mb.s1_bx1 button {
+    margin: 0 auto 24px;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+}
+
+.s1_img_main {
+    margin: 24px auto;
+    width: 160px;
 }
 
 /* 푸터 */
@@ -322,7 +336,7 @@ ul.mb li {
         border-bottom: 2px solid var(--sub3);
     }
 
-    header:hover {
+    nav:hover {
         background: var(--main2);
         border-bottom: none;
     }
@@ -495,7 +509,8 @@ ul.mb li {
 
     .mb,
     div.sns.mb,
-    ul.mb {
+    ul.mb,
+    div.mb.s1_bx1 {
         display: none;
     }
 

@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
             x2.classList.add("active");
             x3.classList.add("active");
             n.classList.add("active");
-        }
+        };
 
     };
-})
+});
