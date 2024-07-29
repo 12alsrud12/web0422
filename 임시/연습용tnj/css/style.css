@@ -216,6 +216,10 @@ div.mb.s1_bx1 button {
     width: 160px;
 }
 
+.s1_img.mb img {
+    margin-bottom: 88px;
+}
+
 /* 푸터 */
 
 footer {

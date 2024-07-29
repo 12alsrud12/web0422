@@ -32,4 +32,6 @@ window.addEventListener("DOMContentLoaded", function () {
         };
 
     };
+
+    const ppp = document.querySelectorAll("p")[0]
 });
