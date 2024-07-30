@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31_객체.html</title>
+    <script>
+        /*
+            객체
+            window
+            document
+            DOM(HTML)
+            Date
+            Math.floor()
+            String
+            Object
+
+            객체: {}
+                함수: function(){}
+                배열: []
+
+            예 : 자동차 객체 (carObject)
+
+            속성 : 자동차 - 이름,모델,무게,색상
+            메서드(행동양식): 자동차 - 시동(),주행(),브레이크(),정지()
+        */
+
+        // 객체 속성 예시
+        // - 실제 자동차에는 무게와 색상이 같은 속성이 있지만, 값은 자동차 마다 다릅니다.
+
+        // 객체 메서드 예시
+        //  - 시동 주행 같은 동일한 메서드가 있지만 작동시간은 각자 다릅니다.
+
+        // 요약: 자동차는 전체 인구중 동일한 차를 갖고 있는 경우가 있지만, 그 지역의 시차나 출근시가닝 다르다는 이유로 다르게 진행된다.
+
+        // 객체 생성
+        const person = new Object();
+
+        // 속성 추가
+        person.firstName = "Jone";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "blue";
+
+
+
+
+        const car = {
+            type: "Fiat",
+            model: "500",
+            color: "white"
+        };
+
+
+        const person1 = {
+            firstName: "Jone",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+        const person2 = {
+            firstName: "Jone",
+            lastName: "Doe",
+            id: 5566,
+            "남자니?": true,
+            // 함수 값을 갖는 속성은 메소드이다.
+            fullName: function () {
+                // return
+            }, "소유하고 있는것": {
+                car: "2대",
+                home: "5채",
+            }
+
+            // person2 오브젝트 생성 후 person2 를 바꿀 수는 없지만 내부의 firstname나 lastname등의 값을 바꿀 수 있다.
+        };
+
+        /*
+            Java script에서는 거의 모든것이 객체입니다.
+
+        */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

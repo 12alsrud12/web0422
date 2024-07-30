@@ -38,6 +38,15 @@ button {
     font-size: 1.6em;
 }
 
+.main div.mb p {
+    font-family: "Abel", sans-serif;
+    font-size: 1.6rem;
+}
+
+.main div.mb button {
+    color: var(--sub1);
+}
+
 
 /* section */
 .section h2:first-of-type {
@@ -105,6 +114,10 @@ ul.mb li a {
     .sub_menu li a:hover {
         color: var(--point);
         text-decoration: underline;
+    }
+
+    .main_menu a.active {
+        color: var(--sub1);
     }
 
 

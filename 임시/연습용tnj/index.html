@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="css/type.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+        .ppppp {
+            top: 90px;
+            position: fixed;
+            color: #fff;
 
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script src="script/script.js"></script>
@@ -23,7 +30,19 @@
         <nav>
 
             <ul class="main">
+                <li class="mb">
+                    <div class="mb">
+                        <div>
+                            <div>
+                                <a href="#"><img src="images/login_img.svg" alt="login"></a>
+                            </div>
+                            <p>로그인을 해주세요</p>
+                        </div>
+                        <div><button>로그인</button></div>
+                    </div>
+                </li>
                 <li class="main_menu" id="main1">
+
                     <a href="#sec1">제품안내</a>
                     <ul class="sub_menu" id="sub1">
                         <li><a href="#">신제품</a></li>
@@ -87,29 +106,37 @@
         </div><!-- .mini_lg -->
     </header>
 
-    <div class="section" id="sec1">
-        <div class="mb s1_bx1">
-            <div class="s1_img_main mb">
-                <img src="images/section1_icon.png" alt="s1_icon">
+    <div id="wrap">
+        <div class="section" id="sec1">
+            <div class="mb">
+                <div class="s1_bx1">
+                    <div class="s1_img_main">
+                        <img src="images/section1_icon.png" alt="s1_icon">
+                    </div>
+                    <div class="s1_img">
+                        <img src="images/s1_img1.svg" alt="s1_img1">
+                        <img src="images/s1_img2.svg" alt="s1_img2">
+                        <img src="images/s1_img3.svg" alt="s1_img3">
+                    </div>
+                    <button>자세히보기</button>
+                </div>
             </div>
-            <div class="s1_img mb">
-                <img src="images/s1_img1.svg" alt="s1_img1">
-                <img src="images/s1_img2.svg" alt="s1_img2">
-                <img src="images/s1_img3.svg" alt="s1_img3">
+        </div>
+        <div class="section" id="sec2">
+            <h2>New TOUS les JOURS</h2>
+        </div>
+        <div class="section" id="sec3">
+            <h2>Brand List</h2>
+        </div>
+        <div class="section" id="sec4">
+            <h2>Event</h2>
+        </div>
+        <div class="section" id="sec5">
+            <div class="h2">
+                <img src="images/logo.png" alt="logo" class="logo">
             </div>
-            <button class="mb">자세히보기</button>
         </div>
     </div>
-    <div class="section" id="sec2">
-        <h2>New TOUS les JOURS</h2>
-    </div>
-    <div class="section" id="sec3">
-        <h2>Brand List</h2>
-    </div>
-    <div class="section" id="sec4">
-        <h2>Event</h2>
-    </div>
-    <div class="section" id="sec5"></div>
 
     <footer>
         <div class="ft1 pc">
@@ -129,22 +156,19 @@
         </div>
         <div class="ft2">
             <div class="mb fm_site">
-                <button>FAMILY SITE</button>
-                <ul class="mb fm_site">
-                    <li><a href="#">더스테이크하우스</a></li>
-                    <li><a href="#">N스위트바</a></li>
-                    <li><a href="#">N스위트</a></li>
-                    <li><a href="#">N테라스</a></li>
-                    <li><a href="#">N버거</a></li>
-                    <li><a href="#">더플레이스다이닝</a></li>
-                    <li><a href="#">한쿡</a></li>
-                    <li><a href="#">엔그릴</a></li>
-                    <li><a href="#">N서울타워</a></li>
-                    <li><a href="#">CJ푸드월드</a></li>
-                    <li><a href="#">제일제면소</a></li>
-                    <li><a href="#">더플레이스</a></li>
-                    <li><a href="#">VIPS</a></li>
+                <ul class="mb fm_site_main">
+                    <li>FAMILY SITE
+                        <ul class="mb fm_site">
+                            <li><a href="#">엔그릴</a></li>
+                            <li><a href="#">N서울타워</a></li>
+                            <li><a href="#">CJ푸드월드</a></li>
+                            <li><a href="#">제일제면소</a></li>
+                            <li><a href="#">더플레이스</a></li>
+                            <li><a href="#">VIPS</a></li>
+                        </ul>
+                    </li>
                 </ul>
+
                 </select>
             </div><!-- //mb fm_site / PC 버전 출력 X -->
             <div class="ft2_bx1">
@@ -161,15 +185,22 @@
         </div><!-- ft2 -->
 
         <div class="ft3">
+            <!-- mb -->
             <div class="sns mb">
                 <div class="sns">
-                    <img src="images/instagram.png" alt="instagram">
+                    <a href="#">
+                        <img src="images/instagram.png" alt="instagram">
+                    </a>
                 </div>
                 <div class="sns">
-                    <img src="images/X_icon.png" alt="twitter_X">
+                    <a href="#">
+                        <img src="images/X_icon.png" alt="twitter_X">
+                    </a>
                 </div>
                 <div class="sns">
-                    <img src="images/facebook-f.png" alt="facebook-f">
+                    <a href="#">
+                        <img src="images/facebook-f.png" alt="facebook-f">
+                    </a>
                 </div>
             </div>
 
