@@ -313,16 +313,17 @@ div.b_ill li {
 }
 
 div.b_ill li:nth-of-type(1) {
-    animation: bubble 1s infinite 10s;
-
+    animation: bubble 50s infinite 20s;
 }
 
 @keyframes bubble {
     0% {
         bottom: -100px;
+        left: 0;
     }
 
     100% {
         bottom: 1000px;
+        left: 80%;
     }
 }
