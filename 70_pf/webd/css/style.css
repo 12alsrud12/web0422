@@ -1,21 +1,133 @@
 @charset "utf-8";
+
 /* 사용후 지울것 */
-body * {outline:1px solid red;}
+body * {
+    outline: 1px solid red;
+}
 
 /* 공통 */
-body {margin:0; color: #333; background: #fff;}
-a {color: #333;}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body,
+ul {
+    margin: 0;
+}
+
+body {
+    color: #333;
+    background: #fff;
+    font-family: Arial, 굴림, sans-serif;
+    font-size: 1.5rem;
+    /* font: 굵기 기울임 크기 글꼴; 크기 글꼴은 절대 생략 불가능하다. */
+}
+
+a {
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
 
 /* A영역 */
-header {height:100px; width: 1340px; margin: 0 auto;}
+header {
+    height: 100px;
+    width: 1340px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 0;
+}
+
+.logo {
+    width: 190px;
+    height: 44px;
+}
+
+/* 네비게이션 */
+
+nav {
+    display: flex;
+    height: 100px;
+    align-items: flex-end;
+}
+
+.main {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.main>li>a {
+    padding: 16px 24px;
+    display: inline-block;
+}
+
+.main>li>a:hover {
+    background: #e31a40;
+    color: #fff;
+}
+
+.sub {
+    font-size: 1.4rem;
+    font-weight: normal;
+    display: none;
+}
+
 /* B영역 */
-#slide {height: 350px;}
+#slide {
+    height: 350px;
+    overflow: hidden;
+}
 
 /* C와 D영역 공통 */
-.container {position: relative; top: -100px; width: 1340px; margin: 0 auto;}
+.container {
+    position: relative;
+    top: -100px;
+    width: 1340px;
+    margin: 0 auto;
+}
+
 /* C영역 */
-#link {height: 100px; background: #e31a40;}
-#banner {height: 150px;}
-#board {height: 300px;}
+#link {
+    height: 100px;
+    background: #e31a40;
+}
+
+#banner {
+    height: 150px;
+}
+
+#board {
+    height: 300px;
+}
+
 /* D영역 */
-footer {height: 100px;}
+footer {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.flogo {
+    width: 190px;
+}
+
+.addr {
+    width: 900px;
+}
+
+.fs {
+    width: 120px;
+}

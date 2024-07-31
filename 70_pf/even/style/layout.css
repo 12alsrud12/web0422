@@ -173,7 +173,7 @@ section li:nth-of-type(2) {
 
 header {
     height: 200px;
-    background: url("https://github.com/12alsrud12/web0422/blob/main/assets/main_index_bg2.jpg?raw=true") no-repeat 50% 90%/cover fixed;
+    background: url("../../../assets/moon-10225.gif") no-repeat 50% 120%/cover fixed;
     line-height: 92px;
 }
 
@@ -228,7 +228,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #490037;
+    background: #004a4e;
 }
 
 footer div a,
@@ -244,7 +244,7 @@ nav {
 
 h1 {
     font-size: 50px;
-    color: #490037;
+    color: #edfaff;
     line-height: 200px;
     margin: 0;
 }
@@ -295,4 +295,35 @@ p {
 
 footer:hover .ill {
     bottom: 88px;
+}
+
+/* bg-비눗방울 */
+div.b_ill {
+    position: fixed;
+}
+
+div.b_ill img {
+    width: 100px;
+    height: 100px;
+}
+
+div.b_ill li {
+    position: fixed;
+    bottom: -100px;
+}
+
+div.b_ill li:nth-of-type(1) {
+    animation: bubble 50s infinite 20s;
+}
+
+@keyframes bubble {
+    0% {
+        bottom: -100px;
+        left: 0;
+    }
+
+    100% {
+        bottom: 1000px;
+        left: 80%;
+    }
 }

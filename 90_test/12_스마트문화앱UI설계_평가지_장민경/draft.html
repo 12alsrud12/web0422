@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주디마리푸딩_draft(시안)</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        /* 모바일 */
+        div.pc,
+        div.tb {
+            display: none;
+        }
+
+        /* 테블릿 */
+        @media (min-width:768px) {
+
+            div.mb,
+            div.pc {
+                display: none;
+            }
+
+            div.tb {
+                display: block;
+            }
+        }
+
+        /* PC/데스크탑 */
+        @media (min-width: 1025px) {
+
+            div.mb,
+            div.tb {
+                display: none;
+            }
+
+            div.pc {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pc">
+        <img src="desktop.png" alt="pc버전_시안">
+    </div>
+    <div class="tb">
+        <img src="tablet.png" alt="테블릿버전_시안">
+    </div>
+    <div class="mb">
+        <img src="phone.png" alt="모바일버전_시안">
+    </div>
+</body>
+
+</html>
