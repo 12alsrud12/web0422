@@ -1,21 +1,61 @@
 @charset "utf-8";
+
 /* 사용후 지울것 */
-body * {outline:1px solid red;}
+body * {
+    outline: 1px solid red;
+}
 
 /* 공통 */
-body {margin:0; color: #333; background: #fff;}
-a {color: #333;}
+body {
+    margin: 0;
+    color: #333;
+    background: #fff;
+}
+
+a {
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
 
 /* A영역 */
-header {height:100px; width: 1340px; margin: 0 auto;}
+header {
+    height: 100px;
+    width: 1340px;
+    margin: 0 auto;
+}
+
 /* B영역 */
-#slide {height: 350px;}
+#slide {
+    height: 350px;
+}
 
 /* C와 D영역 공통 */
-.container {position: relative; top: -100px; width: 1340px; margin: 0 auto;}
+.container {
+    position: relative;
+    top: -100px;
+    width: 1340px;
+    margin: 0 auto;
+}
+
 /* C영역 */
-#link {height: 100px; background: #e31a40;}
-#banner {height: 150px;}
-#board {height: 300px;}
+#link {
+    height: 100px;
+    background: #e31a40;
+}
+
+#banner {
+    height: 150px;
+}
+
+#board {
+    height: 300px;
+}
+
 /* D영역 */
-footer {height: 100px;}
+footer {
+    height: 100px;
+}
