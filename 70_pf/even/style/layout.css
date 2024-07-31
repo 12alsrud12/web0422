@@ -296,3 +296,22 @@ p {
 footer:hover .ill {
     bottom: 88px;
 }
+
+/* bg-비눗방울 */
+div.b_ill {
+    position: fixed;
+}
+
+div.b_ill img {
+    width: 100px;
+    height: 100px;
+}
+
+div.b_ill li {
+    position: fixed;
+}
+
+div.b_ill li:nth-of-type(1) {
+    animation: bubble 1s infinite 10s;
+    
+}
