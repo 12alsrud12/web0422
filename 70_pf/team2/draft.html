@@ -10,32 +10,41 @@
             margin: 0;
         }
 
-        div>img {
+        img {
             width: 100%;
-            height: autoF;
+            min-width: 100%;
+            height: auto;
         }
 
-        .pc {
+        #tb,
+        #pc {
             display: none;
         }
 
-        @media (min-width: 576px) {
-            .phone {
+        @media (min-width: 768px) {
+            #tb {
+                display: block;
+            }
+        }
+
+        @media (min-width: 1025px) {
+
+            #tb,
+            #mb {
                 display: none;
             }
 
-            .pc {
-                display: inline-block;
+            #pc {
+                display: block;
             }
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <img class="pc" src="draft.png" alt="시안">
-        <img class="phone" src="draft_phone.png" alt="phone시안">
-    </div>
+    <div id="mb"><img src="phone.png" alt="mb"></div>
+    <div id="tb"><img src="tablet.png" alt="tb"></div>
+    <div id="pc"><img src="desktop.png" alt="pc"></div>
 </body>
 
 </html>
