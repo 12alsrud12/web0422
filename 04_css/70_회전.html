@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>75_회전</title>
+    <style>
+        .rot {
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            border: 1px solid red;
+        }
+
+        .rot>div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #272727;
+            transition: 1s;
+            margin: 20px;
+        }
+
+        span {
+            display: block;
+            width: 300px;
+            height: 300px;
+            background: yellow;
+            transition: 1s;
+        }
+
+        .rot div:hover span:first-of-type {
+            transform: rotate(720deg);
+        }
+
+        .rot div:nth-of-type(2):hover span {
+            transform: rotateX(720deg);
+        }
+
+        .rot div:last-of-type:hover span {
+            transform: rotateY(720deg);
+        }
+
+        .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            border: 1px solid #272727;
+            perspective: 9999;
+        }
+
+        .slide div {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            transition: 3s;
+            background: orange;
+            border: 1px solid #000;
+            backface-visibility: hidden;
+        }
+
+        .slide div:hover {
+            transform: rotateX(370deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>회전</h1>
+    <div class="rot">
+        <div><span>2D</span></div>
+        <div><span>3D-X</span></div>
+        <div><span>3D-Y</span></div>
+    </div>
+
+    <div class="slide">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+</body>
+
+</html>
