@@ -107,283 +107,96 @@ footer {
 
 
 /* //typo */
-
 /* 공통 */
-
 html {
     scroll-behavior: smooth;
 }
 
-body {
-    background: var(--main);
-}
-
-body * {
-    border: 1px solid mediumpurple;
-}
-
-/* 모바일 */
-/* header */
-header {
-    height: 60px;
-    width: 100%;
-    padding: 0 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 9000;
-    background: var(--main);
-}
-
-.logo {
-    width: 150px;
-}
-
-.main_mu {
-    display: flex;
-    flex-direction: column;
-}
-
-
-nav div.logo {
-    margin-top: 60px;
-    width: 150px;
-    height: 55px;
-}
-
-nav>div.tb.mb {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: var(--sub);
-}
-
-div.tb.mb>.main_mu {
-    width: 100%;
-    padding: 0 20px;
-}
-
-div.tb.mb>.main_mu a {
-    padding: 0 8px;
-}
-
-nav div.tb.mb .main_mu li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 45px;
-}
-
-nav div.tb.mb .main_mu li:hover {
-    background: var(--main);
-}
-
-/* x-logo animation */
-div.x_logo.mb {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    height: 60px;
-    right: 12px;
-    z-index: 9999;
-}
-
-div.x_logo hr {
-    width: 22px;
-    border: 2px solid var(--tx1);
-    margin: 0;
-    transition: .3s;
-}
-
-div.x_logo hr:not(:last-of-type) {
-    margin-bottom: 6px;
-}
-
-div.x_logo:hover div.x_logo hr:first-of-type {
-    transform: rotate(45deg);
-}
-
-div.x_logo:hover div.x_logo hr:nth-of-type(2) {
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    height: 0;
-}
-
-div.x_logo:hover div.x_logo hr:last-of-type {
-    transform: rotate(315deg);
-}
-
-div.x_logo.mb:hover div.x_logo.mb>hr {
-    border: 1px solid var(--main);
-}
-
-nav>div.x_logo.mb:hover nav>div.tb.mb {
-    right: 0 !important;
-}
-
-/* ///x-logo animation/// */
-/* //header END */
-
 /* section */
-/* section 공통 */
+/* 공통 */
 .section {
+    width: 100%;
     height: 100vh;
 }
 
-/* #sed1 */
-#sec1 {
-    background: #c0c0c0;
-}
+/* sec1 */
+
+/* slide */
 
 #slide {
+    width: 100%;
     height: 100vh;
     display: flex;
-    overflow: hidden;
-    background: var(--sub);
+    position: relative;
 }
 
-/* //#sec1 END */
-
-#sec2 {
-    background: #868686;
-}
-
-#sec3 {
-    background: #474747;
-}
-
-#sec4 {
-    background: #ffc1c1;
-}
-
-/* //section END */
-
-/* footer */
-#footer1 {
-    height: 48px;
-    padding: 0 46px;
-    background: var(--sub);
-}
-
-#footer1 ul {
-    display: flex;
+#slide div {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    align-items: center;
+    animation: slide 12s infinite;
 }
 
-#footer1 li:not(last-of-type) {
-    margin-right: 20px;
+#slide div:first-of-type {
+    background: url(../images/slide1.jpg) 50% 50%/cover fixed;
 }
 
-#footer2 {
-    padding: 30px 46px 63px;
-    background: var(--tx1);
+#slide div:nth-of-type(2) {
+    background: url(../images/slide2.jpg) 50% 50%/cover fixed;
 }
 
-#footer2 .logo {
-    width: 162px;
-    margin: 0 auto;
+#slide div:nth-of-type(3) {
+    background: url(../images/slide3.jpg) 50% 50%/cover fixed;
 }
 
-
-/* //footer END */
-
-/* pc버전 가리기 */
-.pc {
-    display: none;
+#slide div:last-of-type {
+    background: url(../images/slide1.jpg) 50% 50%/cover fixed;
 }
+
+@keyframes slide {
+    0% {
+        left: 0%;
+    }
+
+    10% {
+        left: 100%;
+    }
+
+    33% {
+        left: 100%;
+    }
+
+    43% {
+        left: 200%;
+    }
+
+    63% {
+        left: 200%;
+    }
+
+    73% {
+        left: 300%;
+    }
+
+    99.99% {
+        left: 300%;
+    }
+
+    100% {
+        left: 400%;
+    }
+}
+
+/* sec2 */
+/* sec3 */
+/* sec4 */
+
 
 /* 테블릿 */
 
-@media (min-width: 768px) {
-    header {
-        height: 70px;
-        padding: 0 20px;
-    }
-
-    nav div.logo {
-        margin-top: 70px;
-        height: 55px;
-    }
-
-    div.tb.mb>.main_mu {
-        width: 100%;
-        padding: 0 62px;
-    }
-
-    /* footer */
-    #footer1 {
-        height: 60px;
-        padding: 0 56px;
-    }
-
-    #footer2 {
-        padding: 30px 56px;
-    }
-
-    /* //footer */
-}
+@media (min-width: 768px) {}
 
 
 /* PC버전 */
 
-@media (min-width: 1025px) {
-
-    /* PC버전 보이기 */
-    .pc,
-    ul.main_mu.pc {
-        display: flex;
-    }
-
-    /* 헤더 */
-    header {
-        height: 105px;
-        padding: 0 320px;
-        justify-content: flex-start;
-    }
-
-    .main_mu {
-        margin-left: 148px;
-        flex-direction: row;
-    }
-
-    .main_mu li:not(:last-of-type) {
-        margin-right: 80px;
-    }
-
-    .main_mu li a {
-        transition: .3s;
-    }
-
-    .main_mu li a:hover {
-        color: var(--point);
-    }
-
-    /* footer */
-    #footer1 {
-        height: 56px;
-        padding: 0 384px;
-    }
-
-    #footer2 {
-        padding: 48px 384px;
-    }
-
-    /* //footer */
-
-    /* 태블릿,모바일 버전 가리기 */
-    [class*="tb"],
-    [class*="mb"],
-    nav>div.tb.mb {
-        display: none;
-    }
-}
+@media (min-width: 1025px) {}
