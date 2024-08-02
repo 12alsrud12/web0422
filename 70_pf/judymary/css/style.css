@@ -166,7 +166,11 @@ nav>div.tb.mb {
 
 div.tb.mb>.main_mu {
     width: 100%;
-    padding: 0 28px;
+    padding: 0 20px;
+}
+
+div.tb.mb>.main_mu a {
+    padding: 0 8px;
 }
 
 nav div.tb.mb .main_mu li {
@@ -181,12 +185,20 @@ nav div.tb.mb .main_mu li:hover {
 }
 
 /* x-logo animation */
-div.x_logo hr {
-    width: 22px;
-    border: 2px solid var(--tx1);
+div.x_logo.mb {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    height: 60px;
+    right: 12px;
+    z-index: 9999;
 }
 
 div.x_logo hr {
+    width: 22px;
+    border: 2px solid var(--tx1);
     margin: 0;
     transition: .3s;
 }
@@ -195,16 +207,27 @@ div.x_logo hr:not(:last-of-type) {
     margin-bottom: 6px;
 }
 
-div.x_logo.active hr:first-of-type {
+div.x_logo:hover div.x_logo hr:first-of-type {
     transform: rotate(45deg);
 }
 
-div.x_logo.active hr:nth-of-type(2) {
+div.x_logo:hover div.x_logo hr:nth-of-type(2) {
     opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
 }
 
-div.x_logo.active hr:last-of-type {
+div.x_logo:hover div.x_logo hr:last-of-type {
     transform: rotate(315deg);
+}
+
+div.x_logo.mb:hover div.x_logo.mb>hr {
+    border: 1px solid var(--main);
+}
+
+nav>div.x_logo.mb:hover nav>div.tb.mb {
+    right: 0 !important;
 }
 
 /* ///x-logo animation/// */
