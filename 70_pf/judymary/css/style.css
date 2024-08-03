@@ -85,6 +85,12 @@ header li>a {
     font-size: 2.4rem;
 }
 
+.qna button {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "프리텐다드", sans-serif;
+}
+
 p {
     font-size: 1.6rem;
 }
@@ -95,6 +101,10 @@ p {
 
 .p2 {
     font-size: 16px;
+}
+
+.qna .p2 {
+    font-family: "Jua", sans-serif;
 }
 
 .p3 {
@@ -118,6 +128,17 @@ div.btn>ul li {
 
 div.btn li.on {
     color: var(--point);
+}
+
+#sec3 div.box {
+    font-weight: 700;
+}
+
+#sec3 .qna h2 {
+    font-size: 40px;
+    color: var(--tx1);
+    text-align: start;
+    margin: 0;
 }
 
 footer {
@@ -159,6 +180,14 @@ header.mb.tb {
     align-items: center;
 }
 
+.section>h2 {
+    margin: 104px 0 16px;
+}
+
+.section>p {
+    margin-bottom: 44px;
+}
+
 /* sec1 */
 #sec1 {
     height: 100vh;
@@ -188,15 +217,15 @@ header.mb.tb {
     padding: 0 24px;
 }
 
-#sec3 h2 {
+#sec3 h2:not(.qna h2, h2.mb) {
     display: none;
 }
 
-#sec3 h2.mb {
+#sec3>h2.mb {
     display: block;
     text-align: center;
+    margin: 104px 0 16px;
 }
-
 
 div.btn ul {
     margin: 50px 0 40px;
@@ -239,7 +268,6 @@ div.btn>ul li.on::before {
     height: 156px;
     border-radius: 20px;
     padding: 16px 24px;
-
     background: #F8F4F1;
 }
 
@@ -255,12 +283,21 @@ div.btn>ul li.on::before {
 }
 
 div.qna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    height: 226px;
+    height: 240px;
     background: #FFE116;
     border-radius: 20px;
-    padding: 24px;
+    padding: 24px 16px;
     margin-bottom: 104px;
+}
+
+.qna button {
+    border-radius: 24px;
+    padding: 16px 24px;
+    background: var(--main);
 }
 
 /* sec4 */
@@ -280,11 +317,11 @@ div.qna {
     /* sec1 */
     /* sec2 */
     /* sec3 */
-    #sec3 h2 {
-        display: block;
+    #sec3>h2.tb {
+        display: block !important;
     }
 
-    #sec3 h2.mb {
+    #sec3>h2.mb {
         display: none;
     }
 
@@ -416,6 +453,10 @@ div.qna {
     }
 
     /* sec3 */
+    #sec3 h2 {
+        display: block;
+    }
+
     #sec3>div {
         margin: 0 auto;
         width: 1440px;
@@ -429,12 +470,11 @@ div.qna {
     }
 
     #sec3 .box {
-        width: 432px;
-        height: 100%;
+        width: 422px;
+        height: 192px;
+        margin: 0;
     }
 
-    #sec3 .box>a {
-    }
 
 
 
