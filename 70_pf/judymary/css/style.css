@@ -367,10 +367,28 @@ div.qna>.box {
     flex-direction: column;
     width: 100%;
     margin: 180px 0;
+
 }
 
 #sec4 .box>div {
     display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#sec4 .box>h3 {
+    margin-bottom: 16px;
+}
+
+#sec4 .box>h3::before {
+    content: "★";
+    font-family: "Jua", sans-serif;
+    color: var(--point);
+    margin-right: 8px;
+}
+
+#sec4 .box p {
+    line-height: 24px;
 }
 
 #sec4 .box>div>div:last-child {
@@ -391,9 +409,13 @@ div.qna>.box {
 }
 
 #sec4 .s4_img {
-    width: 170px;
+    width: 50%;
     height: 170px;
     overflow: hidden;
+}
+
+#sec4 p.og_bg {
+    background: var(--point);
 }
 
 /* footer */
@@ -435,6 +457,25 @@ div.qna>.box {
     }
 
     /* sec4 */
+    #sec4 p.tb.pc {
+        display: block;
+    }
+
+    #sec4 .s4_img {
+        width: 50%;
+        height: 364px;
+        overflow: hidden;
+    }
+
+    #sec4 .box p {
+        line-height: 42px;
+    }
+
+    #sec4 .box>div>div>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     /* footer */
 }
