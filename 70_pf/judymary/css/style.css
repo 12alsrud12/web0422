@@ -120,6 +120,11 @@ p {
     font-size: 20px;
 }
 
+#sec4 .box>div>div p {
+    font-size: 12px;
+    padding: 0 24px;
+}
+
 /* sec3 font */
 div.btn>ul li {
     font-family: "Jua", sans-serif;
@@ -368,13 +373,17 @@ div.qna>.box {
     flex-direction: column;
     width: 100%;
     margin: 180px 0;
+}
 
+#sec4 .box {
+    width: 100%;
 }
 
 #sec4 .box>div {
     display: flex;
     border-radius: 20px;
     overflow: hidden;
+    border: 1px solid var(--tx2);
 }
 
 #sec4 .box>h3 {
@@ -401,6 +410,12 @@ div.qna>.box {
     margin-bottom: 180px;
 }
 
+#sec4 .s4_img {
+    width: 50%;
+    height: 270px;
+    overflow: hidden;
+}
+
 #sec4 .box:first-child .s4_img {
     background: url(../images/전대점.png) 50% 50%/cover;
 }
@@ -409,17 +424,46 @@ div.qna>.box {
     background: url(../images/주디마리홍대점.png) 50% 50%/cover;
 }
 
-#sec4 .s4_img {
+#sec4 .box>div>div:last-child {
     width: 50%;
-    height: 170px;
-    overflow: hidden;
 }
 
 #sec4 p.og_bg {
     background: var(--point);
 }
 
+#sec4 .box>div>div>div p {
+    line-height: 1.5;
+}
+
 /* footer */
+footer>div:first-child {
+    height: 48px;
+    padding: 0 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--sub);
+    font-weight: 700;
+}
+
+footer>div:first-child a:not(:last-child) {
+    margin-right: 24px;
+}
+
+footer>div:last-child {
+    padding: 30px 40px 63px;
+    background: var(--tx1);
+}
+
+footer>div:last-child {
+    color: var(--main);
+}
+
+footer div.logo {
+    width: 160px;
+    margin-bottom: 18px;
+}
 
 /* pc판 가리기 */
 .pc {
@@ -464,7 +508,7 @@ div.qna>.box {
 
     #sec4 .s4_img {
         width: 50%;
-        height: 364px;
+        height: 380px;
         overflow: hidden;
     }
 
@@ -478,7 +522,19 @@ div.qna>.box {
         justify-content: space-between;
     }
 
+    #sec4 .box>div>div p {
+        font-size: 18px;
+        padding: 0 32px;
+    }
+
     /* footer */
+    footer>div:first-child {
+        height: 60px;
+    }
+
+    footer>div:last-child {
+        padding: 30px 56px;
+    }
 }
 
 
@@ -628,9 +684,6 @@ div.qna>.box {
         margin: 0;
     }
 
-
-
-
     div.qna {
         padding: 45px 44px 35px;
     }
@@ -638,12 +691,15 @@ div.qna>.box {
 
     /* sec4 */
 
+    #sec4>div {
+        width: 1010px;
+    }
+
     /* footer */
     footer>div:first-child {
         height: 52px;
         padding: 0 384px;
-        display: flex;
-        align-items: center;
+        justify-content: flex-start;
         background: var(--sub);
         font-weight: 700;
     }
@@ -661,10 +717,7 @@ div.qna>.box {
         color: var(--main);
     }
 
-    footer div.logo {
-        width: 160px;
-        margin-bottom: 18px;
-    }
+
 
     /* 모바일태블릿 가리기 */
     .mb,
