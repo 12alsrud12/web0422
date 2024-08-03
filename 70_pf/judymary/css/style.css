@@ -286,6 +286,7 @@ div.btn>ul li.on::before {
     content: "★";
     font-family: "Jua", sans-serif;
     color: var(--point);
+    font-size: 18px;
     left: 50%;
     top: -25px;
     transform: translateX(-50%);
@@ -637,7 +638,33 @@ div.qna>.box {
 
     /* sec4 */
 
+    /* footer */
+    footer>div:first-child {
+        height: 52px;
+        padding: 0 384px;
+        display: flex;
+        align-items: center;
+        background: var(--sub);
+        font-weight: 700;
+    }
 
+    footer>div:first-child a:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    footer>div:last-child {
+        padding: 48px 384px;
+        background: var(--tx1);
+    }
+
+    footer>div:last-child {
+        color: var(--main);
+    }
+
+    footer div.logo {
+        width: 160px;
+        margin-bottom: 18px;
+    }
 
     /* 모바일태블릿 가리기 */
     .mb,
