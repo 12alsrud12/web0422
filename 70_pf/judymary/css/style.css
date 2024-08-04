@@ -163,7 +163,7 @@ html {
 }
 
 body * {
-    /* border: 1px solid olivedrab; */
+    border: 1px solid olivedrab;
 }
 
 body {
@@ -258,8 +258,33 @@ header.mb.tb {
 
 
 /* sec2 */
-div.ui_card.mb {
+div.ui_card.tb {
     display: flex;
+}
+
+/* 캐러샐 현재 순서 아이콘 css */
+.generic {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+div.generic>div.box {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--tx2);
+}
+
+div.generic>div.box:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+div.generic>div.box.now {
+    width: 20px;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--point);
 }
 
 /* sec3 */
@@ -474,10 +499,6 @@ footer div.logo {
     display: none;
 }
 
-div.ui_card.tb {
-    display: none;
-}
-
 /* 테블릿 */
 
 @media (min-width: 768px) {
@@ -489,9 +510,6 @@ div.ui_card.tb {
 
     /* sec1 */
     /* sec2 */
-    div.ui_card.tb {
-        display: flex;
-    }
 
     /* sec3 */
     #sec3>h2.tb {
@@ -549,9 +567,7 @@ div.ui_card.tb {
     }
 
     /* 가림막 */
-    div.ui_card.mb {
-        display: none;
-    }
+
 }
 
 
