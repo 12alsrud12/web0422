@@ -263,7 +263,17 @@ div.ui_card.tb {
 }
 
 /* 캐러샐 현재 순서 아이콘 css */
+
+.generic-wrap {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+
 .generic {
+    position: relative;
     margin-top: 48px;
     display: flex;
     justify-content: center;
