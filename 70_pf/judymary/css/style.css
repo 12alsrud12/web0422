@@ -258,6 +258,10 @@ header.mb.tb {
 
 
 /* sec2 */
+div.ui_card.mb {
+    display: flex;
+}
+
 /* sec3 */
 #sec3 {
     padding: 0 24px;
@@ -465,8 +469,12 @@ footer div.logo {
     margin-bottom: 18px;
 }
 
-/* pc판 가리기 */
+/* 가리기 */
 .pc {
+    display: none;
+}
+
+div.ui_card.tb {
     display: none;
 }
 
@@ -481,6 +489,10 @@ footer div.logo {
 
     /* sec1 */
     /* sec2 */
+    div.ui_card.tb {
+        display: flex;
+    }
+
     /* sec3 */
     #sec3>h2.tb {
         display: block !important;
@@ -534,6 +546,11 @@ footer div.logo {
 
     footer>div:last-child {
         padding: 30px 56px;
+    }
+
+    /* 가림막 */
+    div.ui_card.mb {
+        display: none;
     }
 }
 
