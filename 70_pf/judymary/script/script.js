@@ -73,19 +73,12 @@ window.addEventListener("DOMContentLoaded", () => {
             title2_2.classList.add("active");
             sub_t2.classList.add("active");
 
-        } else if (p.innerHTML >= 1800) {
+        } else if (p.innerHTML = 1800) {
             title3.classList.add("active");
             sub_t3.classList.add("active");
         } else {
-            title1.classList.remove("active");
-            title2.classList.remove("active");
-            title2_2.classList.remove("active");
-            title3.classList.remove("active");
-
-            sub_t1.classList.remove("active");
-            sub_t2.classList.remove("active");
-            sub_t3.classList.remove("active");
-        }
+            // 추가예정
+        };
     });
 
 })
