@@ -73,7 +73,7 @@ window.addEventListener("DOMContentLoaded", () => {
             title2_2.classList.add("active");
             sub_t2.classList.add("active");
 
-        } else if (p.innerHTML >= 2000) {
+        } else if (p.innerHTML >= 1800) {
             title3.classList.add("active");
             sub_t3.classList.add("active");
         } else {

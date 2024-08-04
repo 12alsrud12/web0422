@@ -429,7 +429,7 @@ div.qna>.box {
 }
 
 #sec4 p.og_bg {
-    background: var(--point);
+    background: var(--sub);
 }
 
 #sec4 .box>div>div>div p {
@@ -709,6 +709,7 @@ footer div.logo {
     }
 
     footer>div:last-child {
+        display: flex;
         padding: 48px 384px;
         background: var(--tx1);
     }
@@ -717,7 +718,53 @@ footer div.logo {
         color: var(--main);
     }
 
+    footer .pc {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 600px;
+        margin-bottom: 14px;
+    }
 
+    footer .pc>p {
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    footer .pc p:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    footer .pc>p:not(:first-child) {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .ft_box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .ft_box2 ul {
+        margin-top: 36px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ft_box2 a {
+        font-family: "Jua", sans-serif;
+        font-size: 16px;
+        transition: .3s;
+        color: var(--main);
+    }
+
+    .ft_box2 a:hover {
+        color: var(--point);
+    }
 
     /* 모바일태블릿 가리기 */
     .mb,
