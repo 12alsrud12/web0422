@@ -94,6 +94,10 @@ footer {
     color: var(--white);
 }
 
+#sec4 button:active {
+    background: var(--graya);
+}
+
 #sec4 ::placeholder {
     color: var(--graya);
 }
@@ -106,65 +110,7 @@ header {
 }
 
 #sec1 b {
-    background: rgba(0, 0, 0, 0.7
-    
-    
-    
-    
-    
-    
-    z
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    );
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #sec4 button,
