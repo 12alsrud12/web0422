@@ -4,28 +4,42 @@
 * {
     box-sizing: border-box;
 }
-body,h1,h2,h3,ul,p {
-    margin:0;
+
+body,
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
 }
+
 ul {
-    padding:0;
+    padding: 0;
     list-style: none;
 }
+
 img {
     width: 100%;
     height: auto;
 }
+
 a {
     text-decoration: none;
 }
+
 body {
     background: #fff;
 }
+
 button {
-    border:none;
+    border: none;
+    /* 커서 닿았을 시 손모양 */
+    cursor: pointer;
 }
+
 iframe {
-    border:none;
+    border: none;
     width: 100%;
     height: 100%;
 }

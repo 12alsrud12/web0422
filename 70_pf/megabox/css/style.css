@@ -26,9 +26,14 @@ section {
 }
 
 section h2 {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 24px;
-    margin-bottom: 48px;
+    /* 섹션3,4만 */
+    margin-bottom: 24px;
+}
+
+section li {
+    margin-bottom: 24px;
 }
 
 /* 섹션1 */
@@ -50,14 +55,58 @@ section h2 {
 }
 
 /* 섹션2 */
-#sec2 li,
-#sec3 li {
-    margin-bottom: 24px;
+#sec2 h2 {
+    margin-bottom: 48px;
 }
 
 #sec2 h3 {
     position: absolute;
     padding: 8px 24px;
+}
+
+/* 섹션3 */
+#sec3 li {
+    margin-bottom: 48px;
+}
+
+#sec3>p {
+    margin-bottom: 48px;
+}
+
+#sec3 h3,
+#sec3 li p:last-of-type {
+    margin: 24px 0;
+}
+
+#sec3 a {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    margin-bottom: 24px;
+}
+
+/* 섹션4 */
+#sec4 p {
+    margin-bottom: 24px;
+}
+
+#sec4 input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 16px 0;
+    border: 1px solid #ccc;
+}
+
+#sec4 button {
+    margin: 16px 0 48px;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.map {
+    height: 1000px;
+    margin-bottom: 16px;
 }
 
 /* --------------------------------- 폰 --------------------------------- */
@@ -71,11 +120,6 @@ nav {
 }
 
 /* 섹션2 */
-#sec2 ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 
@@ -121,7 +165,7 @@ nav {
 
     /* 섹션2 */
     #sec2 ul {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
     }
 
