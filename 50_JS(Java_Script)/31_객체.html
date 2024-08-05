@@ -59,6 +59,9 @@
             age: 50,
             eyeColor: "blue"
         };
+        // 속성은 "" 로 묶어 사용 가능
+        // 숫자 데이터의 경우  "" 을 묶지 않는것이 원칙! 하지만 위 모델명은 모델명이기 때문에 묶은것이다 나이같은건 단순 숫자라 안묶음
+        // 숫자형 문자 데이터의 경우는 묶을 수 있다.
         const person2 = {
             firstName: "Jone",
             lastName: "Doe",
@@ -75,9 +78,29 @@
             // person2 오브젝트 생성 후 person2 를 바꿀 수는 없지만 내부의 firstname나 lastname등의 값을 바꿀 수 있다.
         };
 
+        // 출력
+        /* 
+            객체 접근 방법
+                객체.속성
+                객체["속성"]
+        */
+        person1.firstName;
+        person1["firstName"];
+
+
         /*
             Java script에서는 거의 모든것이 객체입니다.
-
+        */
+        /*
+            객체 생성
+                new Object()
+                {}
+            
+            -> const 변수 = {
+                속성:값,
+                속성:값,
+                ...,
+            }
         */
     </script>
 </head>
