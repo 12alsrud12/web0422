@@ -39,7 +39,7 @@
                 "이름": "존",
                 "성": "도",
                 "나이": 50,
-                "남자니": true,
+                "남자니?": true,
                 "성과이름": function () {
                     return person.성 + " " + person.이름
                     // this는 객체 자신을 가리킨다.
@@ -51,6 +51,26 @@
                     color: "white"
                 }
             };
+
+
+            div.innerHTML = "이름은"
+                + person["이름"]
+                + person["성"]
+                + "나이는"
+                + person["나이"]
+                + "<br>"
+                + "너 남자니?"
+                + (person["남자니?"] ? "예" : "아니오")
+                + "<br>이름을  다시한번 성과 함께 말해주세요?<br>"
+                + person.성과이름()
+                + "입니다."
+                + "<br> 차도 가지고 있군요! 어떤 차인가요? <br>"
+                + person.myCar.type
+                + "입니다. 모델명은"
+                + person.myCar.model
+                + "입니다. <br>또한 색깔은"
+                + person.myCar.color
+                + "입니다.";
 
             console.log(person.성과이름());
 
@@ -81,12 +101,9 @@
             console.log(car.type);
 
 
-            div.innerHTML = person1.fisrtName;
-            div.innerHTML = person1.lastName;
             person1.firstName;
             person1["firstName"];
 
-            div.innerText = car.type;
 
         });
 
