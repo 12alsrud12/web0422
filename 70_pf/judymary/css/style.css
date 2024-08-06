@@ -162,9 +162,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body * {
+/* body * {
     border: 1px solid olivedrab;
-}
+} */
 
 body {
     background: var(--main);
