@@ -28,12 +28,13 @@ section {
 section h2 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 24px;
-    /* 섹션3,4만 */
+    /* 섹션3,4 */
     margin-bottom: 24px;
 }
 
 section li {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #f1f1f1;
 }
 
 /* 섹션1 */
@@ -47,10 +48,11 @@ section li {
     left: 50%;
     top: 62%;
     transform: translate(-50%, -50%);
+    border: none;
 }
 
 #sec1 b {
-    padding: 8px 16px;
+    padding: 12px 16px;
     margin-right: 16px;
 }
 
@@ -82,16 +84,14 @@ section li {
     display: block;
     text-align: center;
     padding: 12px 0;
-    margin-bottom: 24px;
 }
 
 /* 섹션4 */
-#sec4 p {
+#sec4>p {
     margin-bottom: 24px;
 }
 
 #sec4 input {
-    display: block;
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -99,9 +99,8 @@ section li {
 }
 
 #sec4 button {
+    padding: 12px 24px;
     margin: 16px 0 48px;
-    padding: 12px 20px;
-    border-radius: 5px;
 }
 
 #sec4 .map {
@@ -115,24 +114,26 @@ footer {
     padding: 32px 0;
 }
 
-/* --------------------------------- 폰 --------------------------------- */
+/*///////////////// 폰 ////////////////*/
 nav {
     display: none;
 }
 
-/* 섹션1 */
 #sec1 span {
     display: none;
 }
 
-/* 섹션4 */
+/*////////////////////////////////////*/
 
 
-
-/* 내비게이션 */
-
-/* 768이상: 테블릿, 데스크탑 */
+/* 768이상: 테블릿 */
 @media (min-width: 768px) {
+
+    /* 내비게이션 */
+    nav {
+        display: block;
+    }
+
     nav ul {
         display: flex;
     }
@@ -142,46 +143,61 @@ nav {
     }
 
     /* 섹션1 */
-    #sec1 h2 {
-        top: 50%;
-    }
-
     #sec1 span {
         display: inline-block;
     }
 
-    /* 섹션2,3공통 */
+    /* 섹션2,3 공통 */
     section ul {
         display: flex;
         flex-wrap: wrap;
     }
 
     section li {
-        width: 342px;
+        /* calc(숫자 - 숫자), 연산자 앞뒤는 띄어쓰기 한다. */
+        width: calc(50% - 15px);
     }
 
     section li:not(:nth-of-type(2n)) {
-        margin-right: 16px;
+        margin-right: 20px;
     }
 
     /* 섹션4 */
     #sec4 .map {
-        height: 350px;
+        height: 420px;
     }
+    
 }
 
 /* 992이상: 데스크탑 */
 @media (min-width: 992px) {
 
     /* 섹션 공통 */
+    /* 
+        환산? 전체: 1920, 콘텐츠: 1480 
+        문> 1480은 1920 중에 몇 %인가?
+            1480 / 1903 * 100 = 77.77%
+    */
     section {
-        width: 1480px;
+        width: 77.77%;
+        /* width: 1480px; */
         margin: 0 auto;
+        border: 1px solid red;
     }
 
-    /* 섹션 2,3 공통 */
+    /* 섹션1 */
+    #sec1 h2 {
+        top: 55%;
+    }
+
+    /* 섹션2,3 공통 */
+    section li {
+        /* calc(숫자 - 숫자), 연산자 앞뒤는 띄어쓰기 한다. */
+        width: calc(25% - 15px);
+    }
+
     section li:not(:nth-of-type(4n)) {
-        margin-right: 16px;
+        margin-right: 20px;
     }
 
     /* 섹션1 */
@@ -189,18 +205,10 @@ nav {
         height: 745px;
     }
 
-    /* 섹션2 */
-    #sec2 ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-
-
-    /* 섹션3 */
-    #sec3 ul {
-        display: flex;
-    }
+    /*  섹션2 */
+    /* #sec2 li {
+        height: 240px;
+    } */
 
     /* 섹션4 */
     #sec4 .map {

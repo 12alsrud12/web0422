@@ -1,145 +1,87 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>31-1_객체</title>
-    <style>
-        b {
-            color: #ccc;
-        }
-    </style>
+    <title>Document</title>
     <script>
-
         window.addEventListener("DOMContentLoaded", () => {
 
-            // 요소찾기
-            const div = document.querySelector("div");
-
-            const car = {
-                type: "Fiat",
-                model: "500",
-                color: "white"
-            };
-
-
             const person = {
-                "이름": "존",
-                "성": "도",
-                "나이": 50,
+                "first Name": "존",
+                lastName: "도",
+                age: 50,
                 "남자니?": true,
-                "성과이름": function () {
-                    return person.성 + " " + person.이름
-                    // this는 객체 자신을 가리킨다.
-                    return this.성 + " " + this.이름
+                "성과 이름": function () {
+                    return this["first Name"] + " " + this.lastName
                 },
                 myCar: {
-                    type: "Fiat",
+                    type: "피아트",
                     model: "500",
-                    color: "화이트"
+                    color: "흰색"
                 }
             };
 
+            // 요소 찾기
+            const div = document.querySelector("div");
 
-            div.innerHTML = `"이름은"
-                 <b>${person["이름"]}</b>
-                 <b>${person["성"]}</b><br>
-                 "나이는"
-                 <b>${person["나이"]}</b>
-                 "<br>"
-                 "너 남자니?"
-                 <b>${(person["남자니?"] ? "예" : "아니오")}</b>
-                 <br>이름을  다시한번 성과 함께 말해주세요?<br>
-                 <b>${person.성과이름()}</b>
-                 입니다.
-                 <br> 차도 가지고 있군요! 어떤 차인가요? <br>
-                 <b>${person.myCar.type}</b>
-                 입니다. 모델명은
-                 <b>${person.myCar.model}</b>
-                 입니다. <br>또한 색깔은
-                 <b>${person.myCar.color}</b>
-                 입니다.`;
+            // 출력
+            div.innerHTML = `<b>이름이 어떻게 되세요?</b> ${person["first Name"]}<br><b>성은 어떻게 되세요?</b> ${person.lastName} <br><b>나이는 어떻게 되세요?</b> ${person.age}세<br><b>남자 입니까?</b> ${(person["남자니?"] ? "예" : "아니오")}<br><b>이름을 다시 한 번 성과 함께 말해주세요?</b> ${person["성과 이름"]()}입니다. <br><b>차를 가지고 있군뇨! 어떤 차인가요?</b> ${person.myCar.type} 이구요. 모델명은 ${person.myCar.model}이구요. 색깔은 ${person.myCar.color}입니다.`
 
-            const b = document.querySelectorAll("b")[6];
-            // 요소의 개수 만큼 반복
+            const b = document.querySelectorAll("b");
+
+            // console.log(b.length);
+
             /* 
-                for ~ of -> 컬렉션(Nodelist) /(var.ES6)
-                fot (let 변수명 of HTML컬렉션 or (배열)) {
-                    변수명.코드;
-                }
-
-                var.ES5 때 추가된 것.
-                객체.forEach()
-                이거라는대 성능적인 면은 위의 for ~ of 이게 훨 좋다.
-
-                그래서 둘 다 구버전 인터넷에서는 작동하지 않는다.
-
-                + for ~ in 이라는것도 있다고 한다.
-                    for ~ in -> 객체 라는 뜻
+                HTML컬렉션 객체
+                    length: 개수
             */
-            b.forEath((x) => {
+            /* 
+                객체.forEach(function(currentValue, index){}) (ver.ES5)            
+            */
+            // 화살표함수의 매개변수 괄호는 매개변수 1개일때만 생략할 수 있다.
+            // c는 b[0]~b[5]를 의미한다.
+            // b.forEach(cv => {
+            //     cv.style.color = "#333";
+            //     cv.style.lineHeight = 2;
+            //     cv.style.fontWeight = "normal";
+            //     cv.style.fontSize = ".7rem";
+            // });
+
+            /* 
+                for ~ of (ver.ES6)
+                for(let 변수명 of HTML컬렉션) {
+                    변수명.코드;
+                }       
+            */
+            // for ~ of -> HTML컬렉션(Nodelist)
+            // b 요소 개수 만큼 for문을 반복한다.
+            for (let x of b) {
                 x.style.color = "#333";
                 x.style.lineHeight = 2;
                 x.style.fontWeight = "normal";
                 x.style.fontSize = ".7rem";
-            });
-            // 만약 여기에 순서 추가 하고 싶다면 b.forEath((x,i)) -> x[i].style~~; 으로 하면 된다.
-            // b가 6개일때 1<=6 보다는 1 <= b.lenght라고 적는게 훨씬 좋다. b의 개수만큼만 반복 한다는 뜻이기 때문에
-            for (let i = 0; 1 <= b.lenght; i++) {
-                b[i].style.color = "gray";
-                b[i].style.lineHeight = "2";
-                b[i].style.fontWeight = "normal";
-                b[i].style.fontSize = ".7rem";
             }
 
-            /* 
-                HTML컬렉션 객체
-                lenght: HTMLCollection 객체의 개수
-            */
-
-            console.log(person.성과이름());
-
-            const person1 = {
-                firstName: "Jone",
-                lastName: "Doe",
-                age: 50,
-                eyeColor: "blue"
-            };
-
-            const person2 = {
-                firstName: "Jone",
-                lastName: "Doe",
-                id: 5566,
-                "남자니?": true,
-                // 함수 값을 갖는 속성은 메소드이다.
-                fullName: function () {
-                    // return
-                }, "소유하고 있는것": {
-                    car: "2대",
-                    home: "5채",
-                }
-            };
-
-            const person3 = new Object({
-                firstName: "존",
-                lastName: "도",
-                age: 50,
-            });
-
-            // 저 맨 위에서 div 찾은거에 객체 호출
-
-            console.log(car.type);
+            // length는 객체의 총 개수
+            // for(let i = 0; i < b.length; i++) {
+            //     b[i].style.color = "#333";
+            //     b[i].style.lineHeight = 2;
+            //     b[i].style.fontWeight = "normal";
+            //     b[i].style.fontSize = ".7rem";
+            // }
 
 
-            person1.firstName;
-            person1["firstName"];
+            // 속성 값 변경 및 추가
+            person["first Name"] = "John";
+            person.lastName = "Doe";
+            person.age = 50;
+            person.eyeColor = "blue";
 
+            // console.log(person);
 
-        });
-
-
-
+        }); //DOMContentLoaded
     </script>
 </head>
 
