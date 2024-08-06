@@ -262,39 +262,23 @@ div.ui_card.tb {
     display: flex;
 }
 
-/* 캐러샐 현재 순서 아이콘 css */
-
-.generic-wrap {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    z-index: 999;
+/* 캐러샐 */
+.bx-wrapper .bx-pager.bx-default-pager a {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 4px !important;
+    background: var(--tx2) !important;
 }
 
-
-.generic {
-    position: relative;
-    margin-top: 48px;
-    display: flex;
-    justify-content: center;
-}
-
-div.generic>div.box {
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
-    background: var(--tx2);
-}
-
-div.generic>div.box:not(:last-of-type) {
+.bx-wrapper .bx-pager.bx-default-pager a:not(:last-of-type) {
     margin-right: 8px;
 }
 
-div.generic>div.box.now {
-    width: 20px;
-    height: 8px;
-    border-radius: 4px;
-    background: var(--point);
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    width: 20px !important;
+    height: 8px !important;
+    border-radius: 4px !important;
+    background: var(--point) !important;
 }
 
 /* sec3 */
@@ -473,6 +457,13 @@ div.qna>.box {
 
 #sec4 .box>div>div>div p {
     line-height: 1.5;
+}
+
+#sec4 .last_s4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* footer */

@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주디마리</title>
+    <!-- 주디마리 사이트 메인 css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- 파비콘 -->
     <link rel="icon" type="image/x-icon" href="images/pabicom.png">
+    <!-- bx슬라이더 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <!-- 제이쿼리 라이브러리 파일이 위쪽으로 지정 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bx슬라이더 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
 
     <script src="script/script.js"></script>
 </head>
@@ -95,89 +103,60 @@
             </div><!-- //sub_ui-5 -->
 
         </div><!-- ///ui_card pc -> PC버전에서만 보인다. -->
-        <!-- 참고사이트 -->
-        <!-- https://wooder2050.medium.com/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-%EC%BA%90%EB%9F%AC%EC%85%80-carousel-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-1dbad1b3c7ac -->
-        <div class="ui_main"><!-- 메인 -->
-            <!-- 컨테이너박스 -->
-            <div class="contents-box">
-                <div class="btn">
-                    <a href="#"><img src="" alt=""></a>
-                    <a href="#"><img src="" alt=""></a>
-                </div>
-                <!-- ↓ wrap 대체 -->
-                <div class="ui_card tb">
-                    <div class="carousel-box active">
-                        <a href="#">
-                            <div class="sub_ui">
-                                <div class="cd_img">
-                                    <img src="images/pudding.jpg" alt="푸딩">
-                                </div>
-                            </div>
-                            <div>
-                                <p>PUDDING</p>
-                            </div>
-                        </a>
+
+
+        <div class="bxslider mb tb">
+            <div class="ui2">
+                <a href="#">
+                    <div class="ui_img">
+                        <img src="images/pudding.jpg" alt="푸딩">
                     </div>
-                    <div class="carousel-box">
-                        <a href="#">
-                            <div class="sub_ui">
-                                <div class="cd_img">
-                                    <img src="images/milktea.png" alt="밀크티">
-                                </div>
-                            </div>
-                            <div>
-                                <p>MILK TEA</p>
-                            </div>
-                        </a>
+                    <div class="ui-tx">
+                        <p>PUDDING</p>
                     </div>
-                    <div class="carousel-box">
-                        <a href="#">
-                            <div class="sub_ui">
-                                <div class="cd_img">
-                                    <img src="images/cookie.jpg" alt="쿠키">
-                                </div>
-                            </div>
-                            <div>
-                                <p>COOKIE</p>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="ui2">
+                <a href="#">
+                    <div class="ui_img">
+                        <img src="images/milktea.png" alt="밀크티">
                     </div>
-                    <div class="carousel-box">
-                        <a href="#">
-                            <div class="sub_ui">
-                                <div class="cd_img">
-                                    <img src="images/gift_package.png" alt="기프트박스">
-                                </div>
-                            </div>
-                            <div>
-                                <p>GIFT PACKAGE</p>
-                            </div>
-                        </a>
+                    <div class="ui-tx">
+                        <p>MINK TEA</p>
                     </div>
-                    <div class="carousel-box">
-                        <a href="#">
-                            <div class="sub_ui">
-                                <div class="cd_img">
-                                    <img src="images/products.jpg" alt="produce">
-                                </div>
-                            </div>
-                            <div>
-                                <p>PRODUCTS</p>
-                            </div>
-                        </a>
+                </a>
+            </div>
+            <div class="ui2">
+                <a href="#">
+                    <div class="ui_img">
+                        <img src="images/cookie.jpg" alt="쿠키">
                     </div>
-                </div><!-- //태블릿,모바일 버전 UIcard //wrap -->
-                <div class="generic-wrap">
-                    <div class="generic">
-                        <div class="box now"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                    </div><!-- //generic -->
-                </div><!-- //generic-wrap -->
-            </div><!-- //contents-box -->
-        </div><!-- //UI_main -->
+                    <div class="ui-tx">
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+            <div class="ui2">
+                <a href="#">
+                    <div class="ui_img">
+                        <img src="images/gift_package.png" alt="기프트박스">
+                    </div>
+                    <div class="ui-tx">
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+            <div class="ui2">
+                <a href="#">
+                    <div class="ui_img">
+                        <img src="images/products.jpg" alt="products">
+                    </div>
+                    <div class="ui-tx">
+                        <p></p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div><!-- //sec2 -->
 
     <div class="section" id="sec3">
@@ -269,7 +248,7 @@
                             <p class="tb pc">단체 이용 가능, 포장, 배달</p>
                         </div>
                         <p class="og_bg">영업시간</p>
-                        <div>
+                        <div class="last_s4">
                             <p>매일: 11:00 ~ 22:00</p>
                             <p>주디마리는 연중 무휴 입니다.</p>
                         </div>
@@ -289,7 +268,7 @@
                             <p class="tb pc">포장, 배달, 예약, 무선 인터넷, 대기공간</p>
                         </div>
                         <p class="og_bg">영업시간</p>
-                        <div>
+                        <div class="last_s4">
                             <p>매일: 11:00 ~ 22:00</p>
                             <p>주디마리는 연중 무휴 입니다.</p>
                         </div>

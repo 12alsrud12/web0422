@@ -81,4 +81,14 @@ window.addEventListener("DOMContentLoaded", () => {
         };
     });
 
+    $(() => {
+        $('.bxslider').bxSlider({
+            auto: true,
+            autoControls: false,
+            stopAutoOnClick: true,
+            pager: true,
+            slideWidth: 600
+        });
+    }); // 로드 이벤트
+
 })
