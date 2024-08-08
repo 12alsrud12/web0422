@@ -140,7 +140,7 @@ nav {
     height: 100vh;
     top: 0;
     position: fixed;
-    z-index: 9995;
+    z-index: 9990;
     background: var(--main2);
 }
 
