@@ -97,6 +97,17 @@ footer hr {
     }
 }
 
+#ft_sns {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#ft_sns>a {
+    margin-right: 16px;
+}
+
 /* footer2 */
 
 #ft_main2 {
@@ -348,5 +359,10 @@ footer hr {
 
     .ft2_bx2 li a:not(first-of-type) {
         margin-left: 15px;
+    }
+
+    /* 가리기 */
+    #ft_sns {
+        display: none;
     }
 }
