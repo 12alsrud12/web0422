@@ -47,6 +47,18 @@ p:not(footer p) {
     text-align: center;
 }
 
+section {
+    padding: 125px 0 0;
+}
+
+section>h1 {
+    line-height: 2;
+}
+
+section>p {
+    margin-bottom: 40px;
+}
+
 .section {
     height: 100vh;
 }

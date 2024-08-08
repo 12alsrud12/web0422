@@ -1,75 +1,156 @@
 @charset "utf-8";
 
+/* 임시 스타일 가이드 불러오기 */
+:root {
+    /* main-color */
+    --main1: #876E66;
+    --main2: #E5D9B7;
+
+    /* sub-color */
+    --sub1: #796150;
+    --sub2: #101010;
+
+    /* point-color */
+    --point: #EC2931;
+
+    /* page-bg-color */
+    --bg: #FAF9F5;
+
+    /* season-color */
+    --season1: #ECFBBA;
+    --season2: #46A338;
+    --season3: #79B52B;
+
+    /* sub + text color */
+    --white: #fff;
+
+    /* text-color */
+    --text1: #2d2d2d;
+    --text2: #666;
+    --text3: #8b8b8b;
+
+    /* 추가 color */
+    /* ea */
+    --ea: #eaeaea;
+
+}
+
 header {
     width: 100%;
     height: 40px;
     position: fixed;
+    /* top 추가하는 이유는 안넣으면 스샷 찍을때 헤더가 중간으로 내려옴 */
+    z-index: 9990;
+    top: 0;
     display: flex;
     align-items: center;
+
     background: var(--white);
     border-bottom: 1px solid var(--main2);
 }
 
-nav {
+header.mb.tb {
+    padding: 0 16px;
+}
+
+header.mb.tb>div {
     width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.mb.tb div.logo {
+    display: flex;
+    align-items: center;
+    width: 35px;
+}
+
+header.mb.tb .x_logo hr {
+    margin: 0;
+    width: 18px;
+    border: 2px solid var(--main1);
+}
+
+header.mb.tb .x_logo hr:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+header.mb.tb div.icon {
+    display: flex;
+    align-items: center;
+}
+
+header.mb.tb div.icon>div:not(:first-of-type) {
+    margin-left: 16px;
+}
+
+header.mb.tb .serch>div {
+    position: relative;
+    width: 18px;
+}
+
+header.mb.tb .serch input {
+    position: absolute;
+    height: 35px;
+    padding: 8px;
+    z-index: 50;
+    top: -40px;
+    right: 0;
+}
+
+header.mb.tb input.active {
+    position: absolute;
+    top: 40px;
+}
+
+header.mb.tb .my_page {
+    width: 24px;
+}
+
+div.x_logo {
+    position: relative;
+}
+
+div.x_logo.active hr {
+    position: absolute;
+    right: 2px;
+    transition: 1s;
+    z-index: 9999;
+    background: var(--main1);
+}
+
+div.x_logo.active hr:first-of-type {
+    width: 20px;
+    transform: rotate(45deg);
+}
+
+div.x_logo.active hr:nth-of-type(2) {
+    opacity: 0;
+}
+
+div.x_logo.active hr:last-of-type {
+    width: 20px;
+    transform: rotate(315deg);
+}
+
+nav {
+    width: 100vw;
     height: 100vh;
     top: 0;
     position: fixed;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    background: var(--white);
-    transition: .5s;
-}
-
-.main>li {
-    padding: 0 16px;
-}
-
-.main>li>a {
-    height: 40px;
+    z-index: 9995;
+    background: var(--main2);
 }
 
 
 
-.sub {
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    transition: .5s;
-    background: var(--white);
-}
 
-.sub li {
-    height: 45px;
-    line-height: 45px;
-}
-
-.main>li:hover .sub {
-    opacity: 1;
-    visibility: visible;
-    overflow: visible;
-    padding: 0 16px;
-}
-
-.main #main1:hover #sub1 {
-    height: 135px;
-}
-
-.main #main2:hover #sub2 {
-    height: 225px;
-}
-
-.main #main3:hover #sub3,
-.main #main5:hover #sub5 {
-    height: 90px;
-}
-
-.main #main4:hover #sub4 {
-    height: 45px;
+/* pc.header 가리기 */
+header.pc,
+header.pc>div.logo {
+    display: none;
 }
 
 /* 폰 기울였을 때 */
@@ -80,14 +161,10 @@ nav {
 
 /* 데스크탑 */
 @media (min-width:1024px) {
-    header {
-        height: 90px;
+
+    header.pc {
         display: flex;
+        height: 90px;
     }
 
-    .main_menu {
-        display: flex;
-        height: 90px;
-        line-height: 90px;
-    }
 }

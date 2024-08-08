@@ -75,9 +75,19 @@ section li {
     margin-bottom: 48px;
 }
 
+#sec3 li h3 {
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
 #sec3 h3,
 #sec3 li p:last-of-type {
     margin: 24px 0;
+}
+
+#sec3 li {
+    width: 350px;
 }
 
 #sec3 a {
@@ -162,11 +172,26 @@ nav {
         margin-right: 20px;
     }
 
+    /* 섹션3 */
+    #sec3 li {
+        position: relative;
+    }
+
+    #sec3 li p:last-of-type {
+        margin: 24px 0 64px;
+    }
+
+    #sec3 a {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
     /* 섹션4 */
     #sec4 .map {
         height: 420px;
     }
-    
+
 }
 
 /* 992이상: 데스크탑 */
@@ -197,12 +222,12 @@ nav {
     }
 
     section li:not(:nth-of-type(4n)) {
-        margin-right: 20px;
+        margin-right: 4px;
     }
 
     /* 섹션1 */
     #sec1 div {
-        height: 745px;
+        height: 39.15vw;
     }
 
     /*  섹션2 */
@@ -212,7 +237,7 @@ nav {
 
     /* 섹션4 */
     #sec4 .map {
-        height: 845px;
+        height: 44.4vw;
     }
 
 }
