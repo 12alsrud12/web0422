@@ -4,7 +4,7 @@
 
 footer {
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0 24px;
     background: var(--white);
     background: url(../03.assets/index/footer_bg.svg) no-repeat 50% 50%/cover;

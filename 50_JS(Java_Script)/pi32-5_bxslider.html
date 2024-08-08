@@ -7,10 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
     <style>
+        .bx-wrapper {
+            height: 100%;
+            box-shadow: none;
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .bx-viewport {
+            height: 100%;
+        }
+
         #slideWrap {
             position: absolute;
-            left:50%;
-            top:50%;
+            left: 50%;
+            top: 50%;
             transform: translate(-50%, -50%);
             width: 1140px;
             border: 1px solid red;
@@ -44,6 +55,7 @@
         .bx-wrapper .bx-prev:hover {
             background-position: 50%;
         }
+
         .bx-wrapper .bx-next:focus,
         .bx-wrapper .bx-next:hover {
             background-position: 50%;
