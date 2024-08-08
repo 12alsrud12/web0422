@@ -125,6 +125,19 @@ footer button {
     color: var(--point);
 }
 
+#ft_menu2 {
+    text-align: right;
+}
+
+#ft_menu2 a {
+    font-size: 1.4rem;
+    color: var(--main1);
+}
+
+.ft_mn>a {
+    font-weight: 700;
+}
+
 /* footer 2 */
 
 .ft2_bx2 li a {
