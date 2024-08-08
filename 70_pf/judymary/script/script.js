@@ -87,7 +87,10 @@ window.addEventListener("DOMContentLoaded", () => {
             autoControls: false,
             stopAutoOnClick: true,
             pager: true,
-            slideWidth: 600
+            slideWidth: 360,
+            slideMargin: 20,
+            maxSlides: 3,
+            moveSlides: 1
         });
     }); // 로드 이벤트
 
