@@ -1,7 +1,61 @@
 @charset "utf-8";
 
+@import url(style_guide.css);
+
+/* 임시 스타일 가이드 불러오기 */
+:root {
+    /* main-color */
+    --main1: #876E66;
+    --main2: #E5D9B7;
+
+    /* sub-color */
+    --sub1: #796150;
+    --sub2: #101010;
+
+    /* point-color */
+    --point: #EC2931;
+
+    /* page-bg-color */
+    --bg: #FAF9F5;
+
+    /* season-color */
+    --season1: #ECFBBA;
+    --season2: #46A338;
+    --season3: #79B52B;
+
+    /* sub + text color */
+    --white: #fff;
+
+    /* text-color */
+    --text1: #2d2d2d;
+    --text2: #666;
+    --text3: #8b8b8b;
+
+    /* 추가 color */
+    /* ea */
+    --ea: #eaeaea;
+
+}
+
+/* 공통 */
+body {
+    background: var(--bg);
+}
 
 h1,
 p:not(footer p) {
     text-align: center;
 }
+
+.section {
+    height: 100vh;
+}
+
+/* section1 */
+/* section2 */
+#main_s2 {
+    background: var(--season1);
+}
+
+/* section3 */
+/* section4 */

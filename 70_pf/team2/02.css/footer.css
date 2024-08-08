@@ -4,10 +4,9 @@
 
 footer {
     position: relative;
-    /* border: 1px solid red; */
-    padding: 0 24px;
+    padding: 16px 24px;
     background: var(--white);
-    background: url(../03.assets/index/footer_bg.svg) no-repeat 50% 50%/cover;
+    background: url(../04.assets/index/footer_bg.svg) no-repeat 50% 50%/cover;
 }
 
 footer button {
@@ -69,22 +68,22 @@ footer hr {
 
 #ft_ill {
     display: flex;
-    bottom: 50px;
+    bottom: 70px;
     position: absolute;
     right: 15px;
 }
 
 
 #ft_ill img:first-of-type {
-    width: 24px;
+    width: 36px;
     margin-bottom: 40px;
-    animation: ft_ill1 infinite 3s;
+    animation: ft_ill1 infinite 3s linear;
 }
 
 #ft_ill img:nth-of-type(2) {
-    width: 16px;
+    width: 24px;
     right: 48px;
-    animation: ft_ill1 infinite 7s;
+    animation: ft_ill1 infinite 7s linear;
 }
 
 @keyframes ft_ill1 {
@@ -201,6 +200,10 @@ footer hr {
         margin-top: 10px;
         width: 100%;
         border: 1px solid var(--main1);
+    }
+
+    #ft_ill {
+        bottom: 100px;
     }
 
 }
