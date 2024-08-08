@@ -582,8 +582,18 @@ footer div.logo {
 
     /* sec1 */
     /* sec2 */
+    div.ui2 {
+        width: 330px !important;
+        height: 418px !important;
+    }
 
+    div.ui_img {
+        width: 330px !important;
+    }
 
+    .bx-viewport {
+        height: 500px !important;
+    }
     /* sec3 */
     #sec3>h2.tb {
         display: block !important;
