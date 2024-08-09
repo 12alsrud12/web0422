@@ -15,8 +15,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
     <style>
+        /* reset */
         body {
+            margin: 0;
             background: yellowgreen;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
         }
 
         .slider>div {
@@ -28,16 +36,23 @@
     <script>
         $(() => {
             $('.slider').slick({
+                // 자동슬라이드
                 autoplay: true,
+                // 슬라이드 속도 2000 = 2초
                 autoplaySpeed: 2000,
+                // 슬라이드 시 이미지 몇개를 넘길것인지 = 1일시 1개씩 이동
                 slidesToScroll: 1,
+                // 현재 보여지는 슬라이드 수
                 slidesToShow: 3,
+                // 현재 이미지 중앙에 배치
                 centerMode: true,
-                centerPadding: '60px',
+                centerPadding: '145px',
                 slidesToShow: 3,
+                // responsive = 반응형
                 responsive: [
                     {
-                        breakpoint: 768,
+                        // breakpoint = width가 992보다 작을 때 작동
+                        breakpoint: 992,
                         settings: {
                             arrows: false,
                             centerMode: true,
@@ -46,7 +61,8 @@
                         }
                     },
                     {
-                        breakpoint: 480,
+                        // breakpoint = width가 768보다 작을 때 작동
+                        breakpoint: 768,
                         settings: {
                             arrows: false,
                             centerMode: true,
