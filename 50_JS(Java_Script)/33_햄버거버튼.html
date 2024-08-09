@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33_햄버거 버튼</title>
+    <style>
+        .container {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            transform: translate(0, -11px) rotate(45deg);
+        }
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            // 요소찾기
+            const collapsedMenuIcon = document.querySelector(".collapsedMenuIcon");
+            console.log(collapsedMenuIcon);
+
+            // 이벤트 처리
+            collapsedMenuIcon.onclick = function () {
+                // 함수 호출
+                // myFunction(this);
+                // 화살표 함수 이벤트 내에서 this는 window이다.
+                // 기존 onclick = function(){} 에서의 this는 collapsedMenuIcon 이벤트 객체 자신을 지칭한다.
+
+                console.log(event.currentTarget);
+                // 화살표 함수 내에서 현재 것을 확인방법은 this 말고 위 처럼 적어야 현재 누르는게 잘 뜬다.
+            };
+
+            /* 
+                console.log(collapsedMenuIcon);
+                console.log(event.currentTarget);
+            */
+
+            // 호이스팅
+            // 함수 선언(정의)
+            function myFunction() {
+                /* 
+                    classList.add("선택자")
+                    classList.remove("선택자")
+                    classList.toggle("선택자")
+                */
+                x.classList.toggle("change");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="collapsedMenuIcon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+</body>
+
+</html>
