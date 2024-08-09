@@ -82,7 +82,17 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     $(() => {
-        $('.bxslider').bxSlider({
+        $('.bxslider1').bxSlider({
+            auto: true,
+            autoControls: false,
+            stopAutoOnClick: true,
+            pager: true,
+            slideWidth: 1920,
+            slideMargin: 0,
+            maxSlides: 1,
+            moveSlides: 1
+        });
+        $('.bxslider2').bxSlider({
             auto: true,
             autoControls: false,
             stopAutoOnClick: true,
@@ -92,8 +102,8 @@ window.addEventListener("DOMContentLoaded", () => {
             maxSlides: 3,
             moveSlides: 1
         });
-        
-        $('.bxslider2').bxSlider({
+
+        $('.bxslider3').bxSlider({
             auto: true,
             autoControls: false,
             stopAutoOnClick: true,
