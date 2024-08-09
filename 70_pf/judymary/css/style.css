@@ -313,9 +313,18 @@ div.ui_card.tb {
 }
 
 /* 캐러샐 */
+#slideWrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+}
+
 .bx-viewport {
     height: 300px !important;
 }
+
 .bx-wrapper {
     width: 100%;
     height: 290px;
@@ -594,6 +603,7 @@ footer div.logo {
     .bx-viewport {
         height: 500px !important;
     }
+
     /* sec3 */
     #sec3>h2.tb {
         display: block !important;
