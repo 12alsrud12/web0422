@@ -67,7 +67,17 @@ window.addEventListener("DOMContentLoaded", () => {
         } else {
             s4h2.classList.remove("active");
             s4p.classList.remove("active");
-        }
+        };
+    });
+
+    $(function () {
+
+        $('.slide').bxSlider({
+            autoControls: false,
+            // auto: false(기본값), true이면 자동 전환
+            auto: true,
+        });
+
     });
 
 

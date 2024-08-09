@@ -58,6 +58,18 @@ button {
     padding: 0;
 }
 
+/* bx-slider reset */
+.bx-wrapper {
+    height: 100%;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+}
+
+.bx-viewport {
+    height: 100%;
+}
+
 /* typo */
 html {
     font-size: 10px;
@@ -315,8 +327,10 @@ section>p.active {
 }
 
 /* sec1 */
-
-
+.bx-wrapper li {
+    width: 100vw;
+    height: 100vh;
+}
 
 
 /* sec2 */
