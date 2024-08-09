@@ -22,14 +22,37 @@
         }
 
         img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
+            width: 300px;
+            height: 380px;
         }
 
-        .slider>div {
+        /* Slick Slide */
+        .slider {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            max-width: 1200px;
+            transform: translate(-50%, -50%);
+            border: 2px solid #000;
+        }
+
+        div.ui-card {
+            width: 300px !important;
+            height: 610px;
             background: #fff;
-            border: 1px solid #000;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+
+        h3 {
+            width: 300px;
+        }
+
+        p {
+            width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     </style>
 
@@ -43,10 +66,10 @@
                 // 슬라이드 시 이미지 몇개를 넘길것인지 = 1일시 1개씩 이동
                 slidesToScroll: 1,
                 // 현재 보여지는 슬라이드 수
-                slidesToShow: 3,
+                slidesToShow: 5,
                 // 현재 이미지 중앙에 배치
                 centerMode: true,
-                centerPadding: '145px',
+                centerPadding: '35px',
                 slidesToShow: 3,
                 // responsive = 반응형
                 responsive: [
@@ -89,32 +112,69 @@
             3. ctrl + spaceBar => tap
     -->
     <div class="slider">
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/10.jpg" alt="슬라이드 이미지1">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-1.png" alt="슬라이드 이미지1">
+            <div>
+                <h3>[24년 7월] 설빙 SPECIAL COUPON DAY! 🎁</h3>
+                <p>2024-08-02</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/11.jpg" alt="슬라이드 이미지2">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-2.png" alt="슬라이드 이미지2">
+            <div>
+                <h3>[24년 7월] 설빙과 함께라면 한여름도 두렵지 않지!</h3>
+                <p>2024-08-02</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/12.jpg" alt="슬라이드 이미지3">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-3.png" alt="슬라이드 이미지3">
+            <div>
+                <h3>[24년 7월] 달콤하고 푸짐한 메론설빙 3형제 등장이요!🍈</h3>
+                <p>2024-08-02</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/13.jpg" alt="슬라이드 이미지4">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-4.png" alt="슬라이드 이미지4">
+            <div>
+                <h3>[24년 7월] 설빙에서 시~원한 설캉스 가자!</h3>
+                <p>가득 찬 단팥과 메론을 한번에 즐길 수 있는 리얼통통메론설빙🤎</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/14.jpg" alt="슬라이드 이미지5">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-5.png" alt="슬라이드 이미지5">
+            <div>
+                <h3>[24년 7월] 설빙에서 빙수만 먹기 아쉽다면?</h3>
+                <p>맵단맵단 조합으로 더 다채롭게 즐기자! =͟͟͞͞♡</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/15.jpg" alt="슬라이드 이미지6">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-6.png" alt="슬라이드 이미지6">
+            <div>
+                <h3>[24년 7월] 메론이 통으로 나오는 빙수가 있다고?</h3>
+                <p>통으로 나온 메론을 벌집 모양으로 잘라먹으면 얼~마나 맛있게요? ☆</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/16.jpg" alt="슬라이드 이미지7">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-7.png" alt="슬라이드 이미지7">
+            <div>
+                <h3>[공지] 설빙 위생등급 매장을 소개합니다.</h3>
+                <p>2024년 1월 기준 위생등급 인증 매장 현황입니다.</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/17.jpg" alt="슬라이드 이미지8">
-        </div>
-        <div>
-            <img src="../assets/내가_찍은_사진/사진크기조정_w255/18.jpg" alt="슬라이드 이미지9">
+        <div class="ui-card">
+            <img src="../70_pf/team2/03.assets/index/sec3/ui-8.png" alt="슬라이드 이미지8">
+            <div>
+                <h3>[공지] 소비자패널 8기 합격자 발표</h3>
+                <p>참여해주신 모든 분들께 진심으로 감사드립니다.</p>
+                <p>2024-08-02</p>
+            </div>
         </div>
     </div>
 </body>
