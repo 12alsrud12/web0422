@@ -16,65 +16,85 @@
 
     <style>
         /* reset */
-        * {
-            box-sizing: border-box;
-        }
-        body,
-        h3,
-        p {
+        body {
             margin: 0;
         }
 
         img {
-            width: 300px;
-            height: 380px;
+            width: 100%;
+            vertical-align: top;
         }
 
-        /* typo */
-        h3 {
-            font-size: 20px;
-            line-height: 1.5;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        /* 공통 */
-        body {
-            background: #FAF9F5;
-        }
-
-        /* Slick Slide */
+        /* slick 슬라이드 */
         .slider {
             position: absolute;
             left: 50%;
             top: 50%;
-            width: 100%;
-            max-width: 1200px;
             transform: translate(-50%, -50%);
-            border: 2px solid #000;
+            width: 100%;
+            /* 데스크탑 슬라이드 전체 크기 */
+            max-width: 1210px;
         }
 
-        .ui-card {
-            width: 300px !important;
-            height: 610px;
+        /* 슬라이드 아이템 */
+        .slick-slide {
+            margin: 0 16px;
             background: #fff;
-            overflow: hidden;
             border-radius: 25px;
-            box-shadow: 4px 4px 4px rgba(117, 117, 117, 0.5);
+            /* 이미지 상단 영역 모서리 둥글게 보이기 */
+            overflow: hidden;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
         }
 
-        .slick-slide .s3-title {
-            width: 300px;
-            height: 230px;
-            padding: 22px 26px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        /* 설명글 */
+        .slick-slide .tit {
+            padding: 8px 24px;
+        }
+
+        /* 이전(prev)/다음(next) 버튼 */
+        .slick-prev,
+        .slick-next {
+            z-index: 9999;
+            width: 50px;
+            height: 50px;
+            padding: 0px;
+            border-radius: 50%;
+            background: #ccc;
+        }
+
+        .slick-prev:hover,
+        .slick-next:hover {
+            background: #ccc;
+        }
+
+        .slick-prev::before,
+        .slick-next::before {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0px;
+            /* 캐러셀 버튼 ↓ next button */
+            background: url(../70_pf/team2/03.assets/index/sec3/sec3_right_btn.png);
+        }
+
+        /* 캐러셀 버튼 위치 조정 ↓ */
+        .slick-prev {
+            /* 기본값 left: -25px */
+            left: calc(50% - 35vw);
+        }
+
+        /* 캐러셀 버튼 위치 조정 ↓ */
+        .slick-next {
+            /* 기본값 right: -25px */
+            right: calc(50% - 35vw);
+        }
+
+        /* 캐러셀 이전 버튼 조정 ↓ next button 을 뒤집은 것  */
+        .slick-prev::before {
+            transform: rotate(180deg);
         }
     </style>
+
 
     <script>
         $(() => {
@@ -86,31 +106,30 @@
                 // 슬라이드 시 이미지 몇개를 넘길것인지 = 1일시 1개씩 이동
                 slidesToScroll: 1,
                 // 현재 보여지는 슬라이드 수
-                slidesToShow: 5,
+                slidesToShow: 3,
                 // 현재 이미지 중앙에 배치
                 centerMode: true,
                 centerPadding: '35px',
-                slidesToShow: 3,
                 // responsive = 반응형
                 responsive: [
                     {
                         // breakpoint = width가 992보다 작을 때 작동 / 992이하 테블릿, 모바일
-                        breakpoint: 992,
+                        breakpoint: 1025,
                         settings: {
                             arrows: false,
                             centerMode: true,
                             centerPadding: '40px',
-                            slidesToShow: 3
+                            slidesToShow: 1,
                         }
                     },
                     {
                         // breakpoint = width가 768보다 작을 때 작동 / 768이하 모바일
-                        breakpoint: 768,
+                        breakpoint: 376,
                         settings: {
                             arrows: false,
                             centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 1
+                            centerPadding: '20px',
+                            slidesToShow: 1,
                         }
                     }
                 ]
@@ -132,7 +151,7 @@
             3. ctrl + spaceBar => tap
     -->
     <div class="slider">
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-1.png" alt="슬라이드 이미지1">
             <div class="s3-title">
                 <h3>[24년 7월] 설빙 SPECIAL COUPON DAY! 🎁</h3>
@@ -140,7 +159,7 @@
                 <p>2024-08-02</p>
             </div>
         </div>
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-2.png" alt="슬라이드 이미지2">
             <div class="s3-title">
                 <h3>[24년 7월] 설빙과 함께라면 한여름도 두렵지 않지!</h3>
@@ -148,7 +167,7 @@
                 <p>2024-08-02</p>
             </div>
         </div>
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-3.png" alt="슬라이드 이미지3">
             <div class="s3-title">
                 <h3>[24년 7월] 달콤하고 푸짐한 메론설빙 3형제 등장이요!🍈</h3>
@@ -156,7 +175,7 @@
                 <p>2024-08-02</p>
             </div>
         </div>
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-4.png" alt="슬라이드 이미지4">
             <div class="s3-title">
                 <h3>[24년 7월] 설빙에서 시~원한 설캉스 가자!</h3>
@@ -164,7 +183,7 @@
                 <p>2024-08-02</p>
             </div>
         </div>
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-5.png" alt="슬라이드 이미지5">
             <div class="s3-title">
                 <h3>[24년 7월] 설빙에서 빙수만 먹기 아쉽다면?</h3>
@@ -172,7 +191,7 @@
                 <p>2024-08-02</p>
             </div>
         </div>
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-6.png" alt="슬라이드 이미지6">
             <div class="s3-title">
                 <h3>[24년 7월] 메론이 통으로 나오는 빙수가 있다고?</h3>
@@ -180,7 +199,7 @@
                 <p>2024-08-02</p>
             </div>
         </div>
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-7.png" alt="슬라이드 이미지7">
             <div class="s3-title">
                 <h3>[공지] 설빙 위생등급 매장을 소개합니다.</h3>
@@ -188,7 +207,7 @@
                 <p>2024-08-02</p>
             </div>
         </div>
-        <div class="ui-card">
+        <div>
             <img src="../70_pf/team2/03.assets/index/sec3/ui-8.png" alt="슬라이드 이미지8">
             <div class="s3-title">
                 <h3>[공지] 소비자패널 8기 합격자 발표</h3>
