@@ -87,9 +87,19 @@ window.addEventListener("DOMContentLoaded", () => {
             autoControls: false,
             stopAutoOnClick: true,
             pager: true,
-            slideWidth: 360,
-            slideMargin: 20,
-            maxSlides: 5,
+            slideWidth: 224,
+            slideMargin: 24,
+            maxSlides: 3,
+            moveSlides: 1
+        });
+        $('.bxslider2').bxSlider({
+            auto: true,
+            autoControls: false,
+            stopAutoOnClick: true,
+            pager: true,
+            slideWidth: 330,
+            slideMargin: 24,
+            maxSlides: 3,
             moveSlides: 1
         });
     }); // 로드 이벤트

@@ -269,6 +269,10 @@ header.mb.tb {
 
 
 /* sec2 */
+#slideWrap_tb {
+    display: none;
+}
+
 #sec2 {
     height: 100vh;
 }
@@ -286,7 +290,6 @@ div.ui_card.tb {
 #sec2 div.ui2 {
     border-radius: 20px;
     overflow: hidden;
-    width: 224px;
     height: 284px;
     box-shadow: 4px 4px 4px rgba(104, 104, 104, 0.5);
 }
@@ -589,20 +592,27 @@ footer div.logo {
 
     /* sec1 */
     /* sec2 */
-    div.ui2 {
-        width: 330px;
+    #slideWrap_mb {
+        display: none;
+    }
+
+    #slideWrap_tb {
+        display: flex;
+    }
+
+    #slideWrap_tb div.ui2 {
         height: 418px;
     }
 
-    div.ui_img {
+    #slideWrap_tb div.ui_img {
         width: 330px;
     }
 
-    .bx-viewport {
+    #slideWrap_tb .bx-viewport {
         height: 500px;
     }
 
-    .bx-wrapper {
+    #slideWrap_tb .bx-wrapper {
         height: 420px;
     }
 
