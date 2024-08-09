@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", () => {
             pager: true,
             slideWidth: 360,
             slideMargin: 20,
-            maxSlides: 3,
+            maxSlides: 5,
             moveSlides: 1
         });
     }); // 로드 이벤트

@@ -269,6 +269,10 @@ header.mb.tb {
 
 
 /* sec2 */
+#sec2 {
+    height: 100vh;
+}
+
 div.ui_card.tb {
     display: flex;
 }
@@ -282,7 +286,7 @@ div.ui_card.tb {
 #sec2 div.ui2 {
     border-radius: 20px;
     overflow: hidden;
-    width: 224px !important;
+    width: 224px;
     height: 284px;
     box-shadow: 4px 4px 4px rgba(104, 104, 104, 0.5);
 }
@@ -290,10 +294,6 @@ div.ui_card.tb {
 #sec2 div.ui2 p {
     text-align: center;
     line-height: 57px;
-}
-
-#sec2 .ui2 {
-
 }
 
 #sec2 div.ui2:nth-of-type(2) {
@@ -590,16 +590,20 @@ footer div.logo {
     /* sec1 */
     /* sec2 */
     div.ui2 {
-        width: 330px !important;
-        height: 418px !important;
+        width: 330px;
+        height: 418px;
     }
 
     div.ui_img {
-        width: 330px !important;
+        width: 330px;
     }
 
     .bx-viewport {
-        height: 500px !important;
+        height: 500px;
+    }
+
+    .bx-wrapper {
+        height: 420px;
     }
 
     /* sec3 */
