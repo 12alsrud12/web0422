@@ -42,8 +42,9 @@ window.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         p.innerHTML = Math.floor(pageYOffset);
 
+        // 데스크탑
         // #sec2
-        if (p.innerHTML >= 400, p.innerHTML <= 1300) {
+        if (window.innerWidth < 1025, p.innerHTML >= 400, p.innerHTML <= 1300) {
             s2h2.classList.add("active");
             s2p.classList.add("active");
         } else {
@@ -52,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec3
-        if (p.innerHTML >= 1400, p.innerHTML <= 2300) {
+        if (window.innerWidth < 1025, p.innerHTML >= 1400, p.innerHTML <= 2300) {
             s3h2.classList.add("active");
             s3p.classList.add("active");
         } else {
@@ -61,7 +62,63 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (p.innerHTML >= 2400) {
+        if (window.innerWidth < 1025, p.innerHTML >= 2400) {
+            s4h2.classList.add("active");
+            s4p.classList.add("active");
+        } else {
+            s4h2.classList.remove("active");
+            s4p.classList.remove("active");
+        };
+
+        // 태블릿
+        // #sec2
+        if (window.innerWidth > 1024, p.innerHTML >= 400, p.innerHTML <= 1300) {
+            s2h2.classList.add("active");
+            s2p.classList.add("active");
+        } else {
+            s2h2.classList.remove("active");
+            s2p.classList.remove("active");
+        };
+
+        // #sec3
+        if (window.innerWidth > 1024, p.innerHTML <= 1500, p.innerHTML >= 2400) {
+            s3h2.classList.add("active");
+            s3p.classList.add("active");
+        } else {
+            s3h2.classList.remove("active");
+            s3p.classList.remove("active");
+        };
+
+        // #sec4
+        if (window.innerWidth > 1024, p.innerHTML >= 2500) {
+            s4h2.classList.add("active");
+            s4p.classList.add("active");
+        } else {
+            s4h2.classList.remove("active");
+            s4p.classList.remove("active");
+        };
+
+        // 모바일
+        // #sec2
+        if (window.innerWidth > 375, p.innerHTML >= 200, p.innerHTML <= 1000) {
+            s2h2.classList.add("active");
+            s2p.classList.add("active");
+        } else {
+            s2h2.classList.remove("active");
+            s2p.classList.remove("active");
+        };
+
+        // #sec3
+        if (window.innerWidth > 375, p.innerHTML >= 1100, p.innerHTML <= 1700) {
+            s3h2.classList.add("active");
+            s3p.classList.add("active");
+        } else {
+            s3h2.classList.remove("active");
+            s3p.classList.remove("active");
+        };
+
+        // #sec4
+        if (window.innerWidth > 375, p.innerHTML >= 1700) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {
@@ -69,7 +126,41 @@ window.addEventListener("DOMContentLoaded", () => {
             s4p.classList.remove("active");
         };
     });
+    // #sec3 tabs
+    // 요소찾기
+    const btn1 = document.querySelectorAll(".btn>ul>li")[0];
+    const btn2 = document.querySelectorAll(".btn>ul>li")[1];
+    console.log(btn1);
+    console.log(btn2);
 
+    const tab1 = document.querySelectorAll(".tabs>.tab")[0];
+    const tab2 = document.querySelectorAll(".tabs>.tab")[1];
+    console.log(tab1);
+    console.log(tab2);
+
+    // resetT
+    function resetT() {
+        btn1.classList.remove("on");
+        tab1.classList.remove("on");
+        btn2.classList.remove("on");
+        tab2.classList.remove("on");
+    };
+
+    // 이벤트
+    btn1.onclick = () => {
+        resetT();
+        btn1.classList.add("on");
+        tab1.classList.add("on");
+    };
+
+    btn2.onclick = () => {
+        resetT();
+        btn2.classList.add("on");
+        tab2.classList.add("on");
+    };
+
+    // slide
+    // #sec1
     $(function () {
 
         $('.slide').bxSlider({
