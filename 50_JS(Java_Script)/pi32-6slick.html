@@ -21,8 +21,25 @@
         }
 
         img {
+            max-width: 100%;
             width: 100%;
+            height: auto;
             vertical-align: top;
+        }
+
+        /* typo */
+        h3 {
+            font-size: 18px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-wrap: nowrap;
+        }
+
+        p {
+            font-size: 14px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-wrap: nowrap;
         }
 
         /* slick 슬라이드 */
@@ -33,11 +50,21 @@
             transform: translate(-50%, -50%);
             width: 100%;
             /* 데스크탑 슬라이드 전체 크기 */
-            max-width: 1200px;
+            max-width: 260px;
+        }
+
+
+        .slick-track {
+            height: 100%;
+        }
+
+        .slick-slider .slick-list {
+            height: 348px;
         }
 
         /* 슬라이드 아이템 */
         .slick-slide {
+            width: 166px;
             margin: 0 16px;
             background: #fff;
             border-radius: 25px;
@@ -46,12 +73,10 @@
             box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
         }
 
-        .slick-slide {
-            width: 270px !important;
-        }
+
 
         .slick-slide>div {
-            width: 270px;
+            width: 166px;
         }
 
         /* 설명글 */
@@ -88,18 +113,46 @@
         /* 캐러셀 버튼 위치 조정 ↓ */
         .slick-prev {
             /* 기본값 left: -25px */
-            left: calc(50% - 35vw);
+            left: calc(50% - 47vw);
         }
 
         /* 캐러셀 버튼 위치 조정 ↓ */
         .slick-next {
             /* 기본값 right: -25px */
-            right: calc(50% - 35vw);
+            right: calc(50% - 47vw);
         }
 
         /* 캐러셀 이전 버튼 조정 ↓ next button 을 뒤집은 것  */
         .slick-prev::before {
             transform: rotate(180deg);
+        }
+
+        /* 테블릿 */
+        @media (min-width: 768px) {
+            .slider {
+                max-width: 620px;
+            }
+
+            .slick-slide {
+                width: 355px;
+            }
+
+            .slick-slide>div {
+                width: 355px;
+            }
+
+            .slick-slider .slick-list {
+                height: 700px;
+            }
+
+        }
+
+        /* 데스크탑 */
+        @media (min-width: 1025px) {
+            .slider {
+                max-width: 1200px;
+            }
+
         }
     </style>
 
@@ -114,30 +167,30 @@
                 // 슬라이드 시 이미지 몇개를 넘길것인지 = 1일시 1개씩 이동
                 slidesToScroll: 1,
                 // 현재 보여지는 슬라이드 수
-                slidesToShow: 3,
+                slidesToShow: 2,
                 // 현재 이미지 중앙에 배치
                 centerMode: true,
                 centerPadding: '35px',
                 // responsive = 반응형
                 responsive: [
                     {
-                        // breakpoint = width가 992보다 작을 때 작동 / 992이하 테블릿, 모바일
+                        // breakpoint = width가 1025보다 작을 때 작동 / 1025이하 테블릿, 모바일
                         breakpoint: 1025,
                         settings: {
-                            arrows: false,
+                            // arrows: false,
                             centerMode: true,
-                            centerPadding: '40px',
+                            centerPadding: '120px',
                             slidesToShow: 1,
                         }
                     },
                     {
-                        // breakpoint = width가 768보다 작을 때 작동 / 768이하 모바일
+                        // breakpoint = width가 376보다 작을 때 작동 / 376이하 모바일
                         breakpoint: 376,
                         settings: {
-                            arrows: false,
+                            // arrows: false,
                             centerMode: true,
-                            centerPadding: '20px',
-                            slidesToShow: 1,
+                            centerPadding: '10px',
+                            slidesToShow: 1
                         }
                     }
                 ]
