@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>33_햄버거 버튼</title>
     <style>
-        .container {
+        .collapsedMenuIcon {
+            /* 
+                여기서 position: absolute 추가하면 내용크기 만큼 /inline-block 비슷
+                여기서 position: relative 추가하면 부모크기의 100% / block 와 동일
+            */
+
+            /* display: inline-block를 한 이유는 내부 내용 크기만큼 하기위해 block는 width 100% 고정임 */
             display: inline-block;
+            /* 마우스 포인터 모양 손가락으로 변경 */
             cursor: pointer;
         }
 
@@ -19,6 +26,7 @@
             background-color: #333;
             margin: 6px 0;
             transition: 0.4s;
+            border-radius: 3px;
         }
 
         .change .bar1 {
@@ -43,6 +51,7 @@
             collapsedMenuIcon.onclick = function () {
                 // 함수 호출
                 // myFunction(this);
+                myFunction(event.currentTarget);
                 // 화살표 함수 이벤트 내에서 this는 window이다.
                 // 기존 onclick = function(){} 에서의 this는 collapsedMenuIcon 이벤트 객체 자신을 지칭한다.
 
@@ -57,12 +66,14 @@
 
             // 호이스팅
             // 함수 선언(정의)
-            function myFunction() {
+            function myFunction(x) {
                 /* 
-                    classList.add("선택자")
-                    classList.remove("선택자")
-                    classList.toggle("선택자")
+                    classList.add("선택자") -> 클래스 추가
+                    classList.remove("선택자") -> 클래스 제거
+                    classList.toggle("선택자") -> 선택자를 추가 또는 제거
                 */
+
+                // x 객체가 change가 있으면 제거, 아니면 추가 한다는 의미다. 
                 x.classList.toggle("change");
             }
         });
