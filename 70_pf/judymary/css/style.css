@@ -655,6 +655,14 @@ div.qna>.box {
         background: url(../images/slide3.jpg) 50% 50%/cover;
     }
 
+    /* sec2 */
+    /* sec3 */
+    #sec3 {
+        width: 1440px;
+        margin: 0 auto;
+    }
+    /* tabs 배치 조정 */
+
     /* footer */
     #footer1 {
         justify-content: flex-start;
