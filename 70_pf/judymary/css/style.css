@@ -299,23 +299,23 @@ div.ui_card.tb {
     line-height: 57px;
 }
 
-#sec2 div.ui2:nth-of-type(2) {
+#sec2 div.ui2:nth-of-type(1) {
     background: #F2FFEB;
 }
 
-#sec2 div.ui2:nth-of-type(3) {
+#sec2 div.ui2:nth-of-type(2) {
     background: #FFF9E9;
 }
 
-#sec2 div.ui2:nth-of-type(4) {
+#sec2 div.ui2:nth-of-type(3) {
     background: #EDF9FF;
 }
 
-#sec2 div.ui2:nth-of-type(5) {
+#sec2 div.ui2:nth-of-type(4) {
     background: #FFF2EA;
 }
 
-#sec2 div.ui2:nth-of-type(6) {
+#sec2 div.ui2:nth-of-type(5) {
     background: #FFF2E1;
 }
 
@@ -598,6 +598,7 @@ footer div.logo {
 
     #slideWrap_tb {
         display: flex;
+        height: 500px;
     }
 
     #slideWrap_tb div.ui2 {
@@ -609,11 +610,11 @@ footer div.logo {
     }
 
     #slideWrap_tb .bx-viewport {
-        height: 500px;
+        height: 440px !important;
     }
 
     #slideWrap_tb .bx-wrapper {
-        height: 420px;
+        height: 440px;
     }
 
     /* sec3 */

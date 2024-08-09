@@ -92,6 +92,7 @@ window.addEventListener("DOMContentLoaded", () => {
             maxSlides: 3,
             moveSlides: 1
         });
+        
         $('.bxslider2').bxSlider({
             auto: true,
             autoControls: false,
