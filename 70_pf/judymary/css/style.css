@@ -72,7 +72,8 @@ header li>a {
     font-weight: 700;
 }
 
-.section h2 {
+.section>h2 {
+    margin-top: 209px;
     font-size: 4.8rem;
     font-family: "Jua", sans-serif;
     color: var(--point);
@@ -285,6 +286,7 @@ ul.mb_menu li a:hover {
 /* section */
 /* 공통 */
 .section {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -335,16 +337,6 @@ ul.mb_menu li a:hover {
 /* sec3 */
 #sec3 {
     padding: 0 24px;
-}
-
-#sec3 h2:not(.qna h2, h2.mb) {
-    display: none;
-}
-
-#sec3>h2.mb {
-    display: block;
-    text-align: center;
-    margin: 104px 0 16px;
 }
 
 div.btn ul {
@@ -484,11 +476,11 @@ div.qna>.box {
 /* 테블릿 */
 
 @media (min-width: 768px) {
+
     /* header */
     nav.mb.tb {
         width: 50%;
     }
-
 
     /* footer */
     #footer2 .ft_bx1>p {
@@ -503,6 +495,39 @@ div.qna>.box {
 /* PC버전 */
 
 @media (min-width: 1025px) {
+
+    /* header */
+    header {
+        height: 105px;
+        justify-content: flex-start;
+    }
+
+    header>.logo {
+        width: 162px;
+        margin: 0 148px 0 320px;
+    }
+
+    /* nav pc버전 */
+    nav.pc {
+        height: 105px;
+    }
+
+    .pc_menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .pc_menu li {
+        margin-right: 80px;
+    }
+
+    .pc_menu li a {
+        transition: .3s;
+    }
+
+    .pc_menu li a:hover {
+        color: var(--point);
+    }
 
     /* footer */
     #footer1 {
@@ -554,7 +579,9 @@ div.qna>.box {
     /* 모바일태블릿 가리기 */
     .mb,
     .tb,
-    .mb.tb {
+    .mb.tb,
+    #x_logo,
+    nav.mb.tb {
         display: none;
     }
 
