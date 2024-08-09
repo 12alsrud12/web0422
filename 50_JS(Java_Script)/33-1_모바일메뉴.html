@@ -45,11 +45,49 @@
         nav {
             position: absolute;
             top: 0;
-            right: 0;
+            right: -100%;
             width: 70%;
             height: 100vh;
-            background: yellow;
+            padding: 54px 16px;
+            background: #fff;
+            transition: .4s;
         }
+
+        nav.move {
+            right: 0;
+        }
+
+        /* menu */
+        .main_menu:not(.sub_menu) {
+            line-height: 2;
+        }
+
+        .sub_menu {
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            padding: 8px 8px 16px;
+            transition: .3s;
+        }
+
+        .sub_menu a {
+            padding: 8px 16px;
+        }
+
+        .sub_menu a:hover {
+            background: #ff7878;
+        }
+
+        .main_menu:hover .sub_menu {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        
+
+
+
 
         /* header logo */
         h1 {
@@ -67,6 +105,9 @@
 
         /* 모바일 햄버거 버튼 */
         .collapsedMenuIcon {
+            position: absolute;
+            right: 8px;
+            z-index: 9990;
             display: inline-block;
             cursor: pointer;
             margin-right: 8px;
@@ -101,16 +142,25 @@
         window.addEventListener("DOMContentLoaded", () => {
             // 요소찾기
             const collapsedMenuIcon = document.querySelector(".collapsedMenuIcon");
+            const nav = document.querySelector("nav");
             console.log(collapsedMenuIcon);
-
+            console.log(nav);
             // 이벤트 처리
             collapsedMenuIcon.onclick = function () {
                 myFunction(event.currentTarget);
+                navi(event.currentTarget);
             };
+
+
+
 
             function myFunction(x) {
                 // toggle x 객체가 change를 가지고있으면 제거, 아니면 추가
                 x.classList.toggle("change");
+            }
+
+            function navi(a) {
+                nav.classList.toggle("move");
             }
         });
     </script>
