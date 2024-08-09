@@ -292,6 +292,10 @@ div.ui_card.tb {
     line-height: 57px;
 }
 
+#sec2 .ui2 {
+
+}
+
 #sec2 div.ui2:nth-of-type(2) {
     background: #F2FFEB;
 }
@@ -313,13 +317,7 @@ div.ui_card.tb {
 }
 
 /* 캐러샐 */
-#slideWrap {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid red;
-}
+
 
 .bx-viewport {
     height: 300px !important;
