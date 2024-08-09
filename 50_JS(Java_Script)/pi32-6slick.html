@@ -5,15 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pi32_slick</title>
+    <!-- slick slider CSS 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <!-- jQuery 라이브러리 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!-- slick 슬라이더 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
+    <style>
+        body {
+            background: yellowgreen;
+        }
+    </style>
+
     <script>
-        window.addEventListener("DOMContentLoaded", () => {
-            $('.center').slick({
+        $(() => {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToScroll: 1,
+                slidesToShow: 3,
                 centerMode: true,
                 centerPadding: '60px',
                 slidesToShow: 3,
@@ -43,7 +56,11 @@
 </head>
 
 <body>
-
+    <div class="slider">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+    </div>
 </body>
 
 </html>
