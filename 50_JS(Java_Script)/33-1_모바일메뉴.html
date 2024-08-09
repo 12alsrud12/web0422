@@ -27,7 +27,7 @@
         h1 {
             font-size: 24px;
         }
-        
+
 
         /* 헤더 */
         header {
@@ -40,6 +40,8 @@
             height: 54px;
             /* 임시 */
             border: 1px solid red;
+            background: #fff;
+            box-sizing: 0 4px 4px rgba(134, 134, 134, 0.5);
         }
 
 
@@ -136,6 +138,53 @@
         .change .bar3 {
             transform: translate(0, -11px) rotate(45deg);
         }
+
+        @media (min-width: 768px) {}
+
+        @media (min-width: 996px) {
+            nav {
+                display: flex;
+                width: auto;
+                height: 54px;
+                top: 0;
+                right: 0;
+                padding: 0;
+            }
+
+            .main {
+                display: flex;
+                padding: 0;
+                text-align: center;
+            }
+
+            .main_menu {
+                width: 150px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .main_menu>a {
+                line-height: 1;
+            }
+
+            .sub_menu {
+                width: 150px;
+                position: absolute;
+                top: 54px;
+                padding: 0;
+            }
+
+            .main:hover .sub_menu {
+                height: 150px;
+            }
+
+            /* 가리기 */
+            .collapsedMenuIcon {
+                display: none;
+            }
+        }
     </style>
     <script>
         window.addEventListener("DOMContentLoaded", () => {
@@ -147,7 +196,6 @@
             // 이벤트 처리
             collapsedMenuIcon.onclick = function () {
                 myFunction(event.currentTarget);
-                navi(event.currentTarget);
             };
 
 
@@ -156,11 +204,9 @@
             function myFunction(x) {
                 // toggle x 객체가 change를 가지고있으면 제거, 아니면 추가
                 x.classList.toggle("change");
-            }
-
-            function navi(a) {
                 nav.classList.toggle("move");
             }
+
         });
     </script>
 </head>
