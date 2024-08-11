@@ -104,6 +104,10 @@ p {
     font-size: 1.6rem;
 }
 
+.p0 {
+    font-size: 12px;
+}
+
 .p1 {
     font-size: 14px;
 }
@@ -219,6 +223,7 @@ header {
     padding: 0 20px;
     background: #fff;
     border-bottom: 2px solid var(--sub);
+    box-sizing: border-box;
 }
 
 header>.logo {
@@ -314,7 +319,7 @@ ul.mb_menu li a:hover {
 
 /* section */
 /* 공통 */
-section:not(#sec3) {
+section:not(#sec3, #sec4) {
     height: 100vh;
     padding: 24px 16px 0;
 }
@@ -400,34 +405,96 @@ section>p.active {
 
 /* sec2 */
 
+/* slick 슬라이드 */
+#sec2 {
+    position: relative;
+    overflow: hidden;
+}
 
-/* #sec2 div.ui2:nth-of-type(1) {
+.slider {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* 슬라이드 전체 크기 */
+    max-width: 360px;
+}
+
+/* 슬라이드 아이템 */
+.slick-slide {
+    margin: 8px 10px;
+    background: #fff;
+    border-radius: 15px;
+    /* 이미지 상단 영역 모서리 둥글게 보이기 */
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+}
+
+#sec2 div.s2-bx1 {
+    text-align: center;
+    line-height: 50px;
+}
+
+#sec2 #s2-ui-1 {
     background: #F2FFEB;
 }
 
-#sec2 div.ui2:nth-of-type(2) {
+#sec2 #s2-ui-2 {
     background: #FFF9E9;
 }
 
-#sec2 div.ui2:nth-of-type(3) {
+#sec2 #s2-ui-3 {
     background: #EDF9FF;
 }
 
-#sec2 div.ui2:nth-of-type(4) {
+#sec2 #s2-ui-4 {
     background: #FFF2EA;
 }
 
-#sec2 div.ui2:nth-of-type(5) {
+#sec2 #s2-ui-5 {
     background: #FFF2E1;
-} */
-
-/* 캐러샐 */
+}
 
 
 
+.slick-dots {
+    bottom: -50px;
+}
 
-/* sec2 ui card bg */
 
+.slick-dots li.slick-acive {
+    width: 20px;
+    padding: 0;
+}
+
+.slick-dots li.slick-acive {
+    margin-right: 10px !important;
+}
+
+.slick-dots li button::before {
+    position: absolute;
+    content: none;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--tx2);
+    padding: 0;
+}
+
+.slick-dots li.slick-active button::before {
+    position: absolute;
+    left: -4px;
+    content: none;
+    content: "";
+    border-radius: 4px;
+    text-align-last: left;
+    width: 20px;
+    height: 8px;
+    padding: 0;
+    background: var(--point);
+}
 
 /* sec3 */
 #sec3 {
@@ -529,8 +596,82 @@ div.qna>.box {
     padding: 0 16px;
 }
 
+#sec4 .s4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.s4>p::before {
+    content: "★";
+    font-family: "Jua", sans-serif;
+    color: var(--point);
+}
+
 #sec4 .s4-bx1 {
+    display: flex;
     background: var(--sub);
+    width: 100%;
+    height: 164px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.s4:first-child .s4-bg {
+    width: 50%;
+    background: url(../images/전대점.png) 50% 50%/cover;
+}
+
+.s4:last-child .s4-bg {
+    width: 50%;
+    background: url(../images/주디마리홍대점.png) 50% 50%/cover;
+}
+
+.s4-bx2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.s4-bx2 p {
+    padding: 0 16px;
+}
+
+.s4-bx2>p {
+    line-height: 1.6;
+}
+
+.s4-bx2>div {
+    width: 100%;
+    background: var(--main);
+}
+
+.s4-bx2>div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.s4 button {
+    width: 160px;
+    height: 46px;
+    border-radius: 25px;
+    margin-top: 24px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-family: "Jua", sans-serif;
+    background: var(--sub);
+    color: var(--main);
+}
+
+.s4 button::after {
+    content: url(../images/위치.png);
 }
 
 /* footer */
@@ -598,6 +739,11 @@ div.qna>.box {
     }
 
     /* sec2 */
+    .slider {
+        max-width: 768px;
+        /* 슬라이드 전체 크기 */
+    }
+
     /* sec3 */
     .qna>div:last-child {
         position: absolute;
@@ -607,6 +753,9 @@ div.qna>.box {
     }
 
     /* sec4 */
+    #sec4 .s4-bx1 {
+        height: 380px;
+    }
 
     /* footer */
     #footer2 .ft_bx1>p {
@@ -674,6 +823,13 @@ div.qna>.box {
     }
 
     /* sec2 */
+
+    .slider {
+        margin-top: 100px;
+        max-width: 1216px;
+        /* 슬라이드 전체 크기 */
+    }
+
     /* sec3 */
     #sec3 {
         width: 1440px;

@@ -171,6 +171,49 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    // slide
+    // #sec2
+    $(() => {
+        $('.slider').slick({
+            // 데스크탑
+            // 자동 슬라이드
+            autoplay: false,
+            autoplaySpeed: 2000,
+            slidesToScroll: 1,
+            // 현재 보이는 슬라이드 수
+            slidesToShow: 5,
+            centerMode: true,
+            centerPadding: '0px',
+            dots: false,
+            responsive: [
+                {
+                    // 992 이하 테블릿
+                    breakpoint: 1024,
+                    settings: {
+                        // arrows: false -> 좌우버튼 숨기기
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        centerMode: true,
+                        centerPadding: '32px',
+                        slidesToShow: 2,
+                        dots: true,
+                    }
+                },
+                {
+                    // 768 이하 폰
+                    breakpoint: 768,
+                    settings: {
+                        // arrows: false -> 좌우버튼 숨기기
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1,
+                        dots: true
+                    }
+                }
+            ]
+        });
+    }); // ready 이벤트
+
 
 
 })

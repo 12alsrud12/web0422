@@ -11,10 +11,16 @@
     <link rel="icon" type="image/x-icon" href="images/pabicom.png">
     <!-- bx슬라이더 라이브러리 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <!--slick 슬라이더 CSS 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!--slick 슬라이더 테마 CSS 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <!-- 제이쿼리 라이브러리 파일이 위쪽으로 지정 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- bx슬라이더 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <!-- slick 슬라이더 JS 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
     <!-- 주디마리 사이트 메인 css -->
     <link rel="stylesheet" href="css/style.css">
@@ -73,6 +79,38 @@
     <section class="section" id="sec2">
         <h2>SHOP</h2>
         <p>주디마리의 메뉴를 소개합니다.</p>
+        <div class="slider">
+            <div>
+                <img src="images/pudding.jpg" alt="pudding">
+                <div class="s2-bx1" id="s2-ui-1">
+                    <p>PUDDING</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/milktea.png" alt="milktea">
+                <div class="s2-bx1" id="s2-ui-2">
+                    <p>MILK TEA</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/cookie.jpg" alt="cookie">
+                <div class="s2-bx1" id="s2-ui-3">
+                    <p>COOKIE</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/gift_package.png" alt="gift_package">
+                <div class="s2-bx1" id="s2-ui-4">
+                    <p>GIFT PACKAGE</p>
+                </div>
+            </div>
+            <div>
+                <img src="images/products.jpg" alt="products">
+                <div class="s2-bx1" id="s2-ui-5">
+                    <p>PRODUCTS</p>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="section" id="sec3">
         <h2>NOTICE & VISITOR</h2>
@@ -152,15 +190,45 @@
                 <p>주디마리 전대점</p>
                 <div class="s4-bx1">
                     <div class="s4-bg"><!-- bg - img 삽입 --></div>
-                    <div></div>
-                </div>
+                    <div class="s4-bx2">
+                        <p class="p1">매장전화</p>
+                        <div>
+                            <p class="p0">010-0000-0000</p>
+                        </div>
+                        <p class="p1">매장주소</p>
+                        <div>
+                            <p class="p0">광주광역시 북구 우치로 86 지하1층</p>
+                            <p class="p0">단체 이용, 포장, 배달</p>
+                        </div>
+                        <p class="p1">영업시간</p>
+                        <div>
+                            <p class="p0">매일 11:00 ~ 22:00</p>
+                        </div>
+                    </div><!-- //.s4-bx2 -->
+                </div><!-- //.s4-bx1 -->
+                <button>매장 위치보기</button>
             </li>
             <li class="s4">
                 <p>주디마리 홍대점</p>
                 <div class="s4-bx1">
                     <div class="s4-bg"><!-- bg - img 삽입 --></div>
-                    <div></div>
-                </div>
+                    <div class="s4-bx2">
+                        <p class="p1">매장전화</p>
+                        <div>
+                            <p class="p0">010-0000-0000</p>
+                        </div>
+                        <p class="p1">매장주소</p>
+                        <div>
+                            <p class="p0">서울 마포구 홍익로5안길 63 1층</p>
+                            <p class="p0">포장, 배달, 예약</p>
+                        </div>
+                        <p class="p1">영업시간</p>
+                        <div>
+                            <p class="p0">매일 11:00 ~ 22:00</p>
+                        </div>
+                    </div><!-- //.s4-bx2 -->
+                </div><!-- //.s4-bx1 -->
+                <button>매장 위치보기</button>
             </li>
         </ul>
     </section>
