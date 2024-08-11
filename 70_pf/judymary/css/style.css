@@ -525,7 +525,13 @@ div.qna>.box {
 }
 
 /* sec4 */
+#sec4 {
+    padding: 0 16px;
+}
 
+#sec4 .s4-bx1 {
+    background: var(--sub);
+}
 
 /* footer */
 #footer1 {
@@ -579,6 +585,18 @@ div.qna>.box {
     }
 
     /* sec1 */
+    #s1_s-1 {
+        background: url(../images/slide1.jpg) 50% 50%/cover fixed;
+    }
+
+    #s1_s-2 {
+        background: url(../images/slide2.jpg) 50% 50%/cover fixed;
+    }
+
+    #s1_s-3 {
+        background: url(../images/slide3.jpg) 50% 50%/cover fixed;
+    }
+
     /* sec2 */
     /* sec3 */
     .qna>div:last-child {
@@ -639,7 +657,7 @@ div.qna>.box {
 
     /* 섹션공통 */
     section {
-        padding: 209px 0 0;
+        padding: 209px 0 0 !important;
     }
 
     /* sec1 */

@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // 데스크탑
         // #sec2
-        if (window.innerWidth < 1025, p.innerHTML >= 400, p.innerHTML <= 1300) {
+        if (window.innerWidth < 1025, p.innerHTML >= 400, p.innerHTML <= 1200) {
             s2h2.classList.add("active");
             s2p.classList.add("active");
         } else {
@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec3
-        if (window.innerWidth < 1025, p.innerHTML >= 1400, p.innerHTML <= 2300) {
+        if (window.innerWidth < 1025, p.innerHTML < 1800, p.innerHTML > 2800) {
             s3h2.classList.add("active");
             s3p.classList.add("active");
         } else {
@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (window.innerWidth < 1025, p.innerHTML >= 2400) {
+        if (window.innerWidth < 1025, p.innerHTML >= 2000) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {
