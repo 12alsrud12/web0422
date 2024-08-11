@@ -72,7 +72,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // 태블릿
         // #sec2
-        if (window.innerWidth > 1024, p.innerHTML >= 400, p.innerHTML <= 1300) {
+        if (window.innerWidth > 1024, window.innerWidth < 380, p.innerHTML >= 400, p.innerHTML <= 1300) {
             s2h2.classList.add("active");
             s2p.classList.add("active");
         } else {
@@ -81,7 +81,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec3
-        if (window.innerWidth > 1024, p.innerHTML <= 1500, p.innerHTML >= 2400) {
+        if (window.innerWidth > 1024, window.innerWidth < 380, p.innerHTML <= 1200, p.innerHTML >= 2000) {
             s3h2.classList.add("active");
             s3p.classList.add("active");
         } else {
@@ -90,7 +90,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (window.innerWidth > 1024, p.innerHTML >= 2500) {
+        if (window.innerWidth > 1024, window.innerWidth < 380, p.innerHTML >= 2300) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {
