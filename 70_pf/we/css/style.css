@@ -104,12 +104,14 @@ nav {
 #link ul {
     display: flex;
     align-items: center;
-    height: 100px;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 #link li {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 120px;
     height: 60px;
 }
