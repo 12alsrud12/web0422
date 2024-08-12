@@ -279,6 +279,18 @@ header.mb.tb .sub_menu>li>a {
     color: var(--white);
 }
 
+.kakao a {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 10px;
+    background: #FFD900;
+}
+
+.kakao a::after {
+    content: url(../03.assets/index/kakao_right.svg);
+}
+
 /* pc.header 가리기 */
 header.pc,
 header.pc>div.logo {
