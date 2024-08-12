@@ -109,9 +109,6 @@ nav {
 }
 
 #link li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 120px;
     height: 60px;
 }
@@ -119,6 +116,9 @@ nav {
 #link li img {
     width: 60px;
     height: 60px;
+    /* 인라인 요소의 수직 배치 */
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 #banner {
