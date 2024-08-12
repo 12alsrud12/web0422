@@ -664,6 +664,7 @@ div.qna>.box {
 }
 
 .s4>p::before {
+    margin-right: 8px;
     content: "★";
     font-family: "Jua", sans-serif;
     color: var(--point);
@@ -814,6 +815,13 @@ div.qna>.box {
 
     /* sec4 */
     #sec4 .s4-bx1 {
+        box-shadow: 4px 4px 4px rgba(182, 182, 182, 0.5);
+    }
+    #sec4 li.s4>p.bold {
+        margin: 0 0 16px 8px;
+    }
+
+    #sec4 .s4-bx1 {
         height: 380px;
     }
 
@@ -921,6 +929,8 @@ div.qna>.box {
         width: 1440px;
         margin: 0 auto;
     }
+
+
 
     /* tabs 배치 조정 */
     .tab.on {

@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (window.innerWidth < 1025, p.innerHTML <= 2000) {
+        if (window.innerWidth < 1025, p.innerHTML <= 2300) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {
@@ -90,7 +90,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (window.innerWidth > 1024, window.innerWidth < 380, p.innerHTML >= 2300) {
+        if (window.innerWidth > 1024, window.innerWidth < 380, p.innerHTML <= 2300) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {
@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec3
-        if (window.innerWidth > 375, p.innerHTML >= 1100, p.innerHTML <= 1700) {
+        if (window.innerWidth > 375, p.innerHTML <= 1100, p.innerHTML >= 1700) {
             s3h2.classList.add("active");
             s3p.classList.add("active");
         } else {
@@ -118,7 +118,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (window.innerWidth > 375, p.innerHTML >= 1700) {
+        if (window.innerWidth > 375, p.innerHTML <= 1700) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {
