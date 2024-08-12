@@ -213,7 +213,4 @@ window.addEventListener("DOMContentLoaded", () => {
             ]
         });
     }); // ready 이벤트
-
-
-
 })

@@ -9,15 +9,11 @@
     font-style: normal;
 }
 
-
-
 /* 스타일가이드 */
 :root {
     --main: #fff;
-
     --sub: #ff9D55;
     --point: #ff6700;
-
     --tx1: #272727;
     --tx2: #999;
     --tx3: #E5E7EB;
@@ -133,7 +129,10 @@ p {
     font-size: 20px;
 }
 
-
+/* sec2 font */
+div.s2-bx1>p {
+    font-family: "Jua", sans-serif;
+}
 
 /* sec3 font */
 .btn li {
@@ -198,23 +197,26 @@ html {
     scroll-behavior: smooth;
 }
 
-/* body * {
-    border: 1px solid olivedrab;
-} */
-
 body {
     background: var(--main);
 }
 
+::selection {
+    color: var(--main);
+    background: var(--point);
+}
+
 #pppp {
     position: fixed;
-    z-index: 9999;
+    text-indent: -9999;
 }
 
 /* header */
 header {
     display: flex;
     z-index: 9990;
+    /* top 0은 사이트 스크린샷 시 헤더 내려옴 방지 */
+    top: 0;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -351,7 +353,7 @@ section>p.active {
 
 /* sec1 */
 #sec1 {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -363,6 +365,12 @@ section>p.active {
 .slide li>div {
     width: 100vw;
     height: 100vh;
+}
+
+#s1_s-1,
+#s1_s-2,
+#s1_s-3 {
+    margin: 0 auto;
 }
 
 .bx-wrapper .bx-controls-auto,
@@ -402,15 +410,13 @@ section>p.active {
     background: url(../images/mb-slide3.png) 50% 50%/cover;
 }
 
-
 /* sec2 */
-
-/* slick 슬라이드 */
 #sec2 {
     position: relative;
     overflow: hidden;
 }
 
+/* slick 슬라이드 */
 .slider {
     position: absolute;
     left: 50%;
@@ -456,8 +462,6 @@ section>p.active {
     background: #FFF2E1;
 }
 
-
-
 .slick-dots {
     bottom: -50px;
 }
@@ -481,6 +485,7 @@ section>p.active {
     border-radius: 4px;
     background: var(--tx2);
     padding: 0;
+    transition: .3s;
 }
 
 .slick-dots li.slick-active button::before {
@@ -581,7 +586,11 @@ div.qna>.box {
     border-radius: 24px;
     padding: 16px 0;
     background: var(--main);
+}
 
+.qna button:active {
+    color: var(--main);
+    background: var(--tx1);
 }
 
 .qna>div:last-child {
@@ -604,6 +613,7 @@ div.qna>.box {
 }
 
 .s4>p::before {
+    margin-right: 8px;
     content: "★";
     font-family: "Jua", sans-serif;
     color: var(--point);
@@ -659,7 +669,7 @@ div.qna>.box {
     width: 160px;
     height: 46px;
     border-radius: 25px;
-    margin-top: 24px;
+    margin: 24px auto 0;
     padding: 0 24px;
     display: flex;
     align-items: center;
@@ -717,7 +727,6 @@ div.qna>.box {
 }
 
 /* 테블릿 */
-
 @media (min-width: 768px) {
 
     /* header */
@@ -754,21 +763,51 @@ div.qna>.box {
 
     /* sec4 */
     #sec4 .s4-bx1 {
+        box-shadow: 4px 4px 4px rgba(182, 182, 182, 0.5);
+    }
+
+    #sec4 li.s4>p.bold {
+        margin: 0 0 16px 8px;
+    }
+
+    #sec4 .s4-bx1 {
         height: 380px;
+    }
+
+    #sec4 .s4-bx2 {
+        justify-content: space-between;
+    }
+
+    #sec4 .s4-bx2>p {
+        height: 42px;
+        line-height: 42px;
+        font-size: 16px;
+    }
+
+    #sec4 .s4-bx2>div {
+        height: 100%;
+        display: flex;
+    }
+
+    #sec4 .s4-bx2>div:first-of-type,
+    #sec4 .s4-bx2>div:last-of-type {
+        align-items: center;
+    }
+
+    .s4-bx2>div p {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
     }
 
     /* footer */
     #footer2 .ft_bx1>p {
         font-size: 1.4rem;
     }
-
-    /* 가림막 */
-
 }
 
 
 /* PC버전 */
-
 @media (min-width: 1025px) {
 
     /* header */
@@ -823,11 +862,55 @@ div.qna>.box {
     }
 
     /* sec2 */
-
     .slider {
         margin-top: 100px;
         max-width: 1216px;
         /* 슬라이드 전체 크기 */
+    }
+
+    .s2-rotate {
+        width: 224px;
+        height: 224px;
+        perspective: 800px;
+    }
+
+    .s2-rotate>div {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .s2-rotate:hover>div {
+        transform: rotateY(180deg);
+    }
+
+    .s2-rotate .back div {
+        transform: rotateY(180deg);
+        padding: 48px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .s2-img {
+        overflow: hidden;
+        backface-visibility: hidden;
+    }
+
+    .s2-rotate .back {
+        width: 224px;
+        height: 224px;
+        font-family: "Jua", sans-serif;
+        background: var(--main);
+    }
+
+    .s2-img img {
+        transition: .3s;
+    }
+
+    .s2-img img:hover {
+        transform: scale(1.2);
     }
 
     /* sec3 */
@@ -848,6 +931,16 @@ div.qna>.box {
     .tab .box {
         width: 422px;
         height: 180px;
+    }
+
+    /* sec4 */
+    #sec4 {
+        width: 1010px;
+        margin: 0 auto;
+    }
+
+    #sec4 button {
+        margin-left: 850px;
     }
 
     /* footer */
@@ -905,6 +998,4 @@ div.qna>.box {
     nav.mb.tb {
         display: none;
     }
-
-
 }
