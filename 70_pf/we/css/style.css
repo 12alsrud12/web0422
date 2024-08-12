@@ -122,7 +122,19 @@ nav {
 }
 
 #banner {
+    display: flex;
+    align-items: center;
     height: 150px;
+    padding: 0 100px;
+}
+
+#banner img {
+    width: 100px;
+    height: 80px;
+}
+
+#banner .txt {
+    margin: 0 100px 0 24px;
 }
 
 #board {
