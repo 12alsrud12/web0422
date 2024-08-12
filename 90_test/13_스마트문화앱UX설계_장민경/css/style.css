@@ -651,6 +651,7 @@ div.qna>.box {
 
 .s4-bx2>p {
     line-height: 1.6;
+    color: var(--main);
 }
 
 .s4-bx2>div {
