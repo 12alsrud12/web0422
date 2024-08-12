@@ -109,7 +109,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec3
-        if (window.innerWidth > 375, p.innerHTML <= 1100, p.innerHTML >= 1700) {
+        if (window.innerWidth < 375, p.innerHTML <= 1100) {
             s3h2.classList.add("active");
             s3p.classList.add("active");
         } else {

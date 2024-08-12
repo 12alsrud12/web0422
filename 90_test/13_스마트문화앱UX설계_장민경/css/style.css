@@ -446,53 +446,6 @@ section>p.active {
     line-height: 50px;
 }
 
-.s2-rotate {
-    width: 224px;
-    height: 224px;
-    perspective: 800px;
-}
-
-.s2-rotate>div {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-}
-
-.s2-rotate:hover>div {
-    transform: rotateY(180deg);
-}
-
-.s2-rotate .back div {
-    transform: rotateY(180deg);
-    padding: 48px;
-    text-align: center;
-    font-size: 16px;
-}
-
-.s2-img {
-    overflow: hidden;
-    backface-visibility: hidden;
-}
-
-.s2-rotate .back {
-    width: 224px;
-    height: 224px;
-    font-family: "Jua", sans-serif;
-    background: var(--main);
-}
-
-
-
-.s2-img img {
-    transition: .3s;
-}
-
-.s2-img img:hover {
-    transform: scale(1.2);
-}
-
 
 
 #sec2 #s2-ui-1 {
@@ -920,11 +873,55 @@ div.qna>.box {
     }
 
     /* sec2 */
-
     .slider {
         margin-top: 100px;
         max-width: 1216px;
         /* 슬라이드 전체 크기 */
+    }
+
+    .s2-rotate {
+        width: 224px;
+        height: 224px;
+        perspective: 800px;
+    }
+
+    .s2-rotate>div {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .s2-rotate:hover>div {
+        transform: rotateY(180deg);
+    }
+
+    .s2-rotate .back div {
+        transform: rotateY(180deg);
+        padding: 48px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .s2-img {
+        overflow: hidden;
+        backface-visibility: hidden;
+    }
+
+    .s2-rotate .back {
+        width: 224px;
+        height: 224px;
+        font-family: "Jua", sans-serif;
+        background: var(--main);
+    }
+
+    .s2-img img {
+        transition: .3s;
+    }
+
+    .s2-img img:hover {
+        transform: scale(1.2);
     }
 
     /* sec3 */
