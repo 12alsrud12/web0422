@@ -735,16 +735,20 @@ div.qna>.box {
     }
 
     /* sec1 */
+    .slide {
+        margin-top: 70px;
+    }
+
     #s1_s-1 {
-        background: url(../images/slide1.jpg) 50% 50%/cover fixed;
+        background: url(../images/slide1.jpg) 50% 50%/cover;
     }
 
     #s1_s-2 {
-        background: url(../images/slide2.jpg) 50% 50%/cover fixed;
+        background: url(../images/slide2.jpg) 50% 50%/cover;
     }
 
     #s1_s-3 {
-        background: url(../images/slide3.jpg) 50% 50%/cover fixed;
+        background: url(../images/slide3.jpg) 50% 50%/cover;
     }
 
     /* sec2 */
