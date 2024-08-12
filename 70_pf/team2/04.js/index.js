@@ -19,17 +19,18 @@ window.addEventListener("DOMContentLoaded", () => {
     };
 
     // x_logo
-    const x = document.querySelector("header.mb.tb .x_logo");
+    const x = document.querySelector("#x_logo");
+    const nav = document.querySelector("header.mb.tb>nav");
     console.log(x);
+    console.log(nav);
+
+    function xEvent() {
+        x.classList.toggle("active");
+        nav.classList.toggle("active");
+    };
 
     x.onclick = () => {
-
-        if (x.classList === "active") {
-            x.classList.remove("active");
-        } else {
-            x.classList.add("active");
-        }
-
+        xEvent();
     };
 
 });
