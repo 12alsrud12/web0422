@@ -100,7 +100,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // 모바일
         // #sec2
-        if (window.innerWidth > 375, p.innerHTML >= 200, p.innerHTML <= 1000) {
+        if (window.innerWidth < 375, p.innerHTML >= 200, p.innerHTML <= 1000) {
             s2h2.classList.add("active");
             s2p.classList.add("active");
         } else {
@@ -118,7 +118,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (window.innerWidth > 375, p.innerHTML <= 1700) {
+        if (window.innerWidth < 375, p.innerHTML >= 2000) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {
