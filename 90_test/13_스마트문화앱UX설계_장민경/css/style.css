@@ -479,6 +479,7 @@ section>p.active {
     border-radius: 4px;
     background: var(--tx2);
     padding: 0;
+    transition: .3s;
 }
 
 .slick-dots li.slick-active button::before {
@@ -657,7 +658,7 @@ div.qna>.box {
     width: 160px;
     height: 46px;
     border-radius: 25px;
-    margin-top: 24px;
+    margin: 24px auto 0;
     padding: 0 24px;
     display: flex;
     align-items: center;
