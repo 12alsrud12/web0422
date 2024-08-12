@@ -217,6 +217,8 @@ body {
 header {
     display: flex;
     z-index: 9990;
+    /* top 0은 사이트 스크린샷 시 헤더 내려옴 방지 */
+    top: 0;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -817,6 +819,7 @@ div.qna>.box {
     #sec4 .s4-bx1 {
         box-shadow: 4px 4px 4px rgba(182, 182, 182, 0.5);
     }
+
     #sec4 li.s4>p.bold {
         margin: 0 0 16px 8px;
     }
