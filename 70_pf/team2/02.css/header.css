@@ -153,7 +153,38 @@ header.mb.tb>nav.active {
 }
 
 /* header mb,tb menu */
-header.mb.tb>.main:hover
+header.mb.tb .main_menu {
+    position: relative;
+}
+
+header.mb.tb .main_menu>a {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+header.mb.tb .sub_menu {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+header.mb.tb .sub_menu>li {
+    height: 45px;
+    line-height: 45px;
+}
+
+header.mb.tb .sub_menu>li>a {
+    padding: 0 24px;
+}
+
+header.mb.tb #main_mb_1:hover #sub_mb_1 {
+    height: 135px;
+    opacity: 1;
+    overflow: visible;
+}
 
 /* pc.header 가리기 */
 header.pc,
