@@ -12,10 +12,8 @@
 /* 스타일가이드 */
 :root {
     --main: #fff;
-
     --sub: #ff9D55;
     --point: #ff6700;
-
     --tx1: #272727;
     --tx2: #999;
     --tx3: #E5E7EB;
@@ -412,7 +410,6 @@ section>p.active {
     background: url(../images/mb-slide3.png) 50% 50%/cover;
 }
 
-
 /* sec2 */
 #sec2 {
     position: relative;
@@ -420,7 +417,6 @@ section>p.active {
 }
 
 /* slick 슬라이드 */
-
 .slider {
     position: absolute;
     left: 50%;
@@ -445,8 +441,6 @@ section>p.active {
     text-align: center;
     line-height: 50px;
 }
-
-
 
 #sec2 #s2-ui-1 {
     background: #F2FFEB;
@@ -733,7 +727,6 @@ div.qna>.box {
 }
 
 /* 테블릿 */
-
 @media (min-width: 768px) {
 
     /* header */
@@ -811,14 +804,10 @@ div.qna>.box {
     #footer2 .ft_bx1>p {
         font-size: 1.4rem;
     }
-
-    /* 가림막 */
-
 }
 
 
 /* PC버전 */
-
 @media (min-width: 1025px) {
 
     /* header */
@@ -930,8 +919,6 @@ div.qna>.box {
         margin: 0 auto;
     }
 
-
-
     /* tabs 배치 조정 */
     .tab.on {
         width: 1346px;
@@ -1011,6 +998,4 @@ div.qna>.box {
     nav.mb.tb {
         display: none;
     }
-
-
 }
