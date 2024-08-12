@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec3
-        if (window.innerWidth < 1025, p.innerHTML < 1800, p.innerHTML > 2800) {
+        if (window.innerWidth < 1025, p.innerHTML < 2800, p.innerHTML >= 2800) {
             s3h2.classList.add("active");
             s3p.classList.add("active");
         } else {
@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // #sec4
-        if (window.innerWidth < 1025, p.innerHTML >= 2000) {
+        if (window.innerWidth < 1025, p.innerHTML <= 2000) {
             s4h2.classList.add("active");
             s4p.classList.add("active");
         } else {

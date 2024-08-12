@@ -133,7 +133,10 @@ p {
     font-size: 20px;
 }
 
-
+/* sec2 font */
+div.s2-bx1>p {
+    font-family: "Jua", sans-serif;
+}
 
 /* sec3 font */
 .btn li {
@@ -351,7 +354,7 @@ section>p.active {
 
 /* sec1 */
 #sec1 {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -363,6 +366,12 @@ section>p.active {
 .slide li>div {
     width: 100vw;
     height: 100vh;
+}
+
+#s1_s-1,
+#s1_s-2,
+#s1_s-3 {
+    margin: 0 auto;
 }
 
 .bx-wrapper .bx-controls-auto,
@@ -877,7 +886,12 @@ div.qna>.box {
 
     /* sec4 */
     #sec4 {
-        
+        width: 1010px;
+        margin: 0 auto;
+    }
+
+    #sec4 button {
+        margin-left: 850px;
     }
 
     /* footer */
