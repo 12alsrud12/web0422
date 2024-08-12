@@ -756,6 +756,19 @@ div.qna>.box {
         height: 380px;
     }
 
+    #sec4 .s4-bx2 {
+        justify-content: space-between;
+    }
+
+    #sec4 .s4-bx2>p {
+        height: 42px;
+        line-height: 42px;
+    }
+
+    #sec4 .s4-bx2>div {
+        height: 100%;
+    }
+
     /* footer */
     #footer2 .ft_bx1>p {
         font-size: 1.4rem;
