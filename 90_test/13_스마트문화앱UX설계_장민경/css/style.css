@@ -404,12 +404,12 @@ section>p.active {
 
 
 /* sec2 */
-
-/* slick 슬라이드 */
 #sec2 {
     position: relative;
     overflow: hidden;
 }
+
+/* slick 슬라이드 */
 
 .slider {
     position: absolute;
@@ -455,8 +455,6 @@ section>p.active {
 #sec2 #s2-ui-5 {
     background: #FFF2E1;
 }
-
-
 
 .slick-dots {
     bottom: -50px;
