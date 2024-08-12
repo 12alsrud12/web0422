@@ -763,10 +763,23 @@ div.qna>.box {
     #sec4 .s4-bx2>p {
         height: 42px;
         line-height: 42px;
+        font-size: 16px;
     }
 
     #sec4 .s4-bx2>div {
         height: 100%;
+        display: flex;
+    }
+
+    #sec4 .s4-bx2>div:first-of-type,
+    #sec4 .s4-bx2>div:last-of-type {
+        align-items: center;
+    }
+
+    .s4-bx2>div p {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
     }
 
     /* footer */
@@ -860,6 +873,11 @@ div.qna>.box {
     .tab .box {
         width: 422px;
         height: 180px;
+    }
+
+    /* sec4 */
+    #sec4 {
+        
     }
 
     /* footer */
