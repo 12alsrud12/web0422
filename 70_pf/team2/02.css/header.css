@@ -152,6 +152,9 @@ header.mb.tb>nav.active {
     right: 0;
 }
 
+/* header mb,tb menu */
+header.mb.tb>.main:hover
+
 /* pc.header 가리기 */
 header.pc,
 header.pc>div.logo {
