@@ -208,7 +208,7 @@ body {
 
 #pppp {
     position: fixed;
-    text-indent: -9999;
+    opacity: 0;
 }
 
 /* header */
