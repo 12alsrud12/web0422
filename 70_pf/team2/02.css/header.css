@@ -164,6 +164,21 @@ header.mb.tb .nav_my {
     border-bottom: 2px solid #ccc;
 }
 
+header.mb.tb .nav_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 34px;
+    background: var(--main1);
+    border-radius: 15px;
+}
+
+header.mb.tb .nav_btn a {
+    color: var(--white);
+    font-size: 14px;
+}
+
 header.mb.tb .main_menu {
     position: relative;
     transition: .3s;
