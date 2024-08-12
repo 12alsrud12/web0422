@@ -125,7 +125,7 @@ nav {
     display: flex;
     align-items: center;
     height: 150px;
-    padding: 0 100px;
+    padding: 0 70px;
 }
 
 #banner img {
@@ -134,11 +134,37 @@ nav {
 }
 
 #banner .txt {
-    margin: 0 100px 0 24px;
+    margin: 0 160px 0 24px;
 }
 
 #board {
+    display: flex;
     height: 300px;
+    padding: 20px 40px;
+}
+
+#board>div {
+    width: 600px;
+    height: 260px;
+}
+
+.notice {
+    margin-right: 60px;
+}
+
+.gallery div {
+    display: flex;
+}
+
+.gallery a {
+    height: 170px;
+    margin: 10px;
+}
+
+.gallery img {
+    display: block;
+    width: 180px;
+    height: 140px;
 }
 
 /* D영역 */
