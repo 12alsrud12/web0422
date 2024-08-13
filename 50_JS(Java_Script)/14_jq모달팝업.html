@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>14_JS_모달팝업</title>
+
+
     <style>
         /* 디자인 */
         #modal .popup {
@@ -43,6 +45,32 @@
 
         /* //팝업창 용도 */
     </style>
+
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- 사용자JS -->
+    <script>
+        $(() => {
+            const md = $('#modal');
+            const pp = $('#modal .popup').eq[0];
+            const bt1 = $('.bt1').eq[0];
+            const bt2 = $('button').eq[0];
+
+            function resetX() {
+                md.css({ display: "block" });
+            };
+
+            bt1.click(() => {
+                resetX();
+                md.css({ display: "none" });
+            });
+
+            bt2.click(() => {
+                resetX();
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -70,29 +98,6 @@
 
         </div><!-- .popup -->
     </div><!-- //#modal -->
-
-
-    <!-- JS -->
-    <script>
-        const md = document.querySelector('#modal');
-        const pp = document.querySelectorAll('#modal .popup')[0];
-        const bt1 = document.querySelectorAll('.bt1')[0];
-        const bt2 = document.querySelectorAll('button')[0];
-
-        function resetX() {
-            md.classList.remove('on');
-        };
-
-        bt1.onclick = function () {
-            resetX();
-            md.classList.add('on');
-        };
-
-        bt2.onclick = function () {
-            resetX();
-        };
-
-    </script>
 </body>
 
 </html>
