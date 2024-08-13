@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32_자동슬라이드</title>
+    <!-- 사용자 CSS -->
+    <style>
+        /* reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: top;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* slide */
+        #slideWrap {
+            /* fixed(고정)의 left, top의 기준은 뷰포트이다. */
+            /* absolute의 부모가 없으면 left, top의 기준은 뷰포트이다. */
+            /* 위 2개의 차이점은 fixed는 고정이 된다는 점이고 absolute는 고정되지 않고 화면내리면 그대로 사라진다. */
+            position: absolute;
+
+            /* 화면 정중앙 배치 공식 */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            /* 이건 나중에 스크립트생기면 이미지가 3개에서 4개가되는대 그걸 가리기 위함이다. */
+            overflow: hidden;
+            /* border은 그냥 #slideWrap 사이즈 보려고 있는 것 불필요시 삭제 가능 */
+            border: 1px solid red;
+        }
+
+        #slideWrap ul {
+            /* 내부 li를 가로배치 */
+            display: flex;
+            /* 
+                left를 이용해서 움직이게 하기 위해 position을 지정해 좌우이동을 하게 하기위함.
+                absolute는 쓰면 위치가 엉망이될 수 있기 때문에
+                자기자신이 기준이 되는 positionL relative을 사용 한 것 left, top 기준을 자기 자신위주로 하기때문
+            */
+            position: relative;
+            left: 0%;
+        }
+    </style>
+    <!-- 사용자 JS -->
+</head>
+
+<body>
+    <div id="slideWrap">
+        <ul>
+            <li>
+                <a href="#"><img src="../assets/JS_11_이미지갤러리_1.jpg" alt="이미지1"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../assets/JS_11_이미지갤러리_2.jpg" alt="이미지2"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../assets/JS_11_이미지갤러리_3.jpg" alt="이미지3"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
