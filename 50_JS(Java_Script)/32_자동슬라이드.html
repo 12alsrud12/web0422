@@ -69,21 +69,25 @@
             // 슬라이드 전환 시간 2000 = 2초에 한번씩 이동
             const speed = 2000;
 
-            // 슬라이드 개수 + 마지막에 1개더 추가해서 자연스러운 이동
+            // 슬라이드 개수 + 마지막에 칸을 1개더 추가 나중에 아래에서 1번째 li를 복제해서 끊김없는 이동을 하기위함
+            // length는 HTML DOM 객체의 개수를 샐 때 사용 = slideListItemImg니까 #sludeWrap>ul>li>img의 개수를 새고 1개를 추가한 것
+            // 슬라이드를 맘대로 HTML에서 슬라이드 개수 추가하려면 직접 개수 추가하지말고 이렇게 length + 1
             const slideCount = slideListItemImg.length + 1;
+            // 추가로 lenght의 속성은 nodeList(HTML 컬렉션의 개수)
             console.log(slideCount);
 
             // 슬라이드 크기
             const slideWidth = 50;
             const slideHeight = 50;
 
+            // 아래의 function slideSize를 호출한 것
             slideSize();
 
             function slideSize() {
                 // 슬라이드 크기
-                // slide = #slideWrap이다.
+                // slide = div#slideWrap이다.
                 slide.style.width = slideWidth + "%";/* slideWidth, slideHeight의 값은 50 거기에 % 가 붙으면 50% */
-                slide.style.height = slideHeight + "%";/* slideWidth, slideHeight의 값은 50 거기에 % 가 붙으면 50% */
+                slide.style.height = slideHeight + "%";
                 /* 
                     결과적으로 위 부분은 슬라이드의 전체 크기가 지금기준으로는 body기준 50%짜리 그리고 CSS로 position을 줘서 정중앙 배치를 해두었다.
                 */
@@ -106,10 +110,14 @@
 
             // 자동 슬라이드 함수 선언
             function autoSlide() {
+                // idx는 슬라이드 순서
+                // ++ 로 증감 될 때마다 left가 -100%씩 이동한다. 이동되는 시간은 1s으로
+                // 위의 시간은 2초 뒤에 슬라이드 이동 명령을 내리는 거고 아래 transition은 슬라이드가 이동하는 시간이다.
                 idx++;
                 slideList.style.left = -100 * idx + "%";
-                slideList.style.transition = "1s";
+                slideList.style.transition = "5s";
 
+                // idx = 슬라이드 순서 | slideCount = 슬라이드 개수
                 if (idx === slideCount) {
                     idx = 0;
                     slideList.style.left = "0%";
