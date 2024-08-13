@@ -34,6 +34,13 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
 /* A영역 */
 header {
     display: flex;
@@ -81,9 +88,56 @@ nav {
 
 /* B영역 */
 #slide {
+    position: relative;
     width: 100%;
     height: 350px;
     overflow: hidden;
+}
+
+#slide ul {
+    position: absolute;
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+
+#slide li {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: -100%;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    43% {
+        left: -200%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    76% {
+        left: -300%;
+    }
+
+    99.99% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 /* C와 D영역 공통 */

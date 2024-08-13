@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>하이글로벌컴퍼니</title>
     <link rel="stylesheet" href="css/style.css">
+
+        <!-- JS -->
+        <script>
+            
+            const md = document.querySelector('#modal');
+            const pp = document.querySelectorAll('#modal .popup')[0];
+            const bt1 = document.querySelectorAll('.bt1')[0];
+            const bt2 = document.querySelectorAll('button')[0];
+    
+            function resetX() {
+                md.classList.remove('on');
+            };
+    
+            bt1.onclick = function () {
+                resetX();
+                md.classList.add('on');
+            };
+    
+            bt2.onclick = function () {
+                resetX();
+            };
+    
+        </script>
 </head>
 
 <body>
@@ -54,8 +77,9 @@
     </header>
 
     <!-- B -->
-    <div id="slide">
-        <ul>
+    <div id="slide"><!-- position: relative -->
+        <!-- 이 슬라이드 img크기를 width 100%으로 -->
+        <ul><!-- position:absolute -->
             <li><a href="#"><img src="../../01_photo/slide0.png" alt="슬라이드 이미지1"></a></li>
             <li><a href="#"><img src="../../01_photo/slide1.png" alt="슬라이드 이미지2"></a></li>
             <li><a href="#"><img src="../../01_photo/slide2.png" alt="슬라이드 이미지3"></a></li>
