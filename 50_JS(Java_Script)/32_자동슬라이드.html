@@ -102,11 +102,13 @@
                 // of뜻 ~에서, ~부터, ~으로부터
                 // 반복하다 x ~ slideListItem (#slideWrap>ul>li)
                 for (x of slideListItem) {
-                    // x 으로부터의 width: 100%의 값을 slideListItem = li에게 반복해서 주기위해
+                    // x 라는 이름의 변수로부터 width: 100%의 값을 slideListItem = li에게 반복해서 주기위해
                     x.style.width = 100 + "%";
                     // li는 3개나 있기 때문에 개별적으로 주려면 slideListItem[0],[1] ~ 이렇게 줘야하기 때문에
                     // 한번에 주기 위해 이 방법을 사용한다.
                 };
+
+                // x of slideListItem은 for(변수 of HTML컬렉션/배열) HTML컬렉션이다. 추가로 x 선언시 const x를 해도 된다.
 
                 /* 
                     for(표현식1; 표현식2; 표현식3) {코드;}
@@ -126,17 +128,47 @@
                         slideListItem[i].style.width = 100 + "%";
                         [i] = 즉 인덱스 까지 넣어야한다.
                     };
+
+                    하지만 i 는 원래 0 부터 시작하는대 우리 li는 총 4개밖에 없어서
+                    0 1 2 3까지 갔다가 그 이후로부턴 없으니까 4까지만 반복하고 그 이상은 4이상이 아니기 때문에 반복하다 탈출한다.
+
+                    ※ 그런데!! 복제는 아래에서 본격적으로 시작한 것이지 지금은 복제가 안되어있어서 3번째 li까지만 보고
+                    아래쪽에 추가복제된 4번째 li는 위에있는 for문은 몰라서 저렇게 쓰면 마지막 li에 이미지 인식을 못해서 에러가 난다!
+
+                    저렇게 쓸거면 아래에 쓰거나,
+                    위에 쓸거면 지금 x of slideListItem을 써야한다.
+                    li 개수만큼 반복한다는 의미.
+
+                    위의 i는 직접 증감시켜서 정확하개 n번째 순서의 li를 지목하는 거라 복제는 아래에서 했지만 위 기준에서는 4번째가 없는대 4번째를 지정해버려서 에러가 생긴다.
                 */
             };
 
             // ul의 첫 번째 요소 ul끝에 복제 (반드시 크기를 지정하고 복제해야 한다!)
-            slideList.appendChild(slideList.firstElementChild.cloneNode(true));
-            // 그리고 배경보면 막 눈내리거나 꽃내리고 하는대 이건 cloneNode를 쓰면된다고 한다.
             /* 
                 처음보는 것 학습
                     1. appendChild()
                     2. firstElementChild
                     3. cloneNode(true)
+
+                객체
+                    lastElementChild -> 마지막 자식 요소
+                    firstElementChild -> 첫 번째 자식 요소
+
+                메소드
+                    객체.appendChild(요소) -> 객체의 요소를 잘라서 해당 객체의 맨 끝에 추가
+                        - 예) ul.appendChild(slideListItem[0]) -> ul의 맨 끝에 li 추가
+
+                    객체.insertBefore() -> 이전에 요소 추가
+                    cloneNode(true)
+                속성
+                이벤트
+            */
+
+            // ul의 첫 번째 li 요소를 ul 끝에 추가
+            slideList.appendChild(slideList.firstElementChild.cloneNode(true));
+            // 그리고 배경보면 막 눈내리거나 꽃내리고 하는대 이건 cloneNode를 쓰면된다고 한다.
+            /* 
+
             */
 
             // 2초 마다 자동 슬라이드 함수 호출
