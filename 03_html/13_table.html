@@ -6,9 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>13_table</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #fff;
+            background: #b8ebff;
+        }
+
         table,
         td {
-            border: 1px solid red;
+            width: 600px;
+        }
+
+        a {
+            line-height: 1.5;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        span {
+            width: 500px;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* ellipsis: 생략하다 라는 뜻 */
+            text-wrap: nowrap;
+        }
+
+        td {
+            width: 400px;
+            line-height: 2;
+            border-bottom: 1px solid cornflowerblue;
         }
     </style>
 </head>
@@ -18,20 +60,16 @@
     <h2>공지사항</h2>
     <table>
         <tr>
-            <td>맞춤 플랜을 제안하는 크리에이티브..</td>
-            <td>2019.03.20</td>
+            <td><a href="#"><span>맞춤 플랜을 제안하는 크리에이티브입니다.</span>2019.03.20</a></td>
         </tr>
         <tr>
-            <td>JUST 쇼핑몰과 함께 하실 가슴 따뜻한..</td>
-            <td>2019.05.15</td>
+            <td><a href="#"><span>JUST 쇼핑몰과 함께 하실 가슴 따뜻한 이야기를 확인해 보세요.</span>2019.05.15</a></td>
         </tr>
         <tr>
-            <td>코리아웨딩페어 결혼박람회가 열립니다.</td>
-            <td>2019.07.13</td>
+            <td><a href="#"><span>코리아웨딩페어 결혼박람회가 열립니다.</span>2019.07.13</a></td>
         </tr>
         <tr>
-            <td>마진없이 아낌없이 드리는 마지막 찬스!</td>
-            <td>2019.09.28</td>
+            <td><a href="#"><span>마진없이 아낌없이 드리는 마지막 찬스!</span>2019.09.28</a></td>
         </tr>
     </table>
 </body>
