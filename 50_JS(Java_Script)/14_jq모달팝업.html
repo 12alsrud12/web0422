@@ -51,22 +51,12 @@
     <!-- 사용자JS -->
     <script>
         $(() => {
-            const md = $('#modal');
-            const pp = $('#modal .popup').eq[0];
-            const bt1 = $('.bt1').eq[0];
-            const bt2 = $('button').eq[0];
-
-            function resetX() {
-                md.css({ display: "block" });
-            };
-
-            bt1.click(() => {
-                resetX();
-                md.css({ display: "none" });
+            $(".notice li").eq(0).click(() => {
+                $("#modal").css({ display: "block" });
             });
 
-            bt2.click(() => {
-                resetX();
+            $("button").click(() => {
+                $("#modal").css({ display: "none" });
             });
         });
 

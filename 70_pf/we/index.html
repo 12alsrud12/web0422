@@ -8,31 +8,18 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- 제이쿼리 라이브러리 -->
-    <script src="../../50_JS(Java_Script)/jquery-3.7.1.min.js"></script>
+    <script src="script/jquery-3.7.1.min.js"></script>
     <!-- 사용자 JS -->
     <script>
         $(() => {
-            const md = document.querySelector('#modal');
-            const pp = document.querySelectorAll('#modal .popup')[0];
-            const bt1 = document.querySelectorAll('.bt1')[0];
-            const bt2 = document.querySelectorAll('button')[0];
+            $(".notice li").eq(0).click(() => {
+                $("#modal").css({ display: "block" });
+            });
 
-            function resetX() {
-                md.classList.remove('on');
-            };
-
-            bt1.onclick = function () {
-                resetX();
-                md.classList.add('on');
-            };
-
-            bt2.onclick = function () {
-                resetX();
-            };
+            $("button").click(() => {
+                $("#modal").css({ display: "none" });
+            });
         });
-
-
-
     </script>
 </head>
 
