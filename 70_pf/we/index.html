@@ -11,8 +11,11 @@
     <script src="script/jquery-3.7.1.min.js"></script>
     <!-- 사용자 JS -->
     <script>
+        // 모달팝업
+        // .notion의 첫번째 li를 클릭하면
         $(() => {
             $(".notice li").eq(0).click(() => {
+                
                 $("#modal").css({ display: "block" });
             });
 

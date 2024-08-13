@@ -51,8 +51,12 @@
     <!-- 사용자JS -->
     <script>
         $(() => {
-            $(".notice li").eq(0).click(() => {
+            // li.bt1 첫번째를 클릭 시 이벤트 작동
+            $(".bt1").eq(0).click(() => {
+                // 위에서 만약 .bt1 a라고 하면 a 클릭시 이벤트 작동인대 #modal 이 있으면, a href="#" 이 # 취급당해서 상단으로 올라가지는대 그걸 방지하기 위해서는
                 $("#modal").css({ display: "block" });
+                event.preventDefault();
+                // event.preventDefault(); 이걸 넣으면 a링크의 기본 특성을 제거해버리는대 이걸 넣어야지 팝업이 안뜨고 화면 상단으로 이동되는 것을 방지할 수 있다.
             });
 
             $("button").click(() => {
