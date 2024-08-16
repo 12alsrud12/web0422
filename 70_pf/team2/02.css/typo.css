@@ -71,13 +71,19 @@ a {
 
 /* 추가 폰트 */
 /* header nav-font */
-header {
+header,
+header input {
     font-family: '프리텐다드', sans-serif;
 }
 
-.main_menu a {
+.main_menu>a {
     font-size: 13px;
     color: var(--text1);
+    transition: .3s;
+}
+
+.main_menu>a:hover {
+    color: var(--point);
 }
 
 .sub_menu_title a {
@@ -92,7 +98,8 @@ header {
 
 .sub_menu a:hover {
     font-size: 16px;
-    color: var(--point);
+    color: var(--white);
+    background: var(--main1);
 }
 
 /* 회원가입 창 font */
