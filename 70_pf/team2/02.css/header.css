@@ -403,11 +403,18 @@ header.pc>div.logo {
         margin-right: 30px;
     }
 
-    header.pc nav::before {
-        position: absolute;
-        left: 0;
+    header.pc .main::before {
+        content: " ";
+        position: fixed;
+        top: -150px;
+        left: -345px;
+        width: 600%;
         height: 150px;
         background: var(--main2);
+    }
+
+    header.pc .main:hover .main::before {
+        top: 90px !important;
     }
 
     header.pc .sub_menu {
