@@ -322,6 +322,7 @@ footer hr {
 
     /* footer_menu2 */
     #ft_menu2 {
+        margin-top: 24px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
