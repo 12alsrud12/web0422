@@ -1,4 +1,26 @@
 @charset "utf-8";
+
+/* reset */
+body,
+ul {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
 /* 작업중... */
 body * {
     outline: 1px solid red;
@@ -7,7 +29,7 @@ body * {
 body {
     /* vh는 뷰포트 단위 */
     height: 100vh;
-    margin:0;
+    margin: 0;
 }
 
 /* 상단 영역: 헤더+콘텐츠+슬라이드 */
@@ -38,6 +60,30 @@ header {
 /* 슬라이드 */
 #slide {
     width: calc(100% - 600px);
+}
+
+/* 슬라이드 */
+#slide {
+    width: calc(100% - 600px);
+    height: calc(100% - 120px);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#slide ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#slide li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#slide a {
+    height: 100%;
 }
 
 /* 푸터 */
