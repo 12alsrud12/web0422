@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>슬라이드 - 가로</title>
+    <title>슬라이드 - 세로</title>
     <style>
         /* 초기화 */
         body,
@@ -19,22 +19,25 @@
 
         img {
             width: 100%;
-            vertical-align: top;
+            height: 350px;
+        }
+
+        a {
+            margin: 0;
+            height: 350px;
         }
 
         /* 슬라이드 */
         #slide {
-            width: 400px;
-            /* height: 350px;  */
+            height: 350px;
             overflow: hidden;
         }
 
         #slide ul {
             position: relative;
             /* left: 0 -> -100% -> -200% -> 0 */
-            left: 0%;
-            display: flex;
-            width: 300%;
+            top: 0%;
+            height: 1050px;
         }
     </style>
     <!-- 제이쿼리 라이브러리 -->
@@ -44,20 +47,6 @@
     <script>
         // 준비 이벤트
         $(function () {
-            /* 
-                객체.animate({속성: 값, 속성: 값, ...}, [시간], [가속도], [콜백함수])
-                    값은 "문자열" 또는 숫자
-                    시간은 400이 기본값, (단위는 ms(밀리초))
-                    가속도(easing): 33가지 easing 종류!
-                    콜백함수는 animate 진행후 바로 이어서 실행한 내용
-
-                https://api.jqueryui.com/easings/
-            */
-
-            /* 
-                setInterval(함수, 시간) ~ 일정 시간 간격으로 함수 실행
-                setTimeout(함수, 시간) ~ 일정 시간 후 1번 함수 실행
-            */
 
             // 위치 변수 선언
             // 단위를 생략하면 px이다.
@@ -75,7 +64,7 @@
                 //     idx++;
                 // }
                 (idx === 2) ? idx = 0 : idx++;
-                $("#slide ul").animate({ left: idx * -100 + "%" });
+                $("#slide ul").animate({ top: idx * -350 + "px" });
             }
         });
     </script>
