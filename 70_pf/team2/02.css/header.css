@@ -231,31 +231,32 @@ header.mb.tb .main_menu:hover>a {
 }
 
 header.mb.tb .sub_menu>li>a {
+    width: 100%;
     padding: 0 24px;
     color: var(--main1);
     font-weight: 700;
 }
 
-#main_mb_1:hover #sub_mb_1 {
+header.mb.tb #main_mb_1:hover #sub_mb_1 {
     height: 135px;
     opacity: 1;
     overflow: visible;
 }
 
-#main_mb_2:hover #sub_mb_2 {
+header.mb.tb #main_mb_2:hover #sub_mb_2 {
     height: 225px;
     opacity: 1;
     overflow: visible;
 }
 
-#main_mb_3:hover #sub_mb_3,
-#main_mb_5:hover #sub_mb_5 {
+header.mb.tb #main_mb_3:hover #sub_mb_3,
+header.mb.tb #main_mb_5:hover #sub_mb_5 {
     height: 90px;
     opacity: 1;
     overflow: visible;
 }
 
-#main_mb_4:hover #sub_mb_4 {
+header.mb.tb #main_mb_4:hover #sub_mb_4 {
     height: 45px;
     opacity: 1;
     overflow: visible;
@@ -268,6 +269,7 @@ header.mb.tb .sub_menu>li>a {
     flex-direction: column;
     position: fixed;
     bottom: 0;
+    background: var(--white);
 }
 
 .nav_sub ul {
@@ -333,15 +335,64 @@ header.pc>div.logo {
 }
 
 /* 태블릿 */
-@media (min-width:768px) {
-}
+@media (min-width:768px) {}
 
 /* 데스크탑 */
 @media (min-width:1025px) {
 
+    /* 꺼내기 */
+    header.pc>div.logo {
+        display: flex;
+        margin-left: 200px;
+    }
+
+    /* header */
     header.pc {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 90px;
+    }
+
+    header.pc div.logo2 {
+        display: flex;
+        align-items: center;
+        margin-right: 200px;
+    }
+
+    /* serch */
+    header.pc div.serch {
+        display: flex;
+    }
+
+    header.pc div.serch>input {
+        width: 185px;
+        height: 40px;
+        font-size: 16px;
+        border-bottom: 1px solid var(--main1);
+    }
+
+    header.pc div.serch>div {
+        width: 19px;
+    }
+
+    header.pc div.serch>div img {
+        margin-top: 8px;
+    }
+
+    /* my_page */
+    div.my_page {
+        width: 24px;
+        margin-left: 30px;
+    }
+
+    /* header.pc nav */
+    header.pc .main {
+        display: flex;
+    }
+
+    /* header.pc menu */
+    header.pc .main>.main_menu {
     }
 
     /* 가리기 */
