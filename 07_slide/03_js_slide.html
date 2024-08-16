@@ -31,15 +31,19 @@
         #slide {
             height: 350px;
             overflow: hidden;
+            object-fit: cover;
         }
 
         #slide ul {
-            position: relative;
+            width: 100%;
+            height: 350px;
             height: 1050px;
+            position: relative;
         }
 
         #slide li {
-            opacity: 0;
+            position: absolute;
+            width: 100%;
         }
     </style>
     <!-- 제이쿼리 라이브러리 -->
@@ -55,14 +59,54 @@
             let idx = 0;
 
             // 1초 마다 autoSlide 호출
-            setInterval(autoSlide, 2000);
+            setInterval(autoSlide, 1000);
 
             function autoSlide() {
                 console.log("idx", idx);
+                // idx 0 -> 1 -> 2 -> 0 순서로 진행해야 한다.
+                /* 
+                    삼항(조건)연산자
+                    (조건) ? 참 : 거짓
+                */
+                // 아래는 idx가 2가아니면 idx가 ++ 되어서 +1 씩 증가한다. 2가되면 0이된다.의 반복
                 (idx === 2) ? idx = 0 : idx++;
-                $("#slide li").eq[idx].animate({ opacity: 1 }), 
-                function () { $("#slide li").eq[idx].animate({ opacity: 0 }) };
-            }
+
+                // fade-in (나타내기) -> opacity: 1
+                // fade-out (사라지기) -> opacity: 0
+                // 1이 in일때 0번이 out, 2가 in일때 1이 out, 0이 in일때, 2가 out하게 진행한다.
+                $("#slide li").eq(idx).fadeIn(1000, function () {
+                    // idx가 0이면 3으로 변경
+                    if (idx === 0) idx = 3;
+                    $("#slide li").eq(idx - 1).fadeOut(1000);
+                    // idx가 3이면 0으로 변경
+                    if (idx === 3) idx = 0;
+                    // 0 -> 1 -> 2 씩 +1씩 증가하다가 이후에 또 + 되어서 증감하여 3이되면 다시 0으로 간다.
+                    // 2번째의 idx -1 은 그렇게 (0,1) (1,2) (2,0) 이런식으로 간격을 주고,  
+                });
+
+                /* 
+                객체.show([시간], [가속도], [콜백함수]) ~ 나타남
+
+                객체.hide([시간], [가속도], [콜백함수]) ~ 사라짐
+                객체.toggle([시간], [가속도], [콜백함수]) ~ 나타남/사라짐 번갈아 반복
+
+                객체.slideDown([시간], [가속도], [콜백함수]) ~ 위에서 아래로 서서히 나타남
+                객체.slideUp([시간], [가속도], [콜백함수]) ~ 아래에서 위로 서서히 나타남
+
+                객체.slideToggle([시간], [가속도], [콜백함수])
+
+                객체.fadeIn([시간], [가속도], [콜백함수]) ~ 서서히 나타남
+                객체.fadeOut([시간], [가속도], [콜백함수]) ~ 서서히 사라짐
+
+                객체.fadeToggle([시간], [가속도], [콜백함수])
+
+                객체.animate({속성: 값, ...}, [시간], [가속도], [콜백함수])
+                    시간은 생략하면 400
+                    가속도는 생략하면 swing
+                    콜백함수는 메소드 실행후 실행할 함수 기록!
+                */
+
+            };
         });
     </script>
 </head>
