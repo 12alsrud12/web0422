@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01_js_slide(가로)</title>
+    <!-- J-query -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- Jquery 라이브러리 js -> animate 메소드의 가속도, 배경색 -->
+    <script src="jquery-ui.min.js"></script>
     <style>
         /* 초기화 */
         body,
@@ -25,62 +29,78 @@
         }
 
         /* 슬라이드 */
-        .slide {
+        #slide {
             width: 100%;
             height: 350px;
             overflow: hidden;
         }
 
-        .slide ul {
+        #slide ul {
             position: relative;
             display: flex;
             width: 400%;
-            animation: slide 9s infinite;
+            left: 0;
+            transition: 1s;
         }
 
         li {
             width: 100%;
         }
-
-        /* animation */
-        @keyframes slide {
-            0% {
-                left: 0;
-            }
-
-            10% {
-                left: -100%;
-            }
-
-            33% {
-                left: -100%;
-            }
-
-            43% {
-                left: -200%;
-            }
-
-            66% {
-                left: -200%;
-            }
-
-            76% {
-                left: -300%;
-            }
-
-            99.99% {
-                left: -300%;
-            }
-
-            100% {
-                left: 0;
-            }
-        }
     </style>
+    <script>
+        // jQuery 준비 이벤트 document의 내용을 전부 읽고 준비(ready)한다.
+
+        /* 
+            객체.css({속성: 값, 속성: 값, ...});
+            객체.animate({속성: 값, 속성: 값, ...}, 시간, 가속도);
+            여기서 값은 "문자열", 숫자
+            시간은 400이 기본값, (단위는 ms(밀리초))
+            가속도(easing): 32가지 easing 종류!
+
+            easing 알려주는 사이트
+            https://api.jqueryui.com/easings/
+            
+            단 easeOutBounce 는 제이쿼리 UI라는 이름의 라이브러리가 추가로 필요하다고 한다.
+            그래서 32가지중 쓸 수 있는건 linear 과 swing 그리고 기본값 딱 3가지만 사용할 수 있다. 
+            그 외는 반드시! 라이브러리가 추가되어야 한다.
+        */
+
+        // 기본적으로 이렇게하면 움직인다. 자동X
+        // slideList.animate({ left: "-200%" }, 1000, "easeOutBack");
+
+        // 자동슬라이드 진행방법
+        // 유일하게 할 수 있게 하는 방법 SetInterval(함수,시간); 을 반드시! 사용해야 한다.
+
+        /* 
+            setInterval(함수, 시간); -> 일정 시간 간격으로 함수를 실행한다.
+            seTimeout(함수, 시간); -> 일정 시간후 딱 1번 함수 실행후 종료.
+        */
+
+        // 자동 슬라이드 본격 실행
+        // 요소 찾기
+        $(function () {
+            const slideList = $("#slide ul");
+            console.log = (slideList);
+
+            // 위치 변수 선언 -100% -200% -300% 변해야 하므로 let으로
+            let posx = 0 + "%";
+
+            function autoSlide() {
+                // posx가 0 -> -100 -> -200 -> -300 -> 0 으로 변하게 끔
+
+                // left -100% 한번만 진행 이것만 넣으면 -100% 진행 후 -100%짜리에서 미묘하게 좌우만 계속 왓다갓다 하고 이후 진행 안됨,
+                // 그래서 left 자리에 위의 위치 변수 선언 함수 추가
+                slideList.animate({ left: posx * -100 + "%" });
+            };
+
+            // 위 애니메이션 1000ms (1s)간격으로 실행 함수
+            setInterval(autoSlide, 1000);
+        });
+    </script>
 </head>
 
 <body>
-    <div class="slide">
+    <div id="slide">
         <ul>
             <li>
                 <a href="#"><img src="assets/pic_1-w2000-2.png" alt="슬라이드_이미지1"></a>
