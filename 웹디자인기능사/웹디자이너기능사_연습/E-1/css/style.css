@@ -38,6 +38,10 @@ a {
 }
 
 /* 공통 */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: var(--bg);
 }
@@ -90,16 +94,9 @@ nav {
     transition: .3s;
 }
 
-.main_menu a {
-    display: block;
-}
-
-.main_menu a:hover {
-    background: #ccc;
-}
-
 .main_menu:hover {
     height: 200px;
+    background: #ccc;
 }
 
 .sub_menu {
@@ -110,6 +107,7 @@ nav {
     visibility: hidden;
     transition: .3s;
     border: 1px solid #474747;
+    background: #fff;
 }
 
 .sub_menu li {
@@ -123,8 +121,13 @@ nav {
     visibility: visible;
 }
 
+.sub_menu li:hover {
+    background: #ccc;
+}
+
 #spot_menu {
     margin: 0 auto;
+    transition: .3s;
 }
 
 #spot_menu>ul {
@@ -137,6 +140,7 @@ nav {
 
 /* B영역 - slide  */
 #slide {
+    position: relative;
     width: calc(100% - 600px);
     height: calc(100vh - 120px);
     border-left: 1px solid #ccc;
@@ -144,10 +148,11 @@ nav {
 }
 
 #slide ul {
-    position: relative;
+    position: absolute;
+    display: flex;
     width: 400%;
     height: 100%;
-    animation: slide 5s infinite;
+    animation: slide 12s infinite;
 }
 
 @keyframes slide {
@@ -183,13 +188,12 @@ nav {
         left: -300%;
     }
 
-    99.99% {
+    100% {
         left: 0%;
     }
 }
 
 #slide>ul>li {
-    position: absolute;
     width: 100%;
     height: 100%;
 }
@@ -206,7 +210,7 @@ nav {
     background: yellow;
 }
 
-#slide>ul>li:nth-child(1) {
+#slide>ul>li:nth-child(4) {
     background: red;
 }
 
@@ -226,7 +230,7 @@ nav {
 }
 
 #banner .img:first-of-type {
-    width: 80px;
+    width: 50px !important;
     height: 40px;
     background: #373737;
     border-radius: 5px;
@@ -246,10 +250,101 @@ nav {
     padding: 0 16px 0 16px;
 }
 
+/* modal */
+#modal {
+    position: fixed;
+}
+
+/* notion */
+#notion {
+    height: 257px;
+    padding: 16px 24px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+#notion p {
+    position: relative;
+    top: 3px;
+    border-bottom: 1px solid #373737;
+}
+
+#notion p span {
+    position: relative;
+    top: -3px;
+    border: 1px solid #373737;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    padding: 4px 8px;
+    background: #fff;
+}
+
+#notion ul {
+    margin-top: 16px;
+}
+
+#notion li a {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+#notion a:hover {
+    text-decoration: underline;
+}
+
+/* gallery */
+#gallery {
+    height: 257px;
+    padding: 24px 24px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+#gallery p {
+    position: relative;
+    top: 3px;
+    border-bottom: 1px solid #373737;
+}
+
+#gallery p span {
+    position: relative;
+    top: -3px;
+    border: 1px solid #373737;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    padding: 4px 8px;
+    background: var(--bg);
+}
+
+/* link */
+#link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    padding: 24px;
+}
+
+#link .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link .link>.img {
+    width: 50px;
+    height: 40px;
+    background: #373737;
+}
+
 /* D영역 - footer */
 footer {
     display: flex;
     height: 120px;
+    border-top: 1px solid #ccc;
+}
+
+footer .logo {
+    border-right: 1px solid #ccc;
 }
 
 #ft-box {
