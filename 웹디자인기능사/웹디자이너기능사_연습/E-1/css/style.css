@@ -107,6 +107,7 @@ nav {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    border: 1px solid #474747;
 }
 
 .sub_menu li {
@@ -115,13 +116,21 @@ nav {
 }
 
 .main_menu:hover .sub_menu {
-    height: 150px;
+    height: 130px;
     opacity: 1;
     visibility: visible;
 }
 
+#spot_menu {
+    margin: 0 auto;
+}
+
 #spot_menu>ul {
     display: flex;
+}
+
+#spot_menu li {
+    margin-right: ;
 }
 
 /* B영역 - slide  */
