@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/* style-guide */
+:root {
+    --bg: #fff;
+    --tx: #333;
+}
+
+/* 확인용 line */
+
+/* reset */
+body,
+h2,
+p,
+ul {
+    margin: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tx);
+}
+
+/* typo */
+body {
+    color: var(--tx);
+}
+
+a {
+    line-height: 2;
+}
+
+/* 공통 */
+body {
+    background: var(--bg);
+}
+
+div#wrap {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+div#container {
+    display: flex;
+}
+
+div.logo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.logo h2 {
+    width: 200px;
+    height: 120px;
+    line-height: 120px;
+}
+
+/* A영역 - header */
+header {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav */
+nav {
+    width: 180px;
+    margin: 24px auto 24px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_menu {
+    position: relative;
+    transition: .3s;
+}
+
+.main_menu a {
+    display: block;
+}
+
+.main_menu a:hover {
+    background: #ccc;
+}
+
+.main_menu:hover {
+    height: 200px;
+}
+
+.sub_menu {
+    width: 100%;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.sub_menu li {
+    text-align: center;
+    line-height: 2;
+}
+
+.main_menu:hover .sub_menu {
+    height: 150px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#spot_menu>ul {
+    display: flex;
+}
+
+/* B영역 - slide  */
+#slide {
+    width: calc(100% - 600px);
+    height: calc(100vh - 120px);
+}
+
+/* C영역 - board */
+#board {
+    width: 400px;
+}
+
+/* D영역 - footer */
+footer {
+    display: flex;
+    height: 120px;
+}
+
+#ft-box {
+    padding: 0 24px;
+}
+
+#ft-menu {
+    display: flex;
+}
+
+#ft-menu li {
+    margin-right: 24px;
+}
+
+#ft-menu li::after:not(:last-of-type) {
+    content: "|";
+    margin-left: 16px;
+}
+
+#ft-box2 {
+    height: 82px;
+    display: flex;
+    align-items: center;
+}
+
+#ft-box2 p {
+    line-height: 1.5;
+}
