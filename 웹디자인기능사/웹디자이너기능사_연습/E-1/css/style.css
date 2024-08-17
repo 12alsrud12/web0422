@@ -78,6 +78,10 @@ header {
     border-right: 1px solid #ccc;
 }
 
+header .logo {
+    border-bottom: 1px solid #ccc;
+}
+
 /* nav */
 nav {
     width: 180px;
@@ -136,6 +140,11 @@ nav {
 
 #spot_menu li:not(:last-child) {
     margin-right: 16px;
+}
+
+#spot_menu li:first-of-type::after {
+    content: "|";
+    margin-left: 16px;
 }
 
 /* B영역 - slide  */
@@ -268,12 +277,41 @@ nav {
 
 #popup {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
     width: 500px;
-    height: 500px;
+    height: 400px;
     left: 50%;
     top: 50%;
+    padding: 0 8px 8px;
     transform: translate(-50%, -50%);
     background: #ffbebe;
+}
+
+#popup .box {
+    width: 100%;
+}
+
+#popup .box h2 {
+    line-height: 2;
+    border-bottom: 1px solid #272727;
+}
+
+#popup .box li {
+    height: 30px;
+    border-bottom: 1px solid #272727;
+}
+
+#popup button {
+    position: relative;
+    width: 60px;
+}
+
+#popup button::before {
+    content: "x";
+    margin-right: 4px;
 }
 
 /* notion */
@@ -336,6 +374,22 @@ nav {
     background: var(--bg);
 }
 
+#gallery ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#gallery ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery .img {
+    width: 100px;
+    height: 80px;
+    background: #000;
+}
+
 /* link */
 #link {
     display: flex;
@@ -369,10 +423,11 @@ footer .logo {
 }
 
 #ft-box {
-    padding: 0 24px;
+    width: 100%;
 }
 
 #ft-menu {
+    padding: 0 24px;
     display: flex;
 }
 
@@ -380,15 +435,18 @@ footer .logo {
     margin-right: 24px;
 }
 
-#ft-menu li::after:not(:last-of-type) {
+#ft-menu li:not(:last-of-type)::after {
     content: "|";
     margin-left: 16px;
 }
 
 #ft-box2 {
+    width: 100%;
     height: 82px;
     display: flex;
     align-items: center;
+    border-top:1px solid #ccc ;
+    padding: 0 24px;
 }
 
 #ft-box2 p {
