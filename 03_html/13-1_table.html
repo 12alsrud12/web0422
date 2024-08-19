@@ -4,11 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코엑스 아쿠아리움</title>
+    <title>13-1_table</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         table {
             border: 1px solid red;
         }
+
+        td {
+            border: 1px solid slateblue;
+        }
+
+        tr:first-child td:first-child {
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        tr:nth-child(2) td:first-child {
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        /*
+            text-align -> 인라인요소(텍스트)의 가로 맞춤
+            vertical-align -> 인라인요소의 세로 맞춤
+        */
     </style>
 </head>
 
@@ -25,8 +48,12 @@
             <tr>: 블록레벨요소이며 display: table-row;
                 <td>: 블록레벨요소이며 display: table-cell;
     -->
+    <!-- table 기본 서식 -->
+    <!-- 제일 바깥 틀 -->
     <table>
+        <!-- tr 가로줄 -->
         <tr>
+            <!-- 가로줄 내부 칸 td당 1개씩 총3개 -->
             <td>1</td>
             <td>2</td>
             <td>3</td>
@@ -40,6 +67,29 @@
             <td>7</td>
             <td>8</td>
             <td>9</td>
+        </tr>
+    </table>
+
+    <!-- table 응용 서식 -->
+    <!-- 
+        <thead>: 테이블 헤더
+        <tbody>: 테이블 바디
+        <tfoot>: 테이블 푸터
+
+        행을 합칠 경우: rowspan="값"
+        열을 합칠 경우: colspan="값"
+     -->
+    <table>
+        <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">2</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
         </tr>
     </table>
 </body>
