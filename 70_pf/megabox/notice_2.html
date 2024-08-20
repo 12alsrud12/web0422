@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메가박스 공지사항</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/notice.css">
+</head>
+
+<body>
+    <header>
+        <!-- 로고 -->
+        <h1 class="logo">
+            <a href="index.html"><b>MB</b>MegaBox</a>
+        </h1>
+        <!-- 내비게이션 -->
+        <nav>
+            <ul>
+                <li><a href="#sec2">영화</a></li>
+                <li><a href="#sec3">이벤트</a></li>
+                <li><a href="#sec4">고객센터</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="banner">
+            <!-- #banner을  flex 적용하면 .inner을 수직 중앙 배치할 수 있다. -->
+            <p>MEGA NEWS</p>
+            <h2>MEGA NOTICE</h2>
+            <div class="inner">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="#top">메뉴</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>공지사항</h1>
+        <p>메가박스의 소식을 알려드립니다.</p>
+        <!-- 
+        브레드 크럼(Breadcrumb)이란 주로 페이지 상단 좌측에 자리하여 유저가 웹사이트 내에서 어디에 있는지 알려주는 네비게이션 텍스트 입니다.
+        -->
+        <!-- .jsp (자바 서버 페이지)는 백앤드 개발자 -->
+        <form action="notion.jsp">
+            <!-- 유형 설정 -->
+            <select name="notion" id="notion">
+                <option value="title">제목</option>
+                <option value="내용">내용</option>
+                <option value="작성자">작성자</option>
+            </select>
+            <!-- 검색창 -->
+            <input type="search" placeholder="검색어를 입력하세요">
+            <!-- 검색창 검색 버튼 -->
+            <!-- submit = 전송버튼 / value = 버튼 내 text -->
+            <input type="submit" value="검색">
+        </form>
+
+        <!-- 공지사항 게시판 -->
+        <table>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>날짜</th>
+                    <th>조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>공지</td>
+                    <td>메가박스 영화 관람 공지</td>
+                    <td>MEGA-BOX</td>
+                    <td>0000-00-00</td>
+                    <td>1703</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>탄소중립실천포인트제 8월 인센티브 지급 일정 조정 안내</td>
+                    <td>MEGA-BOX</td>
+                    <td>0000-00-00</td>
+                    <td>358</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>메가박스 신규 상영관 공지 (24.07.25ver)</td>
+                    <td>MEGA-BOX</td>
+                    <td>0000-00-00</td>
+                    <td>601</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>탄소중립실천포인트제 도입 안내</td>
+                    <td>MEGA-BOX</td>
+                    <td>0000-00-00</td>
+                    <td>1809</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <a href="#">처음</a>
+            <a href="#">1</a>
+            <a href="#">마지막</a>
+        </div>
+
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>Copyright Hanatour. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
