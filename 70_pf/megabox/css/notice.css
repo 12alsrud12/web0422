@@ -71,8 +71,13 @@ section {
     justify-content: center;
 }
 
-.inner li {
-    
+.inner li:not(:last-child) {
+    margin-right: 24px;
+}
+
+.inner li:not(:last-child)::after {
+    content: "〉";
+    margin-left: 24px;
 }
 
 form {

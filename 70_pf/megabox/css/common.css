@@ -78,6 +78,10 @@ button {
     color: #252451;
 }
 
+.inner a {
+    color: #fff;
+}
+
 @media (min-width: 992px) {
     #sec3 li p:first-of-type {
         font-size: max(0.76vw, 1.1rem);
