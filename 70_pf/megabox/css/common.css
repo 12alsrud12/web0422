@@ -69,6 +69,15 @@ button {
     font-size: 2.4rem;
 }
 
+/* notice */
+#banner h2 {
+    width: 250px;
+    margin: 24px auto 0;
+    display: inline-block;
+    background: #52abff;
+    padding: 16px 24px;
+}
+
 
 
 @media (min-width: 992px) {
@@ -97,6 +106,10 @@ footer {
 
 #sec4 ::placeholder {
     color: var(--graya);
+}
+
+#banner {
+    color: #fff;
 }
 
 
