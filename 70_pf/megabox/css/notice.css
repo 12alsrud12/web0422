@@ -35,8 +35,12 @@ nav li:not(:first-child) {
 
 /* 섹션 */
 section {
+    position: relative;
+    z-index: 50;
+    height: 1000px;
     margin-top: 54px;
     text-align: center;
+    box-shadow: 0 -5% 10px rgba(0, 0, 0, 0.5);
 }
 
 /* 탑영역 */
@@ -45,8 +49,21 @@ section {
     flex-direction: column;
     justify-content: center;
     height: 370px;
-    background: #7e7e7e;
+    background: #b9b9b9;
     margin-bottom: 48px;
+}
+
+#banner p {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#banner h2 {
+    width: 500px;
+    margin: 16px auto 0;
+    display: inline-block;
+    padding: 16px 24px;
+    border-radius: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 form {
@@ -101,7 +118,6 @@ td:nth-child(2) {
 
 /* footer */
 footer {
-    margin-top: 100px;
     text-align: center;
     height: 100px;
     line-height: 100px;

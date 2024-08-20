@@ -70,15 +70,13 @@ button {
 }
 
 /* notice */
-#banner h2 {
-    width: 250px;
-    margin: 24px auto 0;
-    display: inline-block;
-    background: #52abff;
-    padding: 16px 24px;
+#banner p {
+    font-size: 24px;
 }
-
-
+#banner h2 {
+    font-size: 60px;
+    color: #252451;
+}
 
 @media (min-width: 992px) {
     #sec3 li p:first-of-type {
@@ -132,3 +130,5 @@ footer {
 #sec3 a {
     background: var(--grayc);
 }
+
+/* notice */
