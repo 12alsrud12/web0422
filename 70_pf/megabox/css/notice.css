@@ -66,6 +66,15 @@ section {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
+.inner ul {
+    display: flex;
+    justify-content: center;
+}
+
+.inner li {
+    
+}
+
 form {
     width: 1434px;
     margin: 0 auto;
