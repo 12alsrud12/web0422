@@ -16,8 +16,8 @@
                 },
                 ko: {
                     title_name: "제목",
-                    link1: "한국",
-                    link2: "아이스크림"
+                    line1: "한국",
+                    line2: "아이스크림"
                 }
             };
         });
@@ -38,10 +38,10 @@
     <script>
         window.addEventListener("load", () => {
             // 한글
-            document.getElementById("#langSelector").value = "ko";
+            document.getElementById("langSelector").value = "ko";
             updateLanguage("ko");
 
-            document.getElementById("#langSelector").addEventListener("change", () => {
+            document.getElementById("langSelector").addEventListener("change", () => {
                 const selectedLang = this.value;
                 updateLanguage(selectedLang);
             });
