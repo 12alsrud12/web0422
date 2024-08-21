@@ -117,7 +117,8 @@
                 for (const x of slideListItem) {
                     x.style.width = 100 + "%";
                 }
-            }
+            } // 슬라이드 사이즈의 끝
+
             // ul의 첫 번째 요소 ul끝에 복제 (반드시 크기를 지정하고 복제해야 한다!)
             /* 
                 객체
@@ -151,7 +152,9 @@
 
                 if (idx === slideCount) {
                     idx = 0;
+                    // 0%인 이유는 시작지점으로 다시 돌아감을 의미
                     slideList.style.left = "0%";
+                    // transition 을 0s로 한 이유 위의 마지막 슬라이드 까지 가서 다시 0퍼로 돌아갈때 어색함 + 빈공간노출 방지
                     slideList.style.transition = "0s";
                     setTimeout(() => {
                         idx = 1;
