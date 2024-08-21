@@ -5,56 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>객체2</title>
-    <script>
-        // 객체 접근 방법
-        const langResource = {
-            ko: {
-                title_name: "제목",
-                line1: "한국",
-                line2: "아이스크림"
-            },
-            en: {
-                title_name: "title",
-                line1: "korea",
-                line2: "ice-cream"
-            }
-        };
-    </script>
+
 </head>
 
 <body>
-    <h1 id="title_name">제목</h1>
-    <p id="line1">한국</p>
-    <p id="line2">아이스크림</p>
+    <!-- 언어별 딕셔너리 생성 -->
+    <script>
+        const langResource = {
+            ko: {
+                title_name: "제목",
+                line1: "파이썬",
+                line2: "자바스크립트"
+            },
+            en: {
+                title_name: "Title",
+                line1: "Python",
+                line2: "JavaScript"
+            }
+        }
+    </script>
 
-    <label for="languageSelector">Language</label>
+    <!-- id로 언어별 값 관리 -->
+    <h1 id="title_name"></h1>
+    <p id="line1"></p>
+    <p id="line2"></p>
 
-    <select name="lang" id="languageSelector">
-        <option value="ko">한글</option>
+    <!-- 언어 설정 메뉴 생성 -->
+    <label for="languageSelector" style="position: absolute; top: 10px; left: 90px;">Language:</label>
+    <select id="languageSelector" style="position: absolute; top: 10px; left: 170px;">
         <option value="en">English</option>
+        <option value="ko" selected>한국어</option>
     </select>
 
     <!-- 언어 설정 메뉴 작동 코드 -->
     <script>
-        window.addEventListener("load", () => {
+        /* 초기 언어는 한국어(ko)로 설정하고, 변경되면 맞춰서 업데이트 하는 리스너 구현 */
+        window.addEventListener("load", function () {
             document.getElementById("languageSelector").value = "ko";
             updateLanguage("ko");
 
-            document.getElementById("languageSelector").addEventListener("change", () => {
+            document.getElementById("languageSelector").addEventListener("change", function () {
                 const selectedLang = this.value;
                 updateLanguage(selectedLang);
             });
         });
 
+        /* 딕셔너리 내 모든 key 값을 순회하며 변경하는 함수 */
         function updateLanguage(lang) {
             for (let key in langResource[lang]) {
                 const element = document.getElementById(key);
                 if (element) {
                     element.textContent = langResource[lang][key];
-                };
-            };
-        };
-
+                }
+            }
+        }
     </script>
 </body>
 
