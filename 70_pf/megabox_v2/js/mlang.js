@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         // 섹션의 제목2 변경
         secTit.forEach((ele, idx) => {
-            if (idx === 0)  (ele.innerText = date["sectit"][idx])
+            // if (idx === 0)  (ele.innerText = date["sectit"][idx])
         });
 
         // 섹션2의 아이템 제목 변경
