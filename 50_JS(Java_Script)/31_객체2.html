@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체2</title>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            // 객체 접근 방법
+            const lang = {
+                en: {
+                    title_name: "title",
+                    line1: "korea",
+                    line2: "ice-cream"
+                },
+                ko: {
+                    title_name: "제목",
+                    link1: "한국",
+                    link2: "아이스크림"
+                }
+            };
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="title_name">제목</h1>
+    <p id="line1">한국</p>
+    <p id="line2">아이스크림</p>
+    <label for="langSelector">
+
+        <select name="lang" id="langSelector">
+            <option value="ko">한글</option>
+            <option value="en">English</option>
+        </select>
+    </label>
+    <script>
+        window.addEventListener("load", () => {
+            // 한글
+            document.getElementById("#langSelector").value = "ko";
+            updateLanguage("ko");
+
+            document.getElementById("#langSelector").addEventListener("change", () => {
+                const selectedLang = this.value;
+                updateLanguage(selectedLang);
+            });
+        });
+
+        function updateLanguage(lang) {
+            for (let key in lang[lang]) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = lang[lang][key];
+                };
+            };
+        };
+
+    </script>
+</body>
+
+</html>

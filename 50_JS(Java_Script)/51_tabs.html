@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -156,12 +156,12 @@
                     let data = season[btxt];
                     console.log(data);
 
-                    data.rankImg.forEach((val,idx) => {
+                    data.rankImg.forEach((val, idx) => {
                         rimg[idx].setAttribute("src", val);
                         rimg[idx].setAttribute("alt", season[btxt].rankTxt[idx]);
                         //console.log(rimg[idx]);
                     });
-                    data.rankTxt.forEach((val,idx) => {
+                    data.rankTxt.forEach((val, idx) => {
                         rtxt[idx].innerHTML = season[btxt].rankTxt[idx];
                     });
                 };
