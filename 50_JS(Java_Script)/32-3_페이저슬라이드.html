@@ -212,11 +212,13 @@
 
             // indicator active color function
             function indiActive(indi) {
+                // 모든 A태그의 .active 클래스 제거
                 for (x of indicator) {
                     x.classList.remove("active");
                 }
+                // 클릭한 a 태그만 .active 클래스 추가
                 indicator[indi].classList.add("active");
-            }
+            };
         });
     </script>
 </head>
