@@ -13,6 +13,16 @@
             margin-left: 30px;
             margin-top: 30px;
             transform: translate(100px, 100px);
+            transition: .5s;
+        }
+
+        div.move {
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            position: fixed;
+            z-index: 9999;
         }
     </style>
     <script>
@@ -23,9 +33,9 @@
 
             // 버튼을 클릭하면 div의 위치 이동
             buttonEle.onclick = () => {
-                div.offsetTop;
-                div.offsetLeft;
+                div.classList.toggle("move");
             };
+
             console.log("top:", div.offsetTop);
             console.log("left:", div.offsetLeft);
         });
@@ -33,8 +43,8 @@
 </head>
 
 <body>
+    <button>누르면 움직이지롱</button>
     <div>박스</div>
-    <button></button>
 </body>
 
 </html>
