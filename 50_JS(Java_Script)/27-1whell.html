@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>27_whell-event</title>
+    <style>
+        section {
+            border: 1px solid tomato;
+        }
+    </style>
+    <script>
+        /* 
+            DOMContentLoaded -> window 이벤트
+            click 이벤트 -> HTML DOM 객체이벤트이다.
+        */
+
+        /* 
+            event.preventDefault() -> 기본 이벤트 방지
+
+            onwheel -> 마우스휠 이벤트
+            event.deltaY -> 아래로 스크롤하면 양수, 위로 스크롤하면 음수
+            event.currentTarget -> 이벤트가 발생한 요소 자신
+
+            DOMElement.scrollTop -> 수직 스크롤 픽셀 수
+            DOMElement.scrollLeft -> 수평 스크롤 픽셀 수
+            DOMElement.prevElementSibling -> DOM 요소의 이전 요소
+            DOMElement.nextElementSibling -> DOM 요소의 다음 요소
+            DOMElement.offsetTop -> 부모 기준 상위 위치 반환
+
+            객체.length -> 객체의 길이(개수)
+        */
+        window.addEventListener("DOMContentLoaded", () => {
+            // whell 이벤트 형식
+            /* 
+                1. onwheel -> 마우스 휠 이벤트
+                2. event.deltaY -> 아래로 스크롤하면 양수, 위로 스크롤하면 음수
+                    객체.onwheel = () => {
+                        if (event.deltaY > 0) {
+                            // 마우스휠을 아래로 내렸을때 동작
+                        } else if (event.deltaY < 0) {
+                            // 마우스휠을 위로 올렸을때 동작 
+                        }
+                    };
+            */
+            // section 지정하기
+            const section = document.querySelectorAll('section');
+
+            // 상수 선언한 section/sec에 이벤트를 넣기
+            section.onwhell = function () {
+                if (event.deltaY > 0) {
+                    // 마우스 휠 아래로 내렸을 때
+                    console.log("마우스휠을 아래로 내렸습니다.");
+                } else if (event.deltaY < 0) {
+                    // 마우스 휠 위로 올렸을 시
+                    console.log("마우스휠을 위로 내렸습니다.");
+                }
+            }
+        });
+    </script>
 </head>
+
 <body>
-    
+    <section></section>
 </body>
+
 </html>
