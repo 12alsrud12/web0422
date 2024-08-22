@@ -183,6 +183,10 @@ p.small {
 }
 
 /* footer */
+div.fp-tableCell {
+    height: 600px !important;
+}
+
 /* footer1 */
 .ft_1 li a:not(.ong) {
     font-size: 2.4em;
