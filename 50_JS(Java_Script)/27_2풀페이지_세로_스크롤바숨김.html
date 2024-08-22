@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fullPage - 세로up</title>
     <style>
@@ -21,6 +20,7 @@
         body {
             overflow: hidden;
         }
+
         .sec {
             height: 100vh;
             transition: .3s ease-out;
@@ -90,9 +90,9 @@
                 if (e.deltaY > 0) {
                     // 마우스휠 내림
                     // e.currentTarget는 이벤트가 발생한 요소
-                    if (docEle.scrollTop > wh * (sec.length - 2)+100) return;
+                    if (docEle.scrollTop > wh * (sec.length - 2) + 100) return;
                     let next = e.currentTarget.nextElementSibling.offsetTop;
-                    console.log('앗!', wh * (sec.length - 1)-100, next);
+                    console.log('앗!', wh * (sec.length - 1) - 100, next);
                     docEle.scrollTop = next;
                 } else if (e.deltaY < 0) {
                     // 마우스휠 올림
