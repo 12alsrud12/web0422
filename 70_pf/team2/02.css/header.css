@@ -35,7 +35,8 @@
 
 }
 
-header {
+header.mb.tb,
+header.pc {
     width: 100%;
     height: 40px;
     position: fixed;
@@ -417,13 +418,33 @@ header.pc>div.logo {
         top: 90px !important;
     }
 
+    /* sub_menu 미리 위치 잡기 */
+    #sub_menu2 {
+        left: -65px;
+    }
+
+    #sub_menu3 {
+        left: -117px;
+    }
+
+    #sub_menu4 {
+        left: -180px;
+    }
+
+    #sub_menu5 {
+        left: -255px;
+    }
+
+    /* sub_menu */
     header.pc .sub_menu {
         position: absolute;
         display: flex;
+        align-items: center;
         width: 900px;
         height: 0;
         opacity: 0;
-        top: 120px;
+        top: -120px;
+        transition: .3s;
     }
 
     header.pc .sub_menu>li {
@@ -431,9 +452,21 @@ header.pc>div.logo {
     }
 
     header.pc .main_menu:hover .sub_menu {
+        top: 52px;
         height: 150px;
         opacity: 1;
     }
+
+    header.pc:hover header.pc::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 150px;
+        z-index: -1;
+        background: var(--main1);
+    }
+
+
 
     /* 가리기 */
     header.mb.tb {
