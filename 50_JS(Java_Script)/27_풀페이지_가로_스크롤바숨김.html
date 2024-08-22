@@ -10,6 +10,7 @@
         html {
             scroll-behavior: smooth;
         }
+
         body {
             margin: 0;
             /* 세로 스크롤바 숨김 */
@@ -75,9 +76,9 @@
                 if (e.deltaY > 0) {
                     // 마우스휠 내림
                     // e.currentTarget는 이벤트가 발생한 요소
-                    if (docEle.scrollLeft > ww * (sec.length - 2)+100) return;
+                    if (docEle.scrollLeft > ww * (sec.length - 2) + 100) return;
                     let next = e.currentTarget.nextElementSibling.offsetLeft;
-                    console.log('앗!', ww * (sec.length - 1)-100, next);
+                    console.log('앗!', ww * (sec.length - 1) - 100, next);
                     docEle.scrollLeft = next;
                 } else if (e.deltaY < 0) {
                     // 마우스휠 올림

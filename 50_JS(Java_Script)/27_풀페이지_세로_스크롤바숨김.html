@@ -83,6 +83,9 @@
         const sec = document.querySelectorAll('.sec');
         const wh = window.innerHeight;
 
+        // sec.lenght -> 4
+        // for ~ of
+        // forEach() -> 색인번호 사용!
         for (let i = 0; i < sec.length; i++) {
             sec[i].onwheel = (e) => {
                 // 기본 이벤트 방지
@@ -90,6 +93,7 @@
                 if (e.deltaY > 0) {
                     // 마우스휠 내림
                     // e.currentTarget는 이벤트가 발생한 요소
+                    // 여기서 if없애면 휠을 살살내리면 동작하기는 하는대 쌔게하면 난리가난다.
                     if (docEle.scrollTop > wh * (sec.length - 2) + 100) return;
                     let next = e.currentTarget.nextElementSibling.offsetTop;
                     console.log('앗!', wh * (sec.length - 1) - 100, next);
@@ -103,7 +107,6 @@
                 }
             };
         }
-
     </script>
 </body>
 
