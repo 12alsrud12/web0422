@@ -5,10 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>풀페이지 직접 제작</title>
+    <style>
+        .sec {
+            width: 100%;
+            height: 100vh;
+            transition: .5s;
+        }
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const docEle = document.documentElement;
+            const sec = document.querySelectorAll('.sec');
+            const wh = window.innerWidth;
+
+            // for = 반복문 변수선언 x 를 sec에
+            for (let x of sec) {
+                // sec = x = 를 휠을 굴렸을 시
+                x.onwheel = (e) => {
+                    console.log("HTML의 수직 스크롤량:", docEle.scrollTop);
+                    // e.preventDefault();
+                    // if = 조건문 | 조건 - section을 휠을 굴렷을때
+                    if (e.deltaY > 0) {
+                        // 마우스휠 내림
+                        // 마지막 섹션에서 wheel 이벤트가 발생하면 return;
+                        // return 함수(또는 제어문) 탈출
+                        // HTML의 스크롤량 > 창높이 * (4 - 2) +1
+                        if (docEle.scrollTop > wh * (sec.length - 2) + 1) return;
+                        let next = e.currentTarget.nextElementSibling.offsetTop;
+                        // console.log('앗', wh * (sec.length - 1)-100, next);
+                        console.log("HTML의 수직 스크롤량:", docEle.scrollTop);
+                        docEle.scrollTop = next;
+                    } else if (e.deltay < 0) {
+                        // 마우스휠 올림
+                        // 첫번째 섹션에서 wheel 이벤트가 발생하면 return;
+                        if (docEle.scrollTop < wh) return;
+                        let prev = e.cuttrntTarget.previousElementSibling.offsetTop;
+                        console.log("e.currentTarget:", e.currentTarget);
+                        docEle.scrollTop = prev;
+                    }
+                };
+            }
+        });
+    </script>
 </head>
 
 <body>
-
+    <div class="sec" id="sec1">섹션1</div>
+    <div class="sec" id="sec2">섹션2</div>
+    <div class="sec" id="sec3">섹션3</div>
+    <div class="sec" id="sec4">섹션4</div>
 </body>
 
 </html>
