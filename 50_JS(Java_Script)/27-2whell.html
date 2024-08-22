@@ -10,29 +10,31 @@
             width: 300px;
             height: 300px;
             background: yellow;
+            margin-left: 30px;
+            margin-top: 30px;
+            transform: translate(100px, 100px);
         }
     </style>
     <script>
         window.addEventListener("DOMContentLoaded", () => {
             // section 지정하기
-            const section = document.querySelectorAll('.sec');
+            const div = document.querySelector('div');
+            const buttonEle = document.querySelector("button");
 
-            // 상수 선언한 section/sec에 이벤트를 넣기
-            section.onwhell = function () {
-                if (event.deltaY > 0) {
-                    // 마우스 휠 아래로 내렸을 때
-                    console.log("마우스휠을 아래로 내렸습니다.");
-                } else if (event.deltaY < 0) {
-                    // 마우스 휠 위로 올렸을 시
-                    console.log("마우스휠을 위로 내렸습니다.");
-                }
-            }
+            // 버튼을 클릭하면 div의 위치 이동
+            buttonEle.onclick = () => {
+                div.offsetTop;
+                div.offsetLeft;
+            };
+            console.log("top:", div.offsetTop);
+            console.log("left:", div.offsetLeft);
         });
     </script>
 </head>
 
 <body>
     <div>박스</div>
+    <button></button>
 </body>
 
 </html>
