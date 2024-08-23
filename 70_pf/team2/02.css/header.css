@@ -51,7 +51,7 @@ header.pc {
 
 #mathfoor {
     position: fixed;
-    text-align: -9999;
+    opacity: 0;
 }
 
 #hd1 {
@@ -350,6 +350,7 @@ header.pc>div.logo {
     header.pc>div.logo {
         display: flex;
         margin-left: 200px;
+        box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.7);
     }
 
     /* header */
