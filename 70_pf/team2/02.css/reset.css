@@ -38,9 +38,11 @@ video {
 
 input {
     border: none;
+    background: none;
 }
 
 button {
     padding: 0;
     border: none;
+    cursor: pointer;
 }

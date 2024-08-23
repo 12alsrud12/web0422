@@ -49,6 +49,11 @@ header.pc {
     border-bottom: 1px solid var(--main2);
 }
 
+#mathfoor {
+    position: fixed;
+    text-align: -9999;
+}
+
 #hd1 {
     padding: 0 16px;
 }
@@ -439,13 +444,13 @@ header.pc>div.logo {
         visibility: hidden;
         transition: .5s;
         z-index: 9900;
-        padding: 45px 0 0 95px;
+        padding: 45px 0 0 80px;
     }
 
     header.pc .main_menu:hover .sub_menu {
         height: 190px;
         opacity: 1;
-        padding: 95px 0 0 95px;
+        padding: 95px 0 0 80px;
         visibility: visible;
     }
 
@@ -463,6 +468,11 @@ header.pc>div.logo {
     /* header.pc sub_menu 위치 잡기 */
     header.pc .sub_menu>li {
         margin-right: 50px;
+    }
+
+    header.pc.down {
+        background: #ffffff79;
+        backdrop-filter: blur(5px);
     }
 
     header.pc .sub_menu a {
