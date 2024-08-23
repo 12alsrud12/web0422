@@ -173,7 +173,7 @@ section li:nth-of-type(2) {
 
 header {
     height: 200px;
-    background: url("assets/my/moon-10225.gif") no-repeat 50% 120%/cover fixed;
+    background: url("../assets/my/moon-10225.gif") no-repeat 50% 120%/cover fixed;
     line-height: 92px;
 }
 
