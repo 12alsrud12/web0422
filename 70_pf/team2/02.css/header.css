@@ -408,6 +408,27 @@ header.pc>div.logo {
         padding: 8px 16px;
     }
 
+    /* sub_menu 개별 left 위치 잡기 */
+    header.pc #sub_menu1 {
+        margin-left: -75px;
+    }
+
+    header.pc #sub_menu2 {
+        margin-left: -175px;
+    }
+
+    header.pc #sub_menu3 {
+        margin-left: -260px;
+    }
+
+    header.pc #sub_menu4 {
+        margin-left: -355px;
+    }
+
+    header.pc #sub_menu5 {
+        margin-left: -465px;
+    }
+
     /* sub_menu */
     header.pc .sub_menu {
         width: 500px;
@@ -417,13 +438,34 @@ header.pc>div.logo {
         opacity: 0;
         visibility: hidden;
         transition: .5s;
+        z-index: 9900;
+        padding: 45px 95px;
     }
 
     header.pc .main_menu:hover .sub_menu {
-        height: 150px;
+        height: 190px;
         opacity: 1;
+        padding: 95px 95px;
         visibility: visible;
     }
+
+    header.pc .sub_menu::before {
+        position: absolute;
+        content: "";
+        width: 150vw;
+        height: 150px;
+        top: 38px;
+        left: -800px;
+        background: var(--main2);
+        z-index: -1;
+    }
+
+    /* header.pc sub_menu 위치 잡기 */
+    header.pc .sub_menu>li {
+        mr
+    }
+
+
 
     /* 가리기 */
     header.mb.tb {
