@@ -64,6 +64,15 @@ section>p {
 }
 
 /* section1 */
+#main_s1 {}
+
+#main_s1 .main_bg {
+    width: 80%;
+    height: 80%;
+    margin: 10% auto 0;
+    background: url(../03.assets/index/PC-bg.png) no-repeat;
+}
+
 /* section2 */
 #main_s2 {
     background: var(--season1);
