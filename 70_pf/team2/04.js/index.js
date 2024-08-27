@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     settings: {
                         // arrows: false,
                         centerMode: true,
-                        centerPadding: '150px',
+                        centerPadding: '56px',
                         slidesToShow: 1,
                     }
                 },

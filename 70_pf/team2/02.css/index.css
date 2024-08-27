@@ -269,16 +269,16 @@ section>p {
         height: auto;
     }
 
-    .slick-slide>div {
-        width: 355px;
-    }
-
     /* sec3_slider */
     .sec3_slider {
-        max-width: 620px;
+        max-width: 500px;
     }
 
     .slick-slide {
+        width: 355px;
+    }
+
+    .slick-slide>div {
         width: 355px;
     }
 
@@ -286,12 +286,20 @@ section>p {
         height: 700px;
     }
 
+    .s3-title,
+    .s3-title h3,
+    .s3-title p {
+        width: 300px;
+    }
+
     .s3-title h3 {
         font-size: 24px;
+        height: auto;
     }
 
     .s3-title p {
         font-size: 18px;
+        height: auto;
     }
 
     .s3-title p:last-child {
@@ -308,10 +316,6 @@ section>p {
     .slick-next {
         /* 기본값 right: -25px */
         right: calc(50% - 48vw);
-    }
-
-    .slick-slide>div {
-        width: 270px;
     }
 
     /* sec4 */
