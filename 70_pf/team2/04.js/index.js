@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
             slidesToShow: 3,
             // 현재 이미지 중앙에 배치
             centerMode: true,
-            centerPadding: '35px',
+            centerPadding: '40px',
             // responsive = 반응형
             responsive: [
                 {
@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     settings: {
                         // arrows: false,
                         centerMode: true,
-                        centerPadding: '120px',
+                        centerPadding: '150px',
                         slidesToShow: 1,
                     }
                 },
@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     settings: {
                         // arrows: false,
                         centerMode: true,
-                        centerPadding: '10px',
+                        centerPadding: '24px',
                         slidesToShow: 1
                     }
                 }

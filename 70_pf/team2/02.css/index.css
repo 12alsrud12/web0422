@@ -101,6 +101,10 @@ section>p {
     background: var(--main1);
 }
 
+#slider_wrap2 {
+    margin: 40px 0 40px;
+}
+
 /* s3 - slick_slider */
 /* s3-title */
 .s3-title {
@@ -108,19 +112,29 @@ section>p {
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    height: 250px;
-    padding: 16px;
-    line-height: 2;
+    height: 120px;
 }
 
 .s3-title h3 {
     font-family: "프리텐다드", sans-serif;
     font-size: 12px;
+    line-height: 1.5;
+    width: 136px;
+    height: 35px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .s3-title p {
     text-align: left;
     font-size: 10px;
+    line-height: 2;
+    color: var(--text2);
+}
+
+.s3-title p:first-of-type {
+    height: 40px;
+    overflow: hidden;
 }
 
 /* slick 슬라이드 */
@@ -154,10 +168,8 @@ section>p {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
 }
 
-
-
 .slick-slide>div {
-    width: 270px;
+    width: 180px;
 }
 
 /* 설명글 */
@@ -188,7 +200,7 @@ section>p {
     height: 100%;
     font-size: 0px;
     /* 캐러셀 버튼 ↓ next button */
-    background: url(../70_pf/team2/03.assets/index/sec3/sec3_right_btn.png);
+    background: url(../03.assets/index/sec3/sec3_right_btn.png);
 }
 
 /* 캐러셀 버튼 위치 조정 ↓ */
@@ -231,16 +243,42 @@ section>p {
 
     /* sec2 */
     /* sec3 */
+    /* s3-title */
+    .s3-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        height: 250px;
+    }
+
+    .s3-title h3 {
+        font-family: "프리텐다드", sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 16px 8px 8px;
+        height: auto;
+    }
+
+    .s3-title p {
+        text-align: left;
+        font-size: 10px;
+        line-height: 2;
+        padding: 0 8px;
+        color: var(--text2);
+        height: auto;
+    }
+
+    .slick-slide>div {
+        width: 355px;
+    }
+
     /* sec3_slider */
     .sec3_slider {
         max-width: 620px;
     }
 
     .slick-slide {
-        width: 355px;
-    }
-
-    .slick-slide>div {
         width: 355px;
     }
 
@@ -260,7 +298,21 @@ section>p {
         color: #ccc;
     }
 
+    /* 캐러셀 버튼 위치 조정 ↓ */
+    .slick-prev {
+        /* 기본값 left: -25px */
+        left: calc(50% - 48vw);
+    }
 
+    /* 캐러셀 버튼 위치 조정 ↓ */
+    .slick-next {
+        /* 기본값 right: -25px */
+        right: calc(50% - 48vw);
+    }
+
+    .slick-slide>div {
+        width: 270px;
+    }
 
     /* sec4 */
 }
@@ -354,6 +406,18 @@ section>p {
     /* sec3 */
     .sec3_slider {
         max-width: 1200px;
+    }
+
+    /* 캐러셀 버튼 위치 조정 ↓ */
+    .slick-prev {
+        /* 기본값 left: -25px */
+        left: calc(50% - 37vw);
+    }
+
+    /* 캐러셀 버튼 위치 조정 ↓ */
+    .slick-next {
+        /* 기본값 right: -25px */
+        right: calc(50% - 37vw);
     }
 
     /* sec4 */
