@@ -80,6 +80,11 @@ section>p {
 
 /* section4 */
 
+/* .pc가리기 */
+.pc {
+    display: none;
+}
+
 /* 태블릿 */
 @media (min-width:768px) {
 
@@ -102,15 +107,85 @@ section>p {
 /* 데스크탑 */
 @media (min-width:1025px) {
 
+    /* mb,tb 숨기기 */
+    .mb {
+        display: none;
+    }
+
+    /* pc 꺼내기 */
+    .pc {
+        display: flex;
+    }
+
     /* sec1 */
     #main_s1 {
         height: 100vh;
     }
+
     #main_s1 .main_bg {
-        width: 100%;
-        height: 100%;
-        margin: 30px auto 0;
+        position: absolute;
+        width: 1500px;
+        height: 825px;
+        margin: 0 auto 0;
         background: url(../03.assets/index/PC-bg.png) no-repeat 50% 50% scroll;
+    }
+
+    /* sec1 banner section */
+    .s1_content.pc {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 100px;
+
+    }
+
+    #sec1_wrap {
+        position: relative;
+        z-index: 50;
+        right: -550px;
+        bottom: -120px;
+    }
+
+    .x_button {
+        position: absolute;
+        width: 55px;
+        bottom: 20px;
+        right: 30px;
+        transition: .9s;
+        z-index: 60;
+    }
+
+    #s1_sub_cont {
+        width: 310px;
+    }
+
+    #sec1_sub1,
+    #sec1_sub2,
+    #sec1_sub3 {
+        opacity: 0;
+    }
+
+    #sec1_sub1 {
+        transition: .3s 0;
+    }
+
+    #sec1_sub2 {
+        transition: .3s .3s;
+    }
+
+    #sec1_sub1 {
+        transition: .3s .6s;
+    }
+
+    #s1_sub_cont.action #sec1_sub1,
+    #s1_sub_cont.action #sec1_sub2,
+    #s1_sub_cont.action #sec1_sub3 {
+        opacity: 1;
+    }
+
+    #sec1_wrap.action .x_button {
+        transform: rotate(360deg);
+        right: 270px;
     }
 
     /* sec2 */
