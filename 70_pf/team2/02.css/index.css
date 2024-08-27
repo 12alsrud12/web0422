@@ -42,6 +42,10 @@ body {
     background: var(--bg);
 }
 
+#slider_wrap2 a:hover {
+    text-decoration: underline;
+}
+
 h1,
 p:not(footer p) {
     text-align: center;
@@ -53,10 +57,16 @@ section {
 
 section>h1 {
     line-height: 2;
+    color: var(--main1);
+}
+
+#main_s2 h1 {
+    color: var(--season2);
 }
 
 section>p {
     margin-bottom: 40px;
+    color: var(--text2);
 }
 
 .section {
@@ -83,7 +93,8 @@ section>p {
     align-items: center;
 }
 
-#main_s3 a {
+#s3_btn a {
+    display: block;
     margin-top: 40px;
     width: 170px;
     height: 45px;
@@ -96,7 +107,7 @@ section>p {
     transition: .3s;
 }
 
-#main_s3 a:active {
+#s3_btn a:active {
     color: var(--main2);
     background: var(--main1);
 }
@@ -299,6 +310,9 @@ section>p {
 
     .s3-title p {
         font-size: 18px;
+    }
+
+    .s3-title p:first-of-type {
         height: auto;
     }
 
@@ -379,11 +393,13 @@ section>p {
     #sec1_sub1,
     #sec1_sub2,
     #sec1_sub3 {
+        position: relative;
+        right: -30px;
         opacity: 0;
     }
 
     #sec1_sub1 {
-        transition: .3s 0;
+        transition: .3s;
     }
 
     #sec1_sub2 {
@@ -397,6 +413,7 @@ section>p {
     #s1_sub_cont.action #sec1_sub1,
     #s1_sub_cont.action #sec1_sub2,
     #s1_sub_cont.action #sec1_sub3 {
+        right: 0;
         opacity: 1;
     }
 
