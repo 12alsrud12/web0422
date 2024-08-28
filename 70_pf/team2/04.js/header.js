@@ -23,14 +23,9 @@ window.addEventListener("DOMContentLoaded", () => {
     console.log(serch);
     console.log(serch_input);
 
-    // 마우스 클릭 시 검색창 생성
+    // 마우스 클릭 시 검색창 생성/사라짐
     serch.onclick = () => {
-        serch_input.classList.add("active")
-    };
-
-    // 마우스 떠낫을 시 검색창 사라짐
-    serch.onmouseleave = () => {
-        serch_input.classList.remove("active")
+        serch_input.classList.toggle("active")
     };
 
     // x_logo

@@ -15,6 +15,10 @@ header.pc {
     transition: .5s;
 }
 
+header input {
+    background: var(--white);
+}
+
 #mathfoor {
     position: fixed;
     opacity: 0;
