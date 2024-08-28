@@ -38,6 +38,9 @@
 }
 
 /* 공통 */
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: var(--bg);
 }
