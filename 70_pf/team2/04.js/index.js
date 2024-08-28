@@ -12,6 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     };
 
     // section2
+
     // section3
     $(() => {
         $('.sec3_slider').slick({

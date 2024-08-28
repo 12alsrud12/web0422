@@ -41,6 +41,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background: var(--bg);
 }
@@ -84,11 +85,12 @@ section>p {
     background: url(../03.assets/index/MB-bg.png) no-repeat 50% 50%;
 }
 
-
 /* section2 */
 #main_s2 {
     background: var(--season1);
 }
+
+
 
 /* section3 */
 #main_s3 {
