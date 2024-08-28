@@ -71,6 +71,7 @@ section>p {
 
 .section {
     height: 100vh;
+    margin: 0 auto;
 }
 
 /* section1 */
@@ -140,7 +141,14 @@ section>p {
     text-align: left;
     font-size: 10px;
     line-height: 2;
+}
+
+.s3-title p:first-of-type>a {
     color: var(--text2);
+}
+
+.s3-title p:last-of-type>a {
+    color: #ccc;
 }
 
 .s3-title p:first-of-type {
