@@ -41,6 +41,11 @@ input {
     background: none;
 }
 
+/* input 클릭 시 검은선 없애주는 css */
+input:focus {
+    outline: none;
+}
+
 button {
     padding: 0;
     border: none;
