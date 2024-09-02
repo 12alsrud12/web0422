@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>설빙</title>
     <!-- 파비콘 -->
-     <link rel="icon" href="pabicon.png">
+    <link rel="icon" href="pabicon.png">
+    <!-- bx-slider CSS 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
     <!-- slick slider CSS 라이브러리 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <!-- jQuery 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <!-- bx-slider 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
     <!-- slick 슬라이더 라이브러리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
 
     <!-- 사용자 CSS -->
     <link rel="stylesheet" href="02.css/reset.css">
@@ -239,36 +244,75 @@
         <h1>New & Hot Menu</h1>
         <p class="p2">새로나온 설빙의 신 메뉴와 인기 메뉴를 소개합니다.</p>
         <!-- PC버전 섹션2 슬라이드 -->
-        <div id="pc_wrap"></div>
+        <div id="sec2_pc_wrap">
+            <div id="sec2_pc_new_ui">
+                <a href="01.html/sub/menu.html">
+                    <img src="03.assets/index/sec2_UI_card1_NEW.svg" alt="Ui_Card_NEW">
+                </a>
+            </div>
+            <ul class="bxslider2">
+                <!-- ui1 -->
+                <li>
+                    <div>
+                        <a href="01.html/sub/menu.html">
+                            <img src="03.assets/index/sec2_UI_card1.svg" alt="UI-card1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="01.html/sub/menu.html">
+                            <img src="03.assets/index/sec2_UI_card2.svg" alt="UI-card2">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="01.html/sub/menu.html">
+                            <img src="03.assets/index/sec2_UI_card3.svg" alt="UI-card3">
+                        </a>
+                    </div>
+                </li>
+                <!-- ui2 -->
+                <li>
+                    <div>
+                        <a href="01.html/sub/menu.html">
+                            <img src="03.assets/index/sec2_UI_card4.svg" alt="UI-card4">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="01.html/sub/menu.html">
+                            <img src="03.assets/index/sec2_UI_card5.svg" alt="UI-card5">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <!-- 모바일,테블릿버전 섹션2 슬라이드 -->
         <div id="sec2_mb-tb_wrap">
-            <div id="sec2_mb-tb-slider">
-                <div>
+            <div class="bxslider1">
+                <div id="mb-tb_ui1">
                     <a href="01.html/sub/menu.html">
                         <img src="03.assets/index/sec2_mb_card1.svg" alt="section2-ui-card1">
                     </a>
                 </div>
-                <div>
+                <div id="mb-tb_ui2">
                     <a href="01.html/sub/menu.html">
                         <img src="03.assets/index/sec2_mb_card2.svg" alt="section2-ui-card2">
                     </a>
                 </div>
-                <div>
+                <div id="mb-tb_ui3">
                     <a href="01.html/sub/menu.html">
                         <img src="03.assets/index/sec2_mb_card3.svg" alt="section2-ui-card3">
                     </a>
                 </div>
-                <div>
+                <div id="mb-tb_ui4">
                     <a href="01.html/sub/menu.html">
                         <img src="03.assets/index/sec2_mb_card4.svg" alt="section2-ui-card4">
                     </a>
                 </div>
-                <div>
+                <div id="mb-tb_ui5">
                     <a href="01.html/sub/menu.html">
                         <img src="03.assets/index/sec2_mb_card5.svg" alt="section2-ui-card5">
                     </a>
                 </div>
-                <div>
+                <div id="mb-tb_ui6">
                     <a href="01.html/sub/menu.html">
                         <img src="03.assets/index/sec2_mb_card6.svg" alt="section2-ui-card6">
                     </a>
@@ -363,7 +407,8 @@
         <p class="p2">내 주변 가까운 설빙 매장을 찾아보세요.</p>
         <div id="s4_cont">
             <div id="panner">
-
+                <div id="s4_box1"></div>
+                <div id="s4_box2"></div>
             </div>
             <div id="map">
                 <iframe
