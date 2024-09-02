@@ -90,6 +90,10 @@ section>p {
     background: var(--season1);
 }
 
+/* sec2 slider */
+.sec2_mb-tb-slider {
+    display: flex;
+}
 
 
 /* section3 */
@@ -352,7 +356,8 @@ section>p {
 @media (min-width:1025px) {
 
     /* mb,tb 숨기기 */
-    .mb {
+    .mb,
+    #sec2_mb-tb_wrap {
         display: none;
     }
 
