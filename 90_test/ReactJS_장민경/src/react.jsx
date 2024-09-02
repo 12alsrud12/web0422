@@ -46,9 +46,11 @@ const uiCard = [
 function ReactUi(uiitem) {
     return (
         <li className="ui-card">
-            <div className="ui-img">
-                <a href="#"><img src={uiitem.uiimg} alt={uiitem.uiimgnum} /></a>
-            </div>
+            <a href="">
+                <div className="ui-img">
+                    <img src={uiitem.uiimg} alt={uiitem.uiimgnum} />
+                </div>
+            </a>
             <div className="ui-bx">
                 <div>
                     <h4><a href="#">{uiitem.uititle}</a></h4>
