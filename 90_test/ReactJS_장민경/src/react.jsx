@@ -1,4 +1,4 @@
-import {UiCard} from "Card.jsx"
+import { UiCard } from "Card.jsx"
 
 function ReactUi() {
     return (
