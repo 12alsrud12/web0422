@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* 구글 font 가져오기 = "Noto Sans KR" */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /* reset */
@@ -147,6 +148,7 @@ span {
     opacity: 1;
 }
 
+/* ui 카드 text 부분 */
 .ui-bx {
     display: flex;
     flex-direction: column;
