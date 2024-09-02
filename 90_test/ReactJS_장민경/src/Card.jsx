@@ -44,6 +44,6 @@ const uiCard = [
         uiDetails: "경북 경주시 · ~10kg · 소형견 · 애견수영장 · 애견놀이터",
         uiPrice: "70,000원"
     }
-]
+];
 
 export default uiCard;
