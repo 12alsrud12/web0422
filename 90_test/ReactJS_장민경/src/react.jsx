@@ -7,7 +7,7 @@
     uiDetails: Detauls = 세부/ ui 카드의 세부 정보,
     uiPrice: Price = 가격/ ui카드의 가격 부분
 */
-const UiCard = [
+const uiCard = [
     {
         uiImg: "ui-card-img1.png",
         uiImgNum: "UI_카드_이미지1",
@@ -55,10 +55,21 @@ function ReactUi() {
             </div>
             <div className="ui-bx">
                 <h4>{uiTitle}</h4>
-                <p>{uiLike} <span>{uiSubLike}</span> </p>
-                <p>{uiDetails}</p>
+                <p>{uiLike} <span className="gray">{uiSubLike}</span></p>
+                <p className="gray">{uiDetails}</p>
                 <h3>{uiPrice}</h3>
             </div>
         </div>
     );
 }
+
+// 출력
+ReactDOM.render(
+    <div className="ui-card-list">
+        <ReactUi />
+        <ReactUi />
+        <ReactUi />
+        <ReactUi />
+    </div>,
+    document.querySelector("#root")
+)

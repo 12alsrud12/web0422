@@ -46,4 +46,4 @@ const UiCard = [
     },
 ]
 
-export default UiCard;
+// export default UiCard;
