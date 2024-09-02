@@ -173,16 +173,16 @@ section>p {
 }
 
 
-.slick-track {
+.sec3_slider .slick-track {
     height: 100%;
 }
 
-.slick-slider .slick-list {
+.sec3_slider .slick-slider .slick-list {
     height: 348px;
 }
 
 /* 슬라이드 아이템 */
-.slick-slide {
+.sec3_slider .slick-slide {
     width: 166px;
     margin: 0 16px;
     background: #fff;
@@ -192,18 +192,18 @@ section>p {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
 }
 
-.slick-slide>div {
+.sec3_slider .slick-slide>div {
     width: 180px;
 }
 
 /* 설명글 */
-.slick-slide .s3-title {
+.sec3_slider .slick-slide .s3-title {
     padding: 8px 22px;
 }
 
 /* 이전(prev)/다음(next) 버튼 */
-.slick-prev,
-.slick-next {
+.sec3_slider .slick-prev,
+.sec3_slider .slick-next {
     z-index: 9999;
     width: 50px;
     height: 50px;
@@ -212,13 +212,13 @@ section>p {
     background: #ccc;
 }
 
-.slick-prev:hover,
-.slick-next:hover {
+.sec3_slider .slick-prev:hover,
+.sec3_slider .slick-next:hover {
     background: #ccc;
 }
 
-.slick-prev::before,
-.slick-next::before {
+.sec3_slider .slick-prev::before,
+.sec3_slider .slick-next::before {
     display: block;
     width: 100%;
     height: 100%;
@@ -228,19 +228,19 @@ section>p {
 }
 
 /* 캐러셀 버튼 위치 조정 ↓ */
-.slick-prev {
+.sec3_slider .slick-prev {
     /* 기본값 left: -25px */
     left: calc(50% - 47vw);
 }
 
 /* 캐러셀 버튼 위치 조정 ↓ */
-.slick-next {
+.sec3_slider .slick-next {
     /* 기본값 right: -25px */
     right: calc(50% - 47vw);
 }
 
 /* 캐러셀 이전 버튼 조정 ↓ next button 을 뒤집은 것  */
-.slick-prev::before {
+.sec3_slider .slick-prev::before {
     transform: rotate(180deg);
 }
 
@@ -298,15 +298,15 @@ section>p {
         max-width: 500px;
     }
 
-    .slick-slide {
+    .sec3_slider .slick-slide {
         width: 355px;
     }
 
-    .slick-slide>div {
+    .sec3_slider .slick-slide>div {
         width: 355px;
     }
 
-    .slick-slider .slick-list {
+    .sec3_slider .slick-slider .slick-list {
         height: 700px;
     }
 
@@ -334,13 +334,13 @@ section>p {
     }
 
     /* 캐러셀 버튼 위치 조정 ↓ */
-    .slick-prev {
+    .sec3_slider .slick-prev {
         /* 기본값 left: -25px */
         left: calc(50% - 48vw);
     }
 
     /* 캐러셀 버튼 위치 조정 ↓ */
-    .slick-next {
+    .sec3_slider .slick-next {
         /* 기본값 right: -25px */
         right: calc(50% - 48vw);
     }
@@ -445,13 +445,13 @@ section>p {
     }
 
     /* 캐러셀 버튼 위치 조정 ↓ */
-    .slick-prev {
+    .sec3_slider .slick-prev {
         /* 기본값 left: -25px */
         left: calc(50% - 37vw);
     }
 
     /* 캐러셀 버튼 위치 조정 ↓ */
-    .slick-next {
+    .sec3_slider .slick-next {
         /* 기본값 right: -25px */
         right: calc(50% - 37vw);
     }
