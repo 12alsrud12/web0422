@@ -1,1 +1,93 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+body,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* typo */
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 10px;
+    color: #272727;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a {
+    color: #272727;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body>p {
+    line-height: 3;
+}
+
+.gray {
+    color: #878787;
+}
+
+p:not(p.gray, body>p)::before {
+    content: "★";
+    color: #fff000;
+    margin-right: 8px;
+}
+
+/* style */
+/* 공통 */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+}
+
+.ui-card-list {
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ui-card {
+    width: 282px;
+    height: 316px;
+    background: #fff;
+    box-shadow: 4px 4px 4px rgba(135, 135, 135, 0.5);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.ui-img {
+    width: 100%;
+}

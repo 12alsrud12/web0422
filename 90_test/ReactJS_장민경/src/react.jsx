@@ -45,19 +45,19 @@ const uiCard = [
         uiPrice: "70,000원"
     },
 ]
-
+// uiCard = { uiImg, uiImgNum, uiTitle, uiLike, uiSubLike, uiDetails, uiPrice }
 // React HTML작성
-function ReactUi() {
+function ReactUi(uiCard) {
     return (
         <div className="ui-card">
             <div className="ui-img">
-                <img src="{uiImg}" alt="{uiImgNum}" />
+                <img src="{uiCard.uiImg}" alt="{uiCard.uiImgNum}" />
             </div>
             <div className="ui-bx">
-                <h4>{uiTitle}</h4>
-                <p>{uiLike} <span className="gray">{uiSubLike}</span></p>
-                <p className="gray">{uiDetails}</p>
-                <h3>{uiPrice}</h3>
+                <h4>{uiCard.uiTitle}</h4>
+                <p>{uiCard.uiLike}<span className="gray">{uiCard.uiSubLike}</span></p>
+                <p className="gray">{uiCard.uiDetails}</p>
+                <h3>{uiCard.uiPrice}</h3>
             </div>
         </div>
     );
