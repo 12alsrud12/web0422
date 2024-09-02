@@ -1,3 +1,4 @@
+// 객체(Object) 생성
 const uiCard = [
     {
         uiImg: "../src/ui-card-img1.png",
@@ -38,6 +39,10 @@ const uiCard = [
 ];
 
 // React HTML작성
+/* 
+    uiitem.여기에 아래에서 생성한 UI 컴포넌트 사용
+    복수의 Ui card 출력시 사용하기위함
+*/
 function ReactUi(uiitem) {
     return (
         <li className="ui-card">
@@ -54,10 +59,12 @@ function ReactUi(uiitem) {
     );
 }
 
-// App 컴포넌트
-function App() {
+// Ui 컴포넌트 / 이름: UiCard
+function UiCard() {
     return (
+        /* ul 내부에 ui card부분을 담당하는 li 를 각자 다른 내용으로 넣기 위해 사용 */
         <ul className="ui-card-list">
+            {/* 위에서 제작한 객체uiCard를 map()메서드를 이용하여 카드당 다른 값을 넣기위해 이용 */}
             {uiCard.map((item, idx) => (
                 <ReactUi
                     key={idx}
@@ -77,4 +84,4 @@ function App() {
 // 출력
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
-root.render(<App />);
+root.render(<UiCard />);
