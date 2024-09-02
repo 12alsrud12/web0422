@@ -38,17 +38,17 @@ const uiCard = [
 ];
 
 // React HTML작성
-function ReactUi(uiCard) {
+function ReactUi(uiitem) {
     return (
         <li className="ui-card">
             <div className="ui-img">
-                <img src={uiCard.uiImg} alt={uiCard.uiImgNum} />
+                <img src={uiitem.uiImg} alt={uiitem.uiImgNum} />
             </div>
             <div className="ui-bx">
-                <h4>{uiCard.uiTitle}</h4>
-                <p>{uiCard.uiLike}<span className="gray">{uiCard.uiSubLike}</span></p>
-                <p className="gray">{uiCard.uiDetails}</p>
-                <h3>{uiCard.uiPrice}</h3>
+                <h4>{uiitem.uiTitle}</h4>
+                <p>{uiitem.uiLike}<span className="gray">{uiitem.uiSubLike}</span></p>
+                <p className="gray">{uiitem.uiDetails}</p>
+                <h3>{uiitem.uiPrice}</h3>
             </div>
         </li>
     );
