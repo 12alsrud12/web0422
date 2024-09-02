@@ -73,5 +73,5 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     }); // Loaded Event
 
-    // section4
+
 });

@@ -618,32 +618,6 @@ section>p {
         margin: 0 auto;
     }
 
-    #s4_pc .option {
-        height: 52px;
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-
-    #s4_pc .option>button {
-        background: none;
-        height: 52px;
-        width: 100%;
-        border: 1px solid var(--main1);
-        background: var(--bg);
-        text-align: left;
-        padding: 0 16px;
-        font-size: 18px;
-        border-radius: 5px;
-    }
-
-    #s4_pc>.option {
-        background: #fff;
-    }
-
-    .shop-option {
-        padding: 0 16px;
-    }
-
     #s4_pc input {
         width: 100%;
         height: 52px;
@@ -654,48 +628,8 @@ section>p {
         margin-bottom: 12px;
     }
 
-    #s4_pc input::placeholder {
-        color: var(--sub2);
-    }
-
-    dl>div {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    dl>div>dt {
-        font-size: 25px;
-        line-height: 52px;
-    }
-
-    dl>div>dd {
-        display: flex;
-        align-items: center;
-        margin: 0;
-    }
-
-
-    dd input {
-        width: 18px !important;
-        margin: 0 !important;
-    }
-
-    dd>label {
-        width: 100%;
-        height: 52px;
-        display: flex;
-        align-items: center;
-        padding: 0 16px;
-    }
-
-    dl span {
-        font-size: 15px;
-        line-height: 52px;
-        margin-left: 24px;
-    }
-
-    #s4_pc>button {
+    /* 검색버튼 */
+    #s4_pc button.pc {
         width: 100%;
         height: 56px;
         background: var(--main1);
