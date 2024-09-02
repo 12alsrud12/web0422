@@ -1,3 +1,5 @@
+import {UiCard} from "Card.jsx"
+
 function ReactUi() {
     return (
         <div className="ui-card">
