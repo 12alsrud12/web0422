@@ -117,6 +117,7 @@ span {
     height: 50%;
 }
 
+/* ui-card:hover시 효과 추가 */
 .ui-img:before {
     position: absolute;
     width: 100%;
