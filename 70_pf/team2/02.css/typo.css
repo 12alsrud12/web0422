@@ -157,6 +157,9 @@ footer button {
 }
 
 /* 팀원 별 추가 font */
+.point {
+    color: var(--point);
+}
 
 /* 김은지님 */
 #FAQ_top h2,
