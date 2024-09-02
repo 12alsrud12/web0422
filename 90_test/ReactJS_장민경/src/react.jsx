@@ -47,13 +47,17 @@ function ReactUi(uiitem) {
     return (
         <li className="ui-card">
             <div className="ui-img">
-                <img src={uiitem.uiimg} alt={uiitem.uiimgnum} />
+                <a href="#"><img src={uiitem.uiimg} alt={uiitem.uiimgnum} /></a>
             </div>
             <div className="ui-bx">
-                <h4>{uiitem.uititle}</h4>
-                <p>{uiitem.uilike}<span className="gray">{uiitem.uisublike}</span></p>
-                <p className="gray">{uiitem.uidetails}</p>
-                <h3>{uiitem.uiprice}원</h3>
+                <div>
+                    <h4><a href="#">{uiitem.uititle}</a></h4>
+                    <p><a href="#">{uiitem.uilike}<span className="gray">{uiitem.uisublike}</span></a></p>
+                    <p className="gray"><a href="#" className="gray">{uiitem.uidetails}</a></p>
+                </div>
+                <div>
+                    <h3><a href="#">{uiitem.uiprice}원</a></h3>
+                </div>
             </div>
         </li>
     );

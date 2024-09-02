@@ -48,7 +48,10 @@ p {
 }
 
 p.gray {
+    display: flex;
+    align-items: center;
     font-size: 1.2em;
+    height: 36px;
 }
 
 a {
@@ -56,12 +59,13 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover:not(.ui-bx div a) {
     text-decoration: underline;
 }
 
 body>p {
     line-height: 3;
+    letter-spacing: 2px;
 }
 
 .gray {
@@ -71,7 +75,7 @@ body>p {
 p:not(p.gray, body>p)::before {
     content: "★";
     color: #fff000;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 /* style */
@@ -83,6 +87,10 @@ body {
     align-items: center;
     justify-content: center;
     background: #f4f4f4;
+}
+
+span {
+    margin-left: 4px;
 }
 
 .ui-card-list {
@@ -104,11 +112,55 @@ body {
 }
 
 .ui-img {
+    position: relative;
     width: 100%;
     height: 50%;
 }
 
+.ui-img:before {
+    position: absolute;
+    width: 100%;
+    height: 175px;
+    background: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.ui-card:nth-of-type(1) .ui-img:before {
+    content: url(ui-card-img1_before.png);
+}
+
+.ui-card:nth-of-type(2) .ui-img:before {
+    content: url(ui-card-img2_before.png);
+}
+
+.ui-card:nth-of-type(3) .ui-img:before {
+    content: url(ui-card-img3_before.png);
+}
+
+.ui-card:nth-of-type(4) .ui-img:before {
+    content: url(ui-card-img4_before.png);
+}
+
+.ui-card:nth-of-type(1) .ui-img:hover .ui-img:before {
+    display: block;
+}
+
 .ui-bx {
+    display: flex;
+    flex-direction: column;
     height: 44%;
     padding: 0 8px;
+    justify-content: space-between;
+}
+
+.ui-bx>div:first-child {
+    margin-top: 4px;
+}
+
+.ui-bx>div>p:first-of-type {
+    line-height: 2;
+}
+
+.ui-bx>div:last-child {
+    margin-bottom: 16px;
 }
