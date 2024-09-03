@@ -30,4 +30,44 @@ h4 {
     letter-spacing: 10px;
 }
 
-/* 공통 */
+/* commen */
+#s1 {
+    height: 100vh;
+    background: #ccc;
+}
+.progress {
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+.progress-bar {
+    background: #000;
+}
+
+.progress:nth-of-type(1) .progress-bar {
+    width: 90%;
+}
+
+.progress:nth-of-type(2) .progress-bar {
+    width: 90%;
+}
+
+.progress:nth-of-type(3) .progress-bar {
+    width: 90%;
+}
+
+.progress:nth-of-type(4) .progress-bar {
+    width: 70%;
+}
+
+.progress:nth-of-type(5) .progress-bar {
+    width: 70%;
+}
+
+.progress:nth-of-type(6) .progress-bar {
+    width: 50%;
+}
+
+footer {
+    height: 300px;
+}
