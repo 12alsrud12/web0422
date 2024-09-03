@@ -4,34 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>80_그리드</title>
+    <title>80_그리드4</title>
     <style>
         /* reset */
         body {
             margin: 0;
         }
 
-        /* 
-            자식 -> 부모에 grid를 걸면 자식은 grid item이 된다.
-                1. 병합, 순서 <- 80-2에 했던거
-                    - grid-column
-                    - grid-column-start
-                    - grid-column-end
-
-                    - grid-row
-                    - grid-row-start
-                    - grid-row-end
-
-                2. grid-area
-        */
-
+        /* 공통 */
         .grid-container {
             display: grid;
             /* ↓ 부모크기에 맞춰 동일하게 정렬 */
             /* grid-template-columns: auto; */
             /* ↓ item자기 값만큼 크기 지정 (inline 처럼 된다.) */
-            justify-content: space-between;
-            align-items: center;
             background-color: #2196F3;
             padding: 10px;
             border: 1px solid lime;
@@ -58,16 +43,37 @@
         /* 데스크탑 PC */
         @media (min-width: 992px) {
             .grid-container {
-                grid-template-columns:auto auto auto auto;
-                grid-template-rows: 80px 200px;
+                /* ''로 행(가로/수평) 구분 */
+                grid-template-areas:
+                    /* '' 이 3개면 가로3줄 '이 안에 열 구분' 6개면 세로6줄 */
+                    'header header header header header header'
+                    'menu main main main right right'
+                    'menu footer footer footer footer footer';
             }
 
+            /* 헤더 */
             .item1 {
-                grid-column: 1/span 4;
+                grid-area: header;
             }
 
-            .item6 {
-                grid-column: 1/5;
+            /* 메뉴 */
+            .item2 {
+                grid-area: menu;
+            }
+
+            /* 메인 */
+            .item3 {
+                grid-area: main;
+            }
+
+            /* 오른쪽 */
+            .item4 {
+                grid-area: right;
+            }
+
+            /* 푸터 */
+            .item5 {
+                grid-area: footer;
             }
         }
     </style>
@@ -78,11 +84,10 @@
     <!-- 용도: 상품들이 동일하게 나열될때 등 동일한 오브젝트가 여러개일때 사용된다. -->
     <div class="grid-container">
         <div class="grid-item item1">헤더</div>
-        <div class="grid-item item2">2</div>
-        <div class="grid-item item3">3</div>
-        <div class="grid-item item4">4</div>
-        <div class="grid-item item5">5</div>
-        <div class="grid-item item6">푸터</div>
+        <div class="grid-item item2">메뉴</div>
+        <div class="grid-item item3">메인</div>
+        <div class="grid-item item4">오른쪽</div>
+        <div class="grid-item item5">푸터</div>
     </div>
 </body>
 
