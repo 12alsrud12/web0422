@@ -11,58 +11,37 @@
             margin: 0;
         }
 
+        body * {
+            border: 1px solid red;
+        }
+
         /* 공통 */
         .home-card {
+            width: 940px;
             display: grid;
+            margin: 0 auto;
         }
 
         /* 자식 요소 */
-        .home-card>div {}
 
 
         /* 미디어 쿼리 적용 */
-        /* 테블릿 */
-        @media (min-width: 760px) {
-            .grid-container {
-                grid-template-columns: auto auto auto;
-            }
-        }
-
         /* 데스크탑 PC */
         @media (min-width: 992px) {
-            .grid-container {
-                /* ''로 행(가로/수평) 구분 */
-                grid-template-areas:
-                    /* '' 이 3개면 가로3줄 '이 안에 열 구분' 6개면 세로6줄 */
-                    ''
-                    ''
-                    '';
+            .home-card {
+                grid-template-columns: 100px auto;
+                column-gap: 50px;
             }
 
-            /* 헤더 */
-            .item1 {
-                grid-area: header;
+            /* 썸네일 이미지 */
+            .home-icon {
+                grid-row: 1/span 3;
+                height: 100px;
             }
 
-            /* 메뉴 */
-            .item2 {
-                grid-area: menu;
-            }
-
-            /* 메인 */
-            .item3 {
-                grid-area: main;
-            }
-
-            /* 오른쪽 */
-            .item4 {
-                grid-area: right;
-            }
-
-            /* 푸터 */
-            .item5 {
-                grid-area: footer;
-            }
+            /* 작품제목 */
+            /* 작품설명 */
+            /* 자세히보기버튼 */
         }
     </style>
 </head>
