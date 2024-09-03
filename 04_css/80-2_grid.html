@@ -72,10 +72,15 @@
                     justify-content -> 수평
                     align-content -> 수직
                         값: start, end, center, space-betwrrn, space-around, space-evenly
+                    flex에 거는 거랑 동일하게 적용되는듯 하다.
         */
         .grid-container {
             display: grid;
-            grid-template-columns: auto;
+            /* ↓ 부모크기에 맞춰 동일하게 정렬 */
+            /* grid-template-columns: auto; */
+            /* ↓ item자기 값만큼 크기 지정 (inline 처럼 된다.) */
+            justify-content: space-between;
+            align-items: center;
             background-color: #2196F3;
             padding: 10px;
             border: 1px solid lime;
