@@ -6,8 +6,15 @@
 }
 
 @font-face {
-    font-family: '온글잎 은별';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_eunbyul21-Rg.woff2') format('woff2');
+    font-family: 'G마켓산스';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '에스코어드림';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,7 +30,6 @@ html {
 
 body {
     font: 10px/2 Arial, Helvetica, sans-serif;
-    font-style: italic;
 }
 
 main {
@@ -58,19 +64,23 @@ a {
 
 h3 {
     font-size: 4vw;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "G마켓산스", sans-serif;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 h3 span {
-    font-size: 3.7vw;
+    font-size: 1.7vw;
     font-style: italic;
 }
 
 p {
     font-size: 3vw;
-    font-family: "온글잎 은별", sans-serif;
+    font-family: "에스코어드림", sans-serif;
     font-weight: 700;
+    letter-spacing: 1px;
+    text-align: justify;
+    word-break: normal;
 }
 
 /* reset */
@@ -93,7 +103,7 @@ ul {
 a {
     margin: 0;
     text-decoration: underline;
-    color: #444;
+    color: #727272;
 }
 
 nav a {
@@ -239,7 +249,7 @@ footer:hover .ill {
     }
 
     h3 span {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     p {
@@ -278,7 +288,7 @@ footer:hover .ill {
     }
 
     .home-description h3 span {
-        font-size: 1.0vw;
+        font-size: 0.9vw;
     }
 
     p {
@@ -286,8 +296,7 @@ footer:hover .ill {
     }
 
     a {
-        font-family: "Noto Sans KR", sans-serif;
-        font-size: 0.6vw;
+        font-size: 0.7vw;
     }
 
     /* 공통 */
