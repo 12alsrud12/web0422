@@ -3,28 +3,26 @@
 /* font 연결 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+/* reset */
+img,
+video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 /* typo */
 html {
     font-size: 10px;
 }
 
 body {
-    /* 속기형 font속성
-        - font: 굵기 크기/줄간격 글꼴1,글꼴2,글꼴3,...;
-    */
     font: 300 1.5rem/1.6 "Noto Sans KR", Arial, sans-serif;
 }
 
 h2,
 h3 {
     font-weight: 300;
-}
-
-img,
-video {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
 }
 
 /* 공통 */
