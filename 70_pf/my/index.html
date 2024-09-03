@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- 외부 srcipt -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
-    <!-- 사용자 css -->
+    <!-- 사용자 JS -->
     <script src="script/script.js"></script>
 </head>
 
@@ -22,10 +22,10 @@
     <div id="s2">
         <!-- 이 아래 container 여기 부터 부트스트랩 시작! -->
         <!-- container 1 -->
-        <div class="container pb-5">
-            <h2 class="text-center mt-5">About me</h2>
+        <div class="container">
+            <h2>About me</h2>
             <!-- my 는 margin y 축 (위 아래 전부) -->
-            <p class="text-center my-5">I love photography</p>
+            <p class="text-center pb-5"><em>I love photography</em></p>
             <!-- 내부에 row 2개 만들기! ☆ row에는 flex걸려있음!! -->
             <!-- row 1 프로필1: 학창시절,어린시절 -->
             <div class="row">
@@ -47,19 +47,19 @@
             </div><!-- //.row 1 -->
 
             <!-- row 2 프로필2: 지식,기술소개 -->
-            <div class="row pb-5">
+            <div class="row">
                 <!-- 2번째 row에 col 2개 -->
                 <!-- col #2 -->
                 <div class="col-md">
                     <!-- 2번째 row에 제목과 이미지 삽입 해야하는 부분! -->
-                    <div class="text-center my-5">Jang min kyung</div>
+                    <div class="text-center">Jang min kyung</div>
                     <div>
                         <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="임시 이미지">
                     </div>
                 </div><!-- //.col #2 -->
 
                 <!-- col #3 -->
-                <div class="col-md mt-5">
+                <div class="col-md">
                     <p>
                         Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -79,48 +79,48 @@
 
             <!-- skill -->
             <!-- skill title -->
-            <h3 class="text-center my-5">I'm really good at :</h3>
-            <div class="row mb-5">
+            <h3>I'm really good at :</h3>
+            <div class="row mt-5">
 
                 <!-- skill bar -->
-                <h4 class="my-3">📷Photoshop</h4>
-                <div class="col-12 progress p-0">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                <h4>📷Photoshop</h4>
+                <div class="col-12 progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
                         <span><b>90</b>%</span>
                     </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
                 </div><!-- //.col progress -->
 
-                <h4 class="my-3">📲Figma</h4>
-                <div class="col-12 progress p-0">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                <h4>📲Figma</h4>
+                <div class="col-12 progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
                         <span><b>90</b>%</span>
                     </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
                 </div><!-- //.col progress -->
 
-                <h4 class="my-3">💻HTML5/CSS3</h4>
-                <div class="col-12 progress p-0">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                <h4>💻HTML5/CSS3</h4>
+                <div class="col-12 progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
                         <span><b>90</b>%</span>
                     </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
                 </div><!-- //.col progress -->
 
-                <h4 class="my-3">💻JavaScript/jQuery</h4>
-                <div class="col-12 progress p-0">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                <h4>💻JavaScript/jQuery</h4>
+                <div class="col-12 progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
                         <span><b>70</b>%</span>
                     </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
                 </div><!-- //.col progress -->
 
-                <h4 class="my-3">Boot Strap4</h4>
-                <div class="col-12 progress p-0">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                <h4>Boot Strap4</h4>
+                <div class="col-12 progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
                         <span><b>70</b>%</span>
                     </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
                 </div><!-- //.col progress -->
 
-                <h4 class="my-3">React</h4>
-                <div class="col-12 progress p-0">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                <h4>React</h4>
+                <div class="col-12 progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
                         <span><b>50</b>%</span>
                     </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
                 </div><!-- //.col progress -->
@@ -128,30 +128,140 @@
             </div><!-- //.row 3 -->
 
         </div><!-- // #s2 .container 1 // -->
+
         <!-- counter -->
-        <div class="container-fluid"><!-- cotainer-fluid = width 화면크기 100%를 따라간다. -->
+        <div class="container-fluid counter"><!-- cotainer-fluid = width 화면크기 100%를 따라간다. -->
             <div class="row">
-                <div class="col text-center">
-                    <span>2+</span>
+                <div class="col">
+                    <span>2 +</span>
                     Team Project
                 </div><!-- //.col -->
-                <div class="col text-center">
-                    <span>3+</span>
+                <div class="col">
+                    <span>3 +</span>
                     Personal Projects
                 </div><!-- //.col -->
-                <div class="col text-center">
-                    <span>5+</span>
+                <div class="col">
+                    <span>5 +</span>
                     Web Site Projects
                 </div><!-- //.col -->
-                <div class="col text-center">
-                    <span>4+</span>
+                <div class="col">
+                    <span>4 +</span>
                     National technical certification
                 </div><!-- //.col -->
             </div><!-- //.row 4 -->
         </div><!-- //container-fluid -->
+
     </div><!-- //#s2 -->
+
+    <!-- portfolio -->
+    <div id="s3">
+        <div class="container-fluid">
+            <span>PORTFOLIO</span>
+        </div>
+        <div class="container">
+            <h2>MY WORK</h2>
+            <p class="text-center mb-5">
+                저의 웹사이트 리뉴얼 프로젝트 작업물 중 일부입니다.<br>
+                이미지를 크게 보려면 클릭해주세요!
+            </p>
+            <div class="row">
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+            </div><!-- //.row -->
+
+            <div class="row">
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
+                    </a>
+                </div>
+            </div><!-- //.row -->
+            <a href="#" class="btn btn-dark more">더보기</a>
+        </div><!-- //.container -->
+    </div><!-- //#s3 -->
+
+    <!-- contact -->
+    <div id="s4">
+        <div class="container-fluid">
+            <span>CONTACT</span>
+        </div>
+        <div class="container">
+            <h2>MY WORK</h2>
+            <p class="text-center mb-5">
+                I'd love your feedback!<br>
+                여러분의 피드백을 환영합니다!
+            </p>
+            <div class="row">
+                <div class="col">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.6720859411503!2d127.10743907642306!3d37.35027123649867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351676343!5m2!1sko!2skr"
+                        width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <ul>
+                            <li>성남시, 경기도</li>
+                            <li>Phone: +82) 5553 - 8499</li>
+                            <li>E-mail: 12alsrud12@gmail.com</li>
+                        </ul>
+                    </div>
+                    <p>들러서 ☕커피 한잔 하시거나 메모를 남겨주세요.</p>
+                    <div class="row">
+                        <div class="col">
+                            <form action="memo.jsp">
+                                <input type="text" placeholder="이름">
+                                <input type="email" placeholder="이메일">
+                                <input type="text" placeholder="메시지">
+                                <button class="btn btn-dark">메시지 전송하기</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- //.container -->
+    </div>
     <footer>
-        푸터
+        <div><a href="#top" class="btn btn-light">위로 가기</a></div>
+        <div class="sns">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+        <div>ⓒ 2024 J.M.K All rights reserved.</div>
     </footer>
 </body>
 
