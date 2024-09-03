@@ -6,38 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에반 콘텐츠 레이아웃</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
         /* reset */
-        body {
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        h3,
+        p {
             margin: 0;
         }
 
+        img {
+            max-width: 100px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* typo */
+        html {
+            font-size: 10px;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+
+        h3 {
+            font-size: 4vw;
+        }
+
+        p {
+            font-size: 3vw;
+        }
+
+        a {
+            font-size: 3vw;
+            color: #272727;
+        }
+
+        /* pc typo */
+        @media (min-width: 992px) {
+            h3 {
+                font-size: 1.2vw;
+            }
+
+            p {
+                font-size: 0.8vw;
+            }
+
+            a {
+                font-family: "Noto Sans KR", sans-serif;
+                font-size: 0.6vw;
+            }
+        }
+
+
+        /* 임시 */
         body * {
             border: 1px solid red;
         }
 
         /* 공통 */
-        .home-card {
-            width: 940px;
-            display: grid;
-            margin: 0 auto;
+        .inner {
+            padding: 10px;
         }
 
-        /* 자식 요소 */
+        .home-card {
+            /* 그리드 */
+            display: grid;
+            grid-template-columns: 100px auto;
+            column-gap: 25px;
+            /* 패딩 */
+        }
+
+        /* 자식요소 적용 */
+        /* 썸네일 이미지 */
+        .home-icon {
+            grid-row: 1/span 3;
+            height: 100px;
+            overflow: hidden;
+        }
 
 
         /* 미디어 쿼리 적용 */
         /* 데스크탑 PC */
         @media (min-width: 992px) {
             .home-card {
-                grid-template-columns: 100px auto;
+                width: 50%;
+                margin: 0 auto;
                 column-gap: 50px;
+                padding: 20px 0;
             }
 
             /* 썸네일 이미지 */
-            .home-icon {
-                grid-row: 1/span 3;
-                height: 100px;
-            }
 
             /* 작품제목 */
             /* 작품설명 */
@@ -49,11 +110,27 @@
 <body>
     <!-- 그리드 수업 링크: https://www.w3schools.com/CSS/css_grid.asp -->
     <!-- 용도: 상품들이 동일하게 나열될때 등 동일한 오브젝트가 여러개일때 사용된다. -->
-    <div class="home-card">
-        <div class="home-icon">썸네일 이미지</div>
-        <div class="home-title">작품 제목</div>
-        <div class="home-description">작품 설명</div>
-        <div class="home-btn">자세히보기</div>
+    <div class="inner">
+        <h2>I love portpolio</h2>
+        <div class="home-card">
+            <div class="home-icon">
+                <a href="../70_pf/team2/index.html">
+                    <img src="../70_pf/team2/03.assets/index/footer_ill.png" alt="가상이미지">
+                </a>
+            </div>
+            <div class="home-title">
+                <h3>설빙<span>(2024.07.12 ~ 2024.08.29)</span></h3>
+            </div>
+            <div class="home-description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ex animi a autem iste doloremque
+                    accusantium adipisci, obcaecati officiis rem nulla illum fuga laboriosam sit illo sapiente. Incidunt
+                    quasi, saepe nostrum illo quibusdam, asperiores, ab facilis nisi ex veniam cum! Quaerat voluptates,
+                    distinctio qui hic nulla aperiam repellendus velit commodi.</p>
+            </div>
+            <div class="home-btn">
+                <p><a href="team2/draft.html">Read more...</a></p>
+            </div>
+        </div>
     </div>
 </body>
 
