@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>80_그리드</title>
+    <style>
+        /* 
+            Layout
+                1. float -> 과거        
+                2. table -> 비표준   
+                3. display: flex       
+                4. position      
+                5. display: grid -> 가장 최근에 생긴 디스플레이 속성!
+
+            ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+            
+            용어
+                그리드 (grid) -> 격자
+                그리드 열(column) - 수직선/세로
+                그리드 행(row) - 수평선/가로
+                그리드 갭(gap) - 간격 -> 행과 열 사이의 공간
+                그리드 라인(line) - 말 그대로 선이고 맨 위부터 1부터 카운트 하면 된다.
+                템플릿(template) 
+                    -> 일부 정보가 포함된 견본
+                    -> 매번 반복되는 이미지나 구조
+                    -> 어떤 제품을 만들 때의 '본' 또는 '틀' 
+
+            ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+            display: grid 사용법!
+
+            부모 -> grid container
+                - flex처럼 부모에다 display: grid 적용
+            display: grid 속성
+
+                1. gap <- 속기형 1개만 쓰면 둘 다 같은값이 적용되고 2개를 쓰면 1번째 꺼가 row 2번째 꺼가 column이다.
+                    - column-gap : 수직/세로 요소 사이의 간격 추가.
+                    - row-gap : 수평/가로 요소 사이의 간격 추가.
+
+                2. grid-column : 수직선/세로 -> 용도: 자식 column을 합치는 것
+                    - grid-column
+                    - grid-column-start
+                    - grid-column-end
+
+                3. grid-row : 수평선/가로 -> 용도: 자식 row을 합치는 것 + column을 지정해주어야 한다. 안그러면 1번째 column으로 간다.
+                    - grid-row
+                    - grid-row-start
+                    - grid-row-end
+
+                4. grid-template : 템플릿
+                    - grid-template-columns 
+                    - grid-template-rows
+                    - grid-template-areas
+
+            ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+            자식 -> 부모에 grid를 걸면 자식은 grid item이 된다.
+                1. grid-area
+        */
+        body {
+            margin: 0;
+        }
+
+        /* 
+            부모 -> 그리드 컨테이너
+                display:grid
+                grid-template-columns
+
+                정렬
+                    justify-content -> 수평
+                    align-content -> 수직
+                        값: start, end, center, space-betwrrn, space-around, space-evenly
+                    flex에 거는 거랑 동일하게 적용되는듯 하다.
+        */
+        .grid-container {
+            display: grid;
+            /* ↓ 부모크기에 맞춰 동일하게 정렬 */
+            /* grid-template-columns: auto; */
+            /* ↓ item자기 값만큼 크기 지정 (inline 처럼 된다.) */
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2196F3;
+            padding: 10px;
+            border: 1px solid lime;
+        }
+
+        /* 자식 요소 */
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+
+        /* 미디어 쿼리 적용 */
+        /* 테블릿 */
+        @media (min-width: 760px) {
+            .grid-container {
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        /* 데스크탑 PC */
+        @media (min-width: 992px) {
+            .grid-container {
+                grid-template-columns: 80px 200px auto 60px;
+                grid-template-rows: 80px 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 그리드 수업 링크: https://www.w3schools.com/CSS/css_grid.asp -->
+    <!-- 용도: 상품들이 동일하게 나열될때 등 동일한 오브젝트가 여러개일때 사용된다. -->
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item item7">7</div>
+        <div class="grid-item item8">8</div>
+    </div>
+</body>
+
+</html>
