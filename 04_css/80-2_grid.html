@@ -88,34 +88,6 @@
             text-align: center;
         }
 
-        .item1 {
-            /* grid-column-start: 1; */
-            /* grid-column-end: 3; */
-            /* 
-                1 = 자기자리 부터 시작해서 3이전까지 즉 2칸짜리가 된다.
-                1/4 = 하면 자기자리 부터 시작해서 4 이전까지 즉 박스1이 3칸짜리가 된다.
-                2/3을 하면 1칸이 되고 자기자리의 한칸 옆으로 이동하고 원래 박스 1 있던대는 박스0이 없기 때문에 빈 공간이 된다.
-                2/4는 박스1이 한칸 옆으로 가고 2칸짜리 박스가 된다.
-                말 그대로 시작과 끝을 지정하는 것
-            */
-        }
-
-        .item4 {
-            /* 속기형 */
-            /* 2칸이된다. */
-            /* grid-column: 1/3; */
-            /* grid-column: 1/span 3; */
-            /* 
-                span은 몇개를 묶을것인지 직접 지정하는 것
-                위 처럼 진행하면 1/3하면 2칸짜리가 되는것과는 다르게 자기자신 기준부터 시작해서 3칸짜리 크기의 박스4가 된다.
-             */
-        }
-
-        .item2 {
-            /* row 속성 */
-            grid-row: 1/span 3;
-            /* column을 지정해줘야한다. 안그러면 1번째 column으로 간다. */
-        }
 
         /* 미디어 쿼리 적용 */
         /* 테블릿 */
@@ -154,7 +126,6 @@
         <div class="grid-item item6">6</div>
         <div class="grid-item item7">7</div>
         <div class="grid-item item8">8</div>
-        <div class="grid-item item9">9</div>
     </div>
 </body>
 
