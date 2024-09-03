@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>80_그리드5</title>
+    <title>에반 콘텐츠 레이아웃</title>
     <style>
         /* reset */
         body {
@@ -12,24 +12,12 @@
         }
 
         /* 공통 */
-        .grid-container {
+        .home-card {
             display: grid;
-            /* ↓ 부모크기에 맞춰 동일하게 정렬 */
-            /* grid-template-columns: auto; */
-            /* ↓ item자기 값만큼 크기 지정 (inline 처럼 된다.) */
-            background-color: #2196F3;
-            padding: 10px;
-            border: 1px solid lime;
         }
 
         /* 자식 요소 */
-        .grid-item {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
+        .home-card>div {}
 
 
         /* 미디어 쿼리 적용 */
@@ -46,9 +34,9 @@
                 /* ''로 행(가로/수평) 구분 */
                 grid-template-areas:
                     /* '' 이 3개면 가로3줄 '이 안에 열 구분' 6개면 세로6줄 */
-                    'header header header header header header'
-                    'menu main main main right right'
-                    'menu footer footer footer footer footer';
+                    ''
+                    ''
+                    '';
             }
 
             /* 헤더 */
@@ -82,12 +70,11 @@
 <body>
     <!-- 그리드 수업 링크: https://www.w3schools.com/CSS/css_grid.asp -->
     <!-- 용도: 상품들이 동일하게 나열될때 등 동일한 오브젝트가 여러개일때 사용된다. -->
-    <div class="grid-container">
-        <div class="grid-item item1">헤더</div>
-        <div class="grid-item item2">메뉴</div>
-        <div class="grid-item item3">메인</div>
-        <div class="grid-item item4">오른쪽</div>
-        <div class="grid-item item5">푸터</div>
+    <div class="home-card">
+        <div class="home-icon">썸네일 이미지</div>
+        <div class="home-title">작품 제목</div>
+        <div class="home-description">작품 설명</div>
+        <div class="home-btn">자세히보기</div>
     </div>
 </body>
 
