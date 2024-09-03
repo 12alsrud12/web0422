@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- 외부 srcipt -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <!-- 사용자 css -->
+    <script src="script/script.js"></script>
 </head>
 
 <body>
+    <div id="s1">
+        <div>디지털 시계</div>
+    </div>
     <div id="s2">
         <!-- 이 아래 container 여기 부터 부트스트랩 시작! -->
         <!-- container 1 -->
@@ -22,7 +27,7 @@
             <!-- my 는 margin y 축 (위 아래 전부) -->
             <p class="text-center my-5">I love photography</p>
             <!-- 내부에 row 2개 만들기! ☆ row에는 flex걸려있음!! -->
-            <!-- row 1 -->
+            <!-- row 1 프로필1: 학창시절,어린시절 -->
             <div class="row">
                 <!-- 1번째 row에 col 1개 -->
                 <!-- col #1 -->
@@ -38,10 +43,10 @@
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.
                     </p>
-                </div><!-- //col #1 -->
-            </div><!-- //row 1 -->
+                </div><!-- //.col #1 -->
+            </div><!-- //.row 1 -->
 
-            <!-- row 2 -->
+            <!-- row 2 프로필2: 지식,기술소개 -->
             <div class="row">
                 <!-- 2번째 row에 col 2개 -->
                 <!-- col #2 -->
@@ -51,7 +56,7 @@
                     <div>
                         <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="임시 이미지">
                     </div>
-                </div><!-- //col #2 -->
+                </div><!-- //.col #2 -->
 
                 <!-- col #3 -->
                 <div class="col-md mt-5">
@@ -69,9 +74,20 @@
                         commodo
                         consequat.
                     </p>
-                </div><!-- //col #3 -->
-            </div><!-- //row 2 -->
-        </div><!-- // container 1 -->
+                </div><!-- //.col #3 -->
+            </div><!-- //.row 2 -->
+
+            <!-- skill -->
+            <div class="row">
+                <h3>I'm really good at:</h3>
+                <div class="col progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated">
+                        
+                    </div>
+                </div>
+            </div>
+        </div><!-- // #s2 .container 1 // -->
+    </div><!-- //#s2 -->
 </body>
 
 </html>
