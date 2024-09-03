@@ -63,19 +63,21 @@
             margin: 0;
         }
 
+        /* 
+            부모 -> 그리드 컨테이너
+                display:grid
+                grid-template-columns
+
+                정렬
+                    justify-content -> 수평
+                    align-content -> 수직
+                        값: start, end, center, space-betwrrn, space-around, space-evenly
+        */
         .grid-container {
-            /* ↓ 부모에만 그리드만 딱 하나 걸게 된다면 flex와는 다르게 아무런 변화가 없다 */
             display: grid;
-            /* ↓ grid 전용 템플릿 속성 */
-            /* 부모 내부에 있는 자식 요소9개의 width(세로,수직선) 균등하게 자동(auto) 배치를 3개로 나눠 하겠다는 의미다. 하고나면 3x3 칸으로 정렬된다. auto를 4개로 하면 가로 columns 가 4개로 되고 세로부분(row)의 요소는 그만큼 비게된다. */
             grid-template-columns: auto;
-            /* column-gap: 16px;
-            row-gap: 16px; */
-            gap: 24px 8px;
-            /* ↓ 학습용 디자인 CSS 추가 */
             background-color: #2196F3;
             padding: 10px;
-            /* ↓ 구분용 라임색 line 추가 */
             border: 1px solid lime;
         }
 
@@ -93,22 +95,15 @@
         /* 테블릿 */
         @media (min-width: 760px) {
             .grid-container {
-                display: grid;
                 grid-template-columns: auto auto auto;
-                background-color: #2196F3;
-                padding: 10px;
-                border: 1px solid lime;
             }
         }
 
         /* 데스크탑 PC */
         @media (min-width: 992px) {
             .grid-container {
-                display: grid;
-                grid-template-columns: auto auto auto auto;
-                background-color: #2196F3;
-                padding: 10px;
-                border: 1px solid lime;
+                grid-template-columns: 80px 200px auto 60px;
+                grid-template-rows: 80px 200px;
             }
         }
     </style>
