@@ -76,8 +76,6 @@ header ul>li {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
     animation: title 1.5s;
 }
 
