@@ -17,7 +17,19 @@
 
 <body>
     <div id="s1">
-        <div>디지털 시계</div>
+        <div id="clock">
+            <div class="ddate">
+                <span>년</span>
+                <span>월</span>
+                <span>일</span>
+                <span>요일</span>
+            </div>
+            <div class="dtime">
+                <span>시</span>
+                <span>분</span>
+                <span>초</span>
+            </div>
+        </div><!-- //#clock -->
     </div>
     <div id="s2">
         <!-- 이 아래 container 여기 부터 부트스트랩 시작! -->
@@ -225,28 +237,28 @@
                 여러분의 피드백을 환영합니다!
             </p>
             <div class="row">
-                <div class="col">
+                <div class="col-4">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.6720859411503!2d127.10743907642306!3d37.35027123649867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351676343!5m2!1sko!2skr"
                         width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                <div class="col">
+                <div class="col-8">
                     <div class="row">
                         <ul>
-                            <li>성남시, 경기도</li>
-                            <li>Phone: +82) 5553 - 8499</li>
-                            <li>E-mail: 12alsrud12@gmail.com</li>
+                            <li><i class="fa-solid fa-location-dot"></i> 성남시, 경기도</li>
+                            <li><i class="fa-solid fa-phone"></i> Phone: +82) 5553 - 8499</li>
+                            <li><i class="fa-solid fa-envelope"></i> E-mail: 12alsrud12@gmail.com</li>
                         </ul>
                     </div>
-                    <p>들러서 ☕커피 한잔 하시거나 메모를 남겨주세요.</p>
                     <div class="row">
                         <div class="col">
-                            <form action="memo.jsp">
-                                <input type="text" placeholder="이름">
-                                <input type="email" placeholder="이메일">
-                                <input type="text" placeholder="메시지">
+                            <p>들러서 ☕커피 한잔 하시거나 📝메모를 남겨주세요.</p>
+                            <form action="memo.jsp" class="text-center">
+                                <input type="text" placeholder="이름" name="user-name">
+                                <input type="email" placeholder="이메일" name="user-mail">
+                                <input type="text" placeholder="메시지" name="message">
                                 <button class="btn btn-dark">메시지 전송하기</button>
                             </form>
                         </div>

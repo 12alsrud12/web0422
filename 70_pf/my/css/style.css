@@ -17,6 +17,19 @@ video {
     object-fit: cover;
 }
 
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+p {
+    margin: 0;
+}
+
 /* typo */
 html {
     font-size: 10px;
@@ -47,6 +60,13 @@ h4 {
     margin: 24px 0 16px;
 }
 
+/* 공통 */
+input {
+    border: 1px solid #ccc;
+    line-height: 27px;
+}
+
+/* section2 */
 .counter {
     text-align: center;
 }
@@ -55,6 +75,7 @@ h4 {
     font-size: 2.4rem;
 }
 
+/* section3,4 공통 */
 #s3>div.container-fluid>span,
 #s4>div.container-fluid>span {
     color: #fff;
@@ -83,20 +104,59 @@ h4 {
     background: url(../../assets/내가_찍은_사진/6.jpg) 40% 50%/cover fixed;
 }
 
-#s1>div {
-    position: relative;
-    display: inline-block;
+#s1 #clock {
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* 날짜 디자인 */
+
+span {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
     color: #fff;
-    background: hwb(0 0% 100% / 0.486);
+}
+
+/* 날짜의 . 표시 */
+#clock>div {
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.ddate span:not(:last-child)::after {
+    content: " ●";
+    font-size: 8px;
+    margin: 0 8px;
+}
+
+/* 시간의 : 표시 */
+.dtime span:not(:last-of-type)::after {
+    font-weight: 700;
+    content: ":";
+    margin-left: 8px;
+    animation: time infinite 1s;
+}
+
+/* 시간의 : 표시 애니메이션 추가 */
+@keyframes time {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* progress */
+
 .progress {
     height: 30px;
     font-size: 1.5rem;
+    padding: 0;
 }
 
 .progress-bar {
@@ -143,10 +203,6 @@ h4 {
     text-align: center;
 }
 
-#s3 .col {
-    padding: 8px;
-}
-
 #s3>div.container-fluid {
     position: relative;
     height: 400px;
@@ -168,6 +224,24 @@ h4 {
 }
 
 /* #s4 */
+#s4>.container>p.text-center.mb-5 {
+    padding-bottom: 40px;
+}
+
+#s4 li {
+    line-height: 2;
+}
+
+#s4 .col>p {
+    margin: 32px 0 8px;
+}
+
+#s4 i {
+    margin-right: 16px;
+}
+
+
+
 #s4>div.container-fluid {
     position: relative;
     height: 400px;
@@ -180,6 +254,43 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#s4 div.col-8 {
+    padding: 0;
+}
+
+#s4 div.col-8 .col {
+    padding: 0;
+    margin-top: 24px;
+}
+
+#s4 div.row {
+    margin: 0;
+}
+
+/* s4-input */
+#s4 input {
+    padding: 8px 16px;
+}
+
+[name*="user"] {
+    width: 48.9%;
+    margin-bottom: 16px;
+}
+
+[name*="user"]:first-of-type {
+    margin-right: 11px;
+}
+
+[name*="message"] {
+    width: 100%;
+}
+
+#s4 button {
+    margin-top: 16px;
+    padding: 8px 24px;
+    font-size: 1.6rem;
 }
 
 /* footer */
