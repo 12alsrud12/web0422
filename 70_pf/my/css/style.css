@@ -74,6 +74,7 @@ iframe {
 /* clock */
 /* 섹션 */
 #s1 {
+    height: 100vh;
     position: relative;
     background: url(../../assets/내가_찍은_사진/6.jpg) 50% 50%/cover fixed;
 }
@@ -129,19 +130,21 @@ iframe {
     background: no-repeat 50% 50% / cover fixed;
 }
 
-#s1 .container-fluid {
-    height: 100vh;
-    background-image: url(../assets/parallax1.jpg);
-}
-
 #s3 .container-fluid {
     height: 400px;
-    background-image: url(../assets/parallax2.jpg);
+    background: url(../../assets/내가_찍은_사진/23.jpg) 50% 50%/cover fixed;
 }
 
 #s4 .container-fluid {
     height: 400px;
-    background-image: url(../assets/parallax3.jpg);
+    background: url(../../assets/내가_찍은_사진/23.jpg) 50% 50%/cover fixed;
+}
+
+#s3>.container-fluid>span,
+#s4>.container-fluid>span {
+    padding: 8px 40px;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 4px #fff;
 }
 
 /* background-image Title */
