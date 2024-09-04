@@ -1,13 +1,13 @@
-window.addEventListener("DOMContentLoaded", () => {
+(() => {
     // 년 월 일 요일
-    const ya = document.querySelectorAll("span")[0];
-    const mo = document.querySelectorAll("span")[1];
-    const da = document.querySelectorAll("span")[2];
-    const we = document.querySelectorAll("span")[3];
+    const ya = $("span").eq(0);
+    const mo = $("span").eq(1);
+    const da = $("span").eq(2);
+    const we = $("span").eq(3);
     // 시 분 초
-    const ho = document.querySelectorAll("span")[4];
-    const mi = document.querySelectorAll("span")[5];
-    const se = document.querySelectorAll("span")[6];
+    const ho = $("span").eq(4);
+    const mi = $("span").eq(5);
+    const se = $("span").eq(6);
 
     // 1초마다 clock 호출
     setInterval(clock, 1000);
@@ -38,17 +38,17 @@ window.addEventListener("DOMContentLoaded", () => {
         };
 
         // 출력
-        ya.innerText = yea + "년";
-        mo.innerText = ze(mon) + "월";
-        da.innerText = ze(dat) + "일";
-        we.innerText = wee + "요일";
-        ho.innerText = ze(hou);
-        mi.innerText = ze(min);
-        se.innerText = ze(sec);
+        ya.text(yea + "년");
+        mo.text(zeroAdd(mon) + "월");
+        da.text(zeroAdd(dat) + "일");
+        we.text(wee + "요일");
+        ho.text(zeroAdd(hou));
+        mi.text(zeroAdd(min));
+        se.text(zeroAdd(sec));
 
-        function ze(num) {
+        function zeroAdd(num) {
             // 0~9는 00~09로 표기
             return num < 10 ? (num = "0" + num) : (num = num);
-        };
+        }
     }; // clock_fn
 });
