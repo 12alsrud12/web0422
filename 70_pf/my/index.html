@@ -4,49 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.M.K_my page</title>
-    <!-- cdnjs에서 bootstrap 4.6.2 버전 중 1,4 링크 추가! -->
+    <title>Made by J.M.K</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
-    <!-- 우리꺼 css 스타일 -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- 외부 srcipt -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
-    <!-- 사용자 JS -->
-    <script src="../../50_JS(Java_Script)/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
 </head>
 
 <body>
     <div id="s1">
-        <div id="clock">
-            <div class="ddate">
-                <span>년</span>
-                <span>월</span>
-                <span>일</span>
-                <span>요일</span>
-            </div>
-            <div class="dtime">
-                <span>시</span>
-                <span>분</span>
-                <span>초</span>
-            </div>
-        </div><!-- //#clock -->
+        <div class="container-fluid">
+            <div id="clock">
+                <div class="ddate">
+                    <span>년</span>
+                    <span>월</span>
+                    <span>일</span>
+                    <span>요일</span>
+                </div>
+                <div class="dtime">
+                    <span>시</span>
+                    <span>분</span>
+                    <span>초</span>
+                </div>
+            </div> <!-- #clock end -->
+        </div>
     </div>
     <div id="s2">
-        <!-- 이 아래 container 여기 부터 부트스트랩 시작! -->
-        <!-- container 1 -->
         <div class="container">
-            <h2>About me</h2>
-            <!-- my 는 margin y 축 (위 아래 전부) -->
-            <p class="text-center pb-5"><em>I love photography</em></p>
-            <!-- 내부에 row 2개 만들기! ☆ row에는 flex걸려있음!! -->
-            <!-- row 1 프로필1: 학창시절,어린시절 -->
+            <h2>ABOUT ME</h2>
+            <p><em>I like coding</em></p>
+
+            <!-- 프로필1: 보편적 -->
             <div class="row">
-                <!-- 1번째 row에 col 1개 -->
-                <!-- col #1 -->
                 <div class="col">
-                    <p>
-                        We have created a fictional "personal" website/blog, and our fictional character is a hobby
+                    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby
                         photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -54,117 +46,77 @@
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                    </p>
-                </div><!-- //.col #1 -->
-            </div><!-- //.row 1 -->
+                        consequat.</p>
+                </div>
+            </div>
 
-            <!-- row 2 프로필2: 지식,기술소개 -->
-            <div class="row">
-                <!-- 2번째 row에 col 2개 -->
-                <!-- col #2 -->
+            <!-- 프로필2: 지식,기술 -->
+            <div class="row pb-5">
                 <div class="col-md">
-                    <!-- 2번째 row에 제목과 이미지 삽입 해야하는 부분! -->
-                    <div class="text-center">Jang min kyung</div>
-                    <div>
-                        <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="임시 이미지">
-                    </div>
-                </div><!-- //.col #2 -->
-
-                <!-- col #3 -->
+                    <div class="text-center mb-5">Hong Gil-Dong</div>
+                    <div><img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="내 사진"></div>
+                </div>
                 <div class="col-md">
-                    <p>
-                        Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit
+                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat.
-                    </p>
-                </div><!-- //.col #3 -->
-            </div><!-- //.row 2 -->
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div> <!-- .row end -->
 
             <!-- skill -->
-            <!-- skill title -->
-            <h3>I'm really good at :</h3>
-            <div class="row mt-5">
-
-                <!-- skill bar -->
-                <h4>📷Photoshop</h4>
+            <p class="mt-5">Im really good at:</p>
+            <div class="row">
+                <h3>Photoshop</h3>
                 <div class="col-12 progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark">
                         <span><b>90</b>%</span>
-                    </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
-                </div><!-- //.col progress -->
-
-                <h4>📲Figma</h4>
+                    </div>
+                </div>
+                <h3>Figma</h3>
                 <div class="col-12 progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark">
+                        <span><b>95</b>%</span>
+                    </div>
+                </div>
+                <h3>HTML5/CSS3</h3>
+                <div class="col-12 progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark">
                         <span><b>90</b>%</span>
-                    </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
-                </div><!-- //.col progress -->
-
-                <h4>💻HTML5/CSS3</h4>
+                    </div>
+                </div>
+                <h3>JavaScript/jQuery</h3>
                 <div class="col-12 progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
-                        <span><b>90</b>%</span>
-                    </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
-                </div><!-- //.col progress -->
-
-                <h4>💻JavaScript/jQuery</h4>
-                <div class="col-12 progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark">
                         <span><b>70</b>%</span>
-                    </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
-                </div><!-- //.col progress -->
+                    </div>
+                </div>
+            </div>
 
-                <h4>Boot Strap4</h4>
-                <div class="col-12 progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
-                        <span><b>70</b>%</span>
-                    </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
-                </div><!-- //.col progress -->
-
-                <h4>React</h4>
-                <div class="col-12 progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated dark">
-                        <span><b>50</b>%</span>
-                    </div><!-- //.progress-bar .progress-bar-striped .progress-bar-animated// -->
-                </div><!-- //.col progress -->
-
-            </div><!-- //.row 3 -->
-
-        </div><!-- // #s2 .container 1 // -->
+        </div><!-- .container -->
 
         <!-- counter -->
-        <div class="container-fluid counter"><!-- cotainer-fluid = width 화면크기 100%를 따라간다. -->
+        <div class="container-fluid counter">
             <div class="row">
                 <div class="col-sm">
-                    <span>2 +</span>
-                    Team Project
-                </div><!-- //.col -->
+                    <span>2+</span>Team Projects
+                </div>
                 <div class="col-sm">
-                    <span>3 +</span>
-                    Personal Projects
-                </div><!-- //.col -->
+                    <span>3+</span>Personal Projects
+                </div>
                 <div class="col-sm">
-                    <span>5 +</span>
-                    Web Site Projects
-                </div><!-- //.col -->
+                    <span>5+</span>Total Projects
+                </div>
                 <div class="col-sm">
-                    <span>4 +</span>
-                    National technical certification
-                </div><!-- //.col -->
-            </div><!-- //.row 4 -->
-        </div><!-- //container-fluid -->
-
-    </div><!-- //#s2 -->
+                    <span>2+</span>National technical certification
+                </div>
+            </div>
+        </div>
+    </div><!-- #s2 -->
 
     <!-- portfolio -->
     <div id="s3">
@@ -173,58 +125,39 @@
         </div>
         <div class="container">
             <h2>MY WORK</h2>
-            <p class="text-center mb-5">
-                저의 웹사이트 리뉴얼 프로젝트 작업물 중 일부입니다.<br>
-                이미지를 크게 보려면 클릭해주세요!
-            </p>
+            <p class="mb-5">다음은 내 최신 작업 중 일부입니다.<br>이미지를 더 크게 보려면 클릭해보세요.</p>
             <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
+                <div class="col-sm">
+                    <img src="assets/p1.jpg" alt="작품1">
                 </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
+                <div class="col-sm">
+                    <img src="assets/p2.jpg" alt="작품1">
                 </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
+                <div class="col-sm">
+                    <img src="assets/p3.jpg" alt="작품1">
                 </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
+                <div class="col-sm">
+                    <img src="assets/p4.jpg" alt="작품1">
                 </div>
-            </div><!-- //.row -->
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="assets/p5.jpg" alt="작품1">
+                </div>
+                <div class="col-sm">
+                    <img src="assets/p6.jpg" alt="작품1">
+                </div>
+                <div class="col-sm">
+                    <img src="assets/p7.jpg" alt="작품1">
+                </div>
+                <div class="col-sm">
+                    <img src="assets/p8.jpg" alt="작품1">
+                </div>
+            </div><!-- .row -->
 
-            <div class="row">
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="../assets/내가_찍은_사진/37.jpg" alt="임시사진1">
-                    </a>
-                </div>
-            </div><!-- //.row -->
-            <a href="#" class="btn btn-dark more">더보기</a>
-        </div><!-- //.container -->
-    </div><!-- //#s3 -->
+            <a href="#" class="btn btn-dark">더보기</a>
+        </div><!-- .container -->
+    </div><!-- #s3 -->
 
     <!-- contact -->
     <div id="s4">
@@ -232,49 +165,52 @@
             <span>CONTACT</span>
         </div>
         <div class="container">
-            <h2>MY WORK</h2>
-            <p class="text-center mb-5">
-                I'd love your feedback!<br>
-                여러분의 피드백을 환영합니다!
-            </p>
+            <h2>WHERE I WORK</h2>
+            <p class="mb-5">여러분의 피드백을 환영합니다!</p>
+
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm col-md-4">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.6720859411503!2d127.10743907642306!3d37.35027123649867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351676343!5m2!1sko!2skr"
-                        width="280" height="160" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.672085941141!2d127.1074390763351!3d37.350271236498884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b59c5d7697313%3A0xbba08f656485ef2c!2z7J207KCg7JWE7Lm0642w66-47Lu07ZOo7YSw7ZWZ7JuQIOyEseuCqOu2hOuLueygkA!5e0!3m2!1sko!2skr!4v1725351691378!5m2!1sko!2skr"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-8">
+                <div class="col-sm col-md-8">
                     <div class="row">
-                        <ul>
-                            <li><i class="fa-solid fa-location-dot"></i> 성남시, 경기도</li>
-                            <li><i class="fa-solid fa-phone"></i> Phone: +82) 5553 - 8499</li>
-                            <li><i class="fa-solid fa-envelope"></i> E-mail: 12alsrud12@gmail.com</li>
-                        </ul>
+                        <div class="col">
+                            <ul>
+                                <li>성남시, 경기도</li>
+                                <li>Phone: +82 1515 1515</li>
+                                <li>Email: mail@gmail.com</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <p>들러서 ☕커피 한잔 하시거나 📝메모를 남겨주세요.</p>
-                            <form action="memo.jsp" class="text-center">
-                                <input type="text" placeholder="이름" name="user-name">
-                                <input type="email" placeholder="이메일" name="user-mail">
-                                <input type="text" placeholder="메시지" name="message">
+                            <p>들러서 커피 한잔 하시거나 메모를 남겨주세요.</p>
+                            <form action="message.jsp" class="text-right">
+                                <input type="text" name="user_name" placeholder="이름">
+                                <input type="email" name="user_email" placeholder="이메일">
+                                <input type="text" name="message" placeholder="메시지">
                                 <button class="btn btn-dark">메시지 전송하기</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><!-- //.container -->
+        </div><!-- .container -->
     </div>
+
+    <!-- footer -->
     <footer>
-        <div><a href="#top" class="btn btn-light">위로 가기</a></div>
+        <div><a href="#" class="btn btn-dark">위로 가기</a></div>
         <div class="sns">
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <div>ⓒ 2024 J.M.K All rights reserved.</div>
+        <p>&copy; 2024 H.G.D. All rights reserved.</p>
     </footer>
 </body>
 
