@@ -407,43 +407,66 @@
         <p class="p2">내 주변 가까운 설빙 매장을 찾아보세요.</p>
         <div id="s4_cont">
             <div id="panner">
-                <!-- 옵션 선택 -->
-                <ul class="option">
-                    <li class="main_option">
-                        옵션 선택
-                        <ul class="sub_option">
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- ㅡㅡ 옵션 선택 ㅡㅡ -->
-                <ul class="select">
-                    <li class="main_select">
-                        도/시 선택
-                        <ul class="sub_select">
-                            <li><input type="checkbox">경기도 성남시</li>
-                            <li><input type="checkbox">경기도 성남시</li>
-                            <li><input type="checkbox">경기도 성남시</li>
-                            <li><input type="checkbox">경기도 성남시</li>
-                            <li><input type="checkbox">경기도 성남시</li>
-                        </ul>
-                    </li>
-                    <li class="main_select">
-                        구/군 선택
-                        <ul class="sub_select">
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                            <li><input type="checkbox"></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div id="s4_bx1">
+                    <!-- 옵션 선택 -->
+                    <ul class="option pc">
+                        <li class="main_option">
+                            <p>옵션 선택</p>
+                            <ul class="sub_option">
+                                <li><input type="checkbox">주차</li>
+                                <li><input type="checkbox">배달</li>
+                                <li><input type="checkbox">픽업</li>
+                                <li><input type="checkbox">취식여부</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- ㅡㅡ //옵션 선택 ㅡㅡ -->
+                    <!-- 도/시 선택 구/군 선택 -->
+                    <div class="select">
+                        <!-- 도/시 선택 -->
+                        <ul class="select">
+                            <li class="main_sel">
+                                <p>도/시 선택</p>
+                                <ul class="sub_sel">
+                                    <li><input type="checkbox">경기도 성남시</li>
+                                    <li><input type="checkbox">경기도 성남시</li>
+                                    <li><input type="checkbox">경기도 성남시</li>
+                                    <li><input type="checkbox">경기도 성남시</li>
+                                    <li><input type="checkbox">경기도 성남시</li>
+                                </ul>
+                            </li>
+                        </ul><!-- //.1번째 ul.select -->
+                        <!-- 구/군 선택 -->
+                        <ul class="select">
+                            <li class="main_sel">
+                                <p>구/군 선택</p>
+                                <ul class="sub_sel">
+                                    <li><input type="checkbox">분당구</li>
+                                    <li><input type="checkbox">분당구</li>
+                                    <li><input type="checkbox">분당구</li>
+                                    <li><input type="checkbox">분당구</li>
+                                    <li><input type="checkbox">분당구</li>
+                                </ul>
+                            </li>
+                        </ul><!-- //.2번째 ul.select -->
+                    </div>
 
+                    <form action="search">
+                        <input type="search" placeholder="매장명">
+                        <button class="pc">
+                            <p class="p4">검색</p>
+                        </button>
+                    </form>
+                </div><!-- //#s4_bx1 -->
+                <div id="s4_bx2">
+                    <ul class="s4_serch pc">
+                        <li>
+                            <h3><a href="#">설빙 성남미금역점</a></h3>
+                            <p class="p2"><a href="#">경기 성남시 분당구 성남대로 151<br>031-724-1355</a></p>
+                            <p class="p2"><a href="#">AM 11:30 ~ PM 22:30</a></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div id="map">
                 <iframe

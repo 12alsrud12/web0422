@@ -294,6 +294,10 @@ section>p {
 }
 
 /* section4 */
+#s4_bx1 {
+    padding: 16px 8px;
+}
+
 #s4_cont {
     display: flex;
     flex-direction: column;
@@ -304,6 +308,84 @@ section>p {
     width: 100%;
     height: 153px;
     padding: 0 24px;
+}
+
+/* 옵션 선택 */
+ul.option {
+    margin-bottom: 16px;
+}
+
+ul.option>li.main_option {
+    width: 100%;
+    border: 1px solid var(--main1);
+    padding: 0 24px;
+}
+
+ul.sub_option {
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+li.main_option:hover ul.sub_option {
+    height: 240px;
+}
+
+/* 도/시,구/군 선택 */
+#s4_bx1 li {
+    line-height: 24px;
+    font-size: 12px;
+}
+
+div.select {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.select>ul.select {
+    width: 50%;
+    border: 1px solid var(--main1);
+}
+
+li.main_sel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+}
+
+li.main_sel::after {
+    content: url(../03.assets/index/sec4_under.png);
+}
+
+li.main_sel:hover li.main_sel::after {
+    content: url(../03.assets/index/sec4_top.png);
+}
+
+ul.sub_sel {
+    width: 100%;
+    height: 0;
+    top: 56px;
+    left: 0;
+    overflow: hidden;
+    padding: 0 8px;
+    transition: .3s;
+}
+
+li.main_sel:hover ul.sub_sel {
+    height: 280px;
+}
+
+/* form - serch + button */
+#main_s4 form {
+    display: flex;
+    flex-direction: column;
+}
+
+#main_s4 form>input {
+    height: 24px;
+    padding: 0 8px;
+    border-bottom: 1px solid var(--main1);
 }
 
 #map {
@@ -597,6 +679,60 @@ section>p {
 
     #s4_cont {
         flex-direction: row;
+    }
+
+    #s4_bx1 {
+        padding: 18px 24px 50px;
+    }
+
+    /* 도/시, 구/군 선택 */
+
+    div.select>ul {
+        width: 48%;
+    }
+
+    li.main_sel {
+        padding: 0 16px;
+    }
+
+    #s4_bx1 li {
+        line-height: 56px;
+        font-size: 18px;
+    }
+
+    /* form - serch + button */
+    #main_s4 form>input {
+        height: 56px;
+        padding: 0 20px;
+        border: 1px solid var(--main1);
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    #main_s4 form>button {
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        background: var(--main1);
+    }
+
+    /* 검색결과 */
+    .s4_serch {
+        height: 185px;
+        padding: 40px 20px;
+        border: 1px solid var(--main2);
+    }
+
+    .s4_serch h3 {
+        margin-bottom: 8px;
+    }
+
+    .s4_serch p.p2 {
+        text-align: left;
+        margin-bottom: 8px;
+        line-height: 1.5;
     }
 
     #panner {
