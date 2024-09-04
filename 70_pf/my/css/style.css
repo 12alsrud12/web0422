@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font: 300 1.5rem/1.6 "Noto Sans KR", sans-serif;
+    font: 300 1.5rem/2 "Noto Sans KR", sans-serif;
 }
 
 ul {
@@ -156,6 +156,15 @@ iframe {
     color: #fff;
 }
 
+/* section2 */
+#s2 i {
+    margin-right: 8px;
+}
+
+.skill {
+    margin-top: 40px;
+}
+
 /* progress */
 .progress {
     height: 30px;
@@ -188,6 +197,10 @@ iframe {
     padding: 32px;
 }
 
+.counter .col-sm {
+    padding: 24px 0;
+}
+
 .counter span {
     display: block;
     font-size: 2.4rem;
@@ -199,54 +212,45 @@ iframe {
     text-align: center;
 }
 
-#s3 .col {
+/* #s3 .col {
     padding: 8px;
+} */
+
+#s3 .col-sm {
+    margin-bottom: 16px;
 }
 
-@media (min-width: 992px) {
+/* section4 */
+#s4 input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 4px 0;
+}
 
-    /* s1 */
-    #s1>#clock {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
+#s4 ul {
+    margin-top: 16px;
+}
 
-    /* section4: contact */
-    #s4 li {
-        line-height: 2;
-    }
+#s4 li {
+    line-height: 2;
+}
 
-    #s4 .row p {
-        margin: 24px 0 8px;
-    }
+#s4 .row p {
+    margin: 24px 0 8px;
+}
 
-    #s4 input {
-        border: 1px solid #ccc;
-        padding: 10px;
-        margin: 4px 0;
-    }
+#s4 button.btn {
+    margin-top: 16px;
+}
 
-    #s4 button.btn {
-        margin-top: 16px;
-    }
-
-    #s4 [name="user_name"] {
-        margin-right: 1%;
-    }
-
-    #s4 [name*="user"] {
-        width: 49.2222222%;
-    }
-
-    #s4 [name="message"] {
-        width: 100%;
-    }
+#s4 i {
+    margin-right: 8px;
 }
 
 /* footer */
 footer {
-    padding: 60px 0;
+    padding: 30px 0;
     background: #000;
     text-align: center;
     color: #fff;
@@ -259,4 +263,32 @@ footer a {
 footer .sns {
     margin: 16px 0;
     font-size: 2.4rem;
+}
+
+@media (min-width: 992px) {
+
+    /* s1 */
+    #s1>#clock {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* section4: contact */
+    #s4 form>div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #s4 [name*="user"] {
+        width: 49%;
+    }
+
+    #s4 [name="message"] {
+        width: 100%;
+    }
+
+    footer {
+        padding: 60px 0;
+    }
 }
