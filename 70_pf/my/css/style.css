@@ -79,15 +79,17 @@ iframe {
     background: url(../../assets/내가_찍은_사진/6.jpg) 50% 50%/cover fixed;
 }
 
-#s1 #clock {
+#s1>#clock {
     position: absolute;
+    left: 50%;
     bottom: 16px;
+    transform: translateX(-50%);
     text-align: center;
 }
 
 /* 날짜 디자인 */
 
-#s1 span {
+#clock span {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 3.3vw;
     font-weight: 700;
@@ -97,14 +99,14 @@ iframe {
 }
 
 /* 날짜의 . 표시 */
-.ddate span:not(:last-child)::after {
+#clock>.ddate>span:not(:last-child)::after {
     content: " ●";
     font-size: 4px;
     margin: 0 4px;
 }
 
 /* 시간의 : 표시 */
-.dtime span:not(:last-of-type)::after {
+#clock>.dtime>span:not(:last-of-type)::after {
     font-weight: 700;
     content: ":";
     margin-left: 8px;
@@ -204,7 +206,7 @@ iframe {
 @media (min-width: 992px) {
 
     /* s1 */
-    #s1 #clock {
+    #s1>#clock {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
