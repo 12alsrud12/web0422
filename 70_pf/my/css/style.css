@@ -106,9 +106,8 @@ input {
 
 #s1 #clock {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    right: 0;
+    bottom: 0;
 }
 
 /* 날짜 디자인 */
