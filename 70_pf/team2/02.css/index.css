@@ -311,70 +311,27 @@ section>p {
 }
 
 /* 옵션 선택 */
-ul.option {
+#s4_bx1>select {
+    display: none;
+    background: var(--bg);
+    border: 1px solid var(--main1);
+}
+
+#s4_bx1>.op2 {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 16px;
 }
 
-ul.option>li.main_option {
-    width: 100%;
+#s4_bx1>.op2>select {
+    width: 49%;
+    height: 40px;
+    background: var(--bg);
     border: 1px solid var(--main1);
-    padding: 0 24px;
-}
-
-ul.sub_option {
-    height: 0;
-    overflow: hidden;
-    transition: .3s;
-}
-
-li.main_option:hover ul.sub_option {
-    height: 240px;
 }
 
 /* 도/시,구/군 선택 */
-#s4_bx1 li {
-    line-height: 24px;
-    font-size: 12px;
-}
 
-div.select {
-    display: flex;
-    justify-content: space-between;
-}
-
-div.select>ul.select {
-    width: 50%;
-    border: 1px solid var(--main1);
-}
-
-li.main_sel {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 12px;
-}
-
-li.main_sel::after {
-    content: url(../03.assets/index/sec4_under.png);
-}
-
-li.main_sel:hover li.main_sel::after {
-    content: url(../03.assets/index/sec4_top.png);
-}
-
-ul.sub_sel {
-    width: 100%;
-    height: 0;
-    top: 56px;
-    left: 0;
-    overflow: hidden;
-    padding: 0 8px;
-    transition: .3s;
-}
-
-li.main_sel:hover ul.sub_sel {
-    height: 280px;
-}
 
 /* form - serch + button */
 #main_s4 form {
@@ -673,40 +630,54 @@ li.main_sel:hover ul.sub_sel {
     }
 
     /* sec4 */
-    #s4_pc {
-        display: block;
-    }
-
     #s4_cont {
         flex-direction: row;
     }
 
-    #s4_bx1 {
-        padding: 18px 24px 50px;
+    #s4_cont div>p.p3 {
+        text-align: left;
+        line-height: 2;
+        color: var(--sub1);
     }
 
-    /* 도/시, 구/군 선택 */
-
-    div.select>ul {
-        width: 48%;
+    #s4_cont div>p.p3>span {
+        color: var(--point);
+        margin-left: 4px;
     }
 
-    li.main_sel {
-        padding: 0 16px;
+    /* 옵션 선택 */
+    #s4_bx1>select {
+        display: block;
+        width: 100%;
+        height: 56px;
+        font-size: 18px;
+        margin-bottom: 12px;
     }
 
-    #s4_bx1 li {
-        line-height: 56px;
+    #s4_bx1>.op2 {
+        display: flex;
+    }
+
+    #s4_bx1>.op2>select {
+        height: 56px;
         font-size: 18px;
     }
 
     /* form - serch + button */
     #main_s4 form>input {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
         height: 56px;
         padding: 0 20px;
         border: 1px solid var(--main1);
         margin-bottom: 12px;
         font-size: 18px;
+    }
+
+    #main_s4 form>input::after {
+        position: absolute;
+        content: url(../03.assets/index/serch_ico.svg);
     }
 
     #main_s4 form>button {
@@ -733,6 +704,10 @@ li.main_sel:hover ul.sub_sel {
         text-align: left;
         margin-bottom: 8px;
         line-height: 1.5;
+    }
+
+    .s4_serch p.p2>a {
+        color: var(--text2);
     }
 
     #panner {

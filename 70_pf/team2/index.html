@@ -408,55 +408,30 @@
         <div id="s4_cont">
             <div id="panner">
                 <div id="s4_bx1">
-                    <!-- 옵션 선택 -->
-                    <ul class="option pc">
-                        <li class="main_option">
-                            <p>옵션 선택</p>
-                            <ul class="sub_option">
-                                <li><input type="checkbox">주차</li>
-                                <li><input type="checkbox">배달</li>
-                                <li><input type="checkbox">픽업</li>
-                                <li><input type="checkbox">취식여부</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- ㅡㅡ //옵션 선택 ㅡㅡ -->
-                    <!-- 도/시 선택 구/군 선택 -->
-                    <div class="select">
-                        <!-- 도/시 선택 -->
-                        <ul class="select">
-                            <li class="main_sel">
-                                <p>도/시 선택</p>
-                                <ul class="sub_sel">
-                                    <li><input type="checkbox">경기도 성남시</li>
-                                    <li><input type="checkbox">경기도 성남시</li>
-                                    <li><input type="checkbox">경기도 성남시</li>
-                                    <li><input type="checkbox">경기도 성남시</li>
-                                    <li><input type="checkbox">경기도 성남시</li>
-                                </ul>
-                            </li>
-                        </ul><!-- //.1번째 ul.select -->
-                        <!-- 구/군 선택 -->
-                        <ul class="select">
-                            <li class="main_sel">
-                                <p>구/군 선택</p>
-                                <ul class="sub_sel">
-                                    <li><input type="checkbox">분당구</li>
-                                    <li><input type="checkbox">분당구</li>
-                                    <li><input type="checkbox">분당구</li>
-                                    <li><input type="checkbox">분당구</li>
-                                    <li><input type="checkbox">분당구</li>
-                                </ul>
-                            </li>
-                        </ul><!-- //.2번째 ul.select -->
+                    <select name="option" id="option">
+                        <option value="op">옵션 선택</option>
+                        <option value="jucha">주차</option>
+                        <option value="bd">배달</option>
+                        <option value="pick">픽업</option>
+                        <option value="food">취식여부</option>
+                    </select>
+                    <div class="op2">
+                        <select name="op1" id="option1">
+                            <option value="dc">도/시 선택</option>
+                        </select>
+                        <select name="op2" id="option2">
+                            <option value="gg">구/군 선택</option>
+                        </select>
                     </div>
-
                     <form action="search">
                         <input type="search" placeholder="매장명">
                         <button class="pc">
                             <p class="p4">검색</p>
                         </button>
                     </form>
+                    <div>
+                        <p class="p3 pc">검색결과 <span>1</span>개</p>
+                    </div>
                 </div><!-- //#s4_bx1 -->
                 <div id="s4_bx2">
                     <ul class="s4_serch pc">
