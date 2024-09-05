@@ -12,14 +12,15 @@
             // 요소 찾기
             const btn = $("button");
             const bEle = $("b");
-
-            let count = 1;
-            btn.click(() => {
-                for (let i = 1; i < 100; i++) {
-                    bEle.eq(0).text(i);
-                }
+            btn.click(() => counterFn());
+            let conut = 1;
+            function counterFn() {
+                count++;
+                bEle.eq(0).text(count);
+                if (count >= 100) return;
+                setTimeout(counterFn(), 1000);
                 // for 사용 안할시 count를 아래로 해야 클릭시 1 부터 시작해서 1씩 증감한다 위에다가 하면 클릭시 2부터 등장 후 +1씩 증감한다.
-            });
+            };
         });//ready event
     </script>
 </head>
