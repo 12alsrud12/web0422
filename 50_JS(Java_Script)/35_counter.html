@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(() => {
+            // 요소 찾기
+            const btn = $("button");
+            const bEle = $("b");
+
+            let count = 1;
+            btn.click(() => {
+                for (let i = 1; i < 100; i++) {
+                    bEle.eq(0).text(i);
+                }
+                // for 사용 안할시 count를 아래로 해야 클릭시 1 부터 시작해서 1씩 증감한다 위에다가 하면 클릭시 2부터 등장 후 +1씩 증감한다.
+            });
+        });//ready event
+    </script>
+</head>
+
+<body>
+    <button>클릭하면 숫자가 올라가요!</button>
+    <div><b>0</b></div>
+    <div><b>0</b></div>
+    <div><b>0</b></div>
+    <div><b>0</b></div>
+</body>
+
+</html>
