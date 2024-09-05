@@ -32,48 +32,28 @@
             // 요소 찾기
             const btn = $("button");
             const bEle = $("b");
+            let count = 0;
 
-            let count1 = 1;
-            let count2 = 1;
-            let count3 = 1;
-            let count4 = 1;
-
-            btn.click(() => {
-                counterFn1();
-                counterFn2();
-                counterFn3();
-                counterFn4();
-            });
+            btn.click(() => counterFn());
 
             // 재귀 호출 함수: 함수 안에서 자신을 호출
             // setTimeout(함수, 시간);
 
-            function counterFn1() {
-                count1++;
-                bEle.eq(0).text(count1);
-                if (count1 >= 2) return;
-                setTimeout(counterFn1, 300);
-            };
-
-            function counterFn2() {
-                count2++;
-                bEle.eq(1).text(count2);
-                if (count2 >= 3) return;
-                setTimeout(counterFn2, 300);
-            };
-
-            function counterFn3() {
-                count3++;
-                bEle.eq(2).text(count3);
-                if (count3 >= 5) return;
-                setTimeout(counterFn3, 300);
-            };
-
-            function counterFn4() {
-                count4++;
-                bEle.eq(3).text(count4);
-                if (count4 >= 8) return;
-                setTimeout(counterFn4, 300);
+            function counterFn() {
+                // console.log(count);
+                // 1씩 증가
+                count++;
+                // 첫 번째 b태그에 내용으로 count 지정
+                // <b>숫자</b>
+                bEle.eq(0).text(count);
+                bEle.eq(1).text(count);
+                bEle.eq(2).text(count);
+                bEle.eq(3).text(count);
+                // count가 100이상이면 함수 탈출
+                if (count >= 5) return;
+                // 100이란? 0.1초 이후 1번 counterFn 호출
+                // 그러나 재귀 호출(함수가 자기자신을 호출)
+                setTimeout(counterFn, 300);
             };
 
 
