@@ -33,7 +33,8 @@
             const btn = $("button");
             const bEle = $("b");
 
-            let count1 = 0;
+            let count = 0;
+            const cnts = [0, 0, 0, 0];
             const finalNum = [2, 3, 5, 8];
 
             btn.click(() => {
@@ -43,11 +44,11 @@
             // 재귀 호출 함수: 함수 안에서 자신을 호출
             // setTimeout(함수, 시간);
 
-            function counterFn(idx, num) {
-                count++;
-                bEle.eq(idx).text(count);
-                if (count >= 2) return;
-                setTimeout(counterFn, 300);
+            function counterFn(i, maxNum) {
+                cnts[i]++;
+                bEle.eq(idx).text(cnts[i]);
+                if (cnts >= maxNum) return;
+                setTimeout(() => counterFn(i, maxNum), 300);
             };
 
         }); // ready end
