@@ -5,37 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style></style>
-    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css");
+
+        /* counter */
+        .counter {
+            display: block;
+            background: #616161;
+            color: #fff;
+            text-align: center;
+            padding: 32px;
+        }
+
+        .counter .col-sm {
+            padding: 20px 0;
+        }
+
+        .counter span {
+            display: block;
+            font-size: 2.4rem;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(() => {
             // 요소 찾기
             const btn = $("button");
             const bEle = $("b");
+            let count = 0;
+
             btn.click(() => counterFn());
-            let conut = 1;
+
+            // 재귀 호출 함수: 함수 안에서 자신을 호출
+            // setTimeout(함수, 시간);
+
             function counterFn() {
-                // count++; -> 1씩 증가
+                // console.log(count);
+                // 1씩 증가
                 count++;
-                // <b>태그 내의 숫자를 count 으로 변경
+                // 첫 번째 b태그에 내용으로 count 지정
+                // <b>숫자</b>
                 bEle.eq(0).text(count);
-                // count 100이면 함수 탈출
-                if (count >= 100) return;
-                // 100? 0.1초 이후 1번 counterFn 호출!
-                // 함수가 자기 자신을 호출
-                setTimeout(counterFn(), 1000);
-                // for 사용 안할시 count를 아래로 해야 클릭시 1 부터 시작해서 1씩 증감한다 위에다가 하면 클릭시 2부터 등장 후 +1씩 증감한다.
-            };
-        });//ready event
+                // count가 100이상이면 함수 탈출
+                if (count >= 5) return;
+                // 100이란? 0.1초 이후 1번 counterFn 호출
+                // 그러나 재귀 호출(함수가 자기자신을 호출)
+                setTimeout(counterFn, 300);
+            }
+
+
+        }); // ready end
     </script>
 </head>
 
 <body>
     <button>클릭하면 숫자가 올라가요!</button>
-    <div><b>0</b></div>
-    <div><b>0</b></div>
-    <div><b>0</b></div>
-    <div><b>0</b></div>
+    <!-- counter -->
+    <div class="container-fluid counter">
+        <div class="row">
+            <div class="col-sm">
+                <span><b>0</b>+</span>Team Projects
+            </div>
+            <div class="col-sm">
+                <span><b>0</b>+</span>Personal Projects
+            </div>
+            <div class="col-sm">
+                <span><b>0</b>+</span>Total Projects
+            </div>
+            <div class="col-sm">
+                <span><b>0</b>+</span>National technical certification
+            </div>
+        </div>
+    </div><!-- .counter -->
 </body>
 
 </html>
