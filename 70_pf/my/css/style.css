@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font: 300 1.5rem/2 "Noto Sans KR", sans-serif;
+    font: 300 1.5rem/1.6 "Noto Sans KR", sans-serif;
 }
 
 ul {
@@ -43,6 +43,7 @@ video {
     max-width: 100%;
     object-fit: cover;
     height: auto;
+    vertical-align: top;
 }
 
 input {
@@ -72,56 +73,12 @@ iframe {
 }
 
 /* clock */
-/* 섹션 */
-#s1 {
-    height: 100vh;
-    position: relative;
-    background: url(../../assets/내가_찍은_사진/6.jpg) 50% 50%/cover fixed;
-}
-
-#s1>#clock {
-    position: absolute;
+#clock {
     left: 50%;
-    bottom: 16px;
     transform: translateX(-50%);
+    right: 0;
+    bottom: 7%;
     text-align: center;
-}
-
-/* 날짜 디자인 */
-
-#clock span {
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 3.3vw;
-    font-weight: 700;
-    text-shadow: 0 0 5px 5px #ff7272;
-    color: #ffffff;
-    text-shadow: 0 0 4px #fff;
-}
-
-/* 날짜의 . 표시 */
-#clock>.ddate>span:not(:last-child)::after {
-    content: " ●";
-    font-size: 4px;
-    margin: 0 4px;
-}
-
-/* 시간의 : 표시 */
-#clock>.dtime>span:not(:last-of-type)::after {
-    font-weight: 700;
-    content: ":";
-    margin-left: 8px;
-    animation: time infinite 1s;
-}
-
-/* 시간의 : 표시 애니메이션 추가 */
-@keyframes time {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 /* background-image: Parallax Scrolling */
@@ -132,21 +89,19 @@ iframe {
     background: no-repeat 50% 50% / cover fixed;
 }
 
+#s1 .container-fluid {
+    height: 100vh;
+    background-image: url(../assets/parallax1.jpg);
+}
+
 #s3 .container-fluid {
     height: 400px;
-    background: url(../../assets/내가_찍은_사진/23.jpg) 50% 50%/cover fixed;
+    background-image: url(../assets/parallax2.jpg);
 }
 
 #s4 .container-fluid {
     height: 400px;
-    background: url(../../assets/내가_찍은_사진/23.jpg) 50% 50%/cover fixed;
-}
-
-#s3>.container-fluid>span,
-#s4>.container-fluid>span {
-    padding: 8px 40px;
-    background: rgba(0, 0, 0, 0.5);
-    text-shadow: 0 0 4px #fff;
+    background-image: url(../assets/parallax3.jpg);
 }
 
 /* background-image Title */
@@ -156,13 +111,44 @@ iframe {
     color: #fff;
 }
 
-/* section2 */
-#s2 i {
-    margin-right: 8px;
+/* seciton2: profile */
+#s2 .row {
+    overflow: hidden;
 }
 
-.skill {
-    margin-top: 40px;
+.profile1 {
+    transform: translateY(300px);
+    transition: transform .5s .2s;
+}
+
+.profile2 {
+    transform: translateY(300px);
+    transition: transform .5s .6s;
+}
+
+.photo {
+    transform: translateY(300px);
+    transition: transform .5s .8s;
+}
+
+/* video */
+#s2 .vid {
+    position: relative;
+}
+
+/* i태그가 비디오 버튼 */
+#s2 .vid i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    opacity: 0;
+    transition: .3s;
+}
+
+#s2 .vid:hover i {
+    opacity: 1;
 }
 
 /* progress */
@@ -170,22 +156,6 @@ iframe {
     height: 30px;
     font-size: 1.5rem;
     padding: 0;
-}
-
-.progress:nth-of-type(1) .progress-bar {
-    width: 90%;
-}
-
-.progress:nth-of-type(2) .progress-bar {
-    width: 95%;
-}
-
-.progress:nth-of-type(3) .progress-bar {
-    width: 97%;
-}
-
-.progress:nth-of-type(4) .progress-bar {
-    width: 75%;
 }
 
 /* counter */
@@ -198,7 +168,7 @@ iframe {
 }
 
 .counter .col-sm {
-    padding: 24px 0;
+    padding: 20px 0;
 }
 
 .counter span {
@@ -212,30 +182,19 @@ iframe {
     text-align: center;
 }
 
+/* #s3 .col {
+    padding: 8px;
+} */
 #s3 .col-sm {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
-#s3 .col-sm {
-    position: relative;
+#s3 .pf2row {
+    display: none;
 }
 
-#s3 .col-sm::before {
-    position: absolute;
-    content: "작품1";
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    opacity: 0;
-    transition: .5s;
-}
 
-#s3 .col-sm:hover #s3 .col-sm::before {
-    opacity: 1;
-}
-
-/* section4 */
+/* section4: contact */
 #s4 input {
     width: 100%;
     border: 1px solid #ccc;
@@ -259,10 +218,6 @@ iframe {
     margin-top: 16px;
 }
 
-#s4 i {
-    margin-right: 8px;
-}
-
 /* footer */
 footer {
     padding: 30px 0;
@@ -282,21 +237,50 @@ footer .sns {
 
 @media (min-width: 992px) {
 
-    /* s1 */
-    #s1>#clock {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+    /* 마우스 포인터 */
+    .mp {
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .mp1 {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        /* background: url(mouse-cursor.png) no-repeat; */
+        /* ease-out을 사용! */
+        transition: .7s ease-out;
+    }
+
+    .mp2 {
+        width: 10px;
+        height: 10px;
+        background: #000;
+        /* ease-out을 사용! */
+        transition: .1s ease-out;
+    }
+
+    /* clock */
+    #clock {
+        left: auto;
+        right: -2%;
+        bottom: 2%;
+        text-align: right;
+    }
+
+    /* skill */
+    .skill {
+        margin-top: 48px;
     }
 
     /* section4: contact */
-    #s4 form>div {
+    #s4 form div {
         display: flex;
         justify-content: space-between;
     }
 
     #s4 [name*="user"] {
-        width: 49%;
+        width: 49.5%;
     }
 
     #s4 [name="message"] {

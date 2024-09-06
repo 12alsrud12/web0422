@@ -43,4 +43,23 @@ $(() => {
             return num < 10 ? (num = "0" + num) : (num = num);
         }
     } // clock_fn
+
+    /* 
+    event.pageX ~ 마우스 이벤트가 발생할 때 마우스 포인터의 문서 상대 X 좌표(읽기 전용)
+    event.pageY ~ 마우스 이벤트가 발생할 때 마우스 포인터의 문서 상대 Y 좌표(읽기 전용)
+    */
+    let mp = document.querySelectorAll('.mp');
+
+    document.body.onmousemove = () => {
+        mm(0);
+        mm(1);
+    };
+
+    function mm(i) {
+        let x = event.pageX - mp[i].offsetWidth / 2;
+        let y = event.pageY - mp[i].offsetWidth / 2;
+
+        mp[i].style.left = x + 'px';
+        mp[i].style.top = y + 'px';
+    }
 }); // ready
