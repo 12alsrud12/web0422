@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-body,
-p,
-span {
+body, p, span {
     margin: 0;
 }
 
@@ -23,16 +21,14 @@ a {
     color: var(--text1);
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
     display: none;
     margin: 0;
     padding: 0;
 }
 
 /* typo */
-section p,
-section label {
+section p, section label {
     font-size: 1.6rem;
 }
 
@@ -97,7 +93,7 @@ section label {
     border: none;
 }
 
-#faqCategory input:checked+span>a {
+#faqCategory input:checked+span>a{
     color: var(--point);
 }
 
@@ -218,8 +214,7 @@ input[type="checkbox"]:checked+label>div.answer {
 input[type="checkbox"]:checked+label div.box_open {
     width: 34px;
     height: 34px;
-    transform: rotateY('180deg');
-    /* 수정바람 */
+    transform: rotateY('180deg'); /* 수정바람 */
 }
 
 /* 미디어쿼리 */
