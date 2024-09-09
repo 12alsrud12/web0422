@@ -42,6 +42,7 @@ iframe {
 
 ::selection {
     background: #3D6B5C;
+    color: #F26B24;
 }
 
 /* //reset */
@@ -126,6 +127,7 @@ p {
     font-family: "온글잎 은별", sans-serif;
     font-size: 2.4em;
     color: #0D4633;
+    line-height: 1.5;
 }
 
 #sec1 button {
@@ -183,7 +185,7 @@ p.small {
 }
 
 /* footer */
-div.fp-tableCell {
+footer div.fp-tableCell {
     height: 600px !important;
 }
 
@@ -274,7 +276,6 @@ body {
 button {
     cursor: pointer;
 }
-
 
 /* header */
 header {
@@ -402,7 +403,6 @@ header:hover input {
 .section {
     height: 100vh;
     margin: 0 auto;
-
 }
 
 #sec2,
@@ -410,7 +410,6 @@ header:hover input {
 #sec4,
 #sec5 {
     background: #F7F0DA !important;
-
 }
 
 /* #sec1 */
@@ -517,7 +516,6 @@ header:hover input {
 }
 
 /* #sec2 */
-
 #sec2 {
     display: flex;
     flex-direction: column;
@@ -526,19 +524,21 @@ header:hover input {
 #sec2_bx1 {
     display: flex;
     position: relative;
+    height: 100%;
 }
 
 .sec_limg {
     display: flex;
     align-items: flex-end;
     width: 280px;
-    height: 732px;
+    height: 100%;
     background: #3D6B5C;
 }
 
 .sec_limg img {
     width: 280px;
     height: 550px;
+    margin-bottom: 100px;
 }
 
 #sec2 h3 {
@@ -1096,20 +1096,4 @@ footer .ft_2 {
     width: 50px;
     margin: 10px 0;
     border: 1px solid #0d4633;
-}
-
-@media (min-width:600px) {
-    body {
-        width: 100%;
-    }
-
-    #s5_cont {
-        width: 100%;
-    }
-}
-
-@media (min-width:360px) {
-    body {
-        width: 100%;
-    }
 }
