@@ -719,8 +719,10 @@ section>p {
 
     /* 지도 */
     #map {
+        width: 1525px;
         position: relative;
         border-top: 1px solid var(--main2);
+        overflow: hidden;
     }
 
     #shop-open {
