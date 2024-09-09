@@ -725,5 +725,13 @@ section>p {
 
     #shop-open {
         position: absolute;
+        right: -315px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: .5s;
+    }
+
+    #shop-open:hover {
+        right: 0px;
     }
 }
