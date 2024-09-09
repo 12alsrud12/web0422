@@ -732,37 +732,12 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 
 /* tabs */
 
-#tabs>div {
-    position: relative;
-    display: none;
-    height: 919px;
-}
 
-#tabs>div.on {
-    width: 100%;
-    display: block;
-}
-
-#tabs ul {
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 60%;
-    display: flex;
-    z-index: 50;
-}
-
-#tabs ul li:first-of-type {
-    margin-left: 195px;
-}
-
-#tabs ul li:last-of-type {
-    margin-right: 195px;
-}
 
 .content1,
 .content2 {
-    margin: 180px 360px;
+    margin-top: 200px;
+    width: 1190px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -777,6 +752,40 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* 수정후! sec4 tab는 부적합하여 캐러샐 슬라이드 플러그인으로 슬라이드로 변경 = bx-slide */
+#sec4 .bx-wrapper {
+    box-shadow: none;
+    background: #F7F0DA;
+    border: none;
+}
+
+#sec4 .bx-viewport {
+    width: 1190px !important;
+    margin: 0 auto;
+}
+
+#sec4 .bx-wrapper .bx-prev {
+    width: 88px;
+    height: 87px;
+    top: 500px;
+    left: 200px;
+    background: url(../images/section2_left.png) no-repeat;
+}
+
+#sec4 .bx-wrapper .bx-next,
+#sec4 .bx-wrapper .bx-next:hover {
+    width: 88px;
+    height: 87px;
+    top: 500px;
+    left: 1650px;
+    background: url(../images/section2_right.png) no-repeat 0 0 !important;
+}
+
+#tab1,
+#tab2 {
+    position: absolute;
+    width: 1190px;
+}
 
 /* #sec5 */
 .sec5_logo {
