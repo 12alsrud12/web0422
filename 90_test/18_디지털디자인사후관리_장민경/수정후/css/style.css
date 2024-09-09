@@ -527,6 +527,7 @@ header:hover input {
     height: 100%;
 }
 
+/* 수정후: 아래 sec limg 두개로 조정 수정 */
 .sec_limg {
     display: flex;
     align-items: flex-end;
@@ -689,6 +690,7 @@ iframe {
     margin: 280px 0 36px;
 }
 
+/* 수정후 슬라이드 글자 위치 조정 */
 .s3_sub_box1 h3:last-of-type {
     margin: 70px 0 0 78px;
 }
@@ -726,6 +728,7 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 }
 
 /* #sec4 */
+/* 섹션4는 전체 섹션 위치 조정하면서 자동으로 조정 완료됨 */
 
 /* tabs */
 
@@ -866,6 +869,7 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
     height: 763px;
 }
 
+/* 섹션5 수정후 부분 */
 .s5_box5 img {
     height: 763px;
 }
