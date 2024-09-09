@@ -588,7 +588,6 @@ iframe {
     height: 290px;
 }
 
-
 /* #sec3 */
 #sec3 .slide2 {
     margin: 0;
@@ -602,15 +601,28 @@ iframe {
     height: 730px;
 }
 
+#sec3 .bx-wrapper {
+    box-shadow: none;
+    height: 100%;
+    background: #F7F0DA;
+    border: none;
+}
 
-.slide2>div {
+#sec3 .slide2>div {
     display: flex;
+}
+
+#sec3 .bx-viewport {
+    height: 953px !important;
+}
+
+#sec3 .bx-viewport>div {
+    height: 100% !important;
 }
 
 .slide2>div:first-of-type {
     display: flex !important;
 }
-
 
 .s3_sub_box1 {
     display: flex;
@@ -631,17 +643,13 @@ iframe {
 
 .slide2 {
     background: #F7F0DA;
-    height: 880px;
+    height: 100%;
 }
 
 .slide2>div img {
-    margin: 155px 0 0 160px;
+    margin: 200px 0 0 160px;
     width: 578px;
     height: 576px;
-}
-
-.slide2 .bx-wrapper {
-    margin: 0;
 }
 
 #sec3 .bx-wrapper .bx-prev {
@@ -660,11 +668,6 @@ iframe {
     left: 1103px;
     background: url(../images/section3_right.png) no-repeat 0 0 !important;
 }
-
-#sec3 .bx-wrapper {
-    border: none;
-}
-
 
 #sec3 .slide2 h1 {
     margin: 285px;
@@ -687,7 +690,7 @@ iframe {
 }
 
 .s3_sub_box1 h3:last-of-type {
-    margin: 79px 0 0 78px;
+    margin: 70px 0 0 78px;
 }
 
 #s3_mj_box2 {
@@ -721,8 +724,6 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
     background: #CAC0B6;
     border: none;
 }
-
-
 
 /* #sec4 */
 
@@ -859,29 +860,19 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 .s5_box5 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     margin-left: 135px;
-    width: 893px;
-    height: 730px;
-    background: url(../images/s5_bg.png);
+    width: 894px;
+    height: 763px;
 }
 
-.s5_box5 img:first-of-type {
-    margin-top: 50px;
-    width: 767px;
-    height: 81px;
-}
-
-.s5_box5 img:last-of-type {
-    margin-top: 40px;
-    width: 544px;
-    height: 44px;
+.s5_box5 img {
+    height: 763px;
 }
 
 /* //section */
 
 /* footer */
-
 /* footer1 */
 
 .ft_1 {
