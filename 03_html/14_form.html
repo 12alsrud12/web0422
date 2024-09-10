@@ -277,6 +277,31 @@
         예) rule1에는 방명록 작성시 주의사항, 삭제예제 등을 기록하고 readonly를 추가
             rule2에는 방명록을 작성할 수 있는 textarea를 기입한다.
     -->
+
+    <!-- 
+        [..................... 목록 .....................]
+            - <select>: 선택 만
+            - <datalist>: 선택 + 입력 / value => DB 전송값
+                <input list="browsers">을 위에 둔 상태로 사용한다.
+                    예)
+                    ※ input의 list와 datalist id 이름이 같아야한다.
+
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="chrome">크롬</option> // value = chrome = 크롬 크롬선택 서버 전송값
+                            <option value="firefox">파이어폭스</option>
+                        </datalist>
+
+                    이런식으로
+            
+            목록 속성 값
+                필수
+                    - value => DB 전송값
+                선택
+                    - selected -> 미리 선택된 옵션 정의 이거 넣으면 select에 기본으로 보이는 글자 출력
+                    - size -> 보이는 값 / option 1개말고 2~3개 씩 혹은 한번에 그 이상 보여줄 때 쓰는 것
+                    - multiple -> size를 사용했을 경우에 사용가능
+    -->
 </body>
 
 </html>
