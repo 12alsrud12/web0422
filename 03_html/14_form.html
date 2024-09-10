@@ -207,9 +207,10 @@
             (14) step -> 숫자 간격
                 -> number, range, date, datetime-local, month, time, week 유형에 적용
 
-            (15) multiple 
+            (15) multiple -> 다중선택
                 -> email, file 유형에 적용!
                 email은 우리가 아는 그 email이 맞는대 file는 이메일로 파일같은거 전송할때 쓰는 그 file이다.
+                file전송할때 2개이상의 다수의개수를 전송할 수 있게 해주는 것이다.
     -->
     <form action="tel.js">
         <input type="tel" id="phone" name="phone" pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}"
@@ -265,9 +266,11 @@
         
         이렇게 적고나서 textarea name 이 부분쯔음에 readonly 이걸 넣으면 내부에 넣은 lorem을 삭제 못하게 하는 읽기전용 모드가 된다.
     -->
-    <textarea name="rule1" id="rule1" cols="400" rows="5" readonly>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eius?
+    <textarea name="rule1" id="rule1" cols="400" rows="5" readonly>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eius?
     </textarea>
-    <textarea name="rule2" id="rule2" cols="100" rows="5" readonly>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eius?
+    <textarea name="rule2" id="rule2" cols="100" rows="5" readonly>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, eius?
     </textarea>
     <!-- 
         위의 것의 용도는 rule1 은 설명을 넣고 readonly 를 넣어 읽게하고 아래쪽에는 방명록 혹은 건의사항을 받는 글자쓰는용도로 사용할 수 있다.
