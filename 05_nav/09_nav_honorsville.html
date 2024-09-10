@@ -88,9 +88,11 @@
         .gnb .main li {
             width: 150px;
         }
+
         .gnb .main>li>a {
             position: relative;
         }
+
         .gnb .main>li>a::after {
             content: "";
             position: absolute;
@@ -99,9 +101,10 @@
             transform: scale(0);
             transition: transform .3s;
             height: 2px;
-            bottom:-7px;
-            left:0;
+            bottom: -7px;
+            left: 0;
         }
+
         .gnb .main>li>a:hover::after {
             transform: scale(1);
         }
@@ -123,6 +126,7 @@
             color: #111;
             line-height: 2;
         }
+
         .gnb .sub a:hover {
             color: #b0b3b1;
         }
@@ -150,6 +154,7 @@
             background: transparent;
             transition: background .3s;
         }
+
         .rlink .sns a {
             font-size: 1.8rem;
             line-height: 1.8;

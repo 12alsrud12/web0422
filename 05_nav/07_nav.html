@@ -19,6 +19,17 @@
         }
 
         /* nav */
+        /* 
+            positon:
+                - static / 기본
+                - relative / 부모요소 자기자신에게 거는 것
+                - absolute / 자식요소에 거는 것 부모요소중 relative 기준으로 따라간다.
+                - fixed / 화면상 기준
+                - sticky / IE(인터넷 익스플로러) 적용 X, 처음에는 스크롤 되고나서 이후에 고정된다.
+                    sticky 부가 설명
+                    <p>lorem lorem</p>
+                    <nav style="position: sticky"> 이렇게 걸면 p태그를 지나고나서 fixed 처럼 된다.
+        */
         nav.sticky {
             position: fixed;
             width: 100%;

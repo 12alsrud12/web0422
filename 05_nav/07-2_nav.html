@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* reset */
         * {
             box-sizing: border-box;
         }
@@ -14,6 +15,18 @@
             margin: 0;
         }
 
+        ul,
+        li {
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #272727;
+        }
+
+        /* style */
         div {
             padding-bottom: 2000px;
         }
@@ -26,33 +39,53 @@
             padding: 5px;
             background-color: #cae8ca;
         }
+
         .gnb2 {
             z-index: 9999;
             position: fixed;
             width: 100%;
-            top: -50px;
+            top: -100px;
             padding: 5px;
             background-color: #fff;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
         }
+
         .gnb2.down {
             top: 0px;
             transition: .5s;
         }
+
+        .gnb1,
+        .gnb2 {
+            display: flex;
+        }
+
+        .gnb1 a,
+        .gnb2 a {
+            text-decoration: none;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin-right: 24px;
+        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        $(()=>{
+        $(() => {
             const nav1 = $(".gnb1");
             const nav2 = $(".gnb2");
 
-            $(window).scroll(()=>{
+            $(window).scroll(() => {
                 let st = $(this).scrollTop();
                 if (st > 100) {
-                    nav1.css({opacity:0});
+                    nav1.css({ opacity: 0 });
                     nav2.addClass("down");
                 } else {
-                    nav1.css({opacity:1});
+                    nav1.css({ opacity: 1 });
                     nav2.removeClass("down");
                 }
             });
@@ -63,8 +96,22 @@
 <body>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe a, error dicta beatae earum mollitia optio
         nostrum dignissimos, accusantium sed obcaecati quod dolorem soluta sapiente modi ea voluptatem odit eius!</p>
-    <nav class="gnb1">내비게이션</nav>
-    <nav class="gnb2">내비게이션</nav>
+    <nav class="gnb1">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <nav class="gnb2">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
     <div>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi tenetur molestias explicabo et? Quam eius
             nostrum aliquid ex, exercitationem minima atque sequi, earum aut, voluptate esse consequuntur non totam
