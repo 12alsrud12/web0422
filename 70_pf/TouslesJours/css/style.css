@@ -42,6 +42,7 @@ iframe {
 
 ::selection {
     background: #3D6B5C;
+    color: #F26B24;
 }
 
 /* //reset */
@@ -126,6 +127,7 @@ p {
     font-family: "온글잎 은별", sans-serif;
     font-size: 2.4em;
     color: #0D4633;
+    line-height: 1.5;
 }
 
 #sec1 button {
@@ -183,7 +185,7 @@ p.small {
 }
 
 /* footer */
-div.fp-tableCell {
+footer div.fp-tableCell {
     height: 600px !important;
 }
 
@@ -274,7 +276,6 @@ body {
 button {
     cursor: pointer;
 }
-
 
 /* header */
 header {
@@ -402,7 +403,6 @@ header:hover input {
 .section {
     height: 100vh;
     margin: 0 auto;
-
 }
 
 #sec2,
@@ -410,7 +410,6 @@ header:hover input {
 #sec4,
 #sec5 {
     background: #F7F0DA !important;
-
 }
 
 /* #sec1 */
@@ -517,7 +516,6 @@ header:hover input {
 }
 
 /* #sec2 */
-
 #sec2 {
     display: flex;
     flex-direction: column;
@@ -526,19 +524,22 @@ header:hover input {
 #sec2_bx1 {
     display: flex;
     position: relative;
+    height: 100%;
 }
 
+/* 수정후: 아래 sec limg 두개로 조정 수정 */
 .sec_limg {
     display: flex;
     align-items: flex-end;
     width: 280px;
-    height: 732px;
+    height: 100%;
     background: #3D6B5C;
 }
 
 .sec_limg img {
     width: 280px;
     height: 550px;
+    margin-bottom: 100px;
 }
 
 #sec2 h3 {
@@ -588,7 +589,6 @@ iframe {
     height: 290px;
 }
 
-
 /* #sec3 */
 #sec3 .slide2 {
     margin: 0;
@@ -602,15 +602,28 @@ iframe {
     height: 730px;
 }
 
+#sec3 .bx-wrapper {
+    box-shadow: none;
+    height: 100%;
+    background: #F7F0DA;
+    border: none;
+}
 
-.slide2>div {
+#sec3 .slide2>div {
     display: flex;
+}
+
+#sec3 .bx-viewport {
+    height: 953px !important;
+}
+
+#sec3 .bx-viewport>div {
+    height: 100% !important;
 }
 
 .slide2>div:first-of-type {
     display: flex !important;
 }
-
 
 .s3_sub_box1 {
     display: flex;
@@ -631,17 +644,13 @@ iframe {
 
 .slide2 {
     background: #F7F0DA;
-    height: 880px;
+    height: 100%;
 }
 
 .slide2>div img {
-    margin: 155px 0 0 160px;
+    margin: 200px 0 0 160px;
     width: 578px;
     height: 576px;
-}
-
-.slide2 .bx-wrapper {
-    margin: 0;
 }
 
 #sec3 .bx-wrapper .bx-prev {
@@ -660,11 +669,6 @@ iframe {
     left: 1103px;
     background: url(../images/section3_right.png) no-repeat 0 0 !important;
 }
-
-#sec3 .bx-wrapper {
-    border: none;
-}
-
 
 #sec3 .slide2 h1 {
     margin: 285px;
@@ -686,8 +690,9 @@ iframe {
     margin: 280px 0 36px;
 }
 
+/* 수정후 슬라이드 글자 위치 조정 */
 .s3_sub_box1 h3:last-of-type {
-    margin: 79px 0 0 78px;
+    margin: 70px 0 0 78px;
 }
 
 #s3_mj_box2 {
@@ -722,43 +727,17 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
     border: none;
 }
 
-
-
 /* #sec4 */
+/* 섹션4는 전체 섹션 위치 조정하면서 자동으로 조정 완료됨 */
 
 /* tabs */
 
-#tabs>div {
-    position: relative;
-    display: none;
-    height: 919px;
-}
 
-#tabs>div.on {
-    width: 100%;
-    display: block;
-}
-
-#tabs ul {
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 60%;
-    display: flex;
-    z-index: 50;
-}
-
-#tabs ul li:first-of-type {
-    margin-left: 195px;
-}
-
-#tabs ul li:last-of-type {
-    margin-right: 195px;
-}
 
 .content1,
 .content2 {
-    margin: 180px 360px;
+    margin-top: 200px;
+    width: 1190px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -773,6 +752,40 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* 수정후! sec4 tab는 부적합하여 캐러샐 슬라이드 플러그인으로 슬라이드로 변경 = bx-slide */
+#sec4 .bx-wrapper {
+    box-shadow: none;
+    background: #F7F0DA;
+    border: none;
+}
+
+#sec4 .bx-viewport {
+    width: 1190px !important;
+    margin: 0 auto;
+}
+
+#sec4 .bx-wrapper .bx-prev {
+    width: 88px;
+    height: 87px;
+    top: 500px;
+    left: 200px;
+    background: url(../images/section2_left.png) no-repeat;
+}
+
+#sec4 .bx-wrapper .bx-next,
+#sec4 .bx-wrapper .bx-next:hover {
+    width: 88px;
+    height: 87px;
+    top: 500px;
+    left: 1650px;
+    background: url(../images/section2_right.png) no-repeat 0 0 !important;
+}
+
+#tab1,
+#tab2 {
+    position: absolute;
+    width: 1190px;
+}
 
 /* #sec5 */
 .sec5_logo {
@@ -859,29 +872,20 @@ input[placeholder="매장이나 시/군/구 명 입력"] {
 .s5_box5 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     margin-left: 135px;
-    width: 893px;
-    height: 730px;
-    background: url(../images/s5_bg.png);
+    width: 894px;
+    height: 763px;
 }
 
-.s5_box5 img:first-of-type {
-    margin-top: 50px;
-    width: 767px;
-    height: 81px;
-}
-
-.s5_box5 img:last-of-type {
-    margin-top: 40px;
-    width: 544px;
-    height: 44px;
+/* 섹션5 수정후 부분 */
+.s5_box5 img {
+    height: 763px;
 }
 
 /* //section */
 
 /* footer */
-
 /* footer1 */
 
 .ft_1 {
@@ -1096,20 +1100,4 @@ footer .ft_2 {
     width: 50px;
     margin: 10px 0;
     border: 1px solid #0d4633;
-}
-
-@media (min-width:600px) {
-    body {
-        width: 100%;
-    }
-
-    #s5_cont {
-        width: 100%;
-    }
-}
-
-@media (min-width:360px) {
-    body {
-        width: 100%;
-    }
 }
