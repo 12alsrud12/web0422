@@ -124,6 +124,7 @@
             position: relative;
         }
 
+        /* 메인메뉴 아래 흰색바 만들기 */
         .gnb .main>li:hover::after {
             content: "";
             position: absolute;
@@ -147,6 +148,7 @@
             top: 20px;
             left: 50%;
             transform: translateX(-30%);
+            /* padding으로 띄운 이유 -> main메뉴에서 sub메뉴로 이동할 때 사라짐 방지 */
             padding-top: 32px;
             width: 350px;
             font-size: 1.5rem;
